@@ -1093,7 +1093,7 @@
   ]
 },
 "Coding": {
-  "Hard": [
+  "Easy": [
       {
         "question": "What is the purpose of the <canvas> element in HTML?",
         "options": [
@@ -1285,6 +1285,459 @@
         "answer": "B"
       }
     ],
-    "Extreme": []
+    "Medium": [
+      {
+        "question": "What is the difference between let and var in JavaScript?",
+        "options": [
+          "A) let has block scope, var has function scope",
+          "B) var has block scope, let has function scope", 
+          "C) No difference",
+          "D) let is older than var"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "What does CSS stand for?",
+        "options": [
+          "A) Computer Style Sheets",
+          "B) Cascading Style Sheets",
+          "C) Creative Style Sheets", 
+          "D) Colorful Style Sheets"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "Which method is used to add an element to the end of an array in JavaScript?",
+        "options": [
+          "A) push()",
+          "B) pop()",
+          "C) shift()",
+          "D) unshift()"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "What is the purpose of the 'this' keyword in JavaScript?",
+        "options": [
+          "A) Refers to the current object",
+          "B) Refers to the previous object",
+          "C) Refers to the global object",
+          "D) Refers to the parent object"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which HTML tag is used to link an external CSS file?",
+        "options": [
+          "A) <style>",
+          "B) <css>",
+          "C) <link>",
+          "D) <stylesheet>"
+        ],
+        "answer": "C"
+      },
+      {
+        "question": "What is the purpose of the <web-component> element in HTML?",
+    "options": [
+      "A) To create a reusable web component",
+      "B) To define a hyperlink",
+      "C) To insert an image",
+      "D) To create a form"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Which CSS property is used to create a responsive layout?",
+        "options": [
+          "A) display: responsive",
+          "B) display: flex",
+          "C) display: grid",
+          "D) display: block"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <service-worker> element in HTML?",
+        "options": [
+          "A) To create a background script for offline capabilities",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive navigation menu?",
+        "options": [
+          "A) nav-responsive",
+          "B) nav-menu",
+          "C) nav-flex",
+          "D) nav-grid"
+        ],
+        "answer": "C"
+      },
+      {
+        "question": "What is the purpose of the <progress> element in HTML?",
+        "options": [
+          "A) To display the progress of a task",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive table?",
+        "options": [
+          "A) table-responsive",
+          "B) table-layout",
+          "C) table-flex",
+          "D) table-grid"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <web-worker> element in HTML?",
+        "options": [
+          "A) To create a background script for parallel processing",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive footer?",
+        "options": [
+          "A) footer-responsive",
+          "B) footer-flex",
+          "C) footer-grid",
+          "D) footer-block"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <websocket> element in HTML?",
+        "options": [
+          "A) To create a persistent connection for real-time communication",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive sidebar?",
+        "options": [
+          "A) sidebar-responsive",
+          "B) sidebar-flex",
+          "C) sidebar-grid",
+          "D) sidebar-block"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <web-component> element in HTML?",
+        "options": [
+          "A) To create a reusable web component",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive header?",
+        "options": [
+          "A) header-responsive",
+          "B) header-flex",
+          "C) header-grid",
+          "D) header-block"
+        ],
+        "answer": "B" 
+      },
+      {
+        "question": "What is the purpose of the <custom-element> element in HTML?",
+        "options": [
+          "A) To create a reusable custom element",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive card layout?",
+        "options": [
+          "A) card-responsive",
+          "B) card-flex",
+          "C) card-grid",
+          "D) card-block"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <shadow-dom> element in HTML?",
+        "options": [
+          "A) To create a shadow DOM for encapsulation",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive modal?",
+        "options": [
+          "A) modal-responsive",
+          "B) modal-flex",
+          "C) modal-grid",
+          "D) modal-block"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <web-component> element in HTML?",
+        "options": [
+          "A) To create a reusable web component",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive accordion?",
+        "options": [
+          "A) accordion-responsive",
+          "B) accordion-flex",
+          "C) accordion-grid",
+          "D) accordion-block"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <web-component> element in HTML?",
+        "options": [
+          "A) To create a reusable web component",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      }    ],
+    "Hard": [
+      {
+        "question": "What is the purpose of the <web-component> element in HTML?",
+        "options": [
+          "A) To create a reusable web component",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive grid layout?",
+        "options": [
+          "A) grid-template-columns",
+          "B) grid-template-rows",
+          "C) grid-auto-flow",
+          "D) grid-gap"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "What is the purpose of the <custom-element> element in HTML?",
+        "options": [
+          "A) To create a reusable custom element",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive image?",
+        "options": [
+          "A) max-width",
+          "B) width",
+          "C) height",
+          "D) responsive"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "What is the purpose of the <template> element in HTML?",
+        "options": [
+          "A) To define a reusable template for content",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "\"The Catcher in the Rye\" was written by which author?",
+        "options": ["A) Salinger", 
+                    "B) Capote", 
+                    "C) Vonnegut", 
+                    "D) Kerouac"],
+        "answer": "A"
+      },
+      {
+
+        "question": "Which CSS property is used to create a responsive font size?",
+        "options": [
+          "A) font-size: responsive",
+          "B) font-size: calc()",
+          "C) font-size: viewport",
+          "D) font-size: auto"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <slot> element in HTML?",
+        "options": [
+          "A) To create a placeholder for content in a web component",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive footer?",
+        "options": [
+          "A) footer-responsive",
+          "B) footer-flex",
+          "C) footer-grid",
+          "D) footer-block"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <web-worker> element in HTML?",
+        "options": [
+          "A) To create a background script for parallel processing",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive sidebar?",
+        "options": [
+          "A) sidebar-responsive",
+          "B) sidebar-flex",
+          "C) sidebar-grid",
+          "D) sidebar-block"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <web-component> element in HTML?",
+        "options": [
+          "A) To create a reusable web component",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {   
+        "question": "Which CSS property is used to create a responsive header?",
+        "options": [
+          "A) header-responsive",
+          "B) header-flex",
+          "C) header-grid",
+          "D) header-block"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <custom-element> element in HTML?",
+        "options": [
+          "A) To create a reusable custom element",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive card layout?",
+        "options": [
+          "A) card-responsive",
+          "B) card-flex",
+          "C) card-grid",
+          "D) card-block"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <shadow-dom> element in HTML?",
+        "options": [
+          "A) To create a shadow DOM for encapsulation",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive modal?",
+        "options": [
+          "A) modal-responsive",
+          "B) modal-flex",
+          "C) modal-grid",
+          "D) modal-block"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <web-component> element in HTML?",
+        "options": [
+          "A) To create a reusable web component",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive accordion?",
+        "options": [
+          "A) accordion-responsive",
+          "B) accordion-flex",
+          "C) accordion-grid",
+          "D) accordion-block"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the <web-component> element in HTML?",
+        "options": [
+          "A) To create a reusable web component",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer":"A"
+        
+        },
+        {
+          "question": "How many centimeters are in 1 meter?",
+          "options": ["A) 10", "B) 100", "C) 1000", "D) 10000"],
+          "answer": "B"
+        },
+        {
+          "question": "What is the capital of Japan?",
+          "options": ["A) Tokyo", "B) Seoul", "C) Beijing", "D) Bangkok"],
+          "answer": "A"
+          
+        }      
+    ]
   }
 }
