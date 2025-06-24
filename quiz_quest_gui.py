@@ -22,7 +22,7 @@ char_label.pack(pady=5)
 
 chars = [("Warrior", "Warrior"), ("Mage", "Mage"), ("Archer", "Archer")]
 for text, value in chars:
-    rb = tk.Radiobutton(root, text=text, variable=character_var, value=value, font=("Helvetica", 30))
+    rb = tk.Radiobutton(root, text=text, variable=character_var, value=value, font=("Helvetica", 12))
     rb.pack(anchor="w")
 
 start_button = tk.Button(root, text="Start Game", font=("Helvetica", 14), command=start_game)

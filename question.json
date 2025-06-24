@@ -641,8 +641,8 @@
         "answer": "C"
       }
     ],
-        "Extreme": []
-      },
+    "Extreme": []
+    },
   "Geography": {
     "Easy": [
       {
@@ -1578,15 +1578,6 @@
         "answer": "A"
       },
       {
-        "question": "\"The Catcher in the Rye\" was written by which author?",
-        "options": ["A) Salinger", 
-                    "B) Capote", 
-                    "C) Vonnegut", 
-                    "D) Kerouac"],
-        "answer": "A"
-      },
-      {
-
         "question": "Which CSS property is used to create a responsive font size?",
         "options": [
           "A) font-size: responsive",
@@ -1724,20 +1715,8 @@
           "C) To insert an image",
           "D) To create a form"
         ],
-        "answer":"A"
-        
-        },
-        {
-          "question": "How many centimeters are in 1 meter?",
-          "options": ["A) 10", "B) 100", "C) 1000", "D) 10000"],
-          "answer": "B"
-        },
-        {
-          "question": "What is the capital of Japan?",
-          "options": ["A) Tokyo", "B) Seoul", "C) Beijing", "D) Bangkok"],
-          "answer": "A"
-          
-        }      
+        "answer": "A"
+      }
     ]
   }
 }
