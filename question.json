@@ -1,0 +1,1290 @@
+{
+  "Math": {
+    "Easy": [
+      {
+        "question": "What is 5 + 3?",
+        "options": ["A) 6", "B) 7", "C) 8", "D) 9"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the result of 12 × 8?",
+        "options": ["A) 96", "B) 86", "C) 102", "D) 88"],
+        "answer": "A"
+      },
+      {
+        "question": "What is 7 × 6?",
+        "options": ["A) 42", "B) 36", "C) 48", "D) 40"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the sum of angles in a triangle?",
+        "options": ["A) 180 degrees", "B) 90 degrees", "C) 360 degrees", "D) 270 degrees"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the square root of 81?",
+        "options": ["A) 7", "B) 8", "C) 9", "D) 10"],
+        "answer": "C"
+      },
+      {
+        "question": "If you have 3/4 of a pizza and eat 1/2 of it, how much pizza do you eat?",
+        "options": ["A) 1/2", "B) 3/8", "C) 1/4", "D) 1/8"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 25% of 80?",
+        "options": ["A) 15", "B) 20", "C) 25", "D) 30"],
+        "answer": "B"
+      },
+      {
+        "question": "How many sides does a hexagon have?",
+        "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 10²?",
+        "options": ["A) 10", "B) 100", "C) 20", "D) 50"],
+        "answer": "B"
+      },
+      {
+        "question": "If a shirt costs $20 and is on 25% discount, what is the discounted price?",
+        "options": ["A) $15", "B) $16", "C) $17", "D) $18"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the product of 9 and 5?",
+        "options": ["A) 40", "B) 45", "C) 50", "D) 55"],
+        "answer": "B"
+      },
+      {
+        "question": "How many minutes are in 3 hours?",
+        "options": ["A) 90", "B) 180", "C) 120", "D) 240"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the next number: 3, 6, 9, 12, ...?",
+        "options": ["A) 14", "B) 15", "C) 16", "D) 18"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 100 divided by 25?",
+        "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+        "answer": "C"
+      },
+      {
+        "question": "If you multiply any number by zero, what is the result?",
+        "options": ["A) The number itself", "B) Zero", "C) One", "D) Undefined"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the sum of 15 + 27?",
+        "options": ["A) 42", "B) 40", "C) 45", "D) 44"],
+        "answer": "A"
+      },
+      {
+        "question": "Which number is even?",
+        "options": ["A) 13", "B) 21", "C) 28", "D) 35"],
+        "answer": "C"
+      },
+      {
+        "question": "What is 5 factorial (5!)?",
+        "options": ["A) 120", "B) 60", "C) 24", "D) 20"],
+        "answer": "A"
+      },
+      {
+        "question": "What is 2 to the power of 4?",
+        "options": ["A) 6", "B) 8", "C) 12", "D) 16"],
+        "answer": "D"
+      },
+      {
+        "question": "What is the decimal equivalent of 1/2?",
+        "options": ["A) 0.25", "B) 0.5", "C) 0.75", "D) 1"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 45 - 18?",
+        "options": ["A) 27", "B) 28", "C) 25", "D) 30"],
+        "answer": "A"
+      },
+      {
+        "question": "If a rectangle has length 8 and width 3, what is its area?",
+        "options": ["A) 11", "B) 24", "C) 22", "D) 18"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 50% of 60?",
+        "options": ["A) 20", "B) 25", "C) 30", "D) 35"],
+        "answer": "C"
+      },
+      {
+        "question": "How many sides does a pentagon have?",
+        "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the next prime number after 7?",
+        "options": ["A) 9", "B) 11", "C) 13", "D) 15"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 3/5 expressed as a decimal?",
+        "options": ["A) 0.5", "B) 0.6", "C) 0.75", "D) 0.8"],
+        "answer": "B"
+      },
+      {
+        "question": "How many degrees are in a straight angle?",
+        "options": ["A) 90", "B) 180", "C) 270", "D) 360"],
+        "answer": "B"
+      },
+      {
+        "question": "If you roll a standard die, what is the probability of getting a 6?",
+        "options": ["A) 1/6", "B) 1/3", "C) 1/2", "D) 1/4"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the sum of 7, 8, and 9?",
+        "options": ["A) 22", "B) 23", "C) 24", "D) 25"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the product of 4 and 7?",
+        "options": ["A) 24", "B) 28", "C) 30", "D) 32"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 3 + 4 × 2?",
+        "options": ["A) 14", "B) 11", "C) 10", "D) 9"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the value of pi (π) rounded to 2 decimal places?",
+        "options": ["A) 3.12", "B) 3.14", "C) 3.16", "D) 3.18"],
+        "answer": "B"
+      },
+      {
+        "question": "How many centimeters are in 1 meter?",
+        "options": ["A) 10", "B) 100", "C) 1000", "D) 10000"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the sum of the first 5 natural numbers?",
+        "options": ["A) 10", "B) 12", "C) 15", "D) 20"],
+        "answer": "C"
+      },
+      {
+        "question": "If you subtract 9 from 15, what do you get?",
+        "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the value of 7 × 7?",
+        "options": ["A) 42", "B) 49", "C) 56", "D) 63"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 1000 grams equal to?",
+        "options": ["A) 1 kilogram", "B) 10 kilograms", "C) 100 kilograms", "D) 1000 kilograms"],
+        "answer": "A"
+      },
+      {
+        "question": "If a triangle has two sides of length 5 and 7, what is the minimum length of the third side?",
+        "options": ["A) 1", "B) 2", "C) 3", "D) 4"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the next even number after 14?",
+        "options": ["A) 15", "B) 16", "C) 17", "D) 18"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the value of 2 + 2 × 3?",
+        "options": ["A) 8", "B) 10", "C) 12", "D) 6"],
+        "answer": "A"
+      },
+      {
+        "question": "How many hours are in 2 days?",
+        "options": ["A) 24", "B) 36", "C) 48", "D) 72"],
+        "answer": "C"
+      },
+      {
+        "question": "If a book costs $15 and you pay with a $20 bill, what is your change?",
+        "options": ["A) $3", "B) $4", "C) $5", "D) $6"],
+        "answer": "C"
+      },
+      {
+        "question": "What is 6 squared (6²)?",
+        "options": ["A) 30", "B) 32", "C) 36", "D) 42"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the perimeter of a square with side length 5?",
+        "options": ["A) 10", "B) 15", "C) 20", "D) 25"],
+        "answer": "C"
+      },
+      {
+        "question": "If the time is 3:15 PM now, what time will it be in 2 hours?",
+        "options": ["A) 4:15 PM", "B) 5:15 PM", "C) 6:15 PM", "D) 7:15 PM"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 8 multiplied by 0?",
+        "options": ["A) 0", "B) 8", "C) 1", "D) 10"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the median of these numbers: 3, 5, 7, 9, 11?",
+        "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the remainder when 29 is divided by 5?",
+        "options": ["A) 3", "B) 4", "C) 2", "D) 1"],
+        "answer": "B"
+      },
+      {
+        "question": "Which of the following is a prime number?",
+        "options": ["A) 21", "B) 33", "C) 17", "D) 39"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the value of 3² + 4²?",
+        "options": ["A) 12", "B) 25", "C) 18", "D) 35"],
+        "answer": "B"
+      },
+      {
+        "question": "If a car travels 60 km in 1.5 hours, what is its average speed?",
+        "options": ["A) 30 km/h", "B) 40 km/h", "C) 45 km/h", "D) 50 km/h"],
+        "answer": "C"
+      },
+      {
+        "question": "What is 15% of 200?",
+        "options": ["A) 25", "B) 20", "C) 30", "D) 35"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the next number in the sequence: 2, 4, 6, 8, ...?",
+        "options": ["A) 9", "B) 10", "C) 11", "D) 12"],
+        "answer": "B"
+      },
+      {
+        "question": "How many degrees are in a right angle?",
+        "options": ["A) 45", "B) 60", "C) 90", "D) 180"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the greatest common divisor of 12 and 18?",
+        "options": ["A) 3", "B) 6", "C) 9", "D) 12"],
+        "answer": "B"
+      },
+      {
+        "question": "If you buy 3 pencils for $1.50, how much does one pencil cost?",
+        "options": ["A) $0.30", "B) $0.50", "C) $0.45", "D) $0.60"],
+        "answer": "B"
+      }
+    ],
+    "Medium": [
+      {
+        "question": "What is 12 * 12?",
+        "options": ["A) 120", "B) 144", "C) 156", "D) 132"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 15 - 7?",
+        "options": ["A) 6", "B) 7", "C) 8", "D) 9"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 9 / 3?",
+        "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the square root of 64?",
+        "options": ["A) 6", "B) 7", "C) 8", "D) 9"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the value of pi (π) approximately?",
+        "options": ["A) 3.14", "B) 3.15", "C) 3.16", "D) 3.17"],
+        "answer": "A"
+      },
+      {
+        "question": "What is 2^3?",
+        "options": ["A) 6", "B) 7", "C) 8", "D) 9"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the value of 10% of 200?",
+        "options": ["A) 10", "B) 20", "C) 30", "D) 40"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the perimeter of a rectangle with length 5 and width 3?",
+        "options": ["A) 15", "B) 16", "C) 18", "D) 20"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the area of a triangle with base 4 and height 3?",
+        "options": ["A) 6", "B) 8", "C) 10", "D) 12"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the value of 7 + 5 * 2?",
+        "options": ["A) 17", "B) 19", "C) 21", "D) 23"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the value of 3^4?",
+        "options": ["A) 81", "B) 64", "C) 27", "D) 36"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the value of 100 - 25 / 5?",
+        "options": ["A) 95", "B) 90", "C) 85", "D) 80"],
+        "answer": "B"
+      },
+      {
+        "question": "Solve for x: x + 5 = 12.",
+        "options": ["A) 5", "B) 7", "C) 17", "D) 12"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 18 ÷ 2 + 3?",
+        "options": ["A) 6", "B) 9", "C) 12", "D) 14"],
+        "answer": "C"
+      },
+      {
+        "question": "What is (4 + 6) × 2?",
+        "options": ["A) 14", "B) 16", "C) 18", "D) 20"],
+        "answer": "D"
+      },
+      {
+        "question": "What is 5³?",
+        "options": ["A) 15", "B) 60", "C) 125", "D) 225"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the average of 4, 8, and 12?",
+        "options": ["A) 7", "B) 8", "C) 9", "D) 10"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the remainder when 45 is divided by 6?",
+        "options": ["A) 3", "B) 5", "C) 6", "D) 7"],
+        "answer": "A"
+      },
+      {
+        "question": "Which is larger: 2/3 or 3/5?",
+        "options": ["A) 2/3", "B) 3/5", "C) They are equal", "D) Cannot determine"],
+        "answer": "A"
+      },
+      {
+        "question": "What is 20% of 150?",
+        "options": ["A) 20", "B) 25", "C) 30", "D) 35"],
+        "answer": "C"
+      },
+      {
+        "question": "Simplify: 2(x + 3) when x = 4.",
+        "options": ["A) 10", "B) 14", "C) 16", "D) 20"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 11 × 11?",
+        "options": ["A) 111", "B) 121", "C) 132", "D) 141"],
+        "answer": "B"
+      },
+      {
+        "question": "If 5y = 45, what is y?",
+        "options": ["A) 5", "B) 7", "C) 8", "D) 9"],
+        "answer": "D"
+      },
+      {
+        "question": "What is the next number in the pattern 2, 4, 8, 16, ...?",
+        "options": ["A) 18", "B) 24", "C) 32", "D) 36"],
+        "answer": "C"
+      },
+      {
+        "question": "What is 14 + 28 ÷ 4?",
+        "options": ["A) 7", "B) 21", "C) 17", "D) 24"],
+        "answer": "C"
+      },
+      {
+        "question": "What is (3 × 3) + (4 × 2)?",
+        "options": ["A) 13", "B) 17", "C) 18", "D) 20"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 30 ÷ (5 + 1)?",
+        "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+        "answer": "A"
+      },
+      {
+        "question": "If a = 3 and b = 5, what is a² + b²?",
+        "options": ["A) 25", "B) 34", "C) 38", "D) 41"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 50 ÷ 2 × 3?",
+        "options": ["A) 15", "B) 25", "C) 75", "D) 150"],
+        "answer": "C"
+      },
+      {
+        "question": "What is 7 + (6 ÷ 2)?",
+        "options": ["A) 10", "B) 12", "C) 13", "D) 16"],
+        "answer": "C"
+      },
+      {
+        "question": "What is 100 – (20% of 100)?",
+        "options": ["A) 80", "B) 85", "C) 90", "D) 95"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the mode of the data set [2, 4, 4, 6, 8]?",
+        "options": ["A) 2", "B) 4", "C) 6", "D) 8"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 3 × (4 + 5)?",
+        "options": ["A) 21", "B) 27", "C) 31", "D) 35"],
+        "answer": "A"
+      },
+      {
+        "question": "What is 28 ÷ 7?",
+        "options": ["A) 3", "B) 4", "C) 5", "D) 6"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the surface area of a cube with side length 2?",
+        "options": ["A) 12", "B) 16", "C) 24", "D) 36"],
+        "answer": "C"
+      },
+      {
+        "question": "What is 18 – (3 × 2)?",
+        "options": ["A) 6", "B) 8", "C) 12", "D) 15"],
+        "answer": "A"
+      },
+      {
+        "question": "If 4x = 36, what is x?",
+        "options": ["A) 6", "B) 8", "C) 9", "D) 10"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the next multiple of 7 after 28?",
+        "options": ["A) 30", "B) 34", "C) 35", "D) 42"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the value of 5! / (3! × 2!)?",
+        "options": ["A) 5", "B) 10", "C) 15", "D) 20"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the greatest common divisor of 24 and 36?",
+        "options": ["A) 6", "B) 8", "C) 12", "D) 18"],
+        "answer": "C"
+      },
+      {
+        "question": "What is 11 + 22 + 33?",
+        "options": ["A) 56", "B) 66", "C) 77", "D) 88"],
+        "answer": "B"
+      },
+      {
+        "question": "What is 2³ + 3³?",
+        "options": ["A) 17", "B) 26", "C) 35", "D) 72"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the least common multiple of 4 and 6?",
+        "options": ["A) 6", "B) 12", "C) 18", "D) 24"],
+        "answer": "B"
+      }
+    ],
+    "Hard": [
+      {
+        "question": "What is the value of 7! (7 factorial)?",
+        "options": ["A) 5040", "B) 720", "C) 40320", "D) 10080"],
+        "answer": "A"
+      },
+      {
+        "question": "What is 17 × 19?",
+        "options": ["A) 323", "B) 306", "C) 289", "D) 340"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the value of 2^10?",
+        "options": ["A) 512", "B) 1024", "C) 2048", "D) 4096"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the sum of the first 100 natural numbers?",
+        "options": ["A) 5050", "B) 5000", "C) 5100", "D) 5200"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the value of log10(1000)?",
+        "options": ["A) 1", "B) 2", "C) 3", "D) 4"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the area of a circle with radius 7?",
+        "options": ["A) 154", "B) 144", "C) 196", "D) 308"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the value of sin(30 degrees)?",
+        "options": ["A) 0.5", "B) √3/2", "C) √2/2", "D) 1"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the value of cos(60 degrees)?",
+        "options": ["A) √3/2", "B) √2/2", "C) 0.5", "D) 1"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the value of tan(45 degrees)?",
+        "options": ["A) 1", "B) √3", "C) √2", "D) 0"],
+        "answer": "A"
+      },
+      {
+        "question": "(x + y)^2 = ?",
+        "options": [
+          "A) x^2 + y^2 + xy",
+          "B) x^2 + y^2 - xy",
+          "C) x^2 + y^2 + 2xy",
+          "D) x^2 - y^2 + xy"
+        ],
+        "answer": "C"
+      },
+      {
+        "question": "What is the value of the integral of x^2 dx from 0 to 1?",
+        "options": ["A) 1/3", "B) 1/2", "C) 1", "D) 2/3"],
+        "answer": "A"
+      },
+      {
+        "question": "What is 121 divided by 11?",
+        "options": ["A) 10", "B) 11", "C) 12", "D) 13"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the value of the derivative of x^3 at x = 2?",
+        "options": ["A) 6", "B) 12", "C) 18", "D) 24"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the value of the limit as x approaches 0 of (sin x)/x?",
+        "options": ["A) 0", "B) 1", "C) ∞", "D) Undefined"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the value of e^0?",
+        "options": ["A) 0", "B) 1", "C) e", "D) ∞"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the value of the square root of 144?",
+        "options": ["A) 10", "B) 11", "C) 12", "D) 13"],
+        "answer": "C"
+      },
+      {
+        "question": "(a + b)^3 = ?",
+        "options": [
+          "A) a^3 + b^3 + 3ab(a + b)",
+          "B) a^3 + b^3 - 3ab(a + b)",
+          "C) a^3 + b^3 + 3ab",
+          "D) a^3 - b^3 + ab"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "(x - y)^2 = ?",
+        "options": [
+          "A) x^2 - y^2 - xy",
+          "B) x^2 - y^2 + xy",
+          "C) x^2 - y^2 - 2xy",
+          "D) x^2 - y^2 + 2xy"
+        ],
+        "answer": "C"
+      },
+      {
+        "question": "What is the value of the integral of 1/x dx from 1 to e?",
+        "options": ["A) 1", "B) ln(e)", "C) ln(2)", "D) ln(3)"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the value of the derivative of sin(x) at x = π/2?",
+        "options": ["A) 0", "B) 1", "C) -1", "D) Undefined"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the value of the integral of x^3 dx from 0 to 1?",
+        "options": ["A) 1/4", "B) 1/3", "C) 1/2", "D) 1"],
+        "answer": "B"
+      },
+      {
+        "question": "(a - b)^3 = ?",
+        "options": [
+          "A) a^3 - b^3 + 3ab(a - b)",
+          "B) a^3 - b^3 - 3ab(a - b)",
+          "C) a^3 - b^3 + 3ab",
+          "D) a^3 + b^3 - ab"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "(x + y)^2 = ?",
+        "options": [
+          "A) x^2 + y^2 + xy",
+          "B) x^2 + y^2 - xy",
+          "C) x^2 + y^2 + 2xy",
+          "D) x^2 - y^2 + xy"
+        ],
+        "answer": "C"
+      }
+    ],
+        "Extreme": []
+      },
+  "Geography": {
+    "Easy": [
+      {
+        "question": "What is the capital of Turkey?",
+        "options": ["A) Ankara", "B) Istanbul", "C) Izmir", "D) Antalya"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the largest continent?",
+        "options": ["A) Africa", "B) Asia", "C) Europe", "D) North America"],
+        "answer": "B"
+      },
+      {
+        "question": "Which ocean is the largest?",
+        "options": ["A) Atlantic", "B) Indian", "C) Arctic", "D) Pacific"],
+        "answer": "D"
+      },
+      {
+        "question": "What is the capital of France?",
+        "options": ["A) Paris", "B) London", "C) Berlin", "D) Madrid"],
+        "answer": "A"
+      },
+      {
+        "question": "Which country is known as the Land of the Rising Sun?",
+        "options": ["A) China", "B) Japan", "C) South Korea", "D) Thailand"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the largest country in the world by area?",
+        "options": ["A) USA", "B) Canada", "C) Russia", "D) China"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the capital of Australia?",
+        "options": ["A) Sydney", "B) Melbourne", "C) Canberra", "D) Brisbane"],
+        "answer": "C"
+      },
+      {
+        "question": "Which continent is known as the Dark Continent?",
+        "options": ["A) Asia", "B) Africa", "C) South America", "D) Antarctica"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the capital of Canada?",
+        "options": ["A) Toronto", "B) Vancouver", "C) Ottawa", "D) Montreal"],
+        "answer": "C"
+      },
+      {
+        "question": "Which country is famous for its pyramids?",
+        "options": ["A) Greece", "B) Egypt", "C) Mexico", "D) Peru"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the longest river in the world?",
+        "options": ["A) Amazon", "B) Nile", "C) Yangtze", "D) Mississippi"],
+        "answer": "B"
+      },
+      {
+        "question": "Which country is known as the Land of the Midnight Sun?",
+        "options": ["A) Norway", "B) Sweden", "C) Finland", "D) Denmark"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the capital of Italy?",
+        "options": ["A) Rome", "B) Milan", "C) Venice", "D) Florence"],
+        "answer": "A"
+      },
+      {
+        "question": "Which country is the smallest in the world?",
+        "options": ["A) Monaco", "B) Vatican City", "C) San Marino", "D) Liechtenstein"],
+        "answer": "B"
+      }
+    ],
+    "Medium": [
+      {
+        "question": "Which country has the largest population?",
+        "options": ["A) USA", "B) China", "C) India", "D) Russia"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the largest desert in the world?",
+        "options": ["A) Sahara", "B) Arabian", "C) Gobi", "D) Kalahari"],
+        "answer": "A"
+      },
+      {
+        "question": "Which river is the longest in the world?",
+        "options": ["A) Amazon", "B) Nile", "C) Yangtze", "D) Mississippi"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the smallest country in the world?",
+        "options": ["A) Monaco", "B) Vatican City", "C) San Marino", "D) Liechtenstein"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the capital of Japan?",
+        "options": ["A) Tokyo", "B) Osaka", "C) Kyoto", "D) Hiroshima"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the capital of Brazil?",
+        "options": ["A) Rio de Janeiro", "B) Sao Paulo", "C) Brasilia", "D) Salvador"],
+        "answer": "C"
+      },
+      {
+        "question": "Which country has the most official languages?",
+        "options": ["A) India", "B) Switzerland", "C) Canada", "D) South Africa"],
+        "answer": "D"
+      },
+      {
+        "question": "What is the capital of Egypt?",
+        "options": ["A) Cairo", "B) Alexandria", "C) Giza", "D) Luxor"],
+        "answer": "A"
+      },
+      {
+        "question": "Which country is known as the Land of Fire and Ice?",
+        "options": ["A) Norway", "B) Iceland", "C) Finland", "D) Sweden"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the capital of Spain?",
+        "options": ["A) Barcelona", "B) Madrid", "C) Valencia", "D) Seville"],
+        "answer": "B"
+      },
+      {
+        "question": "Which country is the largest in Africa?",
+        "options": ["A) Nigeria", "B) Algeria", "C) South Africa", "D) Egypt"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the capital of Russia?",
+        "options": ["A) Moscow", "B) St. Petersburg", "C) Kazan", "D) Novosibirsk"],
+        "answer": "A"
+      },
+      {
+        "question": "Which country is known for the Great Wall?",
+        "options": ["A) Japan", "B) China", "C) Korea", "D) Vietnam"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the capital of Germany?",
+        "options": ["A) Berlin", "B) Munich", "C) Frankfurt", "D) Hamburg"],
+        "answer": "A"
+      },
+      {
+        "question": "Which country is known as the Land of a Thousand Lakes?",
+        "options": ["A) Canada", "B) Finland", "C) Sweden", "D) Norway"],
+        "answer": "B"
+      }
+    ],
+    "Hard": [
+      {
+        "question": "What is the capital of Kazakhstan?",
+        "options": ["A) Almaty", "B) Nur-Sultan", "C) Shymkent", "D) Karaganda"],
+        "answer": "B"
+      },
+      {
+        "question": "Which country has the highest mountain in the world?",
+        "options": ["A) Nepal", "B) India", "C) China", "D) Bhutan"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the capital of Mongolia?",
+        "options": ["A) Ulaanbaatar", "B) Erdenet", "C) Darkhan", "D) Choibalsan"],
+        "answer": "A"
+      },
+      {
+        "question": "Which country is known as the Land of the Long White Cloud?",
+        "options": ["A) Australia", "B) New Zealand", "C) Fiji", "D) Samoa"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the capital of Argentina?",
+        "options": ["A) Buenos Aires", "B) Santiago", "C) Monte video", "D) Lima"],
+        "answer": "A"
+      },
+      {
+        "question": "Which country is known for the ancient city of Petra?",
+        "options": ["A) Egypt", "B) Jordan", "C) Syria", "D) Lebanon"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the capital of South Africa?",
+        "options": ["A) Pretoria", "B) Cape Town", "C) Johannesburg", "D) Durban"],
+        "answer": "A"
+      },
+      {
+        "question": "Which country is known for the ancient ruins of Machu Picchu?",
+        "options": ["A) Peru", "B) Bolivia", "C) Ecuador", "D) Colombia"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the capital of Greece?",
+        "options": ["A) Athens", "B) Thessaloniki", "C) Patras", "D) Heraklion"],
+        "answer": "A"
+      },
+      {
+        "question": "Which country is known for the ancient city of Angkor Wat?",
+        "options": ["A) Thailand", "B) Vietnam", "C) Cambodia", "D) Laos"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the capital of Turkey?",
+        "options": ["A) Istanbul", "B) Ankara", "C) Izmir", "D) Antalya"],
+        "answer": "B"
+      },
+      {
+        "question": "Which country is known for the ancient city of Tikal?",
+        "options": ["A) Mexico", "B) Guatemala", "C) Honduras", "D) Belize"],
+        "answer": "B"   
+      },
+      {
+        "question": "What is the capital of the Philippines?",
+        "options": ["A) Manila", "B) Cebu", "C) Davao", "D) Iloilo"],
+        "answer": "A"
+      },
+      {
+        "question": "Which country is known for the ancient city of Petra?",
+        "options": ["A) Egypt", "B) Jordan", "C) Syria", "D) Lebanon"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the capital of Vietnam?",
+        "options": ["A) Hanoi", "B) Ho Chi Minh City", "C) Da Nang", "D) Nha Trang"],
+        "answer": "A"
+      },
+      {
+        "question": "Which country is known for the ancient city of Carthage?",
+        "options": ["A) Tunisia", "B) Algeria", "C) Libya", "D) Morocco"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the capital of Sweden?",
+        "options": ["A) Stockholm", "B) Gothenburg", "C) Malmo", "D) Uppsala"],
+        "answer": "A"
+      },    
+      {
+        "question": "What is the capital of Switzerland?",
+        "options": ["A) Zurich", "B) Geneva", "C) Bern", "D) Basel"],
+        "answer": "C"
+      }
+      
+    ]
+  },
+  "General Knowledge": {
+    "Easy": [
+      {
+        "question": "Who wrote \"Romeo and Juliet\"?",
+        "options": ["A) Dickens", "B) Shakespeare", "C) Tolkien", "D) Rowling"],
+        "answer": "B"
+      },
+      {
+       "question": "What is the capital of Japan?",
+        "options": ["A) Tokyo", "B) Seoul", "C) Beijing", "D) Bangkok"],
+        "answer": "A"   
+      },
+      {
+        "question": "What is the largest planet in our solar system?",
+        "options": ["A) Earth", "B) Mars", "C) Jupiter", "D) Saturn"],
+        "answer": "C"
+      },
+      {
+        "question": "Who painted the Mona Lisa?",
+        "options": ["A) Van Gogh", "B) Picasso", "C) Da Vinci", "D) Rembrandt"],
+        "answer": "C"
+      },
+      {
+        "question": "What is the chemical symbol for water?",
+        "options": ["A) O2", "B) H2O", "C) CO2", "D) NaCl"],
+        "answer": "B"
+      },
+      {
+        "question": "Who discovered penicillin?",
+        "options": ["A) Fleming", "B) Pasteur", "C) Curie", "D) Watson"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the capital of France?",
+        "options": ["A) Paris", "B) London", "C) Berlin", "D) Madrid"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the largest mammal?",
+        "options": ["A) Elephant", "B) Blue Whale", "C) Giraffe", "D) Hippopotamus"],
+        "answer": "B"
+      },
+      {
+        "question": "Who wrote \"The Odyssey\"?",
+        "options": ["A) Homer", "B) Virgil", "C) Dante", "D) Milton"],
+        "answer": "A"
+      },
+      {
+        "question": "\"To be or not to be\" is a quote from which play?",
+        "options": ["A) Macbeth", "B) Hamlet", "C) Othello", "D) King Lear"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the capital of Italy?",
+        "options": ["A) Rome", "B) Venice", "C) Florence", "D) Milan"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the largest ocean on Earth?",
+        "options": ["A) Atlantic", "B) Indian", "C) Arctic", "D) Pacific"],
+        "answer": "D"
+      },
+      {
+        "question": "Who was the first President of the United States?",
+        "options": ["A) Lincoln", "B) Washington", "C) Jefferson", "D) Adams"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the hardest natural substance on Earth?",
+        "options": ["A) Gold", "B) Diamond", "C) Iron", "D) Platinum"],
+        "answer": "B"
+      }
+    ],
+    "Medium": [
+      {
+        "question": "What is the capital of Australia?",
+        "options": ["A) Sydney", "B) Melbourne", "C) Canberra", "D) Brisbane"],
+        "answer": "C"
+      },
+      {
+        "question": "Who wrote \"1984\"?",
+        "options": ["A) Orwell", "B) Huxley", "C) Bradbury", "D) Atwood"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the largest desert in the world?",
+        "options": ["A) Sahara", "B) Arabian", "C) Gobi", "D) Kalahari"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the chemical symbol for gold?",
+        "options": ["A) Au", "B) Ag", "C) Pb", "D) Fe"],
+        "answer": "A"
+      },
+      {
+        "question": "Who painted the Sistine Chapel ceiling?",
+        "options": ["A) Michelangelo", "B) Raphael", "C) Botticelli", "D) Caravaggio"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the capital of Canada?",
+        "options": ["A) Toronto", "B) Vancouver", "C) Ottawa", "D) Montreal"],
+        "answer": "C"
+      },
+      {
+        "question": "\"I think, therefore I am\" is a quote by which philosopher?",
+        "options": ["A) Descartes", "B) Kant", "C) Hegel", "D) Nietzsche"],
+        "answer": "A"
+      },
+      {
+        "question": "\"The Great Gatsby\" was written by which author?",
+        "options": ["A) Fitzgerald", "B) Hemingway", "C) Steinbeck", 
+                    "D) Faulkner"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the capital of Egypt?",
+        "options": ["A) Cairo", "B) Alexandria", "C) Giza", "D) Luxor"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the largest continent?",
+        "options": ["A) Africa", "B) Asia", "C) Europe", "D) North America"],
+        "answer": "B"
+      },
+      {
+        "question": "Who discovered the theory of relativity?",
+        "options": ["A) Newton", "B) Einstein", "C) Galileo", "D) Hawking"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the capital of Brazil?",
+        "options": ["A) Rio de Janeiro", "B) Sao Paulo", 
+                    "C) Brasilia", "D) Salvador"],
+        "answer": "C"
+      },
+      {
+        "question": "\"The Catcher in the Rye\" was written by which author?",
+        "options": ["A) Salinger", "B) Capote", 
+                    "C) Vonnegut", "D) Kerouac"],
+        "answer": "A"
+      },
+      {
+        "question": "\"Pride and Prejudice\" was written by which author?",
+        "options": ["A) Austen", 
+                    "B) Bronte", 
+                    "C) Dickens", 
+                    "D) Eliot"],
+        "answer": "A"
+      }
+    ],
+    "Hard": [
+        {
+            "question": "What is the capital of Mongolia?",
+            "options": ["A) Ulaanbaatar", "B) Erdenet", "C) Darkhan", "D) Choibalsan"],
+            "answer": "A"
+        },
+        {
+            "question": "Who wrote \"The Brothers Karamazov\"?",
+            "options": ["A) Dostoevsky", "B) Tolstoy", "C) Gogol", "D) Chekhov"],
+            "answer": "A"   
+        },
+        {
+            "question": "What is the chemical symbol for potassium?",
+            "options": ["A) K", "B) P", "C) Na", "D) Ca"],
+            "answer": "A"
+        },
+        {
+"question": "Who painted \"The Starry Night\"?",
+            "options": ["A) Van Gogh", "B) Monet", "C) Renoir", "D) Degas"],
+            "answer": "A"
+        },
+        {
+            "question": "What is the capital of Iceland?",
+            "options": ["A) Reykjavik", "B) Akureyri", "C) Kopavogur", "D) Hafnarfjordur"],
+            "answer": "A"
+        },
+        {
+            "question": "Who wrote \"The Divine Comedy\"?",
+            "options": ["A) Dante", "B) Petrarch", "C) Boccaccio", "D) Machiavelli"],
+            "answer": "A"
+        },
+        {
+            "question": "What is the largest organ in the human body?",
+            "options": ["A) Heart", "B) Liver", "C) Skin", "D) Brain"],
+            "answer": "C"
+        },
+        {
+            "question": "\"The Picture of Dorian Gray\" was written by which author?",
+            "options": ["A) Wilde", 
+                        "B) Shaw", 
+                        "C) Yeats", 
+                        "D) Joyce"],
+            "answer": "A"
+        },
+        {
+            "question": "\"War and Peace\" was written by which author?",
+            "options": ["A) Tolstoy", 
+                        "B) Dostoevsky", 
+                        "C) Gogol", 
+                        "D) Chekhov"],
+      "answer": "A"
+    }
+  ]
+},
+"Coding": {
+  "Hard": [
+      {
+        "question": "What is the purpose of the <canvas> element in HTML?",
+        "options": [
+          "A) To create a drawable area for graphics",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a flex container?",
+        "options": [
+          "A) display: flex",
+          "B) display: grid",
+          "C) display: block",
+          "D) display: inline"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "What is the purpose of the <svg> element in HTML?",
+        "options": [
+          "A) To create scalable vector graphics",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a grid layout?",
+        "options": [
+          "A) display: grid",
+          "B) display: flex",
+          "C) display: block",
+          "D) display: inline"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "What is the purpose of the <audio> element in HTML?",
+        "options": [
+          "A) To embed audio content",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "What is the purpose of the <video> element in HTML?",
+        "options": [
+          "A) To embed video content",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive design?",
+        "options": [
+          "A) @media",
+          "B) responsive",
+          "C) viewport",
+          "D) display: responsive"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "What is the purpose of the <iframe> element in HTML?",
+        "options": [
+          "A) To embed another HTML document within the current document",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create animations?",
+        "options": [
+          "A) animation",
+          "B) transition",
+          "C) keyframes",
+          "D) transform"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "What is the purpose of the <websocket> element in HTML?",
+        "options": [
+          "A) To create a persistent connection for real-time communication",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a sticky element?",
+        "options": [
+          "A) position: sticky",
+          "B) position: fixed",
+          "C) position: relative",
+          "D) position: absolute"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "What is the purpose of the <shadow> element in HTML?",
+        "options": [
+          "A) To create a shadow DOM for encapsulation",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a grid template?",
+        "options": [
+          "A) grid-template",
+          "B) grid-layout",
+          "C) grid-area",
+          "D) grid-column"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "What is the purpose of the <custom-element> element in HTML?",
+        "options": [
+          "A) To create a reusable custom element",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive grid layout?",
+        "options": [
+          "A) grid-template-columns",
+          "B) grid-template-rows",
+          "C) grid-auto-flow",
+          "D) grid-gap"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "What is the purpose of the <template> element in HTML?",
+        "options": [
+          "A) To define a reusable template for content",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive image?",
+        "options": [
+          "A) max-width",
+          "B) width",
+          "C) height",
+          "D) responsive"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "What is the purpose of the <slot> element in HTML?",
+        "options": [
+          "A) To create a placeholder for content in a web component",
+          "B) To define a hyperlink",
+          "C) To insert an image",
+          "D) To create a form"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property is used to create a responsive font size?",
+        "options": [
+          "A) font-size: responsive",
+          "B) font-size: calc()",
+          "C) font-size: viewport",
+          "D) font-size: auto"
+        ],
+        "answer": "B"
+      }
+    ],
+    "Extreme": []
+  }
+}
