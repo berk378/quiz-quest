@@ -1,0 +1,10 @@
+# Private/test files
+trying.py
+otomatik_kod.py
+*_test.py
+*_temp.py
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
