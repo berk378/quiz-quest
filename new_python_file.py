@@ -91,7 +91,7 @@ def main():
         game.ask_question(question)
 
     if game.is_alive():
-        print(f"\ Victory! Final score: {game.score}")
+        print(f" Victory! Final score: {game.score}")
 
 if __name__ == "__main__":
     main()
