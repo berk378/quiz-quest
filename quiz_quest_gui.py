@@ -3,6 +3,7 @@ from tkinter import messagebox
 import json
 import threading
 import time
+import random
 
 def start_game():
     selected_char = character_var.get()
@@ -41,7 +42,9 @@ def load_questions(category, difficulty):
     try:
         with open("questions.json", "r", encoding="utf-8") as f:
             all_questions = json.load(f)
-            return all_questions.get(category, {}).get(difficulty, [])
+            questions = all_questions.get(category, {}).get(difficulty, [])
+            random.shuffle(questions)
+            return questions
     except:
         return []
 
@@ -83,11 +86,13 @@ def show_question_window(questions, character):
             messagebox.showinfo("Well Done!", f"You finished the game, {character}!\nFinal Score: {score.get()}")
             game_window.destroy()
             return
-
+        
         q = questions[question_index.get()]
         question_label.config(text=q["question"])
+        options = q["options"].copy()
+        random.shuffle(options)
         for i in range(4):
-            option_buttons[i].config(text=q["options"][i], value=q["options"][i][0])
+            option_buttons[i].config(text=options[i], value=options[i][0])
         update_hearts()
         threading.Thread(target=countdown, daemon=True).start()
 
@@ -144,11 +149,11 @@ category_var = tk.StringVar()
 difficulty_var = tk.StringVar()
 
 category_label = tk.Label(root, text="Select Category:", font=("Helvetica", 12))
-categories = ["Math", "Geography", "General Knowledge", "Coding", "History"]
+categories = ["Math", "Geography", "General Knowledge", "Coding", ]
 category_buttons = [tk.Radiobutton(root, text=cat, variable=category_var, value=cat, font=("Helvetica", 12)) for cat in categories]
 
 difficulty_label = tk.Label(root, text="Select Difficulty:", font=("Helvetica", 12))
-difficulties = ["Easy", "Medium", "Hard", "Extreme"]
+difficulties = ["Easy", "Medium", "Hard", ]
 difficulty_buttons = [tk.Radiobutton(root, text=diff, variable=difficulty_var, value=diff, font=("Helvetica", 12)) for diff in difficulties]
 
 start_button = tk.Button(root, text="Start Game", font=("Helvetica", 14), command=start_game)
