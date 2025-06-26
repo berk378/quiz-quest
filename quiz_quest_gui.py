@@ -5,6 +5,8 @@ import threading
 import time
 import random
 
+player_name = ""
+
 def start_game():
     selected_char = character_var.get()
     selected_category = category_var.get()
@@ -19,15 +21,22 @@ def start_game():
         messagebox.showerror("Error", "No questions found.")
         return
 
-    show_question_window(questions, selected_char)
+    show_question_window(questions, selected_char, selected_category, selected_difficulty)
 
 def continue_to_category():
+    global player_name
     selected_char = character_var.get()
+    player_name = name_entry.get().strip()
+
+    if not player_name:
+        messagebox.showwarning("Warning", "Please enter your name!")
+        return
     if not selected_char:
         messagebox.showwarning("Warning", "Please select a character!")
-    else:
-        character_frame.pack_forget()
-        show_category_selection()
+        return
+
+    character_frame.pack_forget()
+    show_category_selection()
 
 def show_category_selection():
     category_label.pack(pady=5)
@@ -48,7 +57,26 @@ def load_questions(category, difficulty):
     except:
         return []
 
-def show_question_window(questions, character):
+def write_score_to_file(name, score, category, difficulty):
+    score_data = {
+        "name": name,
+        "score": score,
+        "category": category,
+        "difficulty": difficulty
+    }
+
+    try:
+        with open("scores.json", "r", encoding="utf-8") as f:
+            scores = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        scores = []
+
+    scores.append(score_data)
+
+    with open("scores.json", "w", encoding="utf-8") as f:
+        json.dump(scores, f, indent=4)
+
+def show_question_window(questions, character, category, difficulty):
     game_window = tk.Toplevel(root)
     game_window.title("Quiz Time!")
     game_window.geometry("550x500")
@@ -58,12 +86,14 @@ def show_question_window(questions, character):
     question_index = tk.IntVar(value=0)
     selected_answer = tk.StringVar()
     timer = tk.IntVar(value=15)
+
     hearts_label = tk.Label(game_window, font=("Helvetica", 16))
     countdown_label = tk.Label(game_window, font=("Helvetica", 14))
 
     def update_hearts():
         hearts_label.config(text="❤️" * health.get())
         if health.get() <= 0:
+            write_score_to_file(player_name, score.get(), category, difficulty)
             messagebox.showinfo("Game Over", f"Nice try {character}!\nFinal Score: {score.get()}")
             game_window.destroy()
 
@@ -83,10 +113,11 @@ def show_question_window(questions, character):
     def display_question():
         selected_answer.set("")
         if question_index.get() >= len(questions):
+            write_score_to_file(player_name, score.get(), category, difficulty)
             messagebox.showinfo("Well Done!", f"You finished the game, {character}!\nFinal Score: {score.get()}")
             game_window.destroy()
             return
-        
+
         q = questions[question_index.get()]
         question_label.config(text=q["question"])
         options = q["options"].copy()
@@ -107,16 +138,37 @@ def show_question_window(questions, character):
         question_index.set(question_index.get() + 1)
         display_question()
 
-    question_label = tk.Label(game_window, text="", wraplength=500, font=("Helvetica", 14))
+    # Apply theme to game window
+    if is_dark_mode.get():
+        game_window.configure(bg="#2e2e2e")
+        question_label = tk.Label(game_window, text="", wraplength=500, font=("Helvetica", 14), bg="#2e2e2e", fg="white")
+        countdown_label.configure(bg="#2e2e2e", fg="white")
+        hearts_label.configure(bg="#2e2e2e", fg="white")
+    else:
+        game_window.configure(bg="SystemButtonFace")
+        question_label = tk.Label(game_window, text="", wraplength=500, font=("Helvetica", 14), bg="SystemButtonFace", fg="black")
+        countdown_label.configure(bg="SystemButtonFace", fg="black")
+        hearts_label.configure(bg="SystemButtonFace", fg="black")
+
     question_label.pack(pady=20)
 
     option_buttons = []
     for _ in range(4):
-        btn = tk.Radiobutton(game_window, text="", variable=selected_answer, font=("Helvetica", 12))
+        if is_dark_mode.get():
+            btn = tk.Radiobutton(game_window, text="", variable=selected_answer, font=("Helvetica", 12), 
+                               bg="#2e2e2e", fg="white", selectcolor="#404040")
+        else:
+            btn = tk.Radiobutton(game_window, text="", variable=selected_answer, font=("Helvetica", 12),
+                               bg="SystemButtonFace", fg="black", selectcolor="white")
         btn.pack(anchor="w", padx=20)
         option_buttons.append(btn)
 
-    submit_btn = tk.Button(game_window, text="Submit", font=("Helvetica", 12), command=submit_answer)
+    if is_dark_mode.get():
+        submit_btn = tk.Button(game_window, text="Submit", font=("Helvetica", 12), command=submit_answer,
+                             bg="#404040", fg="white")
+    else:
+        submit_btn = tk.Button(game_window, text="Submit", font=("Helvetica", 12), command=submit_answer,
+                             bg="SystemButtonFace", fg="black")
     submit_btn.pack(pady=10)
 
     countdown_label.pack()
@@ -124,9 +176,109 @@ def show_question_window(questions, character):
 
     display_question()
 
+# Theme functions
+def toggle_theme():
+    if is_dark_mode.get():
+        apply_light_theme()
+        is_dark_mode.set(False)
+        theme_button.config(text="🌙 Dark Mode")
+    else:
+        apply_dark_theme()
+        is_dark_mode.set(True)
+        theme_button.config(text="☀️ Light Mode")
+
+def apply_dark_theme():
+    root.configure(bg="#2e2e2e")
+    
+    # Update main widgets
+    widgets = [title_label, name_label, char_label, continue_button,
+               category_label, difficulty_label, start_button, theme_button]
+    
+    for widget in widgets:
+        try:
+            if isinstance(widget, tk.Button):
+                widget.configure(bg="#404040", fg="white")
+            else:
+                widget.configure(bg="#2e2e2e", fg="white")
+        except:
+            pass
+    
+    # Update entry widget
+    try:
+        name_entry.configure(bg="#404040", fg="white", insertbackground="white")
+    except:
+        pass
+    
+    # Update frame
+    character_frame.configure(bg="#2e2e2e")
+    
+    # Update character radiobuttons
+    for child in character_frame.winfo_children():
+        if isinstance(child, tk.Radiobutton):
+            try:
+                child.configure(bg="#2e2e2e", fg="white", selectcolor="#404040")
+            except:
+                pass
+    
+    # Update category and difficulty radiobuttons
+    all_radiobuttons = category_buttons + difficulty_buttons
+    for rb in all_radiobuttons:
+        try:
+            rb.configure(bg="#2e2e2e", fg="white", selectcolor="#404040")
+        except:
+            pass
+
+def apply_light_theme():
+    root.configure(bg="SystemButtonFace")
+    
+    # Update main widgets
+    widgets = [title_label, name_label, char_label, continue_button,
+               category_label, difficulty_label, start_button, theme_button]
+    
+    for widget in widgets:
+        try:
+            if isinstance(widget, tk.Button):
+                widget.configure(bg="SystemButtonFace", fg="black")
+            else:
+                widget.configure(bg="SystemButtonFace", fg="black")
+        except:
+            pass
+    
+    # Update entry widget
+    try:
+        name_entry.configure(bg="white", fg="black", insertbackground="black")
+    except:
+        pass
+    
+    # Update frame
+    character_frame.configure(bg="SystemButtonFace")
+    
+    # Update character radiobuttons
+    for child in character_frame.winfo_children():
+        if isinstance(child, tk.Radiobutton):
+            try:
+                child.configure(bg="SystemButtonFace", fg="black", selectcolor="white")
+            except:
+                pass
+    
+    # Update category and difficulty radiobuttons
+    all_radiobuttons = category_buttons + difficulty_buttons
+    for rb in all_radiobuttons:
+        try:
+            rb.configure(bg="SystemButtonFace", fg="black", selectcolor="white")
+        except:
+            pass
+
 root = tk.Tk()
 root.title("Quiz Quest GUI")
-root.geometry("400x500")
+root.geometry("400x550")
+
+# Theme variable
+is_dark_mode = tk.BooleanVar(value=False)
+
+# Theme button
+theme_button = tk.Button(root, text="🌙 Dark Mode", command=toggle_theme, font=("Helvetica", 10))
+theme_button.pack(pady=5)
 
 title_label = tk.Label(root, text="Welcome to Quiz Quest", font=("Helvetica", 16, "bold"))
 title_label.pack(pady=10)
@@ -135,8 +287,14 @@ character_var = tk.StringVar(value="")
 character_frame = tk.Frame(root)
 character_frame.pack()
 
+name_label = tk.Label(character_frame, text="Enter your name:", font=("Helvetica", 12))
+name_label.pack(pady=5)
+name_entry = tk.Entry(character_frame, font=("Helvetica", 12))
+name_entry.pack()
+
 char_label = tk.Label(character_frame, text="Choose your character:", font=("Helvetica", 12))
 char_label.pack(pady=5)
+
 chars = [("Warrior", "Warrior"), ("Mage", "Mage"), ("Archer", "Archer")]
 for text, value in chars:
     rb = tk.Radiobutton(character_frame, text=text, variable=character_var, value=value, font=("Helvetica", 12))
@@ -149,11 +307,11 @@ category_var = tk.StringVar()
 difficulty_var = tk.StringVar()
 
 category_label = tk.Label(root, text="Select Category:", font=("Helvetica", 12))
-categories = ["Math", "Geography", "General Knowledge", "Coding", ]
+categories = ["Math", "Geography", "General Knowledge", "Coding"]
 category_buttons = [tk.Radiobutton(root, text=cat, variable=category_var, value=cat, font=("Helvetica", 12)) for cat in categories]
 
 difficulty_label = tk.Label(root, text="Select Difficulty:", font=("Helvetica", 12))
-difficulties = ["Easy", "Medium", "Hard", ]
+difficulties = ["Easy", "Medium", "Hard"]
 difficulty_buttons = [tk.Radiobutton(root, text=diff, variable=difficulty_var, value=diff, font=("Helvetica", 12)) for diff in difficulties]
 
 start_button = tk.Button(root, text="Start Game", font=("Helvetica", 14), command=start_game)
