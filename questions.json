@@ -283,11 +283,11 @@
       }
     ],
     "Medium": [
-      {
-        "question": "What is 12 * 12?",
-        "options": ["A) 120", "B) 144", "C) 156", "D) 132"],
-        "answer": "B"
-      },
+    {
+      "question": "What is 12 * 12?",
+      "options": ["A) 120", "B) 144", "C) 156", "D) 132"],
+      "answer": "B"
+    },
       {
         "question": "What is 15 - 7?",
         "options": ["A) 6", "B) 7", "C) 8", "D) 9"],
@@ -630,1092 +630,2327 @@
         ],
         "answer": "A"
       },
-      {
-        "question": "(x + y)^2 = ?",
-        "options": [
-          "A) x^2 + y^2 + xy",
-          "B) x^2 + y^2 - xy",
-          "C) x^2 + y^2 + 2xy",
-          "D) x^2 - y^2 + xy"
-        ],
-        "answer": "C"
-      }
-    ],
-    "Extreme": []
-    },
+    {
+      "question": "(x + y)^2 = ?",
+      "options": [
+        "A) x^2 + y^2 + xy",
+        "B) x^2 + y^2 - xy",
+        "C) x^2 + y^2 + 2xy",
+        "D) x^2 - y^2 + xy"
+      ],
+      "answer": "C"
+    }
+  ],
+  "Extreme": []
+},
   "Geography": {
     "Easy": [
       {
         "question": "What is the capital of Turkey?",
-        "options": ["A) Ankara", "B) Istanbul", "C) Izmir", "D) Antalya"],
+        "options": ["A) An kara", "B) Istanbul", "C) Izmir", "D) Antalya"],
         "answer": "A"
       },
-      {
-        "question": "What is the largest continent?",
-        "options": ["A) Africa", "B) Asia", "C) Europe", "D) North America"],
-        "answer": "B"
-      },
-      {
-        "question": "Which ocean is the largest?",
-        "options": ["A) Atlantic", "B) Indian", "C) Arctic", "D) Pacific"],
-        "answer": "D"
-      },
-      {
-        "question": "What is the capital of France?",
-        "options": ["A) Paris", "B) London", "C) Berlin", "D) Madrid"],
-        "answer": "A"
-      },
-      {
-        "question": "Which country is known as the Land of the Rising Sun?",
-        "options": ["A) China", "B) Japan", "C) South Korea", "D) Thailand"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the largest country in the world by area?",
-        "options": ["A) USA", "B) Canada", "C) Russia", "D) China"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the capital of Australia?",
-        "options": ["A) Sydney", "B) Melbourne", "C) Canberra", "D) Brisbane"],
-        "answer": "C"
-      },
-      {
-        "question": "Which continent is known as the Dark Continent?",
-        "options": ["A) Asia", "B) Africa", "C) South America", "D) Antarctica"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the capital of Canada?",
-        "options": ["A) Toronto", "B) Vancouver", "C) Ottawa", "D) Montreal"],
-        "answer": "C"
-      },
-      {
-        "question": "Which country is famous for its pyramids?",
-        "options": ["A) Greece", "B) Egypt", "C) Mexico", "D) Peru"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the longest river in the world?",
-        "options": ["A) Amazon", "B) Nile", "C) Yangtze", "D) Mississippi"],
-        "answer": "B"
-      },
-      {
-        "question": "Which country is known as the Land of the Midnight Sun?",
-        "options": ["A) Norway", "B) Sweden", "C) Finland", "D) Denmark"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the capital of Italy?",
-        "options": ["A) Rome", "B) Milan", "C) Venice", "D) Florence"],
-        "answer": "A"
-      },
-      {
-        "question": "Which country is the smallest in the world?",
-        "options": ["A) Monaco", "B) Vatican City", "C) San Marino", "D) Liechtenstein"],
-        "answer": "B"
-      }
-    ],
-    "Medium": [
-      {
-        "question": "Which country has the largest population?",
-        "options": ["A) USA", "B) China", "C) India", "D) Russia"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the largest desert in the world?",
-        "options": ["A) Sahara", "B) Arabian", "C) Gobi", "D) Kalahari"],
-        "answer": "A"
-      },
-      {
-        "question": "Which river is the longest in the world?",
-        "options": ["A) Amazon", "B) Nile", "C) Yangtze", "D) Mississippi"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the smallest country in the world?",
-        "options": ["A) Monaco", "B) Vatican City", "C) San Marino", "D) Liechtenstein"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the capital of Japan?",
-        "options": ["A) Tokyo", "B) Osaka", "C) Kyoto", "D) Hiroshima"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the capital of Brazil?",
-        "options": ["A) Rio de Janeiro", "B) Sao Paulo", "C) Brasilia", "D) Salvador"],
-        "answer": "C"
-      },
-      {
-        "question": "Which country has the most official languages?",
-        "options": ["A) India", "B) Switzerland", "C) Canada", "D) South Africa"],
-        "answer": "D"
-      },
-      {
-        "question": "What is the capital of Egypt?",
-        "options": ["A) Cairo", "B) Alexandria", "C) Giza", "D) Luxor"],
-        "answer": "A"
-      },
-      {
-        "question": "Which country is known as the Land of Fire and Ice?",
-        "options": ["A) Norway", "B) Iceland", "C) Finland", "D) Sweden"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the capital of Spain?",
-        "options": ["A) Barcelona", "B) Madrid", "C) Valencia", "D) Seville"],
-        "answer": "B"
-      },
-      {
-        "question": "Which country is the largest in Africa?",
-        "options": ["A) Nigeria", "B) Algeria", "C) South Africa", "D) Egypt"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the capital of Russia?",
-        "options": ["A) Moscow", "B) St. Petersburg", "C) Kazan", "D) Novosibirsk"],
-        "answer": "A"
-      },
-      {
-        "question": "Which country is known for the Great Wall?",
-        "options": ["A) Japan", "B) China", "C) Korea", "D) Vietnam"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the capital of Germany?",
-        "options": ["A) Berlin", "B) Munich", "C) Frankfurt", "D) Hamburg"],
-        "answer": "A"
-      },
-      {
-        "question": "Which country is known as the Land of a Thousand Lakes?",
-        "options": ["A) Canada", "B) Finland", "C) Sweden", "D) Norway"],
-        "answer": "B"
-      }
-    ],
-    "Hard": [
-      {
-        "question": "What is the capital of Kazakhstan?",
-        "options": ["A) Almaty", "B) Nur-Sultan", "C) Shymkent", "D) Karaganda"],
-        "answer": "B"
-      },
-      {
-        "question": "Which country has the highest mountain in the world?",
-        "options": ["A) Nepal", "B) India", "C) China", "D) Bhutan"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the capital of Mongolia?",
-        "options": ["A) Ulaanbaatar", "B) Erdenet", "C) Darkhan", "D) Choibalsan"],
-        "answer": "A"
-      },
-      {
-        "question": "Which country is known as the Land of the Long White Cloud?",
-        "options": ["A) Australia", "B) New Zealand", "C) Fiji", "D) Samoa"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the capital of Argentina?",
-        "options": ["A) Buenos Aires", "B) Santiago", "C) Monte video", "D) Lima"],
-        "answer": "A"
-      },
-      {
-        "question": "Which country is known for the ancient city of Petra?",
-        "options": ["A) Egypt", "B) Jordan", "C) Syria", "D) Lebanon"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the capital of South Africa?",
-        "options": ["A) Pretoria", "B) Cape Town", "C) Johannesburg", "D) Durban"],
-        "answer": "A"
-      },
-      {
-        "question": "Which country is known for the ancient ruins of Machu Picchu?",
-        "options": ["A) Peru", "B) Bolivia", "C) Ecuador", "D) Colombia"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the capital of Greece?",
-        "options": ["A) Athens", "B) Thessaloniki", "C) Patras", "D) Heraklion"],
-        "answer": "A"
-      },
-      {
-        "question": "Which country is known for the ancient city of Angkor Wat?",
-        "options": ["A) Thailand", "B) Vietnam", "C) Cambodia", "D) Laos"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the capital of Turkey?",
-        "options": ["A) Istanbul", "B) Ankara", "C) Izmir", "D) Antalya"],
-        "answer": "B"
-      },
-      {
-        "question": "Which country is known for the ancient city of Tikal?",
-        "options": ["A) Mexico", "B) Guatemala", "C) Honduras", "D) Belize"],
-        "answer": "B"   
-      },
-      {
-        "question": "What is the capital of the Philippines?",
-        "options": ["A) Manila", "B) Cebu", "C) Davao", "D) Iloilo"],
-        "answer": "A"
-      },
-      {
-        "question": "Which country is known for the ancient city of Petra?",
-        "options": ["A) Egypt", "B) Jordan", "C) Syria", "D) Lebanon"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the capital of Vietnam?",
-        "options": ["A) Hanoi", "B) Ho Chi Minh City", "C) Da Nang", "D) Nha Trang"],
-        "answer": "A"
-      },
-      {
-        "question": "Which country is known for the ancient city of Carthage?",
-        "options": ["A) Tunisia", "B) Algeria", "C) Libya", "D) Morocco"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the capital of Sweden?",
-        "options": ["A) Stockholm", "B) Gothenburg", "C) Malmo", "D) Uppsala"],
-        "answer": "A"
-      },    
-      {
-        "question": "What is the capital of Switzerland?",
-        "options": ["A) Zurich", "B) Geneva", "C) Bern", "D) Basel"],
-        "answer": "C"
-      }
-      
-    ]
+  {
+    "question": "What is the largest continent by area?",
+    "options": ["A) Africa", "B) Asia", "C) Europe", "D) Antarctica"],
+    "answer": "B"
   },
-  "General Knowledge": {
-    "Easy": [
-      {
-        "question": "Who wrote \"Romeo and Juliet\"?",
-        "options": ["A) Dickens", "B) Shakespeare", "C) Tolkien", "D) Rowling"],
-        "answer": "B"
-      },
-      {
-       "question": "What is the capital of Japan?",
-        "options": ["A) Tokyo", "B) Seoul", "C) Beijing", "D) Bangkok"],
-        "answer": "A"   
-      },
-      {
-        "question": "What is the largest planet in our solar system?",
-        "options": ["A) Earth", "B) Mars", "C) Jupiter", "D) Saturn"],
-        "answer": "C"
-      },
-      {
-        "question": "Who painted the Mona Lisa?",
-        "options": ["A) Van Gogh", "B) Picasso", "C) Da Vinci", "D) Rembrandt"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the chemical symbol for water?",
-        "options": ["A) O2", "B) H2O", "C) CO2", "D) NaCl"],
-        "answer": "B"
-      },
-      {
-        "question": "Who discovered penicillin?",
-        "options": ["A) Fleming", "B) Pasteur", "C) Curie", "D) Watson"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the capital of France?",
-        "options": ["A) Paris", "B) London", "C) Berlin", "D) Madrid"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the largest mammal?",
-        "options": ["A) Elephant", "B) Blue Whale", "C) Giraffe", "D) Hippopotamus"],
-        "answer": "B"
-      },
-      {
-        "question": "Who wrote \"The Odyssey\"?",
-        "options": ["A) Homer", "B) Virgil", "C) Dante", "D) Milton"],
-        "answer": "A"
-      },
-      {
-        "question": "\"To be or not to be\" is a quote from which play?",
-        "options": ["A) Macbeth", "B) Hamlet", "C) Othello", "D) King Lear"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the capital of Italy?",
-        "options": ["A) Rome", "B) Venice", "C) Florence", "D) Milan"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the largest ocean on Earth?",
-        "options": ["A) Atlantic", "B) Indian", "C) Arctic", "D) Pacific"],
-        "answer": "D"
-      },
-      {
-        "question": "Who was the first President of the United States?",
-        "options": ["A) Lincoln", "B) Washington", "C) Jefferson", "D) Adams"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the hardest natural substance on Earth?",
-        "options": ["A) Gold", "B) Diamond", "C) Iron", "D) Platinum"],
-        "answer": "B"
-      }
+  {
+    "question": "Which ocean is the deepest?",
+    "options": ["A) Atlantic", "B) Indian", "C) Arctic", "D) Pacific"],
+    "answer": "D"
+  },
+  {
+    "question": "Which country is known as the Land of the Rising Sun?",
+    "options": ["A) South Korea", "B) China", "C) Japan", "D) Thailand"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the capital of France?",
+    "options": ["A) Paris", "B) Lyon", "C) Marseille", "D) Nice"],
+    "answer": "A"
+  },
+  {
+    "question": "Which desert is the largest hot desert?",
+    "options": ["A) Gobi", "B) Kalahari", "C) Sahara", "D) Atacama"],
+    "answer": "C"
+  },
+  {
+    "question": "Which river is the longest in the world?",
+    "options": ["A) Amazon", "B) Nile", "C) Yangtze", "D) Mississippi"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country is famous for pyramids?",
+    "options": ["A) Mexico", "B) Egypt", "C) Peru", "D) Iraq"],
+    "answer": "B"
+  },
+  {
+    "question": "Which is the smallest continent?",
+    "options": ["A) Europe", "B) Australia", "C) South America", "D) Antarctica"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the capital of Canada?",
+    "options": ["A) Toronto", "B) Vancouver", "C) Ottawa", "D) Montreal"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the capital of the United States?",
+    "options": ["A) New York", "B) Washington D.C.", "C) Los Angeles", "D) Chicago"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the capital of Italy?",
+    "options": ["A) Venice", "B) Rome", "C) Milan", "D) Florence"],
+    "answer": "B"
+  },
+  {
+    "question": "Where is the Great Wall located?",
+    "options": ["A) India", "B) Mongolia", "C) Japan", "D) China"],
+    "answer": "D"
+  },
+  {
+    "question": "What is the capital of Germany?",
+    "options": ["A) Berlin", "B) Hamburg", "C) Frankfurt", "D) Munich"],
+    "answer": "A"
+  },
+  {
+    "question": "Which continent is Egypt in?",
+    "options": ["A) Europe", "B) Africa", "C) Asia", "D) South America"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country has the city of Rio de Janeiro?",
+    "options": ["A) Argentina", "B) Portugal", "C) Brazil", "D) Spain"],
+    "answer": "C"
+  },
+  {
+    "question": "Which island country lies southeast of India?",
+    "options": ["A) Maldives", "B) Sri Lanka", "C) Indonesia", "D) Bangladesh"],
+    "answer": "B"
+  },
+  {
+    "question": "Which ocean borders Africa to the west?",
+    "options": ["A) Indian", "B) Pacific", "C) Arctic", "D) Atlantic"],
+    "answer": "D"
+  },
+  {
+    "question": "What is the capital of Australia?",
+    "options": ["A) Sydney", "B) Melbourne", "C) Brisbane", "D) Canberra"],
+    "answer": "D"
+  },
+  {
+    "question": "Which country does the city of Nairobi belong to?",
+    "options": ["A) Nigeria", "B) Kenya", "C) Ghana", "D) Ethiopia"],
+    "answer": "B"
+  },
+  {
+    "question": "Where is Mount Everest located?",
+    "options": ["A) China", "B) Nepal", "C) India", "D) Bhutan"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the official language of Brazil?",
+    "options": ["A) Spanish", "B) Portuguese", "C) French", "D) English"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country has the most people?",
+    "options": ["A) USA", "B) India", "C) China", "D) Indonesia"],
+    "answer": "C"
+  },
+  {
+    "question": "Which direction does the sun rise from?",
+    "options": ["A) West", "B) North", "C) East", "D) South"],
+    "answer": "C"
+  },
+  {
+    "question": "Which is the largest island in the world?",
+    "options": ["A) Australia", "B) Greenland", "C) Borneo", "D) Madagascar"],
+    "answer": "B"
+  },
+  {
+    "question": "Which U.S. state is known as the 'Sunshine State'?",
+    "options": ["A) Texas", "B) California", "C) Florida", "D) Arizona"],
+    "answer": "C"
+  },
+  {
+    "question": "Which country is home to the Eiffel Tower?",
+    "options": ["A) Italy", "B) Germany", "C) France", "D) England"],
+    "answer": "C"
+  },
+  {
+    "question": "Which city is known as the Big Apple?",
+    "options": ["A) Chicago", "B) Los Angeles", "C) Miami", "D) New York"],
+    "answer": "D"
+  },
+  {
+    "question": "Which is the smallest country in the world?",
+    "options": ["A) Monaco", "B) Vatican City", "C) San Marino", "D) Liechtenstein"],
+    "answer": "B"
+  },
+  {
+    "question": "Where is the Sahara Desert located?",
+    "options": ["A) Australia", "B) North Africa", "C) South America", "D) Middle East"],
+    "answer": "B"
+  },
+  {
+    "question": "Which city hosted the 2020 Summer Olympics?",
+    "options": ["A) Rio", "B) Tokyo", "C) London", "D) Paris"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of these is a country?",
+    "options": ["A) Africa", "B) Asia", "C) Europe", "D) Canada"],
+    "answer": "D"
+  },
+  {
+    "question": "What is the currency used in the United Kingdom?",
+    "options": ["A) Euro", "B) Pound", "C) Dollar", "D) Franc"],
+    "answer": "B"
+  },
+  {
+    "question": "Which mountain range separates Europe and Asia?",
+    "options": ["A) Alps", "B) Ural", "C) Andes", "D) Himalayas"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the capital of Spain?",
+    "options": ["A) Madrid", "B) Barcelona", "C) Valencia", "D) Seville"],
+    "answer": "A"
+  },
+  {
+    "question": "Which continent has the Amazon rainforest?",
+    "options": ["A) Africa", "B) Asia", "C) South America", "D) Australia"],
+    "answer": "C"
+  },
+  {
+    "question": "Which country has a maple leaf on its flag?",
+    "options": ["A) USA", "B) Canada", "C) UK", "D) Mexico"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of these cities is in India?",
+    "options": ["A) Karachi", "B) Dhaka", "C) Mumbai", "D) Colombo"],
+    "answer": "C"
+  },
+  {
+    "question": "Where would you find the Colosseum?",
+    "options": ["A) Athens", "B) Rome", "C) Paris", "D) Istanbul"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the capital of South Korea?",
+    "options": ["A) Seoul", "B) Tokyo", "C) Pyongyang", "D) Busan"],
+    "answer": "A"
+  },
+  {
+    "question": "Which is the coldest continent?",
+    "options": ["A) Europe", "B) North America", "C) Antarctica", "D) Asia"],
+    "answer": "C"
+  },
+  {
+    "question": "Which of these is not a continent?",
+    "options": ["A) Africa", "B) Europe", "C) Arabia", "D) Asia"],
+    "answer": "C"
+  },
+  {
+    "question": "Which city is famous for its canals and gondolas?",
+    "options": ["A) Venice", "B) Paris", "C) Amsterdam", "D) Bangkok"],
+    "answer": "A"
+  },
+  {
+    "question": "What is the capital of Argentina?",
+    "options": ["A) Buenos Aires", "B) Santiago", "C) Montevideo", "D) Lima"],
+    "answer": "A"
+  },
+  {
+    "question": "Where is the Leaning Tower of Pisa located?",
+    "options": ["A) Spain", "B) France", "C) Italy", "D) Greece"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the capital of Mexico?",
+    "options": ["A) Guadalajara", "B) Mexico City", "C) Cancun", "D) Monterrey"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country is known for tulips and windmills?",
+    "options": ["A) Switzerland", "B) Germany", "C) Netherlands", "D) Denmark"],
+    "answer": "C"
+  },
+  {
+    "question": "Which U.S. city is closest to Canada?",
+    "options": ["A) Seattle", "B) Buffalo", "C) Detroit", "D) Chicago"],
+    "answer": "C"
+  },
+  {
+    "question": "Which African country has Cape Town as one of its capitals?",
+    "options": ["A) Nigeria", "B) Kenya", "C) South Africa", "D) Ghana"],
+    "answer": "C"
+  },
+  {
+    "question": "Which of the following is a landlocked country?",
+    "options": ["A) Peru", "B) Bolivia", "C) Colombia", "D) Ecuador"],
+    "answer": "B"
+  }
     ],
     "Medium": [
-      {
-        "question": "What is the capital of Australia?",
-        "options": ["A) Sydney", "B) Melbourne", "C) Canberra", "D) Brisbane"],
-        "answer": "C"
-      },
-      {
-        "question": "Who wrote \"1984\"?",
-        "options": ["A) Orwell", "B) Huxley", "C) Bradbury", "D) Atwood"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the largest desert in the world?",
-        "options": ["A) Sahara", "B) Arabian", "C) Gobi", "D) Kalahari"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the chemical symbol for gold?",
-        "options": ["A) Au", "B) Ag", "C) Pb", "D) Fe"],
-        "answer": "A"
-      },
-      {
-        "question": "Who painted the Sistine Chapel ceiling?",
-        "options": ["A) Michelangelo", "B) Raphael", "C) Botticelli", "D) Caravaggio"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the capital of Canada?",
-        "options": ["A) Toronto", "B) Vancouver", "C) Ottawa", "D) Montreal"],
-        "answer": "C"
-      },
-      {
-        "question": "\"I think, therefore I am\" is a quote by which philosopher?",
-        "options": ["A) Descartes", "B) Kant", "C) Hegel", "D) Nietzsche"],
-        "answer": "A"
-      },
-      {
-        "question": "\"The Great Gatsby\" was written by which author?",
-        "options": ["A) Fitzgerald", "B) Hemingway", "C) Steinbeck", 
-                    "D) Faulkner"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the capital of Egypt?",
-        "options": ["A) Cairo", "B) Alexandria", "C) Giza", "D) Luxor"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the largest continent?",
-        "options": ["A) Africa", "B) Asia", "C) Europe", "D) North America"],
-        "answer": "B"
-      },
-      {
-        "question": "Who discovered the theory of relativity?",
-        "options": ["A) Newton", "B) Einstein", "C) Galileo", "D) Hawking"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the capital of Brazil?",
-        "options": ["A) Rio de Janeiro", "B) Sao Paulo", 
-                    "C) Brasilia", "D) Salvador"],
-        "answer": "C"
-      },
-      {
-        "question": "\"The Catcher in the Rye\" was written by which author?",
-        "options": ["A) Salinger", "B) Capote", 
-                    "C) Vonnegut", "D) Kerouac"],
-        "answer": "A"
-      },
-      {
-        "question": "\"Pride and Prejudice\" was written by which author?",
-        "options": ["A) Austen", 
-                    "B) Bronte", 
-                    "C) Dickens", 
-                    "D) Eliot"],
-        "answer": "A"
-      }
+  {
+    "question": "Which country spans both Europe and Asia?",
+    "options": ["A) Turkey", "B) Kazakhstan", "C) Russia", "D) All of the above"],
+    "answer": "D"
+  },
+  {
+    "question": "In which country is Angel Falls, the world’s highest waterfall?",
+    "options": ["A) Brazil", "B) Venezuela", "C) Peru", "D) Argentina"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the capital of New Zealand?",
+    "options": ["A) Auckland", "B) Wellington", "C) Christchurch", "D) Hamilton"],
+    "answer": "B"
+  },
+  {
+    "question": "Which African country has the most population?",
+    "options": ["A) Ethiopia", "B) Egypt", "C) Nigeria", "D) South Africa"],
+    "answer": "C"
+  },
+  {
+    "question": "Which river flows through Paris?",
+    "options": ["A) Seine", "B) Thames", "C) Danube", "D) Rhine"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country is famous for fjords?",
+    "options": ["A) Finland", "B) Sweden", "C) Norway", "D) Iceland"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the capital of Thailand?",
+    "options": ["A) Phnom Penh", "B) Bangkok", "C) Hanoi", "D) Jakarta"],
+    "answer": "B"
+  },
+  {
+    "question": "Which desert is located in Mongolia and China?",
+    "options": ["A) Kalahari", "B) Gobi", "C) Atacama", "D) Sonoran"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the currency of Japan?",
+    "options": ["A) Yen", "B) Won", "C) Dollar", "D) Yuan"],
+    "answer": "A"
+  },
+  {
+    "question": "Which city is known for the statue of Christ the Redeemer?",
+    "options": ["A) Rio de Janeiro", "B) Buenos Aires", "C) Lima", "D) Santiago"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country is home to Mount Kilimanjaro?",
+    "options": ["A) Kenya", "B) Ethiopia", "C) Tanzania", "D) Uganda"],
+    "answer": "C"
+  },
+  {
+    "question": "Which European country has the most volcanoes?",
+    "options": ["A) Iceland", "B) Italy", "C) Greece", "D) France"],
+    "answer": "A"
+  },
+  {
+    "question": "Which lake is the largest freshwater lake by surface area?",
+    "options": ["A) Lake Superior", "B) Lake Victoria", "C) Lake Baikal", "D) Lake Tanganyika"],
+    "answer": "A"
+  },
+  {
+    "question": "What is the capital of Pakistan?",
+    "options": ["A) Lahore", "B) Karachi", "C) Islamabad", "D) Peshawar"],
+    "answer": "C"
+  },
+  {
+    "question": "Which river flows through London?",
+    "options": ["A) Rhine", "B) Thames", "C) Danube", "D) Seine"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country is known as the Land of Fire and Ice?",
+    "options": ["A) Greenland", "B) Norway", "C) Iceland", "D) Canada"],
+    "answer": "C"
+  },
+  {
+    "question": "Which is the only country that is also a continent?",
+    "options": ["A) Greenland", "B) Australia", "C) Antarctica", "D) Madagascar"],
+    "answer": "B"
+  },
+  {
+    "question": "Which African lake is the source of the Nile River?",
+    "options": ["A) Lake Malawi", "B) Lake Victoria", "C) Lake Tanganyika", "D) Lake Turkana"],
+    "answer": "B"
+  },
+  {
+    "question": "Which is the most populated island in the world?",
+    "options": ["A) Java", "B) Honshu", "C) Great Britain", "D) Luzon"],
+    "answer": "A"
+  },
+  {
+    "question": "Which Middle Eastern country has no rivers?",
+    "options": ["A) Saudi Arabia", "B) Iraq", "C) Syria", "D) Jordan"],
+    "answer": "A"
+  },
+  {
+    "question": "What is the capital of Switzerland?",
+    "options": ["A) Geneva", "B) Zurich", "C) Bern", "D) Basel"],
+    "answer": "C"
+  },
+  {
+    "question": "Which is the driest place on Earth?",
+    "options": ["A) Gobi Desert", "B) Atacama Desert", "C) Sahara Desert", "D) Mojave Desert"],
+    "answer": "B"
+  },
+  {
+    "question": "Which river forms part of the U.S.–Mexico border?",
+    "options": ["A) Mississippi", "B) Colorado", "C) Rio Grande", "D) Missouri"],
+    "answer": "C"
+  },
+  {
+    "question": "Which sea lies between Saudi Arabia and Africa?",
+    "options": ["A) Arabian Sea", "B) Red Sea", "C) Mediterranean Sea", "D) Dead Sea"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country has the city of Casablanca?",
+    "options": ["A) Algeria", "B) Tunisia", "C) Morocco", "D) Egypt"],
+    "answer": "C"
+  },
+  {
+    "question": "Which country has the longest coastline?",
+    "options": ["A) Russia", "B) Canada", "C) USA", "D) Indonesia"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the capital of Portugal?",
+    "options": ["A) Porto", "B) Lisbon", "C) Braga", "D) Faro"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country has a red flag with a white cross?",
+    "options": ["A) Denmark", "B) Switzerland", "C) England", "D) Norway"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the name of the mountain range in western South America?",
+    "options": ["A) Alps", "B) Rockies", "C) Andes", "D) Sierra Nevada"],
+    "answer": "C"
+  },
+  {
+    "question": "Which Asian country has the city of Varanasi?",
+    "options": ["A) Bangladesh", "B) Nepal", "C) Pakistan", "D) India"],
+    "answer": "D"
+  },
+  {
+    "question": "Which of the following is a Baltic country?",
+    "options": ["A) Poland", "B) Latvia", "C) Finland", "D) Denmark"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the name of the strait separating Europe and Asia in Turkey?",
+    "options": ["A) Bosporus", "B) Dardanelles", "C) Gibraltar", "D) Suez"],
+    "answer": "A"
+  },
+  {
+    "question": "Which U.S. state is the Grand Canyon located in?",
+    "options": ["A) California", "B) Nevada", "C) Arizona", "D) Utah"],
+    "answer": "C"
+  },
+  {
+    "question": "Which European capital is built on 14 islands?",
+    "options": ["A) Oslo", "B) Helsinki", "C) Stockholm", "D) Copenhagen"],
+    "answer": "C"
+  },
+  {
+    "question": "Which of these cities lies closest to the Equator?",
+    "options": ["A) Quito", "B) Bangkok", "C) Nairobi", "D) São Paulo"],
+    "answer": "A"
+  },
+  {
+    "question": "Which two continents does the Ural Mountains divide?",
+    "options": ["A) Europe and Africa", "B) Asia and Europe", "C) Asia and Africa", "D) Europe and North America"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country is known for the historical region of Transylvania?",
+    "options": ["A) Ukraine", "B) Bulgaria", "C) Romania", "D) Hungary"],
+    "answer": "C"
+  },
+  {
+    "question": "Which U.S. state is the only one made up entirely of islands?",
+    "options": ["A) Alaska", "B) Hawaii", "C) Florida", "D) Maine"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the capital of South Sudan?",
+    "options": ["A) Juba", "B) Khartoum", "C) Addis Ababa", "D) Bujumbura"],
+    "answer": "A"
+  },
+  {
+    "question": "Which river is sacred to Hindus?",
+    "options": ["A) Indus", "B) Brahmaputra", "C) Ganges", "D) Godavari"],
+    "answer": "C"
+  },
+  {
+    "question": "Which country is landlocked?",
+    "options": ["A) Chile", "B) Bolivia", "C) Peru", "D) Ecuador"],
+    "answer": "B"
+  },
+  {
+    "question": "Which U.S. state is closest to Russia?",
+    "options": ["A) Alaska", "B) Washington", "C) Oregon", "D) Hawaii"],
+    "answer": "A"
+  },
+  {
+    "question": "Which continent is both north and south of the equator?",
+    "options": ["A) Europe", "B) Asia", "C) Africa", "D) Australia"],
+    "answer": "C"
+  },
+  {
+    "question": "Which country has three capital cities?",
+    "options": ["A) South Africa", "B) Nigeria", "C) India", "D) Brazil"],
+    "answer": "A"
+  },
+  {
+    "question": "What is the capital of Iraq?",
+    "options": ["A) Mosul", "B) Basra", "C) Baghdad", "D) Erbil"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the capital of Peru?",
+    "options": ["A) Arequipa", "B) Lima", "C) Cusco", "D) Trujillo"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the capital of Malaysia?",
+    "options": ["A) Penang", "B) Kuala Lumpur", "C) Johor Bahru", "D) Kota Kinabalu"],
+    "answer": "B"
+  }
     ],
     "Hard": [
-        {
-            "question": "What is the capital of Mongolia?",
-            "options": ["A) Ulaanbaatar", "B) Erdenet", "C) Darkhan", "D) Choibalsan"],
-            "answer": "A"
-        },
-        {
-            "question": "Who wrote \"The Brothers Karamazov\"?",
-            "options": ["A) Dostoevsky", "B) Tolstoy", "C) Gogol", "D) Chekhov"],
-            "answer": "A"   
-        },
-        {
-            "question": "What is the chemical symbol for potassium?",
-            "options": ["A) K", "B) P", "C) Na", "D) Ca"],
-            "answer": "A"
-        },
-        {
-"question": "Who painted \"The Starry Night\"?",
-            "options": ["A) Van Gogh", "B) Monet", "C) Renoir", "D) Degas"],
-            "answer": "A"
-        },
-        {
-            "question": "What is the capital of Iceland?",
-            "options": ["A) Reykjavik", "B) Akureyri", "C) Kopavogur", "D) Hafnarfjordur"],
-            "answer": "A"
-        },
-        {
-            "question": "Who wrote \"The Divine Comedy\"?",
-            "options": ["A) Dante", "B) Petrarch", "C) Boccaccio", "D) Machiavelli"],
-            "answer": "A"
-        },
-        {
-            "question": "What is the largest organ in the human body?",
-            "options": ["A) Heart", "B) Liver", "C) Skin", "D) Brain"],
-            "answer": "C"
-        },
-        {
-            "question": "\"The Picture of Dorian Gray\" was written by which author?",
-            "options": ["A) Wilde", 
-                        "B) Shaw", 
-                        "C) Yeats", 
-                        "D) Joyce"],
-            "answer": "A"
-        },
-        {
-            "question": "\"War and Peace\" was written by which author?",
-            "options": ["A) Tolstoy", 
-                        "B) Dostoevsky", 
-                        "C) Gogol", 
-                        "D) Chekhov"],
+  {
+    "question": "What is the capital of Kazakhstan?",
+    "options": ["A) Almaty", "B) Nur-Sultan", "C) Shymkent", "D) Karaganda"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country has the highest number of time zones (including overseas territories)?",
+    "options": ["A) USA", "B) France", "C) Russia", "D) China"],
+    "answer": "B"
+  },
+  {
+    "question": "Which desert is the coldest in the world?",
+    "options": ["A) Gobi", "B) Sahara", "C) Antarctic Desert", "D) Arctic Desert"],
+    "answer": "C"
+  },
+  {
+    "question": "Which country does Lake Titicaca lie in?",
+    "options": ["A) Argentina & Chile", "B) Peru & Bolivia", "C) Brazil & Argentina", "D) Colombia & Venezuela"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the deepest point in the Earth's crust?",
+    "options": ["A) Mariana Trench", "B) Tonga Trench", "C) Puerto Rico Trench", "D) South Sandwich Trench"],
+    "answer": "A"
+  },
+  {
+    "question": "Which European country has the smallest land area?",
+    "options": ["A) Monaco", "B) San Marino", "C) Liechtenstein", "D) Vatican City"],
+    "answer": "D"
+  },
+  {
+    "question": "Which river forms the border between USA and Mexico?",
+    "options": ["A) Colorado", "B) Rio Grande", "C) Mississippi", "D) Columbia"],
+    "answer": "B"
+  },
+  {
+    "question": "Which mountain is known as 'Savage Mountain' and has one of the highest fatality rates?",
+    "options": ["A) K2", "B) Everest", "C) Annapurna", "D) Kangchenjunga"],
+    "answer": "C"
+  },
+  {
+    "question": "Which country is both in the Northern Hemisphere and Eastern Hemisphere?",
+    "options": ["A) Chile", "B) India", "C) Australia", "D) South Africa"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the capital of Malawi?",
+    "options": ["A) Lilongwe", "B) Blantyre", "C) Mzuzu", "D) Zomba"],
+    "answer": "A"
+  },
+  {
+    "question": "Which African country has Portuguese as an official language?",
+    "options": ["A) Mozambique", "B) Nigeria", "C) Kenya", "D) Ghana"],
+    "answer": "A"
+  },
+  {
+    "question": "Which US state has the most volcanoes?",
+    "options": ["A) Alaska", "B) California", "C) Hawaii", "D) Washington"],
+    "answer": "A"
+  },
+  {
+    "question": "Which strait separates Alaska and Russia?",
+    "options": ["A) Bering Strait", "B) Bab-el-Mandeb", "C) Strait of Magellan", "D) Strait of Gibraltar"],
+    "answer": "A"
+  },
+  {
+    "question": "What is the capital of Lithuania?",
+    "options": ["A) Riga", "B) Tallinn", "C) Vilnius", "D) Kaunas"],
+    "answer": "C"
+  },
+  {
+    "question": "Which island country is the largest by area?",
+    "options": ["A) Greenland", "B) Madagascar", "C) Borneo", "D) Great Britain"],
+    "answer": "A"
+  },
+  {
+    "question": "Which European country is entirely landlocked by Italy?",
+    "options": ["A) San Marino", "B) Vatican City", "C) Switzerland", "D) Austria"],
+    "answer": "A"
+  },
+  {
+    "question": "Which European city is built on the mouth of the Tagus River?",
+    "options": ["A) Lisbon", "B) Porto", "C) Seville", "D) Madrid"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country has the largest number of islands?",
+    "options": ["A) Canada", "B) Indonesia", "C) Sweden", "D) Finland"],
+    "answer": "C"
+  },
+  {
+    "question": "Which country is home to the Plateau of Tibet?",
+    "options": ["A) India", "B) Nepal", "C) China", "D) Bhutan"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the capital of Seychelles?",
+    "options": ["A) Victoria", "B) Malé", "C) Port Louis", "D) Moroni"],
+    "answer": "A"
+  },
+  {
+    "question": "Which mountain border divides France and Spain?",
+    "options": ["A) Rockies", "B) Pyrenees", "C) Alps", "D) Apennines"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country’s flag features a maple leaf?",
+    "options": ["A) Canada", "B) Austria", "C) Bulgaria", "D) Lebanon"],
+    "answer": "A"
+  },
+  {
+    "question": "Which region is known as the land of 10,000 lakes?",
+    "options": ["A) Ontario", "B) Finland", "C) Minnesota", "D) Sweden"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country’s native language is Kiswahili?",
+    "options": ["A) Kenya", "B) Uganda", "C) Tanzania", "D) All of the above"],
+    "answer": "D"
+  },
+  {
+    "question": "Which city lies at the confluence of Blue and White Nile?",
+    "options": ["A) Khartoum", "B) Cairo", "C) Addis Ababa", "D) Juba"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country is landlocked by South Africa?",
+    "options": ["A) Lesotho", "B) Namibia", "C) Mozambique", "D) Botswana"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country is home to Macchu Picchu?",
+    "options": ["A) Mexico", "B) Peru", "C) Chile", "D) Bolivia"],
+    "answer": "B"
+  },
+  {
+    "question": "Which ocean lies between Africa and Australia?",
+    "options": ["A) Atlantic", "B) Indian", "C) Pacific", "D) Southern"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the official language of Iran?",
+    "options": ["A) Arabic", "B) Persian", "C) Kurdish", "D) Turkish"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country is the world's largest democracy by population?",
+    "options": ["A) USA", "B) India", "C) Indonesia", "D) Brazil"],
+    "answer": "B"
+  },
+  {
+    "question": "Which US state is the only one that borders both the Atlantic and Pacific?",
+    "options": ["A) Florida", "B) California", "C) Alaska", "D) None"],
+    "answer": "D"
+  },
+  {
+    "question": "Which country has the most UNESCO World Heritage sites?",
+    "options": ["A) China", "B) Italy", "C) Spain", "D) Germany"],
+    "answer": "A"
+  },
+  {
+    "question": "Which gulf lies to the west of India?",
+    "options": ["A) Gulf of Thailand", "B) Persian Gulf", "C) Arabian Sea", "D) Gulf of Aden"],
+    "answer": "C"
+  },
+  {
+    "question": "Which is the highest capital city by elevation in the world?",
+    "options": ["A) La Paz", "B) Quito", "C) Kathmandu", "D) Thimphu"],
+    "answer": "A"
+  },
+  {
+    "question": "Which US Great Lake borders Michigan and Ontario?",
+    "options": ["A) Lake Superior", "B) Lake Huron", "C) Lake Erie", "D) Lake Ontario"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country has the world’s longest railway tunnel, Gotthard Base Tunnel?",
+    "options": ["A) Austria", "B) Switzerland", "C) France", "D) Germany"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country is the only one to have territory in both Africa and Asia?",
+    "options": ["A) Egypt", "B) Sudan", "C) Saudi Arabia", "D) Yemen"],
+    "answer": "A"
+  },
+  {
+    "question": "Which African capital is below sea level?",
+    "options": ["A) Djibouti", "B) Asmara", "C) Bujumbura", "D) Cairo"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country is the smallest by area in South America?",
+    "options": ["A) Suriname", "B) Uruguay", "C) Guyana", "D) Paraguay"],
+    "answer": "A"
+  },
+  {
+    "question": "What is the capital of Kyrgyzstan?",
+    "options": ["A) Bishkek", "B) Almaty", "C) Tashkent", "D) Dushanbe"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country invented papermaking?",
+    "options": ["A) Egypt", "B) Mesopotamia", "C) China", "D) Greece"],
+    "answer": "C"
+  },
+  {
+    "question": "Which river is nicknamed the Yellow River?",
+    "options": ["A) Yangtze", "B) Euphrates", "C) Huang He", "D) Mekong"],
+    "answer": "C"
+  },
+  {
+    "question": "Which country has both English and French as official languages in Africa?",
+    "options": ["A) Cameroon", "B) Kenya", "C) Nigeria", "D) Ghana"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country has 9 time zones but does not observe daylight savings?",
+    "options": ["A) USA", "B) Russia", "C) China", "D) Australia"],
+    "answer": "B"
+  },
+  {
+    "question": "Which African lake is the deepest?",
+    "options": ["A) Lake Malawi", "B) Lake Tanganyika", "C) Lake Victoria", "D) Lake Chad"],
+    "answer": "B"
+  }
+    ],
+    "Extreme": [
+  {
+    "question": "Which country has a town named 'Dull' that is officially twinned with 'Boring' in the USA?",
+    "options": ["A) England", "B) Ireland", "C) Scotland", "D) Wales", "E) Canada"],
+    "answer": "C"
+  },
+  {
+    "question": "Which island is the easternmost point of Russia?",
+    "options": ["A) Sakhalin", "B) Iturup", "C) Komsomolets", "D) Big Diomede", "E) Wrangel Island"],
+    "answer": "D"
+  },
+  {
+    "question": "Which city is located on two continents and known for the Hagia Sophia?",
+    "options": ["A) Athens", "B) Baku", "C) Istanbul", "D) Cairo", "E) Tbilisi"],
+    "answer": "C"
+  },
+  {
+    "question": "Which of these countries does not border the Caspian Sea?",
+    "options": ["A) Russia", "B) Kazakhstan", "C) Azerbaijan", "D) Iran", "E) Turkmenistan"],
+    "answer": "E"
+  },
+  {
+    "question": "Where is the geographic center of the Earth's landmasses located?",
+    "options": ["A) Cairo", "B) Istanbul", "C) Mecca", "D) Baghdad", "E) Almaty"],
+    "answer": "C"
+  },
+  {
+    "question": "Which is the only country with three capital cities?",
+    "options": ["A) Nigeria", "B) South Africa", "C) Bolivia", "D) Sri Lanka", "E) India"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country has the world’s only non-rectangular national flag?",
+    "options": ["A) Bhutan", "B) Nepal", "C) Vatican City", "D) Sri Lanka", "E) Maldives"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of these cities is furthest north?",
+    "options": ["A) Helsinki", "B) Oslo", "C) Reykjavik", "D) Anchorage", "E) Murmansk"],
+    "answer": "E"
+  },
+  {
+    "question": "Which of the following is not a landlocked country?",
+    "options": ["A) Bolivia", "B) Mongolia", "C) Paraguay", "D) Ethiopia", "E) Malaysia"],
+    "answer": "E"
+  },
+  {
+    "question": "What is the flattest country in the world?",
+    "options": ["A) Maldives", "B) Qatar", "C) Netherlands", "D) Bangladesh", "E) Denmark"],
+    "answer": "A"
+  },
+  {
+    "question": "Which river crosses the most international borders?",
+    "options": ["A) Danube", "B) Amazon", "C) Nile", "D) Mekong", "E) Congo"],
+    "answer": "A"
+  },
+  {
+    "question": "Which capital city is located on an island?",
+    "options": ["A) Jakarta", "B) Lisbon", "C) Madrid", "D) Sofia", "E) Bucharest"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country is home to the most pyramids in the world?",
+    "options": ["A) Mexico", "B) Peru", "C) Sudan", "D) Egypt", "E) Guatemala"],
+    "answer": "C"
+  },
+  {
+    "question": "Which lake has the clearest freshwater in the world?",
+    "options": ["A) Lake Baikal", "B) Crater Lake", "C) Lake Tahoe", "D) Lake Mashu", "E) Blue Lake (New Zealand)"],
+    "answer": "E"
+  },
+  {
+    "question": "Which city has the largest urban population in the world?",
+    "options": ["A) Tokyo", "B) Delhi", "C) São Paulo", "D) Shanghai", "E) Mexico City"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country is NOT part of the African Great Lakes region?",
+    "options": ["A) Kenya", "B) Rwanda", "C) Burundi", "D) Chad", "E) Uganda"],
+    "answer": "D"
+  },
+  {
+    "question": "Which European capital is furthest east?",
+    "options": ["A) Kyiv", "B) Moscow", "C) Helsinki", "D) Athens", "E) Ankara"],
+    "answer": "B"
+  },
+  {
+    "question": "Which of these countries has the lowest population density?",
+    "options": ["A) Mongolia", "B) Namibia", "C) Iceland", "D) Australia", "E) Canada"],
+    "answer": "A"
+  },
+  {
+    "question": "Which of these is NOT a real island?",
+    "options": ["A) Snake Island", "B) Ghost Island", "C) Christmas Island", "D) Sentinel Island", "E) Easter Island"],
+    "answer": "B"
+  },
+  {
+    "question": "Which river flows through the most countries in the world?",
+    "options": ["A) Amazon", "B) Danube", "C) Congo", "D) Mekong", "E) Ganges"],
+    "answer": "B"
+  },
+  {
+    "question": "Which African city has the highest population?",
+    "options": ["A) Lagos", "B) Cairo", "C) Kinshasa", "D) Nairobi", "E) Addis Ababa"],
+    "answer": "A"
+  },
+  {
+    "question": "Which ocean is shrinking?",
+    "options": ["A) Pacific", "B) Atlantic", "C) Indian", "D) Arctic", "E) Southern"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country has the most natural lakes?",
+    "options": ["A) USA", "B) Finland", "C) Canada", "D) Russia", "E) Brazil"],
+    "answer": "C"
+  },
+  {
+    "question": "Which country’s territory is entirely in the Southern Hemisphere?",
+    "options": ["A) Ecuador", "B) Australia", "C) Kenya", "D) Indonesia", "E) Colombia"],
+    "answer": "B"
+  },
+  {
+    "question": "Which mountain range forms the longest above-sea mountain chain?",
+    "options": ["A) Himalayas", "B) Andes", "C) Rockies", "D) Alps", "E) Urals"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country is the largest island nation?",
+    "options": ["A) Madagascar", "B) Japan", "C) Australia", "D) Indonesia", "E) Philippines"],
+    "answer": "D"
+  },
+  {
+    "question": "Which of these countries is fully within the Arctic Circle?",
+    "options": ["A) Norway", "B) Russia", "C) Greenland", "D) Iceland", "E) Canada"],
+    "answer": "C"
+  },
+  {
+    "question": "Which country is closest to the Mariana Trench?",
+    "options": ["A) Indonesia", "B) Japan", "C) Philippines", "D) Palau", "E) Papua New Guinea"],
+    "answer": "C"
+  },
+  {
+    "question": "Which African nation has the most official languages?",
+    "options": ["A) Nigeria", "B) South Africa", "C) Ethiopia", "D) Kenya", "E) Cameroon"],
+    "answer": "B"
+  },
+  {
+    "question": "Which desert is the oldest in the world?",
+    "options": ["A) Sahara", "B) Gobi", "C) Namib", "D) Kalahari", "E) Atacama"],
+    "answer": "C"
+  },
+  {
+    "question": "Which of these countries is not a member of the Commonwealth?",
+    "options": ["A) India", "B) Nigeria", "C) USA", "D) Pakistan", "E) Canada"],
+    "answer": "C"
+  },
+  {
+    "question": "Which of these islands is disputed territory?",
+    "options": ["A) Guam", "B) Taiwan", "C) Greenland", "D) Iceland", "E) Seychelles"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country has a national park entirely made of pink sand dunes?",
+    "options": ["A) Australia", "B) Namibia", "C) USA", "D) Chile", "E) Morocco"],
+    "answer": "B"
+  },
+  {
+    "question": "Which river flows backward during certain times of the year?",
+    "options": ["A) Mississippi", "B) Amazon", "C) Nile", "D) Orinoco", "E) Congo"],
+    "answer": "B"
+  },
+  {
+    "question": "Which capital city has the longest continuous human settlement?",
+    "options": ["A) Jerusalem", "B) Damascus", "C) Cairo", "D) Athens", "E) Baghdad"],
+    "answer": "B"
+  },
+  {
+    "question": "Which country is famous for the Chocolate Hills?",
+    "options": ["A) Philippines", "B) Switzerland", "C) Belgium", "D) Ghana", "E) Malaysia"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country is the largest producer of cobalt?",
+    "options": ["A) Russia", "B) USA", "C) China", "D) DRC (Congo)", "E) Zambia"],
+    "answer": "D"
+  },
+  {
+    "question": "Which U.S. state has the longest coastline?",
+    "options": ["A) California", "B) Florida", "C) Texas", "D) Alaska", "E) Hawaii"],
+    "answer": "D"
+  },
+  {
+    "question": "Which island is known as the 'Island of Fire and Ice'?",
+    "options": ["A) Iceland", "B) Japan", "C) Philippines", "D) Fiji", "E) Indonesia"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country has no rivers?",
+    "options": ["A) Saudi Arabia", "B) Qatar", "C) UAE", "D) Oman", "E) Bahrain"],
+    "answer": "A"
+  },
+  {
+    "question": "Which country is home to the Atacama Desert?",
+    "options": ["A) Argentina", "B) Peru", "C) Chile", "D) Bolivia", "E) Ecuador"],
+    "answer": "C"
+  },
+  {
+    "question": "Which sea has no coastline?",
+    "options": ["A) Red Sea", "B) Arabian Sea", "C) Sargasso Sea", "D) Mediterranean", "E) Baltic Sea"],
+    "answer": "C"
+  },
+  {
+    "question": "Which continent has the most countries?",
+    "options": ["A) Africa", "B) Europe", "C) Asia", "D) South America", "E) North America"],
+    "answer": "A"
+  },
+  {
+    "question": "Which city is known as the ‘City of Bridges’?",
+    "options": ["A) Amsterdam", "B) Venice", "C) Pittsburgh", "D) Hamburg", "E) Istanbul"],
+    "answer": "C"
+  },
+  {
+    "question": "Which country is split into the most time zones?",
+    "options": ["A) Russia", "B) USA", "C) France", "D) China", "E) Australia"],
+    "answer": "C"
+  },
+  {
+    "question": "Which mountain range separates Europe and Asia?",
+    "options": ["A) Alps", "B) Carpathians", "C) Caucasus", "D) Urals", "E) Tatras"],
+    "answer": "D"
+  },
+  {
+    "question": "Which lake is both the deepest and oldest?",
+    "options": ["A) Crater Lake", "B) Lake Tanganyika", "C) Lake Vostok", "D) Lake Baikal", "E) Lake Superior"],
+    "answer": "D"
+  },
+  {
+    "question": "Which is the southernmost capital city in the world?",
+    "options": ["A) Wellington", "B) Canberra", "C) Santiago", "D) Buenos Aires", "E) Pretoria"],
+    "answer": "A"
+  },
+  {
+    "question": "Which river is the longest in Europe?",
+    "options": ["A) Rhine", "B) Danube", "C) Volga", "D) Elbe", "E) Dnieper"],
+    "answer": "C"
+  }
+],
+},
+"General Knowledge": {
+    "Easy": [
+    {
+      "question": "What is the largest planet in our solar system?",
+      "options": ["A) Earth", "B) Mars", "C) Jupiter", "D) Saturn"],
+      "answer": "C"
+    },
+    {
+      "question": "Which instrument is used to measure temperature?",
+      "options": ["A) Barometer", "B) Thermometer", "C) Altimeter", "D) Hygrometer"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the capital of France?",
+      "options": ["A) Paris", "B) London", "C) Berlin", "D) Madrid"],
       "answer": "A"
+    },
+    {
+      "question": "Who painted the ceiling of the Sistine Chapel?",
+      "options": ["A) Leonardo da Vinci", "B) Michelangelo", "C) Raphael", "D) Van Gogh"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "options": ["A) Au", "B) Ag", "C) Fe", "D) Hg"],
+      "answer": "A"
+    },
+    {
+      "question": "Who wrote the play 'Romeo and Juliet'?",
+      "options": ["A) William Shakespeare", "B) Charles Dickens", "C) Jane Austen", "D) Mark Twain"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the capital of Canada?",
+      "options": ["A) Toronto", "B) Ottawa", "C) Vancouver", "D) Montreal"],
+      "answer": "B"
+    },
+    {
+      "question": "Which gas do plants absorb from the atmosphere?",
+      "options": ["A) Oxygen", "B) Nitrogen", "C) Carbon Dioxide", "D) Hydrogen"],
+      "answer": "C"
+    },
+    {
+      "question": "How many continents are there on Earth?",
+      "options": ["A) Five", "B) Six", "C) Seven", "D) Eight"],
+      "answer": "C"
+    },
+    {
+      "question": "Which ocean is the smallest?",
+      "options": ["A) Arctic", "B) Atlantic", "C) Indian", "D) Pacific"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the currency of Japan?",
+      "options": ["A) Yen", "B) Won", "C) Yuan", "D) Dollar"],
+      "answer": "A"
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "options": ["A) Vincent van Gogh", "B) Pablo Picasso", "C) Leonardo da Vinci", "D) Claude Monet"],
+      "answer": "C"
+    },
+    {
+      "question": "Which animal is known as the 'King of the Jungle'?",
+      "options": ["A) Tiger", "B) Elephant", "C) Lion", "D) Gorilla"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the boiling point of water in Celsius?",
+      "options": ["A) 100", "B) 0", "C) 50", "D) 75"],
+      "answer": "A"
+    },
+    {
+      "question": "Who is the author of 'Harry Potter' series?",
+      "options": ["A) J.K. Rowling", "B) Stephen King", "C) Suzanne Collins", "D) J.R.R. Tolkien"],
+      "answer": "A"
+    },
+    {
+      "question": "Which country is famous for the Eiffel Tower?",
+      "options": ["A) Italy", "B) France", "C) Germany", "D) Spain"],
+      "answer": "B"
+    },
+    {
+      "question": "What do bees produce?",
+      "options": ["A) Milk", "B) Honey", "C) Silk", "D) Wax"],
+      "answer": "B"
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "options": ["A) Venus", "B) Mars", "C) Jupiter", "D) Mercury"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the tallest mountain in the world?",
+      "options": ["A) K2", "B) Mount Everest", "C) Kilimanjaro", "D) Denali"],
+      "answer": "B"
+    },
+    {
+      "question": "Which instrument has keys, pedals, and strings?",
+      "options": ["A) Guitar", "B) Violin", "C) Piano", "D) Flute"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the primary source of energy for Earth?",
+      "options": ["A) Moon", "B) Sun", "C) Wind", "D) Ocean"],
+      "answer": "B"
+    },
+    {
+      "question": "Which language is the most widely spoken worldwide?",
+      "options": ["A) English", "B) Spanish", "C) Mandarin Chinese", "D) Hindi"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the chemical symbol for water?",
+      "options": ["A) O2", "B) CO2", "C) H2O", "D) NaCl"],
+      "answer": "C"
+    },
+    {
+      "question": "Which continent is the Sahara Desert located in?",
+      "options": ["A) Asia", "B) Africa", "C) Australia", "D) South America"],
+      "answer": "B"
+    },
+    {
+      "question": "How many legs does a spider have?",
+      "options": ["A) Six", "B) Eight", "C) Ten", "D) Twelve"],
+      "answer": "B"
+    },
+    {
+      "question": "Which city hosted the 2016 Summer Olympics?",
+      "options": ["A) London", "B) Beijing", "C) Rio de Janeiro", "D) Tokyo"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the freezing point of water in Celsius?",
+      "options": ["A) 0", "B) 32", "C) 100", "D) -10"],
+      "answer": "A"
+    },
+    {
+      "question": "Which bird is known for its colorful tail feathers?",
+      "options": ["A) Peacock", "B) Eagle", "C) Parrot", "D) Flamingo"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the main ingredient in sushi?",
+      "options": ["A) Rice", "B) Bread", "C) Pasta", "D) Potato"],
+      "answer": "A"
+    },
+    {
+      "question": "Who was the first person to walk on the Moon?",
+      "options": ["A) Neil Armstrong", "B) Buzz Aldrin", "C) Yuri Gagarin", "D) Michael Collins"],
+      "answer": "A"
+    },
+    {
+      "question": "Which country is known for inventing pizza?",
+      "options": ["A) France", "B) USA", "C) Italy", "D) Greece"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the smallest prime number?",
+      "options": ["A) 0", "B) 1", "C) 2", "D) 3"],
+      "answer": "C"
+    },
+    {
+      "question": "Which organ pumps blood throughout the body?",
+      "options": ["A) Brain", "B) Liver", "C) Heart", "D) Kidney"],
+      "answer": "C"
+    },
+    {
+      "question": "What color do you get by mixing red and white?",
+      "options": ["A) Pink", "B) Purple", "C) Orange", "D) Brown"],
+      "answer": "A"
+    },
+    {
+      "question": "Which planet is closest to the Sun?",
+      "options": ["A) Venus", "B) Mercury", "C) Earth", "D) Mars"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the largest mammal in the world?",
+      "options": ["A) Elephant", "B) Blue Whale", "C) Giraffe", "D) Hippopotamus"],
+      "answer": "B"
+    },
+    {
+      "question": "Which sea creature has eight arms?",
+      "options": ["A) Crab", "B) Octopus", "C) Squid", "D) Lobster"],
+      "answer": "B"
+    },
+    {
+      "question": "What do you call a baby cat?",
+      "options": ["A) Puppy", "B) Kitten", "C) Cub", "D) Calf"],
+      "answer": "B"
+    },
+    {
+      "question": "Which country has the Great Barrier Reef?",
+      "options": ["A) Australia", "B) USA", "C) Brazil", "D) South Africa"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the tallest animal on Earth?",
+      "options": ["A) Elephant", "B) Giraffe", "C) Kangaroo", "D) Lion"],
+      "answer": "B"
+    },
+    {
+      "question": "Which continent is known as the 'Dark Continent'?",
+      "options": ["A) Asia", "B) Africa", "C) Europe", "D) South America"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the main gas in the Earth's atmosphere?",
+      "options": ["A) Oxygen", "B) Carbon Dioxide", "C) Nitrogen", "D) Hydrogen"],
+      "answer": "C"
+    },
+    {
+      "question": "Which sport is known as the 'king of sports'?",
+      "options": ["A) Basketball", "B) Football (Soccer)", "C) Tennis", "D) Cricket"],
+      "answer": "B"
+    },
+    {
+      "question": "Who invented the telephone?",
+      "options": ["A) Thomas Edison", "B) Alexander Graham Bell", "C) Nikola Tesla", "D) Guglielmo Marconi"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "options": ["A) Sydney", "B) Melbourne", "C) Canberra", "D) Brisbane"],
+      "answer": "C"
+    },
+    {
+      "question": "Which fruit is known as the 'king of fruits'?",
+      "options": ["A) Mango", "B) Banana", "C) Apple", "D) Durian"],
+      "answer": "D"
+    },
+    {
+      "question": "How many colors are there in a rainbow?",
+      "options": ["A) Five", "B) Six", "C) Seven", "D) Eight"],
+      "answer": "C"
+    },
+    {
+      "question": "Which element has the chemical symbol 'O'?",
+      "options": ["A) Gold", "B) Oxygen", "C) Osmium", "D) Iron"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the main language spoken in Brazil?",
+      "options": ["A) Spanish", "B) Portuguese", "C) French", "D) English"],
+      "answer": "B"
+    },
+    {
+      "question": "Which animal is the largest land carnivore?",
+      "options": ["A) Lion", "B) Polar Bear", "C) Tiger", "D) Grizzly Bear"],
+      "answer": "B"
+    },
+    {
+      "question": "Which continent is the largest by area?",
+      "options": ["A) Africa", "B) Asia", "C) Europe", "D) Antarctica"],
+      "answer": "B"
     }
   ]
-},
-"Coding": {
-  "Easy": [
-      {
-        "question": "What is the purpose of the <canvas> element in HTML?",
-        "options": [
-          "A) To create a drawable area for graphics",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a flex container?",
-        "options": [
-          "A) display: flex",
-          "B) display: grid",
-          "C) display: block",
-          "D) display: inline"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "What is the purpose of the <svg> element in HTML?",
-        "options": [
-          "A) To create scalable vector graphics",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a grid layout?",
-        "options": [
-          "A) display: grid",
-          "B) display: flex",
-          "C) display: block",
-          "D) display: inline"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "What is the purpose of the <audio> element in HTML?",
-        "options": [
-          "A) To embed audio content",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "What is the purpose of the <video> element in HTML?",
-        "options": [
-          "A) To embed video content",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a responsive design?",
-        "options": [
-          "A) @media",
-          "B) responsive",
-          "C) viewport",
-          "D) display: responsive"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "What is the purpose of the <iframe> element in HTML?",
-        "options": [
-          "A) To embed another HTML document within the current document",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create animations?",
-        "options": [
-          "A) animation",
-          "B) transition",
-          "C) keyframes",
-          "D) transform"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "What is the purpose of the <websocket> element in HTML?",
-        "options": [
-          "A) To create a persistent connection for real-time communication",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a sticky element?",
-        "options": [
-          "A) position: sticky",
-          "B) position: fixed",
-          "C) position: relative",
-          "D) position: absolute"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "What is the purpose of the <shadow> element in HTML?",
-        "options": [
-          "A) To create a shadow DOM for encapsulation",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a grid template?",
-        "options": [
-          "A) grid-template",
-          "B) grid-layout",
-          "C) grid-area",
-          "D) grid-column"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "What is the purpose of the <custom-element> element in HTML?",
-        "options": [
-          "A) To create a reusable custom element",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a responsive grid layout?",
-        "options": [
-          "A) grid-template-columns",
-          "B) grid-template-rows",
-          "C) grid-auto-flow",
-          "D) grid-gap"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "What is the purpose of the <template> element in HTML?",
-        "options": [
-          "A) To define a reusable template for content",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a responsive image?",
-        "options": [
-          "A) max-width",
-          "B) width",
-          "C) height",
-          "D) responsive"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "What is the purpose of the <slot> element in HTML?",
-        "options": [
-          "A) To create a placeholder for content in a web component",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a responsive font size?",
-        "options": [
-          "A) font-size: responsive",
-          "B) font-size: calc()",
-          "C) font-size: viewport",
-          "D) font-size: auto"
-        ],
-        "answer": "B"
-      }
     ],
     "Medium": [
+    {
+      "question": "Who painted the ceiling of the Sistine Chapel?",
+      "options": ["A) Leonardo da Vinci", "B) Michelangelo", "C) Raphael", "D) Donatello", "E) Caravaggio"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the capital of Australia?",
+      "options": ["A) Sydney", "B) Melbourne", "C) Canberra", "D) Brisbane", "E) Perth"],
+      "answer": "C"
+    },
+    {
+      "question": "Which element has the chemical symbol Au?",
+      "options": ["A) Silver", "B) Gold", "C) Aluminum", "D) Argon", "E) Uranium"],
+      "answer": "B"
+    },
+    {
+      "question": "Which planet has the most moons?",
+      "options": ["A) Earth", "B) Mars", "C) Jupiter", "D) Saturn", "E) Neptune"],
+      "answer": "C"
+    },
+    {
+      "question": "In which year did the Titanic sink?",
+      "options": ["A) 1910", "B) 1912", "C) 1914", "D) 1916", "E) 1918"],
+      "answer": "B"
+    },
+    {
+      "question": "Who wrote the novel '1984'?",
+      "options": ["A) Aldous Huxley", "B) George Orwell", "C) Ray Bradbury", "D) J.R.R. Tolkien", "E) Arthur C. Clarke"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the hardest naturally occurring mineral?",
+      "options": ["A) Quartz", "B) Corundum", "C) Diamond", "D) Topaz", "E) Garnet"],
+      "answer": "C"
+    },
+    {
+      "question": "Which country hosted the 2016 Summer Olympics?",
+      "options": ["A) China", "B) Brazil", "C) United Kingdom", "D) Russia", "E) Japan"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the smallest bone in the human body?",
+      "options": ["A) Femur", "B) Tibia", "C) Stapes", "D) Ulna", "E) Sacrum"],
+      "answer": "C"
+    },
+    {
+      "question": "Which language has the most native speakers worldwide?",
+      "options": ["A) English", "B) Spanish", "C) Mandarin", "D) Hindi", "E) Arabic"],
+      "answer": "C"
+    },
+    {
+      "question": "Who is known as the Father of Computers?",
+      "options": ["A) Steve Jobs", "B) Charles Babbage", "C) Alan Turing", "D) Bill Gates", "E) Tim Berners-Lee"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the primary ingredient in traditional hummus?",
+      "options": ["A) Lentils", "B) Chickpeas", "C) Kidney beans", "D) Peas", "E) Soybeans"],
+      "answer": "B"
+    },
+    {
+      "question": "Which ocean is the Mariana Trench located in?",
+      "options": ["A) Atlantic", "B) Pacific", "C) Indian", "D) Arctic", "E) Southern"],
+      "answer": "B"
+    },
+    {
+      "question": "Who discovered penicillin?",
+      "options": ["A) Alexander Fleming", "B) Louis Pasteur", "C) Marie Curie", "D) Gregor Mendel", "E) Jonas Salk"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the currency of South Africa?",
+      "options": ["A) Rand", "B) Dollar", "C) Euro", "D) Pound", "E) Shilling"],
+      "answer": "A"
+    },
+    {
+      "question": "Which composer wrote the 'Fifth Symphony'?",
+      "options": ["A) Mozart", "B) Beethoven", "C) Bach", "D) Tchaikovsky", "E) Brahms"],
+      "answer": "B"
+    },
+    {
+      "question": "Which desert covers much of northern China and southern Mongolia?",
+      "options": ["A) Gobi", "B) Sahara", "C) Thar", "D) Kalahari", "E) Mojave"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the Bordeaux region famous for producing?",
+      "options": ["A) Cheese", "B) Wine", "C) Olives", "D) Truffles", "E) Bread"],
+      "answer": "B"
+    },
+    {
+      "question": "Which city is the financial center of the United Kingdom?",
+      "options": ["A) Manchester", "B) Edinburgh", "C) London", "D) Birmingham", "E) Cardiff"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the tallest building in the world (2025)?",
+      "options": ["A) Shanghai Tower", "B) Burj Khalifa", "C) One World Trade Center", "D) Taipei 101", "E) Petronas Towers"],
+      "answer": "B"
+    },
+    {
+      "question": "Which element is a noble gas?",
+      "options": ["A) Nitrogen", "B) Oxygen", "C) Argon", "D) Carbon", "E) Chlorine"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the capital of Canada?",
+      "options": ["A) Toronto", "B) Vancouver", "C) Ottawa", "D) Montreal", "E) Winnipeg"],
+      "answer": "C"
+    },
+    {
+      "question": "Who wrote 'Pride and Prejudice'?",
+      "options": ["A) Emily Brontë", "B) Jane Austen", "C) Charlotte Brontë", "D) Mary Shelley", "E) George Eliot"],
+      "answer": "B"
+    },
+    {
+      "question": "Which planet is known for its rings?",
+      "options": ["A) Jupiter", "B) Saturn", "C) Uranus", "D) Neptune", "E) Mars"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the chemical symbol for table salt?",
+      "options": ["A) NaCl", "B) KCl", "C) CaCl₂", "D) MgCl₂", "E) FeCl₃"],
+      "answer": "A"
+    },
+    {
+      "question": "In which continent is the Sahara Desert?",
+      "options": ["A) Asia", "B) Africa", "C) North America", "D) Australia", "E) South America"],
+      "answer": "B"
+    },
+    {
+      "question": "Which country introduced the first paper money?",
+      "options": ["A) China", "B) Greece", "C) Egypt", "D) Rome", "E) Persia"],
+      "answer": "A"
+    },
+    {
+      "question": "Who is the author of the 'Harry Potter' series?",
+      "options": ["A) J.R.R. Tolkien", "B) C.S. Lewis", "C) J.K. Rowling", "D) Philip Pullman", "E) Roald Dahl"],
+      "answer": "C"
+    },
+    {
+      "question": "Which river flows through Paris?",
+      "options": ["A) Seine", "B) Thames", "C) Danube", "D) Rhine", "E) Loire"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the largest continent by land area?",
+      "options": ["A) Africa", "B) Asia", "C) North America", "D) Europe", "E) South America"],
+      "answer": "B"
+    },
+    {
+      "question": "Which country produces the most coffee?",
+      "options": ["A) Colombia", "B) Vietnam", "C) Brazil", "D) Ethiopia", "E) Indonesia"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the most widely spoken language in South America?",
+      "options": ["A) Spanish", "B) Portuguese", "C) English", "D) French", "E) Dutch"],
+      "answer": "A"
+    },
+    {
+      "question": "Which U.S. state is known as the 'Empire State'?",
+      "options": ["A) California", "B) Texas", "C) New York", "D) Florida", "E) Illinois"],
+      "answer": "C"
+    },
+    {
+      "question": "Who developed the theory of relativity?",
+      "options": ["A) Isaac Newton", "B) Albert Einstein", "C) Niels Bohr", "D) Galileo Galilei", "E) Max Planck"],
+      "answer": "B"
+    },
+    {
+      "question": "Which instrument measures atmospheric pressure?",
+      "options": ["A) Thermometer", "B) Barometer", "C) Hygrometer", "D) Anemometer", "E) Altimeter"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the capital of Italy?",
+      "options": ["A) Venice", "B) Milan", "C) Rome", "D) Florence", "E) Naples"],
+      "answer": "C"
+    },
+    {
+      "question": "Which sea creature has three hearts?",
+      "options": ["A) Dolphin", "B) Octopus", "C) Shark", "D) Whale", "E) Squid"],
+      "answer": "B"
+    },
+    {
+      "question": "Which currency is used in the United Kingdom?",
+      "options": ["A) Euro", "B) Dollar", "C) Pound Sterling", "D) Franc", "E) Krona"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the tallest waterfall in the world?",
+      "options": ["A) Niagara Falls", "B) Angel Falls", "C) Victoria Falls", "D) Iguazu Falls", "E) Yosemite Falls"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the study of mushrooms called?",
+      "options": ["A) Mycology", "B) Botany", "C) Zoology", "D) Ecology", "E) Entomology"],
+      "answer": "A"
+    },
+    {
+      "question": "Which composer wrote 'The Magic Flute'?",
+      "options": ["A) Beethoven", "B) Mozart", "C) Bach", "D) Verdi", "E) Handel"],
+      "answer": "B"
+    },
+    {
+      "question": "Which city hosted the first modern Olympic Games?",
+      "options": ["A) Paris", "B) Athens", "C) London", "D) Rome", "E) Berlin"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the freezing point of water in Fahrenheit?",
+      "options": ["A) 0°F", "B) 32°F", "C) 100°F", "D) 212°F", "E) -32°F"],
+      "answer": "B"
+    },
+    {
+      "question": "Which planet is known as the Morning Star?",
+      "options": ["A) Mars", "B) Venus", "C) Jupiter", "D) Mercury", "E) Saturn"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the capital of Spain?",
+      "options": ["A) Barcelona", "B) Madrid", "C) Valencia", "D) Seville", "E) Bilbao"],
+      "answer": "B"
+    },
+    {
+      "question": "Which metal is most abundant in Earth's crust?",
+      "options": ["A) Iron", "B) Aluminum", "C) Silicon", "D) Calcium", "E) Magnesium"],
+      "answer": "B"
+    },
+    {
+      "question": "Which country is shaped like a boot?",
+      "options": ["A) Greece", "B) Italy", "C) Spain", "D) Portugal", "E) Turkey"],
+      "answer": "B"
+    ],
+    "Hard": [
+    {
+      "question": "Who was the first female Prime Minister of the United Kingdom?",
+      "options": ["A) Theresa May", "B) Margaret Thatcher", "C) Angela Merkel", "D) Indira Gandhi", "E) Golda Meir"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the chemical formula for ozone?",
+      "options": ["A) O₂", "B) O₃", "C) O₄", "D) O", "E) O₂⁻"],
+      "answer": "B"
+    },
+    {
+      "question": "In what year did the Berlin Wall fall?",
+      "options": ["A) 1987", "B) 1988", "C) 1989", "D) 1990", "E) 1991"],
+      "answer": "C"
+    },
+    {
+      "question": "Which artist painted 'The Starry Night'?",
+      "options": ["A) Claude Monet", "B) Vincent van Gogh", "C) Pablo Picasso", "D) Edvard Munch", "E) Salvador Dalí"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the powerhouse of the cell?",
+      "options": ["A) Nucleus", "B) Mitochondrion", "C) Ribosome", "D) Endoplasmic Reticulum", "E) Golgi Apparatus"],
+      "answer": "B"
+    },
+    {
+      "question": "Which playwright wrote 'Death of a Salesman'?",
+      "options": ["A) Arthur Miller", "B) Tennessee Williams", "C) Eugene O'Neill", "D) Samuel Beckett", "E) Harold Pinter"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the capital city of Mongolia?",
+      "options": ["A) Ulaanbaatar", "B) Astana", "C) Bishkek", "D) Tashkent", "E) Dushanbe"],
+      "answer": "A"
+    },
+    {
+      "question": "Which element has atomic number 79?",
+      "options": ["A) Silver", "B) Gold", "C) Platinum", "D) Mercury", "E) Lead"],
+      "answer": "B"
+    },
+    {
+      "question": "Who wrote the epic poem 'Paradise Lost'?",
+      "options": ["A) John Milton", "B) William Wordsworth", "C) Geoffrey Chaucer", "D) Edmund Spenser", "E) Alexander Pope"],
+      "answer": "A"
+    },
+    {
+      "question": "Which treaty ended World War I?",
+      "options": ["A) Treaty of Vienna", "B) Treaty of Versailles", "C) Treaty of Tordesillas", "D) Treaty of Paris", "E) Treaty of Utrecht"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the rarest blood type in humans?",
+      "options": ["A) O-", "B) A-", "C) AB+", "D) AB-", "E) B-"],
+      "answer": "D"
+    },
+    {
+      "question": "Which mountain range contains Mont Blanc?",
+      "options": ["A) Rockies", "B) Andes", "C) Alps", "D) Pyrenees", "E) Carpathians"],
+      "answer": "C"
+    },
+    {
+      "question": "Who discovered the law of universal gravitation?",
+      "options": ["A) Galileo Galilei", "B) Johannes Kepler", "C) Isaac Newton", "D) Albert Einstein", "E) Niels Bohr"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the largest internal organ in the human body?",
+      "options": ["A) Heart", "B) Liver", "C) Lung", "D) Kidney", "E) Pancreas"],
+      "answer": "B"
+    },
+    {
+      "question": "Which city was the capital of Japan before Tokyo?",
+      "options": ["A) Osaka", "B) Kyoto", "C) Nagoya", "D) Hiroshima", "E) Nara"],
+      "answer": "B"
+    },
+    {
+      "question": "Which composer wrote 'The Four Seasons'?",
+      "options": ["A) Bach", "B) Beethoven", "C) Vivaldi", "D) Mozart", "E) Handel"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the term for a word that is spelled the same forwards and backwards?",
+      "options": ["A) Homonym", "B) Antonym", "C) Palindrome", "D) Synonym", "E) Oxymoron"],
+      "answer": "C"
+    },
+    {
+      "question": "In computing, what does 'CPU' stand for?",
+      "options": ["A) Central Processing Unit", "B) Computer Personal Unit", "C) Central Performance Utility", "D) Computation Processing Unit", "E) Control Processing Unit"],
+      "answer": "A"
+    },
+    {
+      "question": "Which philosopher wrote 'The Republic'?",
+      "options": ["A) Aristotle", "B) Socrates", "C) Plato", "D) Epicurus", "E) Cicero"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the main language spoken in Vienna, Austria?",
+      "options": ["A) German", "B) French", "C) English", "D) Italian", "E) Hungarian"],
+      "answer": "A"
+    },
+    {
+      "question": "Which country invented paper?",
+      "options": ["A) Egypt", "B) China", "C) Greece", "D) India", "E) Mesopotamia"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the longest bone in the human body?",
+      "options": ["A) Tibia", "B) Femur", "C) Humerus", "D) Radius", "E) Fibula"],
+      "answer": "B"
+    },
+    {
+      "question": "Who was the first person to reach the South Pole?",
+      "options": ["A) Roald Amundsen", "B) Robert Scott", "C) Ernest Shackleton", "D) Edmund Hillary", "E) Douglas Mawson"],
+      "answer": "A"
+    },
+    {
+      "question": "Which element is gaseous at room temperature and used in neon signs?",
+      "options": ["A) Argon", "B) Neon", "C) Krypton", "D) Xenon", "E) Helium"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the capital of New Mexico, USA?",
+      "options": ["A) Albuquerque", "B) Santa Fe", "C) Las Cruces", "D) Taos", "E) Roswell"],
+      "answer": "B"
+    },
+    {
+      "question": "Which scientist proposed the three laws of motion?",
+      "options": ["A) Galileo Galilei", "B) Nikola Tesla", "C) Isaac Newton", "D) James Watt", "E) Michael Faraday"],
+      "answer": "C"
+    },
+    {
+      "question": "Which novel begins with 'Call me Ishmael'?",
+      "options": ["A) Moby-Dick", "B) Pride and Prejudice", "C) War and Peace", "D) The Odyssey", "E) Ulysses"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the capital city of Mongolia?",
+      "options": ["A) Ulaanbaatar", "B) Bishkek", "C) Astana", "D) Tashkent", "E) Dushanbe"],
+      "answer": "A"
+    },
+    {
+      "question": "Which painter is famous for the work 'Guernica'?",
+      "options": ["A) Salvador Dalí", "B) Pablo Picasso", "C) Henri Matisse", "D) Jackson Pollock", "E) René Magritte"],
+      "answer": "B"
+    },
+    {
+      "question": "Which war was ended by the Treaty of Ghent?",
+      "options": ["A) World War I", "B) War of 1812", "C) American Civil War", "D) Napoleonic Wars", "E) Crimean War"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the study of the universe beyond Earth's atmosphere called?",
+      "options": ["A) Geology", "B) Meteorology", "C) Astronomy", "D) Oceanography", "E) Biology"],
+      "answer": "C"
+    },
+    {
+      "question": "Which city is the southernmost capital in the world?",
+      "options": ["A) Wellington", "B) Canberra", "C) Suva", "D) Buenos Aires", "E) Santiago"],
+      "answer": "D"
+    },
+    {
+      "question": "Who wrote 'The Divine Comedy'?",
+      "options": ["A) Dante Alighieri", "B) Geoffrey Chaucer", "C) John Milton", "D) Virgil", "E) Homer"],
+      "answer": "A"
+    },
+    {
+      "question": "Which gas makes up most of the Earth's atmosphere?",
+      "options": ["A) Oxygen", "B) Nitrogen", "C) Carbon Dioxide", "D) Argon", "E) Hydrogen"],
+      "answer": "B"
+    },
+    {
+      "question": "Which ancient civilization built Machu Picchu?",
+      "options": ["A) Maya", "B) Aztec", "C) Inca", "D) Olmec", "E) Toltec"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the rarest naturally occurring element on Earth?",
+      "options": ["A) Francium", "B) Astatine", "C) Promethium", "D) Technetium", "E) Osmium"],
+      "answer": "B"
+    },
+    {
+      "question": "Which river runs through Baghdad?",
+      "options": ["A) Euphrates", "B) Tigris", "C) Jordan", "D) Nile", "E) Amazon"],
+      "answer": "B"
+    },
+    {
+      "question": "Who is the author of 'One Hundred Years of Solitude'?",
+      "options": ["A) Jorge Luis Borges", "B) Gabriel García Márquez", "C) Mario Vargas Llosa", "D) Pablo Neruda", "E) Isabel Allende"],
+      "answer": "B"
+    },
+    {
+      "question": "Which chemical element is diamond made of?",
+      "options": ["A) Carbon", "B) Silicon", "C) Oxygen", "D) Nitrogen", "E) Boron"],
+      "answer": "A"
+    },
+    {
+      "question": "Which U.S. President issued the Emancipation Proclamation?",
+      "options": ["A) George Washington", "B) Abraham Lincoln", "C) Thomas Jefferson", "D) Ulysses S. Grant", "E) Theodore Roosevelt"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the capital of Iceland?",
+      "options": ["A) Reykjavik", "B) Oslo", "C) Helsinki", "D) Copenhagen", "E) Stockholm"],
+      "answer": "A"
+    },
+    {
+      "question": "Which planet is tilted on its side, giving it extreme seasons?",
+      "options": ["A) Jupiter", "B) Mars", "C) Uranus", "D) Neptune", "E) Saturn"],
+      "answer": "C"
+    },
+    {
+      "question": "What language has the most official UN status?",
+      "options": ["A) English", "B) French", "C) Spanish", "D) Russian", "E) Arabic"],
+      "answer": "E"
+    },
+    {
+      "question": "Which ocean is the Sargasso Sea located in?",
+      "options": ["A) Atlantic", "B) Pacific", "C) Indian", "D) Arctic", "E) Southern"],
+      "answer": "A"
+    },
+    {
+      "question": "Who was the first woman to win a Nobel Prize?",
+      "options": ["A) Marie Curie", "B) Rosalind Franklin", "C) Jane Goodall", "D) Rita Levi-Montalcini", "E) Dorothy Hodgkin"],
+      "answer": "A"
+    },
+    {
+      "question": "Which country has the most UNESCO World Heritage Sites?",
+      "options": ["A) Italy", "B) China", "C) Spain", "D) France", "E) Germany"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the approximate age of the Earth?",
+      "options": ["A) 4.5 million years", "B) 4.5 billion years", "C) 4.5 trillion years", "D) 450 million years", "E) 450 billion years"],
+      "answer": "B"
+    },
+    {
+      "question": "Which novel features the character Atticus Finch?",
+      "options": ["A) 1984", "B) To Kill a Mockingbird", "C) The Great Gatsby", "D) Moby-Dick", "E) Jane Eyre"],
+      "answer": "B"
+    },
+    {
+{
+  "Extreme": [
+    {
+      "question": "Who formulated the theory of general relativity?",
+      "options": ["A) Isaac Newton", "B) Albert Einstein", "C) Niels Bohr", "D) Erwin Schrödinger", "E) Stephen Hawking"],
+      "answer": "B"
+    },
+    {
+      "question": "Which element is most abundant in the Earth's core?",
+      "options": ["A) Iron", "B) Nickel", "C) Aluminum", "D) Silicon", "E) Magnesium"],
+      "answer": "A"
+    }
+  ],
+{
+  "Coding": {
+    "Easy": [
       {
-        "question": "What is the difference between let and var in JavaScript?",
-        "options": [
-          "A) let has block scope, var has function scope",
-          "B) var has block scope, let has function scope", 
-          "C) No difference",
-          "D) let is older than var"
-        ],
+        "question": "What keyword is used to define a function in Python?",
+        "options": ["A) define", "B) function", "C) def", "D) func"],
+        "answer": "C"
+      },
+      {
+        "question": "Which data type is immutable in Python?",
+        "options": ["A) list", "B) dict", "C) set", "D) tuple", "E) bytearray"],
+        "answer": "D"
+      },
+      {
+        "question": "What symbol is used to comment out a single line in Python?",
+        "options": ["A) //", "B) <!--", "C) #", "D) /*", "E) %"], 
+        "answer": "C"
+      },
+      {
+        "question": "Which loop will always execute at least once in C?",
+        "options": ["A) for", "B) while", "C) do-while", "D) foreach", "E) repeat-until"],
+        "answer": "C"
+      },
+      {
+        "question": "In HTML, which tag is used for the largest heading?",
+        "options": ["A) <h1>", "B) <h6>", "C) <title>", "D) <header>", "E) <headline>"],
         "answer": "A"
       },
       {
         "question": "What does CSS stand for?",
-        "options": [
-          "A) Computer Style Sheets",
-          "B) Cascading Style Sheets",
-          "C) Creative Style Sheets", 
-          "D) Colorful Style Sheets"
-        ],
-        "answer": "B"
-      },
-      {
-        "question": "Which method is used to add an element to the end of an array in JavaScript?",
-        "options": [
-          "A) push()",
-          "B) pop()",
-          "C) shift()",
-          "D) unshift()"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "What is the purpose of the 'this' keyword in JavaScript?",
-        "options": [
-          "A) Refers to the current object",
-          "B) Refers to the previous object",
-          "C) Refers to the global object",
-          "D) Refers to the parent object"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which HTML tag is used to link an external CSS file?",
-        "options": [
-          "A) <style>",
-          "B) <css>",
-          "C) <link>",
-          "D) <stylesheet>"
-        ],
+        "options": ["A) Computer Style Sheets", "B) Creative Style System", "C) Cascading Style Sheets", "D) Colorful Style Syntax", "E) Custom Style Script"],
         "answer": "C"
       },
       {
-        "question": "What is the purpose of the <web-component> element in HTML?",
-    "options": [
-      "A) To create a reusable web component",
-      "B) To define a hyperlink",
-      "C) To insert an image",
-      "D) To create a form"
-    ],
-    "answer": "A"
+        "question": "Which operator is used for string concatenation in JavaScript?",
+        "options": ["A) +", "B) &", "C) .", "D) &&", "E) |"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the index of the first element in an array in most programming languages?",
+        "options": ["A) 0", "B) 1", "C) -1", "D) 2", "E) Depends on the language"],
+        "answer": "A"
+      },
+      {
+        "question": "Which HTML attribute specifies an alternate text for an image?",
+        "options": ["A) src", "B) alt", "C) title", "D) href", "E) caption"],
+        "answer": "B"
+      },
+      {
+        "question": "What built-in method converts a string to lowercase in JavaScript?",
+        "options": ["A) toLower()", "B) lowerCase()", "C) toLowerCase()", "D) lowercase()", "E) downcase()"],
+        "answer": "C"
+      },
+      {
+        "question": "Which symbol is used to access properties of an object in JavaScript?",
+        "options": ["A) ::", "B) .", "C) ->", "D) =>", "E) #"],
+        "answer": "B"
+      },
+      {
+        "question": "In Python, what is the result of 3 == '3'?",
+        "options": ["A) True", "B) False", "C) Error", "D) None", "E) 3"],
+        "answer": "B"
+      },
+      {
+        "question": "Which tag is self-closing in HTML5?",
+        "options": ["A) <div>", "B) <p>", "C) <img>", "D) <span>", "E) <section>"],
+        "answer": "C"
+      },
+      {
+        "question": "What does SQL stand for?",
+        "options": ["A) Structured Query Language", "B) Simple Question Language", "C) Sequential Query List", "D) Standard Query Logic", "E) Structured Question List"],
+        "answer": "A"
+      },
+      {
+        "question": "Which symbol begins a CSS id selector?",
+        "options": ["A) .", "B) #", "C) @", "D) $", "E) &"],
+        "answer": "B"
+      },
+      {
+        "question": "In Java, which keyword is used to create a new object?",
+        "options": ["A) instantiate", "B) new", "C) create", "D) make", "E) build"],
+        "answer": "B"
+      },
+      {
+        "question": "Which HTML element is used to embed JavaScript code?",
+        "options": ["A) <js>", "B) <script>", "C) <code>", "D) <javascript>", "E) <embed>"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the value of the expression 5 % 2 in most languages?",
+        "options": ["A) 0", "B) 1", "C) 2", "D) 2.5", "E) Error"],
+        "answer": "B"
+      },
+      {
+        "question": "Which keyword defines a constant in JavaScript (ES6)?",
+        "options": ["A) var", "B) let", "C) const", "D) static", "E) final"],
+        "answer": "C"
+      },
+      {
+        "question": "In Python, which keyword is used for exception handling?",
+        "options": ["A) try", "B) catch", "C) handle", "D) except", "E) error"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the main file extension for Python scripts?",
+        "options": ["A) .py", "B) .pt", "C) .pyt", "D) .python", "E) .px"],
+        "answer": "A"
+      },
+      {
+        "question": "In CSS, how do you select all elements?",
+        "options": ["A) *", "B) all", "C) .all", "D) #all", "E) &"],
+        "answer": "A"
+      },
+      {
+        "question": "Which loop is ideal when you know the number of iterations beforehand?",
+        "options": ["A) while", "B) do-while", "C) for", "D) foreach", "E) repeat"],
+        "answer": "C"
+      },
+      {
+        "question": "What does DOM stand for?",
+        "options": ["A) Document Object Model", "B) Data Object Model", "C) Document Oriented Method", "D) Dynamic Object Model", "E) Document Order Model"],
+        "answer": "A"
+      },
+      {
+        "question": "Which HTML attribute is used to specify styles inline?",
+        "options": ["A) style", "B) class", "C) id", "D) css", "E) inline"],
+        "answer": "A"
+      },
+      {
+        "question": "In JavaScript, which method adds an element to the end of an array?",
+        "options": ["A) push()", "B) pop()", "C) shift()", "D) unshift()", "E) append()"],
+        "answer": "A"
+      },
+      {
+        "question": "Which built-in Python function returns the length of an object?",
+        "options": ["A) len()", "B) length()", "C) size()", "D) count()", "E) measure()"],
+        "answer": "A"
+      },
+      {
+        "question": "Which HTML tag creates a numbered list?",
+        "options": ["A) <ul>", "B) <ol>", "C) <li>", "D) <dl>", "E) <list>"],
+        "answer": "B"
+      },
+      {
+        "question": "What symbol is used to begin a block comment in CSS?",
+        "options": ["A) /*", "B) //", "C) <!--", "D) ##", "E) **"],
+        "answer": "A"
+      },
+      {
+        "question": "Which keyword is used to stop a loop prematurely in C?",
+        "options": ["A) stop", "B) break", "C) exit", "D) end", "E) halt"],
+        "answer": "B"
+      },
+      {
+        "question": "What does AJAX stand for?",
+        "options": ["A) Asynchronous Java and XML", "B) Asynchronous JavaScript and XML", "C) Advanced JavaScript and XHTML", "D) Assembled JSON and XML", "E) Asynchronous JSON and XHTML"],
+        "answer": "B"
+      },
+      {
+        "question": "Which method converts a JSON string to a JavaScript object?",
+        "options": ["A) JSON.parse()", "B) JSON.stringify()", "C) JSON.toObject()", "D) JSON.decode()", "E) JSON.objectify()"],
+        "answer": "A"
+      },
+      {
+        "question": "In Python, which collection type holds key-value pairs?",
+        "options": ["A) list", "B) tuple", "C) dict", "D) set", "E) array"],
+        "answer": "C"
+      },
+      {
+        "question": "Which HTML tag is used for a checkbox input?",
+        "options": ["A) <check>", "B) <input type=\"checkbox\">", "C) <checkbox>", "D) <option>", "E) <form>"],
+        "answer": "B"
+      },
+      {
+        "question": "Which CSS property controls the text size?",
+        "options": ["A) font-style", "B) font-weight", "C) font-size", "D) text-size", "E) text-style"],
+        "answer": "C"
+      },
+      {
+        "question": "What does SQL's SELECT statement do?",
+        "options": ["A) Deletes rows", "B) Updates rows", "C) Retrieves data", "D) Creates table", "E) Alters table"],
+        "answer": "C"
+      },
+      {
+        "question": "Which tag is used to create a table row in HTML?",
+        "options": ["A) <td>", "B) <tr>", "C) <th>", "D) <table>", "E) <row>"],
+        "answer": "B"
+      },
+      {
+        "question": "In JavaScript, which keyword declares a block-scoped variable?",
+        "options": ["A) var", "B) let", "C) const", "D) both B and C", "E) shared"],
+        "answer": "D"
+      },
+      {
+        "question": "Which Python keyword is used to create an anonymous function?",
+        "options": ["A) lambda", "B) anon", "C) def", "D) func", "E) inline"],
+        "answer": "A"
+      },
+      {
+        "question": "Which HTML element is used to create a dropdown list?",
+        "options": ["A) <dropdown>", "B) <select>", "C) <option>", "D) <list>", "E) <combo>"],
+        "answer": "B"
+      },
+      {
+        "question": "Which CSS unit is relative to the font-size of the element?",
+        "options": ["A) px", "B) em", "C) rem", "D) %", "E) vh"],
+        "answer": "B"
+      },
+      {
+        "question": "In SQL, which clause is used to filter results?",
+        "options": ["A) ORDER BY", "B) GROUP BY", "C) HAVING", "D) WHERE", "E) FILTER"],  
+        "answer": "D"
+      },
+      {
+        "question": "Which JavaScript function is used to schedule code execution after a delay?",
+        "options": ["A) setDelay()", "B) delay()", "C) setTimeout()", "D) wait()", "E) sleep()"],
+        "answer": "C"
+      },
+      {
+        "question": "What tag encloses the visible content of an HTML document?",
+        "options": ["A) <body>", "B) <head>", "C) <html>", "D) <main>", "E) <section>"],
+        "answer": "A"
+      },
+      {
+        "question": "Which HTML tag defines a hyperlink?",
+        "options": ["A) <link>", "B) <a>", "C) <href>", "D) <url>", "E) <anchor>"],
+        "answer": "B"
+      },
+      {
+        "question": "What does API stand for?",
+        "options": ["A) Application Programming Interface", "B) Application Protocol Internet", "C) Applied Program Internet", "D) Automatic Programming Interface", "E) Application Process Internet"],
+        "answer": "A"
+      },
+      {
+        "question": "Which CSS property sets the background color?",
+        "options": ["A) bg-color", "B) background-color", "C) color", "D) bg", "E) bgcolor"],
+        "answer": "B"
+      },
+      {
+        "question": "Which method removes the last element from an array in JavaScript?",
+        "options": ["A) pop()", "B) shift()", "C) slice()", "D) splice()", "E) remove()"],
+        "answer": "A"
+      },
+      {
+        "question": "In Python, which keyword is used to create a class?",
+        "options": ["A) class", "B) def", "C) struct", "D) object", "E) type"],
+        "answer": "A"
+      },
+      {
+        "question": "Which HTML tag is used to define a paragraph?",
+        "options": ["A) <p>", "B) <para>", "C) <text>", "D) <div>", "E) <span>"],
+        "answer": "A"
+      },
+      {
+        "question": "What file extension is commonly used for JavaScript files?",
+        "options": ["A) .java", "B) .js", "C) .jsx", "D) .ts", "E) .script"],
+        "answer": "B"
+      },
+      {
+        "question": "Which SQL keyword retrieves unique values?",
+        "options": ["A) UNIQUE", "B) DISTINCT", "C) ONLY", "D) SINGLE", "E) SPECIAL"],
+        "answer": "B"
+      }
+   ],
+"Medium": [
+  {
+    "question": "What is the time complexity of binary search on a sorted array of size n?",
+    "options": ["A) O(n)", "B) O(log n)", "C) O(n log n)", "D) O(1)", "E) O(n²)"],
+    "answer": "B"
   },
   {
-    "question": "Which CSS property is used to create a responsive layout?",
-        "options": [
-          "A) display: responsive",
-          "B) display: flex",
-          "C) display: grid",
-          "D) display: block"
-        ],
-        "answer": "B"
-      },
+    "question": "In Python, what does the `strip()` method do on a string?",
+    "options": ["A) Converts to lowercase", "B) Removes whitespace", "C) Splits string", "D) Strips characters", "E) None"],
+    "answer": "B"
+  },
+  {
+    "question": "Which data structure uses FIFO order?",
+    "options": ["A) Stack", "B) Queue", "C) Tree", "D) Graph", "E) HashMap"],
+    "answer": "B"
+  },
+  {
+    "question": "Which keyword in Java marks a method that cannot be overridden?",
+    "options": ["A) static", "B) final", "C) abstract", "D) private", "E) synchronized"],
+    "answer": "B"
+  },
+  {
+    "question": "In C++, which operator must be overloaded to allow `a + b` syntax on objects?",
+    "options": ["A) operator_add", "B) operator+", "C) add()", "D) +()", "E) opPlus"],
+    "answer": "B"
+  },
+  {
+    "question": "Which HTML5 element is used for video playback?",
+    "options": ["A) <media>", "B) <movie>", "C) <embed>", "D) <video>", "E) <play>"],
+    "answer": "D"
+  },
+  {
+    "question": "What is the output of `print(2 ** 3 ** 2)` in Python?",
+    "options": ["A) 64", "B) 512", "C) 256", "D) 36", "E) Error"],
+    "answer": "B"
+  },
+  {
+    "question": "Which SQL clause groups rows sharing a property?",
+    "options": ["A) WHERE", "B) HAVING", "C) GROUP BY", "D) ORDER BY", "E) JOIN"],
+    "answer": "C"
+  },
+  {
+    "question": "In JavaScript, what does `===` compare?",
+    "options": ["A) Value only", "B) Type only", "C) Value and type", "D) Reference", "E) Prototype"],
+    "answer": "C"
+  },
+  {
+    "question": "Which CSS property controls the layout of flex items?",
+    "options": ["A) display", "B) position", "C) flex-direction", "D) float", "E) grid-template"],
+    "answer": "C"
+  }
       {
-        "question": "What is the purpose of the <service-worker> element in HTML?",
-        "options": [
-          "A) To create a background script for offline capabilities",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a responsive navigation menu?",
-        "options": [
-          "A) nav-responsive",
-          "B) nav-menu",
-          "C) nav-flex",
-          "D) nav-grid"
-        ],
+        "question": "What is the space complexity of merge sort?",
+        "options": ["A) O(1)", "B) O(log n)", "C) O(n)", "D) O(n log n)", "E) O(n²)"],
         "answer": "C"
       },
       {
-        "question": "What is the purpose of the <progress> element in HTML?",
-        "options": [
-          "A) To display the progress of a task",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
+        "question": "In Python list slicing `a[1:5:2]`, what does `2` represent?",
+        "options": ["A) Start index", "B) Stop index", "C) Step size", "D) Length", "E) Count"],
+        "answer": "C"
+      },
+      {
+        "question": "Which HTTP status code means 'Not Found'?",
+        "options": ["A) 200", "B) 301", "C) 400", "D) 404", "E) 500"],
+        "answer": "D"
+      },
+      {
+        "question": "What does REST stand for in web services?",
+        "options": ["A) Representational State Transfer", "B) Remote Execution Service Transport", "C) Reliable Service Transfer", "D) Represented Server Tech", "E) None"],
         "answer": "A"
       },
       {
-        "question": "Which CSS property is used to create a responsive table?",
-        "options": [
-          "A) table-responsive",
-          "B) table-layout",
-          "C) table-flex",
-          "D) table-grid"
-        ],
+        "question": "In C, what is the return type of `malloc()`?",
+        "options": ["A) void", "B) char*", "C) void*", "D) int", "E) size_t"],
+        "answer": "C"
+      },
+      {
+        "question": "Which Git command uploads commits to a remote repository?",
+        "options": ["A) git push", "B) git pull", "C) git fetch", "D) git commit", "E) git merge"],
+        "answer": "A"
+      },
+      {
+        "question": "What does JSON stand for?",
+        "options": ["A) Java Serialized Object Notation", "B) JavaScript Object Notation", "C) Java Standard Output Notation", "D) JSON Script Object Notation", "E) None"],
         "answer": "B"
       },
       {
-        "question": "What is the purpose of the <web-worker> element in HTML?",
-        "options": [
-          "A) To create a background script for parallel processing",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
+        "question": "Which programming paradigm emphasizes objects and classes?",
+        "options": ["A) Functional", "B) Procedural", "C) Object-oriented", "D) Logic", "E) Declarative"],
+        "answer": "C"
+      },
+      {
+        "question": "In SQL, which join returns rows with matching keys only?",
+        "options": ["A) LEFT JOIN", "B) RIGHT JOIN", "C) INNER JOIN", "D) FULL JOIN", "E) CROSS JOIN"],
+        "answer": "C"
+      },
+      {
+        "question": "Which Python built-in type is immutable?",
+        "options": ["A) list", "B) dict", "C) set", "D) tuple", "E) bytearray"],
+        "answer": "D"
+      },
+      {
+        "question": "What is the output of `console.log(typeof NaN)` in JavaScript?",
+        "options": ["A) 'number'", "B) 'NaN'", "C) 'undefined'", "D) 'object'", "E) 'float'"],
         "answer": "A"
       },
       {
-        "question": "Which CSS property is used to create a responsive footer?",
-        "options": [
-          "A) footer-responsive",
-          "B) footer-flex",
-          "C) footer-grid",
-          "D) footer-block"
-        ],
+        "question": "Which CSS unit is relative to the root element font-size?",
+        "options": ["A) em", "B) rem", "C) px", "D) vh", "E) %"],
         "answer": "B"
       },
       {
-        "question": "What is the purpose of the <websocket> element in HTML?",
-        "options": [
-          "A) To create a persistent connection for real-time communication",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a responsive sidebar?",
-        "options": [
-          "A) sidebar-responsive",
-          "B) sidebar-flex",
-          "C) sidebar-grid",
-          "D) sidebar-block"
-        ],
+        "question": "In Java, what keyword indicates a class cannot be subclassed?",
+        "options": ["A) static", "B) final", "C) abstract", "D) private", "E) protected"],
         "answer": "B"
       },
       {
-        "question": "What is the purpose of the <web-component> element in HTML?",
-        "options": [
-          "A) To create a reusable web component",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
+        "question": "Which algorithm finds the shortest path in a weighted graph with non-negative edges?",
+        "options": ["A) BFS", "B) DFS", "C) Dijkstra's", "D) Kruskal's", "E) Prim's"],
+        "answer": "C"
       },
       {
-        "question": "Which CSS property is used to create a responsive header?",
-        "options": [
-          "A) header-responsive",
-          "B) header-flex",
-          "C) header-grid",
-          "D) header-block"
-        ],
-        "answer": "B" 
-      },
-      {
-        "question": "What is the purpose of the <custom-element> element in HTML?",
-        "options": [
-          "A) To create a reusable custom element",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a responsive card layout?",
-        "options": [
-          "A) card-responsive",
-          "B) card-flex",
-          "C) card-grid",
-          "D) card-block"
-        ],
+        "question": "What is the purpose of a constructor in OOP?",
+        "options": ["A) Destroy object", "B) Initialize object", "C) Clone object", "D) Serialize object", "E) None"],
         "answer": "B"
       },
       {
-        "question": "What is the purpose of the <shadow-dom> element in HTML?",
-        "options": [
-          "A) To create a shadow DOM for encapsulation",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a responsive modal?",
-        "options": [
-          "A) modal-responsive",
-          "B) modal-flex",
-          "C) modal-grid",
-          "D) modal-block"
-        ],
+        "question": "Which JavaScript function parses a JSON string?",
+        "options": ["A) JSON.stringify()", "B) JSON.parse()", "C) JSON.toObject()", "D) JSON.decode()", "E) JSON.objectify()"],
         "answer": "B"
       },
       {
-        "question": "What is the purpose of the <web-component> element in HTML?",
-        "options": [
-          "A) To create a reusable web component",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a responsive accordion?",
-        "options": [
-          "A) accordion-responsive",
-          "B) accordion-flex",
-          "C) accordion-grid",
-          "D) accordion-block"
-        ],
+        "question": "Which HTML element defines the document's title shown in browser tab?",
+        "options": ["A) <header>", "B) <title>", "C) <meta>", "D) <head>", "E) <h1>"],
         "answer": "B"
       },
       {
-        "question": "What is the purpose of the <web-component> element in HTML?",
-        "options": [
-          "A) To create a reusable web component",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
+        "question": "In Python, what keyword makes a function anonymous?",
+        "options": ["A) anon", "B) lambda", "C) def", "D) func", "E) inline"],
+        "answer": "B"
+      },
+      {
+        "question": "Which data structure uses LIFO order?",
+        "options": ["A) Queue", "B) Stack", "C) Tree", "D) Graph", "E) Heap"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the default access modifier for class members in C++?",
+        "options": ["A) public", "B) private", "C) protected", "D) internal", "E) friend"],
+        "answer": "B"
+      },
+      {
+        "question": "Which command initializes a new Git repository?",
+        "options": ["A) git start", "B) git init", "C) git create", "D) git new", "E) git repo"],
+        "answer": "B"
+      },
+      {
+        "question": "What does AJAX primarily use to communicate with the server?",
+        "options": ["A) WebSockets", "B) XMLHttpRequest", "C) FTP", "D) SMTP", "E) TCP"],
+        "answer": "B"
+      },
+      {
+        "question": "Which HTTP method is idempotent and retrieves data?",
+        "options": ["A) POST", "B) PUT", "C) DELETE", "D) GET", "E) PATCH"],
+        "answer": "D"
+      },
+      {
+        "question": "In CSS, which property controls element stacking order?",
+        "options": ["A) order", "B) z-index", "C) depth", "D) stack-order", "E) layer"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the purpose of the `finally` block in exception handling?",
+        "options": ["A) Executes only on success", "B) Executes only on failure", "C) Always executes", "D) Executes before try", "E) None"],
+        "answer": "C"
+      },
+      {
+        "question": "Which Python statement is used to exit a loop?",
+        "options": ["A) stop", "B) break", "C) exit", "D) continue", "E) return"],
+        "answer": "B"
+      },
+      {
+        "question": "Which method adds an element to the beginning of a JavaScript array?",
+        "options": ["A) push()", "B) unshift()", "C) shift()", "D) prepend()", "E) addFront()"],
+        "answer": "B"
+      },
+      {
+        "question": "In SQL, which function returns the current date and time?",
+        "options": ["A) NOW()", "B) CURRENT_DATE()", "C) GETDATE()", "D) SYSDATE()", "E) TODAY()"],
         "answer": "A"
-      }    ],
+      },
+      {
+        "question": "What does MVC stand for in web frameworks?",
+        "options": ["A) Model View Controller", "B) Model View Code", "C) Main View Controller", "D) Model Validate Control", "E) Module View Control"],
+        "answer": "A"
+      },
+      {
+        "question": "Which HTML attribute is used for linking an external CSS file?",
+        "options": ["A) src", "B) href", "C) linkto", "D) css", "E) rel"],
+        "answer": "E"
+      },
+      {
+        "question": "Which Python collection preserves insertion order as of 3.7?",
+        "options": ["A) list", "B) dict", "C) set", "D) frozenset", "E) array"],
+        "answer": "B"
+      },
+      {
+        "question": "What is the complexity of accessing an element by index in an array?",
+        "options": ["A) O(1)", "B) O(log n)", "C) O(n)", "D) O(n log n)", "E) O(n²)"],
+        "answer": "A"
+      },
+      {
+        "question": "Which HTTP status code indicates server error?",
+        "options": ["A) 200", "B) 301", "C) 404", "D) 500", "E) 302"],
+        "answer": "D"
+      },
+      {
+        "question": "In JavaScript, which keyword declares a block-scoped constant?",
+        "options": ["A) var", "B) let", "C) const", "D) static", "E) final"],
+        "answer": "C"
+      },
+      {
+        "question": "Which database is known as a NoSQL document store?",
+        "options": ["A) MySQL", "B) PostgreSQL", "C) MongoDB", "D) Oracle", "E) SQLite"],
+        "answer": "C"
+      }
+    ],
     "Hard": [
       {
-        "question": "What is the purpose of the <web-component> element in HTML?",
-        "options": [
-          "A) To create a reusable web component",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
+        "question": "What is the time complexity of the worst case for quicksort?",
+        "options": ["A) O(n log n)", "B) O(n²)", "C) O(log n)", "D) O(n)"],
+        "answer": "B"
       },
       {
         "question": "Which CSS property is used to create a responsive grid layout?",
-        "options": [
-          "A) grid-template-columns",
-          "B) grid-template-rows",
-          "C) grid-auto-flow",
-          "D) grid-gap"
-        ],
+        "options": ["A) grid-template-columns", "B) grid-template-rows", "C) grid-auto-flow", "D) grid-gap"],
         "answer": "A"
       },
       {
-        "question": "What is the purpose of the <custom-element> element in HTML?",
-        "options": [
-          "A) To create a reusable custom element",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
+        "question": "In JavaScript, what is the difference between `call()` and `apply()`?",
+        "options": ["A) No difference", "B) call() takes individual arguments, apply() takes an array", "C) apply() is deprecated", "D) call() is faster"],
+        "answer": "B"
       },
       {
         "question": "Which CSS property is used to create a responsive image?",
-        "options": [
-          "A) max-width",
-          "B) width",
-          "C) height",
-          "D) responsive"
-        ],
+        "options": ["A) max-width", "B) width", "C) height", "D) responsive"],
         "answer": "A"
       },
       {
-        "question": "What is the purpose of the <template> element in HTML?",
-        "options": [
-          "A) To define a reusable template for content",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
+        "question": "What is the purpose of the `<template>` element in HTML?",
+        "options": ["A) To define a reusable template for content", "B) To define a hyperlink", "C) To insert an image", "D) To create a form"],
         "answer": "A"
       },
       {
-        "question": "Which CSS property is used to create a responsive font size?",
-        "options": [
-          "A) font-size: responsive",
-          "B) font-size: calc()",
-          "C) font-size: viewport",
-          "D) font-size: auto"
-        ],
+        "question": "Which design pattern ensures a class has only one instance?",
+        "options": ["A) Factory", "B) Singleton", "C) Observer", "D) Strategy"],
         "answer": "B"
       },
       {
-        "question": "What is the purpose of the <slot> element in HTML?",
-        "options": [
-          "A) To create a placeholder for content in a web component",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
+        "question": "What is the purpose of the `<slot>` element in HTML?",
+        "options": ["A) To create a placeholder for content in a web component", "B) To define a hyperlink", "C) To insert an image", "D) To create a form"],
         "answer": "A"
       },
       {
-        "question": "Which CSS property is used to create a responsive footer?",
-        "options": [
-          "A) footer-responsive",
-          "B) footer-flex",
-          "C) footer-grid",
-          "D) footer-block"
-        ],
+        "question": "In Python, what is a closure?",
+        "options": ["A) A nested function that captures variables from outer scope", "B) A way to close files", "C) A type of loop", "D) An exception handler"],
+        "answer": "A"
+      },
+      {
+        "question": "What is the difference between `==` and `is` in Python?",
+        "options": ["A) No difference", "B) == compares values, is compares identity", "C) is compares values, == compares identity", "D) is is deprecated"],
         "answer": "B"
       },
       {
-        "question": "What is the purpose of the <web-worker> element in HTML?",
-        "options": [
-          "A) To create a background script for parallel processing",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
+        "question": "Which data structure would be most efficient for implementing autocomplete?",
+        "options": ["A) Array", "B) Hash Table", "C) Trie", "D) Binary Tree"],
+        "answer": "C"
+      }
+    ],
+    "Extreme": [
       {
-        "question": "Which CSS property is used to create a responsive sidebar?",
-        "options": [
-          "A) sidebar-responsive",
-          "B) sidebar-flex",
-          "C) sidebar-grid",
-          "D) sidebar-block"
-        ],
+        "question": "What is the space complexity of the Floyd-Warshall algorithm?",
+        "options": ["A) O(V)", "B) O(V²)", "C) O(V³)", "D) O(E)"],
         "answer": "B"
       },
       {
-        "question": "What is the purpose of the <web-component> element in HTML?",
-        "options": [
-          "A) To create a reusable web component",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {   
-        "question": "Which CSS property is used to create a responsive header?",
-        "options": [
-          "A) header-responsive",
-          "B) header-flex",
-          "C) header-grid",
-          "D) header-block"
-        ],
+        "question": "In JavaScript, what happens when you modify a const object's property?",
+        "options": ["A) Error is thrown", "B) Property is modified successfully", "C) Nothing happens", "D) Object becomes null"],
         "answer": "B"
       },
       {
-        "question": "What is the purpose of the <custom-element> element in HTML?",
-        "options": [
-          "A) To create a reusable custom element",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
+        "question": "Which algorithm is used in Git's diff functionality?",
+        "options": ["A) Myers algorithm", "B) Dijkstra's algorithm", "C) Quick sort", "D) Binary search"],
         "answer": "A"
       },
       {
-        "question": "Which CSS property is used to create a responsive card layout?",
-        "options": [
-          "A) card-responsive",
-          "B) card-flex",
-          "C) card-grid",
-          "D) card-block"
-        ],
+        "question": "What is the difference between TCP and UDP?",
+        "options": ["A) TCP is faster", "B) UDP is connection-oriented", "C) TCP is reliable, UDP is not", "D) No difference"],
+        "answer": "C"
+      },
+      {
+        "question": "In database design, what is denormalization?",
+        "options": ["A) Removing all relationships", "B) Adding redundancy to improve performance", "C) Creating more tables", "D) Deleting data"],
         "answer": "B"
       },
       {
-        "question": "What is the purpose of the <shadow-dom> element in HTML?",
-        "options": [
-          "A) To create a shadow DOM for encapsulation",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
+        "question": "What is the CAP theorem in distributed systems?",
+        "options": ["A) Consistency, Availability, Partition tolerance - pick two", "B) All three can be achieved", "C) Only one can be achieved", "D) None of the above"],
         "answer": "A"
       },
       {
-        "question": "Which CSS property is used to create a responsive modal?",
-        "options": [
-          "A) modal-responsive",
-          "B) modal-flex",
-          "C) modal-grid",
-          "D) modal-block"
-        ],
+        "question": "Which consensus algorithm is used by Bitcoin?",
+        "options": ["A) Proof of Stake", "B) Proof of Work", "C) Raft", "D) Paxos"],
         "answer": "B"
       },
       {
-        "question": "What is the purpose of the <web-component> element in HTML?",
-        "options": [
-          "A) To create a reusable web component",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property is used to create a responsive accordion?",
-        "options": [
-          "A) accordion-responsive",
-          "B) accordion-flex",
-          "C) accordion-grid",
-          "D) accordion-block"
-        ],
+        "question": "What is the time complexity of inserting into a B-tree?",
+        "options": ["A) O(1)", "B) O(log n)", "C) O(n)", "D) O(n log n)"],
         "answer": "B"
       },
       {
-        "question": "What is the purpose of the <web-component> element in HTML?",
-        "options": [
-          "A) To create a reusable web component",
-          "B) To define a hyperlink",
-          "C) To insert an image",
-          "D) To create a form"
-        ],
+        "question": "In functional programming, what is a monad?",
+        "options": ["A) A design pattern for handling side effects", "B) A type of loop", "C) A database transaction", "D) An error handler"],
         "answer": "A"
+      },
+      {
+        "question": "What is the purpose of garbage collection in programming languages?",
+        "options": ["A) To delete unused files", "B) To automatically manage memory", "C) To compress data", "D) To optimize code"],
+        "answer": "B"
       }
     ]
   }
