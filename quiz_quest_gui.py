@@ -311,9 +311,9 @@ categories = ["Math", "Geography", "General Knowledge", "Coding"]
 category_buttons = [tk.Radiobutton(root, text=cat, variable=category_var, value=cat, font=("Helvetica", 12)) for cat in categories]
 
 difficulty_label = tk.Label(root, text="Select Difficulty:", font=("Helvetica", 12))
-difficulties = ["Easy", "Medium", "Hard"]
+difficulties = ["Easy","Medium","Hard","Extreme"]
 difficulty_buttons = [tk.Radiobutton(root, text=diff, variable=difficulty_var, value=diff, font=("Helvetica", 12)) for diff in difficulties]
 
 start_button = tk.Button(root, text="Start Game", font=("Helvetica", 14), command=start_game)
 
-root.mainloop()
+root.mainloop() 

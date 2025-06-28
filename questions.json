@@ -1,655 +1,1129 @@
 {
   "Math": {
-    "Easy": [
-      {
-        "question": "What is 5 + 3?",
-        "options": ["A) 6", "B) 7", "C) 8", "D) 9"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the result of 12 × 8?",
-        "options": ["A) 96", "B) 86", "C) 102", "D) 88"],
-        "answer": "A"
-      },
-      {
-        "question": "What is 7 × 6?",
-        "options": ["A) 42", "B) 36", "C) 48", "D) 40"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the sum of angles in a triangle?",
-        "options": ["A) 180 degrees", "B) 90 degrees", "C) 360 degrees", "D) 270 degrees"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the square root of 81?",
-        "options": ["A) 7", "B) 8", "C) 9", "D) 10"],
-        "answer": "C"
-      },
-      {
-        "question": "If you have 3/4 of a pizza and eat 1/2 of it, how much pizza do you eat?",
-        "options": ["A) 1/2", "B) 3/8", "C) 1/4", "D) 1/8"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 25% of 80?",
-        "options": ["A) 15", "B) 20", "C) 25", "D) 30"],
-        "answer": "B"
-      },
-      {
-        "question": "How many sides does a hexagon have?",
-        "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 10²?",
-        "options": ["A) 10", "B) 100", "C) 20", "D) 50"],
-        "answer": "B"
-      },
-      {
-        "question": "If a shirt costs $20 and is on 25% discount, what is the discounted price?",
-        "options": ["A) $15", "B) $16", "C) $17", "D) $18"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the product of 9 and 5?",
-        "options": ["A) 40", "B) 45", "C) 50", "D) 55"],
-        "answer": "B"
-      },
-      {
-        "question": "How many minutes are in 3 hours?",
-        "options": ["A) 90", "B) 180", "C) 120", "D) 240"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the next number: 3, 6, 9, 12, ...?",
-        "options": ["A) 14", "B) 15", "C) 16", "D) 18"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 100 divided by 25?",
-        "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
-        "answer": "C"
-      },
-      {
-        "question": "If you multiply any number by zero, what is the result?",
-        "options": ["A) The number itself", "B) Zero", "C) One", "D) Undefined"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the sum of 15 + 27?",
-        "options": ["A) 42", "B) 40", "C) 45", "D) 44"],
-        "answer": "A"
-      },
-      {
-        "question": "Which number is even?",
-        "options": ["A) 13", "B) 21", "C) 28", "D) 35"],
-        "answer": "C"
-      },
-      {
-        "question": "What is 5 factorial (5!)?",
-        "options": ["A) 120", "B) 60", "C) 24", "D) 20"],
-        "answer": "A"
-      },
-      {
-        "question": "What is 2 to the power of 4?",
-        "options": ["A) 6", "B) 8", "C) 12", "D) 16"],
-        "answer": "D"
-      },
-      {
-        "question": "What is the decimal equivalent of 1/2?",
-        "options": ["A) 0.25", "B) 0.5", "C) 0.75", "D) 1"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 45 - 18?",
-        "options": ["A) 27", "B) 28", "C) 25", "D) 30"],
-        "answer": "A"
-      },
-      {
-        "question": "If a rectangle has length 8 and width 3, what is its area?",
-        "options": ["A) 11", "B) 24", "C) 22", "D) 18"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 50% of 60?",
-        "options": ["A) 20", "B) 25", "C) 30", "D) 35"],
-        "answer": "C"
-      },
-      {
-        "question": "How many sides does a pentagon have?",
-        "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the next prime number after 7?",
-        "options": ["A) 9", "B) 11", "C) 13", "D) 15"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 3/5 expressed as a decimal?",
-        "options": ["A) 0.5", "B) 0.6", "C) 0.75", "D) 0.8"],
-        "answer": "B"
-      },
-      {
-        "question": "How many degrees are in a straight angle?",
-        "options": ["A) 90", "B) 180", "C) 270", "D) 360"],
-        "answer": "B"
-      },
-      {
-        "question": "If you roll a standard die, what is the probability of getting a 6?",
-        "options": ["A) 1/6", "B) 1/3", "C) 1/2", "D) 1/4"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the sum of 7, 8, and 9?",
-        "options": ["A) 22", "B) 23", "C) 24", "D) 25"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the product of 4 and 7?",
-        "options": ["A) 24", "B) 28", "C) 30", "D) 32"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 3 + 4 × 2?",
-        "options": ["A) 14", "B) 11", "C) 10", "D) 9"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the value of pi (π) rounded to 2 decimal places?",
-        "options": ["A) 3.12", "B) 3.14", "C) 3.16", "D) 3.18"],
-        "answer": "B"
-      },
-      {
-        "question": "How many centimeters are in 1 meter?",
-        "options": ["A) 10", "B) 100", "C) 1000", "D) 10000"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the sum of the first 5 natural numbers?",
-        "options": ["A) 10", "B) 12", "C) 15", "D) 20"],
-        "answer": "C"
-      },
-      {
-        "question": "If you subtract 9 from 15, what do you get?",
-        "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the value of 7 × 7?",
-        "options": ["A) 42", "B) 49", "C) 56", "D) 63"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 1000 grams equal to?",
-        "options": ["A) 1 kilogram", "B) 10 kilograms", "C) 100 kilograms", "D) 1000 kilograms"],
-        "answer": "A"
-      },
-      {
-        "question": "If a triangle has two sides of length 5 and 7, what is the minimum length of the third side?",
-        "options": ["A) 1", "B) 2", "C) 3", "D) 4"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the next even number after 14?",
-        "options": ["A) 15", "B) 16", "C) 17", "D) 18"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the value of 2 + 2 × 3?",
-        "options": ["A) 8", "B) 10", "C) 12", "D) 6"],
-        "answer": "A"
-      },
-      {
-        "question": "How many hours are in 2 days?",
-        "options": ["A) 24", "B) 36", "C) 48", "D) 72"],
-        "answer": "C"
-      },
-      {
-        "question": "If a book costs $15 and you pay with a $20 bill, what is your change?",
-        "options": ["A) $3", "B) $4", "C) $5", "D) $6"],
-        "answer": "C"
-      },
-      {
-        "question": "What is 6 squared (6²)?",
-        "options": ["A) 30", "B) 32", "C) 36", "D) 42"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the perimeter of a square with side length 5?",
-        "options": ["A) 10", "B) 15", "C) 20", "D) 25"],
-        "answer": "C"
-      },
-      {
-        "question": "If the time is 3:15 PM now, what time will it be in 2 hours?",
-        "options": ["A) 4:15 PM", "B) 5:15 PM", "C) 6:15 PM", "D) 7:15 PM"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 8 multiplied by 0?",
-        "options": ["A) 0", "B) 8", "C) 1", "D) 10"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the median of these numbers: 3, 5, 7, 9, 11?",
-        "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the remainder when 29 is divided by 5?",
-        "options": ["A) 3", "B) 4", "C) 2", "D) 1"],
-        "answer": "B"
-      },
-      {
-        "question": "Which of the following is a prime number?",
-        "options": ["A) 21", "B) 33", "C) 17", "D) 39"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the value of 3² + 4²?",
-        "options": ["A) 12", "B) 25", "C) 18", "D) 35"],
-        "answer": "B"
-      },
-      {
-        "question": "If a car travels 60 km in 1.5 hours, what is its average speed?",
-        "options": ["A) 30 km/h", "B) 40 km/h", "C) 45 km/h", "D) 50 km/h"],
-        "answer": "C"
-      },
-      {
-        "question": "What is 15% of 200?",
-        "options": ["A) 25", "B) 20", "C) 30", "D) 35"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the next number in the sequence: 2, 4, 6, 8, ...?",
-        "options": ["A) 9", "B) 10", "C) 11", "D) 12"],
-        "answer": "B"
-      },
-      {
-        "question": "How many degrees are in a right angle?",
-        "options": ["A) 45", "B) 60", "C) 90", "D) 180"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the greatest common divisor of 12 and 18?",
-        "options": ["A) 3", "B) 6", "C) 9", "D) 12"],
-        "answer": "B"
-      },
-      {
-        "question": "If you buy 3 pencils for $1.50, how much does one pencil cost?",
-        "options": ["A) $0.30", "B) $0.50", "C) $0.45", "D) $0.60"],
-        "answer": "B"
-      }
-    ],
-    "Medium": [
+    
+ "Easy": [
     {
-      "question": "What is 12 * 12?",
-      "options": ["A) 120", "B) 144", "C) 156", "D) 132"],
+      "question": "What is 7 + 5?",
+      "options": ["A) 10", "B) 11", "C) 12", "D) 13"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the value of 9 - 4?",
+      "options": ["A) 3", "B) 5", "C) 6", "D) 7"],
       "answer": "B"
     },
-      {
-        "question": "What is 15 - 7?",
-        "options": ["A) 6", "B) 7", "C) 8", "D) 9"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 9 / 3?",
-        "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the square root of 64?",
-        "options": ["A) 6", "B) 7", "C) 8", "D) 9"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the value of pi (π) approximately?",
-        "options": ["A) 3.14", "B) 3.15", "C) 3.16", "D) 3.17"],
-        "answer": "A"
-      },
-      {
-        "question": "What is 2^3?",
-        "options": ["A) 6", "B) 7", "C) 8", "D) 9"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the value of 10% of 200?",
-        "options": ["A) 10", "B) 20", "C) 30", "D) 40"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the perimeter of a rectangle with length 5 and width 3?",
-        "options": ["A) 15", "B) 16", "C) 18", "D) 20"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the area of a triangle with base 4 and height 3?",
-        "options": ["A) 6", "B) 8", "C) 10", "D) 12"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the value of 7 + 5 * 2?",
-        "options": ["A) 17", "B) 19", "C) 21", "D) 23"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the value of 3^4?",
-        "options": ["A) 81", "B) 64", "C) 27", "D) 36"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the value of 100 - 25 / 5?",
-        "options": ["A) 95", "B) 90", "C) 85", "D) 80"],
-        "answer": "B"
-      },
-      {
-        "question": "Solve for x: x + 5 = 12.",
-        "options": ["A) 5", "B) 7", "C) 17", "D) 12"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 18 ÷ 2 + 3?",
-        "options": ["A) 6", "B) 9", "C) 12", "D) 14"],
-        "answer": "C"
-      },
-      {
-        "question": "What is (4 + 6) × 2?",
-        "options": ["A) 14", "B) 16", "C) 18", "D) 20"],
-        "answer": "D"
-      },
-      {
-        "question": "What is 5³?",
-        "options": ["A) 15", "B) 60", "C) 125", "D) 225"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the average of 4, 8, and 12?",
-        "options": ["A) 7", "B) 8", "C) 9", "D) 10"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the remainder when 45 is divided by 6?",
-        "options": ["A) 3", "B) 5", "C) 6", "D) 7"],
-        "answer": "A"
-      },
-      {
-        "question": "Which is larger: 2/3 or 3/5?",
-        "options": ["A) 2/3", "B) 3/5", "C) They are equal", "D) Cannot determine"],
-        "answer": "A"
-      },
-      {
-        "question": "What is 20% of 150?",
-        "options": ["A) 20", "B) 25", "C) 30", "D) 35"],
-        "answer": "C"
-      },
-      {
-        "question": "Simplify: 2(x + 3) when x = 4.",
-        "options": ["A) 10", "B) 14", "C) 16", "D) 20"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 11 × 11?",
-        "options": ["A) 111", "B) 121", "C) 132", "D) 141"],
-        "answer": "B"
-      },
-      {
-        "question": "If 5y = 45, what is y?",
-        "options": ["A) 5", "B) 7", "C) 8", "D) 9"],
-        "answer": "D"
-      },
-      {
-        "question": "What is the next number in the pattern 2, 4, 8, 16, ...?",
-        "options": ["A) 18", "B) 24", "C) 32", "D) 36"],
-        "answer": "C"
-      },
-      {
-        "question": "What is 14 + 28 ÷ 4?",
-        "options": ["A) 7", "B) 21", "C) 17", "D) 24"],
-        "answer": "C"
-      },
-      {
-        "question": "What is (3 × 3) + (4 × 2)?",
-        "options": ["A) 13", "B) 17", "C) 18", "D) 20"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 30 ÷ (5 + 1)?",
-        "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
-        "answer": "A"
-      },
-      {
-        "question": "If a = 3 and b = 5, what is a² + b²?",
-        "options": ["A) 25", "B) 34", "C) 38", "D) 41"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 50 ÷ 2 × 3?",
-        "options": ["A) 15", "B) 25", "C) 75", "D) 150"],
-        "answer": "C"
-      },
-      {
-        "question": "What is 7 + (6 ÷ 2)?",
-        "options": ["A) 10", "B) 12", "C) 13", "D) 16"],
-        "answer": "C"
-      },
-      {
-        "question": "What is 100 – (20% of 100)?",
-        "options": ["A) 80", "B) 85", "C) 90", "D) 95"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the mode of the data set [2, 4, 4, 6, 8]?",
-        "options": ["A) 2", "B) 4", "C) 6", "D) 8"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 3 × (4 + 5)?",
-        "options": ["A) 21", "B) 27", "C) 31", "D) 35"],
-        "answer": "A"
-      },
-      {
-        "question": "What is 28 ÷ 7?",
-        "options": ["A) 3", "B) 4", "C) 5", "D) 6"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the surface area of a cube with side length 2?",
-        "options": ["A) 12", "B) 16", "C) 24", "D) 36"],
-        "answer": "C"
-      },
-      {
-        "question": "What is 18 – (3 × 2)?",
-        "options": ["A) 6", "B) 8", "C) 12", "D) 15"],
-        "answer": "A"
-      },
-      {
-        "question": "If 4x = 36, what is x?",
-        "options": ["A) 6", "B) 8", "C) 9", "D) 10"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the next multiple of 7 after 28?",
-        "options": ["A) 30", "B) 34", "C) 35", "D) 42"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the value of 5! / (3! × 2!)?",
-        "options": ["A) 5", "B) 10", "C) 15", "D) 20"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the greatest common divisor of 24 and 36?",
-        "options": ["A) 6", "B) 8", "C) 12", "D) 18"],
-        "answer": "C"
-      },
-      {
-        "question": "What is 11 + 22 + 33?",
-        "options": ["A) 56", "B) 66", "C) 77", "D) 88"],
-        "answer": "B"
-      },
-      {
-        "question": "What is 2³ + 3³?",
-        "options": ["A) 17", "B) 26", "C) 35", "D) 72"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the least common multiple of 4 and 6?",
-        "options": ["A) 6", "B) 12", "C) 18", "D) 24"],
-        "answer": "B"
-      }
-    ],
-    "Hard": [
-      {
-        "question": "What is the value of 7! (7 factorial)?",
-        "options": ["A) 5040", "B) 720", "C) 40320", "D) 10080"],
-        "answer": "A"
-      },
-      {
-        "question": "What is 17 × 19?",
-        "options": ["A) 323", "B) 306", "C) 289", "D) 340"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the value of 2^10?",
-        "options": ["A) 512", "B) 1024", "C) 2048", "D) 4096"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the sum of the first 100 natural numbers?",
-        "options": ["A) 5050", "B) 5000", "C) 5100", "D) 5200"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the value of log10(1000)?",
-        "options": ["A) 1", "B) 2", "C) 3", "D) 4"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the area of a circle with radius 7?",
-        "options": ["A) 154", "B) 144", "C) 196", "D) 308"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the value of sin(30 degrees)?",
-        "options": ["A) 0.5", "B) √3/2", "C) √2/2", "D) 1"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the value of cos(60 degrees)?",
-        "options": ["A) √3/2", "B) √2/2", "C) 0.5", "D) 1"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the value of tan(45 degrees)?",
-        "options": ["A) 1", "B) √3", "C) √2", "D) 0"],
-        "answer": "A"
-      },
-      {
-        "question": "(x + y)^2 = ?",
-        "options": [
-          "A) x^2 + y^2 + xy",
-          "B) x^2 + y^2 - xy",
-          "C) x^2 + y^2 + 2xy",
-          "D) x^2 - y^2 + xy"
-        ],
-        "answer": "C"
-      },
-      {
-        "question": "What is the value of the integral of x^2 dx from 0 to 1?",
-        "options": ["A) 1/3", "B) 1/2", "C) 1", "D) 2/3"],
-        "answer": "A"
-      },
-      {
-        "question": "What is 121 divided by 11?",
-        "options": ["A) 10", "B) 11", "C) 12", "D) 13"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the value of the derivative of x^3 at x = 2?",
-        "options": ["A) 6", "B) 12", "C) 18", "D) 24"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the value of the limit as x approaches 0 of (sin x)/x?",
-        "options": ["A) 0", "B) 1", "C) ∞", "D) Undefined"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the value of e^0?",
-        "options": ["A) 0", "B) 1", "C) e", "D) ∞"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the value of the square root of 144?",
-        "options": ["A) 10", "B) 11", "C) 12", "D) 13"],
-        "answer": "C"
-      },
-      {
-        "question": "(a + b)^3 = ?",
-        "options": [
-          "A) a^3 + b^3 + 3ab(a + b)",
-          "B) a^3 + b^3 - 3ab(a + b)",
-          "C) a^3 + b^3 + 3ab",
-          "D) a^3 - b^3 + ab"
-        ],
-        "answer": "A"
-      },
-      {
-        "question": "(x - y)^2 = ?",
-        "options": [
-          "A) x^2 - y^2 - xy",
-          "B) x^2 - y^2 + xy",
-          "C) x^2 - y^2 - 2xy",
-          "D) x^2 - y^2 + 2xy"
-        ],
-        "answer": "C"
-      },
-      {
-        "question": "What is the value of the integral of 1/x dx from 1 to e?",
-        "options": ["A) 1", "B) ln(e)", "C) ln(2)", "D) ln(3)"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the value of the derivative of sin(x) at x = π/2?",
-        "options": ["A) 0", "B) 1", "C) -1", "D) Undefined"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the value of the integral of x^3 dx from 0 to 1?",
-        "options": ["A) 1/4", "B) 1/3", "C) 1/2", "D) 1"],
-        "answer": "B"
-      },
-      {
-        "question": "(a - b)^3 = ?",
-        "options": [
-          "A) a^3 - b^3 + 3ab(a - b)",
-          "B) a^3 - b^3 - 3ab(a - b)",
-          "C) a^3 - b^3 + 3ab",
-          "D) a^3 + b^3 - ab"
-        ],
-        "answer": "A"
-      },
     {
-      "question": "(x + y)^2 = ?",
-      "options": [
-        "A) x^2 + y^2 + xy",
-        "B) x^2 + y^2 - xy",
-        "C) x^2 + y^2 + 2xy",
-        "D) x^2 - y^2 + xy"
-      ],
+      "question": "What is 6 × 3?",
+      "options": ["A) 18", "B) 16", "C) 20", "D) 15"],
+      "answer": "A"
+    },
+    {
+      "question": "What is 16 ÷ 4?",
+      "options": ["A) 2", "B) 4", "C) 6", "D) 8"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the square of 5?",
+      "options": ["A) 10", "B) 20", "C) 25", "D) 30"],
       "answer": "C"
+    },
+    {
+      "question": "What is 15% of 200?",
+      "options": ["A) 20", "B) 25", "C) 30", "D) 35"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the next number in the sequence: 2, 4, 6, 8, ...?",
+      "options": ["A) 9", "B) 10", "C) 11", "D) 12"],
+      "answer": "B"
+    },
+    {
+      "question": "If x = 3, what is 2x + 4?",
+      "options": ["A) 6", "B) 8", "C) 10", "D) 12"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the perimeter of a square with side length 7?",
+      "options": ["A) 21", "B) 24", "C) 28", "D) 30"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the area of a rectangle with length 5 and width 3?",
+      "options": ["A) 15", "B) 8", "C) 10", "D) 12"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the value of 8²?",
+      "options": ["A) 56", "B) 64", "C) 72", "D) 81"],
+      "answer": "B"
+    },
+    {
+      "question": "What is 50 divided by 5?",
+      "options": ["A) 5", "B) 8", "C) 10", "D) 12"],
+      "answer": "C"
+    },
+    {
+      "question": "What is 100 minus 45?",
+      "options": ["A) 45", "B) 50", "C) 55", "D) 60"],
+      "answer": "C"
+    },
+    {
+      "question": "What is 3 cubed (3³)?",
+      "options": ["A) 6", "B) 9", "C) 27", "D) 81"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the value of π (pi) rounded to two decimals?",
+      "options": ["A) 3.12", "B) 3.14", "C) 3.16", "D) 3.18"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the next prime number after 7?",
+      "options": ["A) 9", "B) 10", "C) 11", "D) 13"],
+      "answer": "C"
+    },
+    {
+      "question": "What is 25% of 80?",
+      "options": ["A) 15", "B) 20", "C) 25", "D) 30"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the sum of the angles in a triangle?",
+      "options": ["A) 90°", "B) 180°", "C) 270°", "D) 360°"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the value of 4! (factorial of 4)?",
+      "options": ["A) 12", "B) 18", "C) 24", "D) 36"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the median of the numbers 3, 7, 9, 12, 15?",
+      "options": ["A) 7", "B) 9", "C) 10", "D) 12"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the next number in the pattern: 1, 1, 2, 3, 5, 8, ...?",
+      "options": ["A) 10", "B) 11", "C) 12", "D) 13"],
+      "answer": "D"
+    },
+    {
+      "question": "What is the greatest common divisor (GCD) of 12 and 18?",
+      "options": ["A) 3", "B) 4", "C) 6", "D) 9"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the least common multiple (LCM) of 4 and 6?",
+      "options": ["A) 10", "B) 12", "C) 18", "D) 24"],
+      "answer": "B"
+    },
+    {
+      "question": "How many sides does a hexagon have?",
+      "options": ["A) 5", "B) 6", "C) 7", "D) 8"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the square root of 81?",
+      "options": ["A) 7", "B) 8", "C) 9", "D) 10"],
+      "answer": "C"
+    },
+    {
+      "question": "What is 10% of 250?",
+      "options": ["A) 15", "B) 20", "C) 25", "D) 30"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the value of 2³?",
+      "options": ["A) 6", "B) 8", "C) 9", "D) 10"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the result of 45 divided by 9?",
+      "options": ["A) 4", "B) 5", "C) 6", "D) 7"],
+      "answer": "B"
+    },
+    {
+      "question": "How many degrees are in a right angle?",
+      "options": ["A) 45°", "B) 60°", "C) 90°", "D) 180°"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the perimeter of a triangle with sides 3, 4, and 5?",
+      "options": ["A) 10", "B) 12", "C) 14", "D) 15"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the value of 0 factorial (0!)?",
+      "options": ["A) 0", "B) 1", "C) Undefined", "D) Error"],
+      "answer": "B"
+    },
+    {
+      "question": "Which number is an even prime number?",
+      "options": ["A) 1", "B) 2", "C) 3", "D) 5"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the volume of a cube with side length 3?",
+      "options": ["A) 9", "B) 18", "C) 27", "D) 36"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the decimal equivalent of 1/4?",
+      "options": ["A) 0.2", "B) 0.25", "C) 0.3", "D) 0.4"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the sum of the interior angles of a pentagon?",
+      "options": ["A) 360°", "B) 450°", "C) 540°", "D) 600°"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the difference between the largest and smallest number in 5, 8, 12, 20?",
+      "options": ["A) 15", "B) 12", "C) 8", "D) 5"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the value of 5 + 2 × 3?",
+      "options": ["A) 11", "B) 21", "C) 17", "D) 10"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the next number in the sequence: 10, 20, 30, 40, ...?",
+      "options": ["A) 45", "B) 50", "C) 55", "D) 60"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the square root of 49?",
+      "options": ["A) 6", "B) 7", "C) 8", "D) 9"],
+      "answer": "B"
+    },
+    {
+      "question": "What is 2 × (3 + 4)?",
+      "options": ["A) 10", "B) 12", "C) 14", "D) 16"],
+      "answer": "C"
+    },
+    {
+      "question": "What is 3% of 1000?",
+      "options": ["A) 20", "B) 25", "C) 30", "D) 35"],
+      "answer": "C"
+    },
+    {
+      "question": "If the radius of a circle is 7, what is the diameter?",
+      "options": ["A) 7", "B) 14", "C) 21", "D) 28"],
+      "answer": "B"
+    },
+    {
+      "question": "What is 11 × 11?",
+      "options": ["A) 111", "B) 121", "C) 131", "D) 141"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the mode of the numbers: 2, 3, 3, 5, 7?",
+      "options": ["A) 2", "B) 3", "C) 5", "D) 7"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the value of 10⁰?",
+      "options": ["A) 0", "B) 1", "C) 10", "D) Undefined"],
+      "answer": "B"
+    },
+    {
+      "question": "Which of the following is a composite number?",
+      "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the result of 7 mod 3?",
+      "options": ["A) 1", "B) 2", "C) 3", "D) 4"],
+      "answer": "B"
     }
   ],
-  "Extreme": []
-},
+     "Medium": [
+    {
+      "question": "What is the solution to the equation 3x + 5 = 20?",
+      "options": ["A) 3", "B) 5", "C) 7", "D) 10"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the value of 2^5?",
+      "options": ["A) 16", "B) 32", "C) 64", "D) 128"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the derivative of x^2?",
+      "options": ["A) x", "B) 2x", "C) x^2", "D) 2"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the integral of 2x dx?",
+      "options": ["A) x^2 + C", "B) 2x + C", "C) x + C", "D) 4x + C"],
+      "answer": "A"
+    },
+    {
+      "question": "If a triangle has angles 45°, 45°, what is the third angle?",
+      "options": ["A) 45°", "B) 60°", "C) 90°", "D) 100°"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the quadratic formula used to solve ax² + bx + c = 0?",
+      "options": [
+        "A) (-b ± √(b² - 4ac)) / 2a",
+        "B) (-b ± √(4ac - b²)) / 2a",
+        "C) (b ± √(b² - 4ac)) / 2a",
+        "D) (b ± √(4ac - b²)) / 2a"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the next number in the Fibonacci sequence: 1, 1, 2, 3, 5, 8, ...?",
+      "options": ["A) 11", "B) 12", "C) 13", "D) 14"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the value of sin(90°)?",
+      "options": ["A) 0", "B) 0.5", "C) 1", "D) √2/2"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the sum of the interior angles of a hexagon?",
+      "options": ["A) 540°", "B) 720°", "C) 900°", "D) 1080°"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the area of a circle with radius 4?",
+      "options": ["A) 8π", "B) 12π", "C) 16π", "D) 20π"],
+      "answer": "C"
+    },
+    {
+      "question": "If f(x) = 2x + 3, what is f(4)?",
+      "options": ["A) 9", "B) 10", "C) 11", "D) 12"],
+      "answer": "C"
+    },
+    {
+      "question": "What is 25% of 240?",
+      "options": ["A) 50", "B) 55", "C) 60", "D) 65"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the value of log10(1000)?",
+      "options": ["A) 2", "B) 3", "C) 4", "D) 5"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the solution for x in 5x - 15 = 0?",
+      "options": ["A) 1", "B) 2", "C) 3", "D) 4"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the slope of the line passing through points (1,2) and (3,6)?",
+      "options": ["A) 1", "B) 2", "C) 3", "D) 4"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the next prime number after 29?",
+      "options": ["A) 31", "B) 33", "C) 35", "D) 37"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the value of cos(0°)?",
+      "options": ["A) 0", "B) 0.5", "C) 1", "D) -1"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the volume of a cube with edge length 5?",
+      "options": ["A) 100", "B) 125", "C) 150", "D) 175"],
+      "answer": "B"
+    },
+    {
+      "question": "Which number is irrational?",
+      "options": ["A) 22/7", "B) √2", "C) 0.75", "D) 1/3"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the value of 7 factorial (7!)?",
+      "options": ["A) 5040", "B) 720", "C) 120", "D) 362880"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the angle between the hands of a clock at 3:00?",
+      "options": ["A) 60°", "B) 75°", "C) 90°", "D) 180°"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the distance between points (2,3) and (5,7)?",
+      "options": ["A) 4", "B) 5", "C) √20", "D) √29"],
+      "answer": "D"
+    },
+    {
+      "question": "What is the prime factorization of 84?",
+      "options": ["A) 2² × 3 × 7", "B) 2 × 3² × 7", "C) 2 × 3 × 7²", "D) 2³ × 3 × 7"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the sum of the first 10 natural numbers?",
+      "options": ["A) 45", "B) 50", "C) 55", "D) 60"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the value of tan(45°)?",
+      "options": ["A) 0", "B) 1", "C) √2", "D) Undefined"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the area of a triangle with base 10 and height 6?",
+      "options": ["A) 30", "B) 40", "C) 50", "D) 60"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following is a perfect square?",
+      "options": ["A) 50", "B) 64", "C) 72", "D) 80"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the next number in the sequence: 2, 4, 8, 16, ...?",
+      "options": ["A) 18", "B) 20", "C) 24", "D) 32"],
+      "answer": "D"
+    },
+    {
+      "question": "What is the median of the numbers 3, 9, 11, 12, 15?",
+      "options": ["A) 9", "B) 11", "C) 12", "D) 13"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the perimeter of a rectangle with length 7 and width 3?",
+      "options": ["A) 20", "B) 21", "C) 24", "D) 25"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the solution to 2(x - 3) = 8?",
+      "options": ["A) 5", "B) 7", "C) 9", "D) 11"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the cube root of 64?",
+      "options": ["A) 3", "B) 4", "C) 5", "D) 6"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the decimal equivalent of 3/5?",
+      "options": ["A) 0.4", "B) 0.5", "C) 0.6", "D) 0.7"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the sum of angles in a quadrilateral?",
+      "options": ["A) 180°", "B) 270°", "C) 360°", "D) 450°"],
+      "answer": "C"
+    },
+    {
+      "question": "What is 15% of 60?",
+      "options": ["A) 7", "B) 8", "C) 9", "D) 10"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the value of the expression 5² - 3²?",
+      "options": ["A) 16", "B) 20", "C) 25", "D) 28"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the next odd number after 21?",
+      "options": ["A) 22", "B) 23", "C) 24", "D) 25"],
+      "answer": "B"
+    },
+    {
+      "question": "How many faces does a cube have?",
+      "options": ["A) 4", "B) 5", "C) 6", "D) 8"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the average of 4, 8, 12, 16?",
+      "options": ["A) 8", "B) 10", "C) 12", "D) 14"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the simplified form of (3x + 5x)?",
+      "options": ["A) 5x", "B) 6x", "C) 8x", "D) 15x"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the value of 1/2 + 1/3?",
+      "options": ["A) 5/6", "B) 1/5", "C) 2/3", "D) 3/5"],
+      "answer": "A"
+    },
+    {
+      "question": "If a = 2 and b = 3, what is the value of ab + ba?",
+      "options": ["A) 12", "B) 18", "C) 24", "D) 30"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the value of 10 × 0?",
+      "options": ["A) 0", "B) 1", "C) 10", "D) 100"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the result of 8 ÷ 2(2 + 2)?",
+      "options": ["A) 1", "B) 2", "C) 8", "D) 16"],
+      "answer": "B"
+    },
+    {
+      "question": "Which is a prime number?",
+      "options": ["A) 15", "B) 17", "C) 18", "D) 20"],
+      "answer": "B"
+    }
+  ],
+
+      "Hard": [
+    {
+      "question": "What is the limit of (1 + 1/n)^n as n approaches infinity?",
+      "options": ["A) 0", "B) 1", "C) e", "D) Infinity"],
+      "answer": "C"
+    },
+    {
+      "question": "Solve for x: e^x = 5",
+      "options": ["A) ln(5)", "B) 5ln(e)", "C) e^5", "D) 1/5"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the derivative of ln(x)?",
+      "options": ["A) 1/x", "B) ln(x)", "C) x", "D) e^x"],
+      "answer": "A"
+    },
+    {
+      "question": "If f(x) = x^3 - 3x^2 + 2x, what is f'(x)?",
+      "options": ["A) 3x^2 - 6x + 2", "B) 3x^2 - 3x + 2", "C) 3x^3 - 6x + 2", "D) 3x^2 + 6x + 2"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the sum of the infinite geometric series 3 + 1.5 + 0.75 + ...?",
+      "options": ["A) 4", "B) 6", "C) 9", "D) 12"],
+      "answer": "B"
+    },
+    {
+      "question": "Which of the following matrices is invertible?",
+      "options": [
+        "A) A matrix with determinant 0",
+        "B) A matrix with determinant 1",
+        "C) A matrix with all zeros",
+        "D) A singular matrix"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is the integral of 1/x dx?",
+      "options": ["A) ln|x| + C", "B) 1/x + C", "C) x + C", "D) e^x + C"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the formula for the area of an ellipse with semi-major axis a and semi-minor axis b?",
+      "options": ["A) πab", "B) 2πab", "C) π(a+b)", "D) 2π(a+b)"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the determinant of a 2x2 matrix [[a,b],[c,d]]?",
+      "options": ["A) ad + bc", "B) ab + cd", "C) ad - bc", "D) ac - bd"],
+      "answer": "C"
+    },
+    {
+      "question": "If a sequence is defined by a_n = 2a_{n-1} + 3, what is a_3 if a_1 = 1?",
+      "options": ["A) 7", "B) 11", "C) 15", "D) 19"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the integral of sin(x) dx?",
+      "options": ["A) -cos(x) + C", "B) cos(x) + C", "C) sin(x) + C", "D) -sin(x) + C"],
+      "answer": "A"
+    },
+    {
+      "question": "Find the value of the series ∑_{n=1}^∞ 1/n^2.",
+      "options": ["A) π^2/6", "B) π^2/4", "C) π^2/3", "D) π^2/2"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the inverse function of f(x) = 3x + 2?",
+      "options": ["A) (x - 2)/3", "B) 3(x - 2)", "C) (x + 2)/3", "D) 3x - 2"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the sum of the roots of the quadratic equation x^2 - 5x + 6 = 0?",
+      "options": ["A) 5", "B) 6", "C) -5", "D) -6"],
+      "answer": "A"
+    },
+    {
+      "question": "If cos(θ) = 0.6, what is sin(θ) assuming θ is in the first quadrant?",
+      "options": ["A) 0.4", "B) 0.6", "C) 0.8", "D) 1.0"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the solution set of |x - 3| < 5?",
+      "options": [
+        "A) -2 < x < 8",
+        "B) -8 < x < 2",
+        "C) x < -2 or x > 8",
+        "D) x < 2 or x > 8"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the formula for the volume of a cone?",
+      "options": ["A) (1/3)πr^2h", "B) πr^2h", "C) 2πrh", "D) (1/2)πr^2h"],
+      "answer": "A"
+    },
+    {
+      "question": "If the function f(x) = x^2 is translated 3 units to the right, what is the new function?",
+      "options": ["A) (x+3)^2", "B) (x-3)^2", "C) x^2 + 3", "D) x^2 - 3"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the equation of the line perpendicular to y = 2x + 1 passing through (1,2)?",
+      "options": [
+        "A) y = -1/2 x + 5/2",
+        "B) y = 1/2 x + 3/2",
+        "C) y = -2x + 4",
+        "D) y = 2x - 1"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the binomial expansion of (x + 2)^3?",
+      "options": [
+        "A) x^3 + 6x^2 + 12x + 8",
+        "B) x^3 + 3x^2 + 6x + 8",
+        "C) x^3 + 2x^2 + 4x + 8",
+        "D) x^3 + 4x^2 + 8x + 8"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these is NOT a prime number?",
+      "options": ["A) 53", "B) 57", "C) 59", "D) 61"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the cross product of vectors (1,0,0) and (0,1,0)?",
+      "options": ["A) (0,0,1)", "B) (0,1,0)", "C) (1,0,0)", "D) (1,1,0)"],
+      "answer": "A"
+    },
+    {
+      "question": "Evaluate the limit: lim_{x→0} (sin x)/x",
+      "options": ["A) 0", "B) 1", "C) Undefined", "D) ∞"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the principal square root of -16 in complex numbers?",
+      "options": ["A) 4i", "B) -4i", "C) 4", "D) -4"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the partial derivative of f(x,y) = x^2 y + 3xy^2 with respect to x?",
+      "options": ["A) 2xy + 3y^2", "B) x^2 + 6xy", "C) 2xy + 6xy", "D) 2x + 3y^2"],
+      "answer": "A"
+    },
+    {
+      "question": "If the function f(x) = x^4 - 4x^3 + 6x^2 - 4x + 1, what is f(1)?",
+      "options": ["A) 0", "B) 1", "C) 2", "D) 3"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the sum of angles in a pentagon?",
+      "options": ["A) 540°", "B) 600°", "C) 720°", "D) 900°"],
+      "answer": "A"
+    },
+    {
+      "question": "How many solutions does the equation x^2 + 1 = 0 have in the real number system?",
+      "options": ["A) 0", "B) 1", "C) 2", "D) Infinite"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the 10th term of the arithmetic sequence where a_1=3 and d=5?",
+      "options": ["A) 48", "B) 50", "C) 53", "D) 55"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the formula for the sum of the first n terms of an arithmetic series?",
+      "options": [
+        "A) n/2 (2a + (n-1)d)",
+        "B) n(a + d)",
+        "C) na + d",
+        "D) n^2 + a"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "If sin²(x) + cos²(x) = 1, what is sin²(x) when cos(x) = 0.8?",
+      "options": ["A) 0.36", "B) 0.64", "C) 0.16", "D) 0.4"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these is a transcendental number?",
+      "options": ["A) π", "B) √2", "C) 3", "D) 1/2"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the order of growth for the function f(n) = 3n² + 5n + 2?",
+      "options": ["A) O(n)", "B) O(n²)", "C) O(n³)", "D) O(1)"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the result of multiplying two complex numbers (3 + 4i) and (1 + 2i)?",
+      "options": [
+        "A) -5 + 10i",
+        "B) 11 + 10i",
+        "C) -5 - 10i",
+        "D) 11 - 10i"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is the Taylor series expansion of e^x at x=0?",
+      "options": [
+        "A) 1 + x + x²/2! + x³/3! + ...",
+        "B) 1 - x + x²/2! - x³/3! + ...",
+        "C) x + x² + x³ + ...",
+        "D) 1 + x - x² + x³ - ..."
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the angle between two vectors if their dot product is zero?",
+      "options": ["A) 0°", "B) 45°", "C) 90°", "D) 180°"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the standard deviation in a data set that is perfectly uniform?",
+      "options": ["A) 0", "B) 1", "C) Dependent on mean", "D) Undefined"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the integral of e^(2x) dx?",
+      "options": ["A) (1/2)e^(2x) + C", "B) e^(2x) + C", "C) 2e^(2x) + C", "D) (1/4)e^(2x) + C"],
+      "answer": "A"
+    },
+    {
+      "question": "If A and B are independent events, what is P(A and B)?",
+      "options": [
+        "A) P(A) + P(B)",
+        "B) P(A) × P(B)",
+        "C) P(A) - P(B)",
+        "D) P(A) / P(B)"
+      ],
+      "answer": "B"
+    },
+    {
+      "question": "What is the result of the integral ∫_0^1 x dx?",
+      "options": ["A) 1/2", "B) 1", "C) 0", "D) 2"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the angle in radians of 180 degrees?",
+      "options": ["A) π/2", "B) π", "C) 2π", "D) 3π/2"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the sum of the first five factorial numbers (1! + 2! + 3! + 4! + 5!)?",
+      "options": ["A) 120", "B) 153", "C) 145", "D) 125"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the smallest positive solution to the equation cos(x) = 0?",
+      "options": ["A) π/2", "B) π", "C) 3π/2", "D) 2π"],
+      "answer": "B"
+    }
+  ],
+
+      "Extreme": [
+    {
+      "question": "What is the value of the Riemann zeta function ζ(2)?",
+      "options": ["A) π^2/6", "B) π^2/4", "C) π^2/8", "D) 2π^2", "E) π^3/6"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these numbers is transcendental?",
+      "options": ["A) √2", "B) π", "C) 3", "D) 0", "E) 1/2"],
+      "answer": "B"
+    },
+    {
+      "question": "Evaluate the integral ∫ e^(x^2) dx over real numbers.",
+      "options": [
+        "A) No elementary antiderivative",
+        "B) e^(x^2) + C",
+        "C) 2xe^(x^2) + C",
+        "D) √π erf(x) + C",
+        "E) x e^(x^2) + C"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the cardinality of the set of all real numbers?",
+      "options": ["A) Countable", "B) Uncountable", "C) Finite", "D) Zero", "E) Aleph-null"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the Taylor series expansion of ln(1+x) around x=0?",
+      "options": [
+        "A) x - x^2/2 + x^3/3 - x^4/4 + ...",
+        "B) x + x^2 + x^3 + ...",
+        "C) 1 + x + x^2 + ...",
+        "D) x - x^3/3 + x^5/5 - ...",
+        "E) ln x + 1"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these is NOT a solution to the equation x^5 = 1?",
+      "options": [
+        "A) 1",
+        "B) cos(2π/5) + i sin(2π/5)",
+        "C) cos(4π/5) + i sin(4π/5)",
+        "D) 0",
+        "E) cos(6π/5) + i sin(6π/5)"
+      ],
+      "answer": "D"
+    },
+    {
+      "question": "What is the integral of 1/(x^2 + 1) dx?",
+      "options": [
+        "A) arctan(x) + C",
+        "B) ln|x^2 + 1| + C",
+        "C) 1/(x^2 + 1) + C",
+        "D) arccos(x) + C",
+        "E) arcsin(x) + C"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What does Euler's formula e^(iπ) + 1 equal?",
+      "options": ["A) 0", "B) 1", "C) π", "D) -1", "E) i"],
+      "answer": "A"
+    },
+    {
+      "question": "If f(x) is a function such that f''(x) = -f(x), what is the general form of f(x)?",
+      "options": [
+        "A) A cos(x) + B sin(x)",
+        "B) Ae^x + Be^{-x}",
+        "C) Ax^2 + Bx + C",
+        "D) A ln x + B",
+        "E) A/x + B"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the convergence radius of the power series ∑ x^n / n! ?",
+      "options": ["A) 0", "B) 1", "C) ∞", "D) Undefined", "E) e"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the value of the Gamma function Γ(1/2)?",
+      "options": ["A) √π", "B) 1/2", "C) π", "D) 1", "E) 0"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following is NOT a vector space over the real numbers?",
+      "options": [
+        "A) All polynomials",
+        "B) All continuous functions",
+        "C) All positive real numbers",
+        "D) All real-valued sequences",
+        "E) R^n"
+      ],
+      "answer": "C"
+    },
+    {
+      "question": "What is the integral ∫_0^∞ e^{-x} dx?",
+      "options": ["A) 1", "B) 0", "C) ∞", "D) e", "E) -1"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the fundamental group of a circle S^1?",
+      "options": [
+        "A) Z (integers)",
+        "B) 0",
+        "C) R (reals)",
+        "D) Z_2",
+        "E) Q (rationals)"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the solution to the differential equation dy/dx = y?",
+      "options": [
+        "A) y = Ce^{x}",
+        "B) y = Cx",
+        "C) y = C ln(x)",
+        "D) y = C/x",
+        "E) y = C"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these numbers is irrational?",
+      "options": ["A) 22/7", "B) √2", "C) 0.5", "D) 1", "E) 3"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the eigenvalue of the matrix [[2,0],[0,3]] corresponding to the eigenvector [0,1]?",
+      "options": ["A) 2", "B) 3", "C) 0", "D) 1", "E) 5"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the formula for the nth Fibonacci number using Binet's formula?",
+      "options": [
+        "A) (φ^n - (1 - φ)^n)/√5",
+        "B) n^2 + n + 1",
+        "C) 2^n - 1",
+        "D) n!",
+        "E) n^n"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Which function is its own derivative?",
+      "options": ["A) e^x", "B) x^2", "C) sin x", "D) cos x", "E) ln x"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the volume of a 4-dimensional hypercube with side length 1?",
+      "options": ["A) 1", "B) 4", "C) 8", "D) 16", "E) 24"],
+      "answer": "A"
+    },
+    {
+      "question": "Which matrix property means it equals its own transpose?",
+      "options": [
+        "A) Symmetric",
+        "B) Skew-symmetric",
+        "C) Orthogonal",
+        "D) Diagonal",
+        "E) Identity"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the determinant of a rotation matrix in 2D?",
+      "options": ["A) 1", "B) 0", "C) -1", "D) Depends on angle", "E) Undefined"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the solution to the integral ∫ cos^2(x) dx?",
+      "options": [
+        "A) (x/2) + (sin(2x)/4) + C",
+        "B) sin^2(x) + C",
+        "C) -cos(x) + C",
+        "D) cos^3(x)/3 + C",
+        "E) (x/2) - (sin(2x)/4) + C"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the limit of (1 + 1/n)^n as n approaches infinity?",
+      "options": ["A) e", "B) 0", "C) 1", "D) ∞", "E) None of these"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the sum of the interior angles of a dodecagon (12-sided polygon)?",
+      "options": ["A) 1800°", "B) 1440°", "C) 2160°", "D) 900°", "E) 1200°"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the Laplace transform of f(t) = 1?",
+      "options": [
+        "A) 1/s",
+        "B) s",
+        "C) e^s",
+        "D) 0",
+        "E) 1"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the minimal polynomial of the matrix [[2,1],[0,2]]?",
+      "options": [
+        "A) (x - 2)^2",
+        "B) x - 2",
+        "C) x^2 - 4",
+        "D) x^2 - 2x + 1",
+        "E) x^2 - 2x - 1"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Which series converges?",
+      "options": [
+        "A) ∑ 1/n^2",
+        "B) ∑ 1/n",
+        "C) ∑ n",
+        "D) ∑ (-1)^n",
+        "E) ∑ n!"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the solution of the differential equation y' + y = 0?",
+      "options": [
+        "A) y = Ce^{-x}",
+        "B) y = Ce^x",
+        "C) y = Cx",
+        "D) y = 0",
+        "E) y = C"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the probability of getting exactly two heads in three tosses of a fair coin?",
+      "options": ["A) 3/8", "B) 1/8", "C) 1/2", "D) 1/4", "E) 3/4"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the binomial coefficient C(5,2)?",
+      "options": ["A) 10", "B) 5", "C) 15", "D) 20", "E) 25"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the solution to the system: x + y = 3, x - y = 1?",
+      "options": [
+        "A) (2,1)",
+        "B) (1,2)",
+        "C) (3,0)",
+        "D) (0,3)",
+        "E) (1,1)"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "Which function has the Fourier transform that is itself?",
+      "options": [
+        "A) Gaussian function",
+        "B) Sine function",
+        "C) Cosine function",
+        "D) Exponential decay",
+        "E) Step function"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the dot product of vectors (1,2,3) and (4,5,6)?",
+      "options": ["A) 32", "B) 27", "C) 28", "D) 31", "E) 30"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the determinant of the identity matrix of size n?",
+      "options": ["A) 1", "B) 0", "C) n", "D) n!", "E) Undefined"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the result of the derivative of x^x?",
+      "options": [
+        "A) x^x (ln x + 1)",
+        "B) x^(x-1)",
+        "C) x^(x+1)",
+        "D) ln x",
+        "E) x^x ln x"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "If a square matrix A satisfies A^2 = I, what are the possible eigenvalues?",
+      "options": [
+        "A) ±1",
+        "B) 0",
+        "C) 1 only",
+        "D) -1 only",
+        "E) Complex numbers"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the sum of the infinite series ∑_{n=1}^∞ 1/2^n?",
+      "options": ["A) 1", "B) 2", "C) 0.5", "D) ∞", "E) 0"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these is an example of a non-Euclidean geometry?",
+      "options": [
+        "A) Hyperbolic geometry",
+        "B) Euclidean geometry",
+        "C) Plane geometry",
+        "D) Solid geometry",
+        "E) Analytic geometry"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the dimension of the vector space of all polynomials of degree ≤ n?",
+      "options": [
+        "A) n + 1",
+        "B) n",
+        "C) n - 1",
+        "D) Infinite",
+        "E) 1"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the solution to the integral ∫ sin^2(x) dx?",
+      "options": [
+        "A) (x/2) - (sin(2x)/4) + C",
+        "B) (x/2) + (sin(2x)/4) + C",
+        "C) -cos(x) + C",
+        "D) cos^2(x) + C",
+        "E) sin(x) + C"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the value of the infinite continued fraction 1 + 1/(1 + 1/(1 + 1/(...)))?",
+      "options": ["A) (1 + √5)/2", "B) 1", "C) 2", "D) √2", "E) π"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the value of the Euler-Mascheroni constant γ approximately?",
+      "options": [
+        "A) 0.5772",
+        "B) 3.1415",
+        "C) 2.7183",
+        "D) 1.6180",
+        "E) 0"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the sum of the interior angles of an n-sided polygon?",
+      "options": [
+        "A) (n - 2) × 180°",
+        "B) n × 90°",
+        "C) (n + 2) × 180°",
+        "D) n × 180°",
+        "E) (n - 1) × 90°"
+      ],
+      "answer": "A"
+    },
+    {
+      "question": "What is the standard deviation of a data set where all values are equal?",
+      "options": ["A) 0", "B) 1", "C) Undefined", "D) Depends on the mean", "E) Infinite"],
+      "answer": "A"
+    },
+    {
+      "question": "Which number is a perfect square?",
+      "options": ["A) 144", "B) 145", "C) 150", "D) 160", "E) 200"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the solution of the differential equation y'' + y = 0?",
+      "options": [
+        "A) y = A cos x + B sin x",
+        "B) y = Ae^x + Be^{-x}",
+        "C) y = Ax + B",
+        "D) y = 0",
+        "E) y = x^2"
+      ],
+      "answer": "A"
+    }
+  ]
+    },
   "Geography": {
     "Easy": [
-      {
-        "question": "What is the capital of Turkey?",
-        "options": ["A) An kara", "B) Istanbul", "C) Izmir", "D) Antalya"],
-        "answer": "A"
-      },
+  {
+    "question": "What is the capital of Turkey?",
+    "options": ["A) Ankara", "B) Istanbul", "C) Izmir", "D) Antalya"],
+    "answer": "A"
+  },
   {
     "question": "What is the largest continent by area?",
     "options": ["A) Africa", "B) Asia", "C) Europe", "D) Antarctica"],
@@ -895,7 +1369,7 @@
     "options": ["A) Peru", "B) Bolivia", "C) Colombia", "D) Ecuador"],
     "answer": "B"
   }
-    ],
+],
     "Medium": [
   {
     "question": "Which country spans both Europe and Asia?",
@@ -1132,8 +1606,8 @@
     "options": ["A) Penang", "B) Kuala Lumpur", "C) Johor Bahru", "D) Kota Kinabalu"],
     "answer": "B"
   }
-    ],
-    "Hard": [
+],
+"Hard": [
   {
     "question": "What is the capital of Kazakhstan?",
     "options": ["A) Almaty", "B) Nur-Sultan", "C) Shymkent", "D) Karaganda"],
@@ -1358,9 +1832,14 @@
     "question": "Which African lake is the deepest?",
     "options": ["A) Lake Malawi", "B) Lake Tanganyika", "C) Lake Victoria", "D) Lake Chad"],
     "answer": "B"
+  },
+  {
+    "question": "Which country’s capital is Kigali?",
+    "options": ["A) Rwanda", "B) Burundi", "C) Uganda", "D) Tanzania"],
+    "answer": "A"
   }
-    ],
-    "Extreme": [
+],
+"Extreme": [
   {
     "question": "Which country has a town named 'Dull' that is officially twinned with 'Boring' in the USA?",
     "options": ["A) England", "B) Ireland", "C) Scotland", "D) Wales", "E) Canada"],
@@ -1606,10 +2085,12 @@
     "options": ["A) Rhine", "B) Danube", "C) Volga", "D) Elbe", "E) Dnieper"],
     "answer": "C"
   }
-],
-},
-"General Knowledge": {
-    "Easy": [
+]
+
+  },
+  "General Knowledge": {
+    
+ "Easy": [
     {
       "question": "What is the largest planet in our solar system?",
       "options": ["A) Earth", "B) Mars", "C) Jupiter", "D) Saturn"],
@@ -1619,21 +2100,6 @@
       "question": "Which instrument is used to measure temperature?",
       "options": ["A) Barometer", "B) Thermometer", "C) Altimeter", "D) Hygrometer"],
       "answer": "B"
-    },
-    {
-      "question": "What is the capital of France?",
-      "options": ["A) Paris", "B) London", "C) Berlin", "D) Madrid"],
-      "answer": "A"
-    },
-    {
-      "question": "Who painted the ceiling of the Sistine Chapel?",
-      "options": ["A) Leonardo da Vinci", "B) Michelangelo", "C) Raphael", "D) Van Gogh"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the chemical symbol for gold?",
-      "options": ["A) Au", "B) Ag", "C) Fe", "D) Hg"],
-      "answer": "A"
     },
     {
       "question": "Who wrote the play 'Romeo and Juliet'?",
@@ -1865,1093 +2331,1690 @@
       "options": ["A) Africa", "B) Asia", "C) Europe", "D) Antarctica"],
       "answer": "B"
     }
-  ]
-    ],
+  ],
     "Medium": [
     {
-      "question": "Who painted the ceiling of the Sistine Chapel?",
-      "options": ["A) Leonardo da Vinci", "B) Michelangelo", "C) Raphael", "D) Donatello", "E) Caravaggio"],
+      "question": "Which country gifted the Statue of Liberty to the United States?",
+      "options": ["A) United Kingdom", "B) France", "C) Germany", "D) Spain"],
       "answer": "B"
     },
     {
-      "question": "What is the capital of Australia?",
-      "options": ["A) Sydney", "B) Melbourne", "C) Canberra", "D) Brisbane", "E) Perth"],
+      "question": "In which year did World War II end?",
+      "options": ["A) 1944", "B) 1945", "C) 1946", "D) 1947"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the name of the closest star to Earth after the Sun?",
+      "options": ["A) Alpha Centauri", "B) Betelgeuse", "C) Proxima Centauri", "D) Sirius"],
       "answer": "C"
     },
     {
-      "question": "Which element has the chemical symbol Au?",
-      "options": ["A) Silver", "B) Gold", "C) Aluminum", "D) Argon", "E) Uranium"],
-      "answer": "B"
-    },
-    {
-      "question": "Which planet has the most moons?",
-      "options": ["A) Earth", "B) Mars", "C) Jupiter", "D) Saturn", "E) Neptune"],
-      "answer": "C"
-    },
-    {
-      "question": "In which year did the Titanic sink?",
-      "options": ["A) 1910", "B) 1912", "C) 1914", "D) 1916", "E) 1918"],
-      "answer": "B"
-    },
-    {
-      "question": "Who wrote the novel '1984'?",
-      "options": ["A) Aldous Huxley", "B) George Orwell", "C) Ray Bradbury", "D) J.R.R. Tolkien", "E) Arthur C. Clarke"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the hardest naturally occurring mineral?",
-      "options": ["A) Quartz", "B) Corundum", "C) Diamond", "D) Topaz", "E) Garnet"],
-      "answer": "C"
-    },
-    {
-      "question": "Which country hosted the 2016 Summer Olympics?",
-      "options": ["A) China", "B) Brazil", "C) United Kingdom", "D) Russia", "E) Japan"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the smallest bone in the human body?",
-      "options": ["A) Femur", "B) Tibia", "C) Stapes", "D) Ulna", "E) Sacrum"],
-      "answer": "C"
-    },
-    {
-      "question": "Which language has the most native speakers worldwide?",
-      "options": ["A) English", "B) Spanish", "C) Mandarin", "D) Hindi", "E) Arabic"],
-      "answer": "C"
-    },
-    {
-      "question": "Who is known as the Father of Computers?",
-      "options": ["A) Steve Jobs", "B) Charles Babbage", "C) Alan Turing", "D) Bill Gates", "E) Tim Berners-Lee"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the primary ingredient in traditional hummus?",
-      "options": ["A) Lentils", "B) Chickpeas", "C) Kidney beans", "D) Peas", "E) Soybeans"],
-      "answer": "B"
-    },
-    {
-      "question": "Which ocean is the Mariana Trench located in?",
-      "options": ["A) Atlantic", "B) Pacific", "C) Indian", "D) Arctic", "E) Southern"],
-      "answer": "B"
-    },
-    {
-      "question": "Who discovered penicillin?",
-      "options": ["A) Alexander Fleming", "B) Louis Pasteur", "C) Marie Curie", "D) Gregor Mendel", "E) Jonas Salk"],
+      "question": "Which planet in our solar system has the most moons?",
+      "options": ["A) Saturn", "B) Jupiter", "C) Uranus", "D) Neptune"],
       "answer": "A"
     },
     {
-      "question": "What is the currency of South Africa?",
-      "options": ["A) Rand", "B) Dollar", "C) Euro", "D) Pound", "E) Shilling"],
-      "answer": "A"
-    },
-    {
-      "question": "Which composer wrote the 'Fifth Symphony'?",
-      "options": ["A) Mozart", "B) Beethoven", "C) Bach", "D) Tchaikovsky", "E) Brahms"],
-      "answer": "B"
-    },
-    {
-      "question": "Which desert covers much of northern China and southern Mongolia?",
-      "options": ["A) Gobi", "B) Sahara", "C) Thar", "D) Kalahari", "E) Mojave"],
-      "answer": "A"
-    },
-    {
-      "question": "What is the Bordeaux region famous for producing?",
-      "options": ["A) Cheese", "B) Wine", "C) Olives", "D) Truffles", "E) Bread"],
-      "answer": "B"
-    },
-    {
-      "question": "Which city is the financial center of the United Kingdom?",
-      "options": ["A) Manchester", "B) Edinburgh", "C) London", "D) Birmingham", "E) Cardiff"],
+      "question": "Which famous artist cut off part of his own ear?",
+      "options": ["A) Pablo Picasso", "B) Leonardo da Vinci", "C) Vincent van Gogh", "D) Claude Monet"],
       "answer": "C"
     },
     {
-      "question": "What is the tallest building in the world (2025)?",
-      "options": ["A) Shanghai Tower", "B) Burj Khalifa", "C) One World Trade Center", "D) Taipei 101", "E) Petronas Towers"],
-      "answer": "B"
-    },
-    {
-      "question": "Which element is a noble gas?",
-      "options": ["A) Nitrogen", "B) Oxygen", "C) Argon", "D) Carbon", "E) Chlorine"],
-      "answer": "C"
-    },
-    {
-      "question": "What is the capital of Canada?",
-      "options": ["A) Toronto", "B) Vancouver", "C) Ottawa", "D) Montreal", "E) Winnipeg"],
-      "answer": "C"
-    },
-    {
-      "question": "Who wrote 'Pride and Prejudice'?",
-      "options": ["A) Emily Brontë", "B) Jane Austen", "C) Charlotte Brontë", "D) Mary Shelley", "E) George Eliot"],
-      "answer": "B"
-    },
-    {
-      "question": "Which planet is known for its rings?",
-      "options": ["A) Jupiter", "B) Saturn", "C) Uranus", "D) Neptune", "E) Mars"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the chemical symbol for table salt?",
-      "options": ["A) NaCl", "B) KCl", "C) CaCl₂", "D) MgCl₂", "E) FeCl₃"],
+      "question": "Who was the first woman to win a Nobel Prize?",
+      "options": ["A) Marie Curie", "B) Rosalind Franklin", "C) Ada Lovelace", "D) Jane Goodall"],
       "answer": "A"
     },
     {
-      "question": "In which continent is the Sahara Desert?",
-      "options": ["A) Asia", "B) Africa", "C) North America", "D) Australia", "E) South America"],
-      "answer": "B"
-    },
-    {
-      "question": "Which country introduced the first paper money?",
-      "options": ["A) China", "B) Greece", "C) Egypt", "D) Rome", "E) Persia"],
-      "answer": "A"
-    },
-    {
-      "question": "Who is the author of the 'Harry Potter' series?",
-      "options": ["A) J.R.R. Tolkien", "B) C.S. Lewis", "C) J.K. Rowling", "D) Philip Pullman", "E) Roald Dahl"],
+      "question": "What is the smallest country in the world by area?",
+      "options": ["A) Monaco", "B) San Marino", "C) Vatican City", "D) Liechtenstein"],
       "answer": "C"
     },
     {
-      "question": "Which river flows through Paris?",
-      "options": ["A) Seine", "B) Thames", "C) Danube", "D) Rhine", "E) Loire"],
-      "answer": "A"
-    },
-    {
-      "question": "What is the largest continent by land area?",
-      "options": ["A) Africa", "B) Asia", "C) North America", "D) Europe", "E) South America"],
-      "answer": "B"
-    },
-    {
-      "question": "Which country produces the most coffee?",
-      "options": ["A) Colombia", "B) Vietnam", "C) Brazil", "D) Ethiopia", "E) Indonesia"],
-      "answer": "C"
-    },
-    {
-      "question": "What is the most widely spoken language in South America?",
-      "options": ["A) Spanish", "B) Portuguese", "C) English", "D) French", "E) Dutch"],
-      "answer": "A"
-    },
-    {
-      "question": "Which U.S. state is known as the 'Empire State'?",
-      "options": ["A) California", "B) Texas", "C) New York", "D) Florida", "E) Illinois"],
-      "answer": "C"
-    },
-    {
-      "question": "Who developed the theory of relativity?",
-      "options": ["A) Isaac Newton", "B) Albert Einstein", "C) Niels Bohr", "D) Galileo Galilei", "E) Max Planck"],
-      "answer": "B"
-    },
-    {
-      "question": "Which instrument measures atmospheric pressure?",
-      "options": ["A) Thermometer", "B) Barometer", "C) Hygrometer", "D) Anemometer", "E) Altimeter"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the capital of Italy?",
-      "options": ["A) Venice", "B) Milan", "C) Rome", "D) Florence", "E) Naples"],
-      "answer": "C"
-    },
-    {
-      "question": "Which sea creature has three hearts?",
-      "options": ["A) Dolphin", "B) Octopus", "C) Shark", "D) Whale", "E) Squid"],
-      "answer": "B"
-    },
-    {
-      "question": "Which currency is used in the United Kingdom?",
-      "options": ["A) Euro", "B) Dollar", "C) Pound Sterling", "D) Franc", "E) Krona"],
-      "answer": "C"
-    },
-    {
-      "question": "What is the tallest waterfall in the world?",
-      "options": ["A) Niagara Falls", "B) Angel Falls", "C) Victoria Falls", "D) Iguazu Falls", "E) Yosemite Falls"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the study of mushrooms called?",
-      "options": ["A) Mycology", "B) Botany", "C) Zoology", "D) Ecology", "E) Entomology"],
-      "answer": "A"
-    },
-    {
-      "question": "Which composer wrote 'The Magic Flute'?",
-      "options": ["A) Beethoven", "B) Mozart", "C) Bach", "D) Verdi", "E) Handel"],
-      "answer": "B"
-    },
-    {
-      "question": "Which city hosted the first modern Olympic Games?",
-      "options": ["A) Paris", "B) Athens", "C) London", "D) Rome", "E) Berlin"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the freezing point of water in Fahrenheit?",
-      "options": ["A) 0°F", "B) 32°F", "C) 100°F", "D) 212°F", "E) -32°F"],
-      "answer": "B"
-    },
-    {
-      "question": "Which planet is known as the Morning Star?",
-      "options": ["A) Mars", "B) Venus", "C) Jupiter", "D) Mercury", "E) Saturn"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the capital of Spain?",
-      "options": ["A) Barcelona", "B) Madrid", "C) Valencia", "D) Seville", "E) Bilbao"],
-      "answer": "B"
-    },
-    {
-      "question": "Which metal is most abundant in Earth's crust?",
-      "options": ["A) Iron", "B) Aluminum", "C) Silicon", "D) Calcium", "E) Magnesium"],
-      "answer": "B"
-    },
-    {
-      "question": "Which country is shaped like a boot?",
-      "options": ["A) Greece", "B) Italy", "C) Spain", "D) Portugal", "E) Turkey"],
-      "answer": "B"
-    ],
-    "Hard": [
-    {
-      "question": "Who was the first female Prime Minister of the United Kingdom?",
-      "options": ["A) Theresa May", "B) Margaret Thatcher", "C) Angela Merkel", "D) Indira Gandhi", "E) Golda Meir"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the chemical formula for ozone?",
-      "options": ["A) O₂", "B) O₃", "C) O₄", "D) O", "E) O₂⁻"],
-      "answer": "B"
-    },
-    {
-      "question": "In what year did the Berlin Wall fall?",
-      "options": ["A) 1987", "B) 1988", "C) 1989", "D) 1990", "E) 1991"],
-      "answer": "C"
-    },
-    {
-      "question": "Which artist painted 'The Starry Night'?",
-      "options": ["A) Claude Monet", "B) Vincent van Gogh", "C) Pablo Picasso", "D) Edvard Munch", "E) Salvador Dalí"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the powerhouse of the cell?",
-      "options": ["A) Nucleus", "B) Mitochondrion", "C) Ribosome", "D) Endoplasmic Reticulum", "E) Golgi Apparatus"],
-      "answer": "B"
-    },
-    {
-      "question": "Which playwright wrote 'Death of a Salesman'?",
-      "options": ["A) Arthur Miller", "B) Tennessee Williams", "C) Eugene O'Neill", "D) Samuel Beckett", "E) Harold Pinter"],
-      "answer": "A"
-    },
-    {
-      "question": "What is the capital city of Mongolia?",
-      "options": ["A) Ulaanbaatar", "B) Astana", "C) Bishkek", "D) Tashkent", "E) Dushanbe"],
-      "answer": "A"
-    },
-    {
-      "question": "Which element has atomic number 79?",
-      "options": ["A) Silver", "B) Gold", "C) Platinum", "D) Mercury", "E) Lead"],
-      "answer": "B"
-    },
-    {
-      "question": "Who wrote the epic poem 'Paradise Lost'?",
-      "options": ["A) John Milton", "B) William Wordsworth", "C) Geoffrey Chaucer", "D) Edmund Spenser", "E) Alexander Pope"],
-      "answer": "A"
-    },
-    {
-      "question": "Which treaty ended World War I?",
-      "options": ["A) Treaty of Vienna", "B) Treaty of Versailles", "C) Treaty of Tordesillas", "D) Treaty of Paris", "E) Treaty of Utrecht"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the rarest blood type in humans?",
-      "options": ["A) O-", "B) A-", "C) AB+", "D) AB-", "E) B-"],
+      "question": "Which language has the most native speakers?",
+      "options": ["A) English", "B) Hindi", "C) Spanish", "D) Mandarin Chinese"],
       "answer": "D"
     },
     {
-      "question": "Which mountain range contains Mont Blanc?",
-      "options": ["A) Rockies", "B) Andes", "C) Alps", "D) Pyrenees", "E) Carpathians"],
+      "question": "Which is the only mammal capable of true flight?",
+      "options": ["A) Bat", "B) Flying Squirrel", "C) Sugar Glider", "D) Colugo"],
+      "answer": "A"
+    },
+    {
+      "question": "Which ancient structure was located in the city of Babylon?",
+      "options": ["A) Hanging Gardens", "B) Colossus of Rhodes", "C) Lighthouse of Alexandria", "D) Great Pyramid"],
+      "answer": "A"
+    },
+    {
+      "question": "Which natural disaster is measured with a Richter scale?",
+      "options": ["A) Hurricane", "B) Tornado", "C) Earthquake", "D) Tsunami"],
       "answer": "C"
     },
     {
-      "question": "Who discovered the law of universal gravitation?",
-      "options": ["A) Galileo Galilei", "B) Johannes Kepler", "C) Isaac Newton", "D) Albert Einstein", "E) Niels Bohr"],
+      "question": "Which ocean is the deepest?",
+      "options": ["A) Atlantic", "B) Indian", "C) Southern", "D) Pacific"],
+      "answer": "D"
+    },
+    {
+      "question": "What is the capital of New Zealand?",
+      "options": ["A) Auckland", "B) Wellington", "C) Christchurch", "D) Dunedin"],
+      "answer": "B"
+    },
+    {
+      "question": "Which scientist developed the theory of evolution by natural selection?",
+      "options": ["A) Isaac Newton", "B) Charles Darwin", "C) Galileo Galilei", "D) Louis Pasteur"],
+      "answer": "B"
+    },
+    {
+      "question": "Which country has the most volcanoes?",
+      "options": ["A) Indonesia", "B) Japan", "C) USA", "D) Mexico"],
+      "answer": "A"
+    },
+    {
+      "question": "Which desert is the largest in the world by area?",
+      "options": ["A) Sahara", "B) Gobi", "C) Arabian", "D) Antarctic"],
+      "answer": "D"
+    },
+    {
+      "question": "Which philosopher taught Alexander the Great?",
+      "options": ["A) Socrates", "B) Aristotle", "C) Plato", "D) Pythagoras"],
+      "answer": "B"
+    },
+    {
+      "question": "Which part of the human body contains the hammer and anvil?",
+      "options": ["A) Nose", "B) Eye", "C) Ear", "D) Throat"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the currency of South Korea?",
+      "options": ["A) Yen", "B) Won", "C) Ringgit", "D) Yuan"],
+      "answer": "B"
+    },
+    {
+      "question": "Which famous ship sank on its maiden voyage in 1912?",
+      "options": ["A) Lusitania", "B) Britannic", "C) Titanic", "D) Olympic"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the chemical symbol for gold?",
+      "options": ["A) Gd", "B) Go", "C) Au", "D) Ag"],
+      "answer": "C"
+    },
+    {
+      "question": "Which continent has the highest number of countries?",
+      "options": ["A) Europe", "B) Asia", "C) Africa", "D) South America"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the main ingredient in traditional Japanese miso soup?",
+      "options": ["A) Tofu", "B) Seaweed", "C) Soybean paste", "D) Noodles"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the tallest mountain in North America?",
+      "options": ["A) Mount Logan", "B) Mount Denali", "C) Mount Rainier", "D) Mount Whitney"],
+      "answer": "B"
+    },
+    {
+      "question": "Which U.S. president abolished slavery?",
+      "options": ["A) George Washington", "B) Thomas Jefferson", "C) Abraham Lincoln", "D) John Adams"],
+      "answer": "C"
+    },
+    {
+      "question": "How many players are there in a baseball team on the field?",
+      "options": ["A) 9", "B) 10", "C) 11", "D) 8"],
+      "answer": "A"
+    },
+    {
+      "question": "What does 'www' stand for in a website browser?",
+      "options": ["A) World Wired Web", "B) Wide World Web", "C) World Wide Web", "D) Web Wide World"],
+      "answer": "C"
+    },
+    {
+      "question": "Who wrote 'The Catcher in the Rye'?",
+      "options": ["A) F. Scott Fitzgerald", "B) J.D. Salinger", "C) Ernest Hemingway", "D) Mark Twain"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the freezing point of water on the Fahrenheit scale?",
+      "options": ["A) 0°F", "B) 32°F", "C) 100°F", "D) 212°F"],
+      "answer": "B"
+    },
+    {
+      "question": "Which vitamin is primarily gained from sunlight?",
+      "options": ["A) Vitamin A", "B) Vitamin C", "C) Vitamin D", "D) Vitamin E"],
+      "answer": "C"
+    },
+    {
+      "question": "Which U.S. state is known as the 'Sunshine State'?",
+      "options": ["A) California", "B) Texas", "C) Florida", "D) Arizona"],
+      "answer": "C"
+    },
+    {
+      "question": "Which composer became deaf later in life?",
+      "options": ["A) Mozart", "B) Beethoven", "C) Bach", "D) Chopin"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the term for an animal that eats both plants and meat?",
+      "options": ["A) Herbivore", "B) Carnivore", "C) Omnivore", "D) Insectivore"],
+      "answer": "C"
+    },
+    {
+      "question": "Which bird is known for mimicking human speech?",
+      "options": ["A) Sparrow", "B) Parrot", "C) Crow", "D) Pigeon"],
+      "answer": "B"
+    },
+    {
+      "question": "Which gas do plants absorb from the atmosphere?",
+      "options": ["A) Oxygen", "B) Carbon Dioxide", "C) Nitrogen", "D) Hydrogen"],
+      "answer": "B"
+    },
+    {
+      "question": "How many legs does a spider have?",
+      "options": ["A) 6", "B) 8", "C) 10", "D) 12"],
+      "answer": "B"
+    },
+    {
+      "question": "Which famous scientist wrote 'A Brief History of Time'?",
+      "options": ["A) Carl Sagan", "B) Richard Feynman", "C) Stephen Hawking", "D) Brian Cox"],
+      "answer": "C"
+    },
+    {
+      "question": "Which planet has a prominent ring system?",
+      "options": ["A) Jupiter", "B) Uranus", "C) Neptune", "D) Saturn"],
+      "answer": "D"
+    },
+    {
+      "question": "How many bones are there in the adult human body?",
+      "options": ["A) 198", "B) 206", "C) 220", "D) 250"],
+      "answer": "B"
+    },
+    {
+      "question": "Which U.S. holiday is celebrated on the fourth Thursday of November?",
+      "options": ["A) Labor Day", "B) Veterans Day", "C) Thanksgiving", "D) Independence Day"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the capital city of Canada?",
+      "options": ["A) Toronto", "B) Montreal", "C) Ottawa", "D) Vancouver"],
+      "answer": "C"
+    },
+    {
+      "question": "Which country is home to the Great Barrier Reef?",
+      "options": ["A) Australia", "B) South Africa", "C) Brazil", "D) Philippines"],
+      "answer": "A"
+    },
+    {
+      "question": "Who painted the ceiling of the Sistine Chapel?",
+      "options": ["A) Leonardo da Vinci", "B) Raphael", "C) Donatello", "D) Michelangelo"],
+      "answer": "D"
+    },
+    {
+      "question": "What does 'CPU' stand for?",
+      "options": ["A) Central Processing Unit", "B) Computer Processing Unit", "C) Central Power Unit", "D) Control Processing Unit"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the hardest natural substance on Earth?",
+      "options": ["A) Diamond", "B) Quartz", "C) Granite", "D) Iron"],
+      "answer": "A"
+    },
+    {
+      "question": "Which instrument has 88 keys?",
+      "options": ["A) Violin", "B) Guitar", "C) Piano", "D) Saxophone"],
+      "answer": "C"
+    },
+    {
+      "question": "Which organ is responsible for pumping blood throughout the body?",
+      "options": ["A) Liver", "B) Brain", "C) Heart", "D) Kidney"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the process of cell division in humans called?",
+      "options": ["A) Mitosis", "B) Meiosis", "C) Photosynthesis", "D) Respiration"],
+      "answer": "A"
+    }
+  ],
+   "Hard": [
+    {
+      "question": "Which physicist is known for the uncertainty principle?",
+      "options": ["A) Albert Einstein", "B) Max Planck", "C) Werner Heisenberg", "D) Niels Bohr"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the capital city of Bhutan?",
+      "options": ["A) Kathmandu", "B) Thimphu", "C) Dhaka", "D) Naypyidaw"],
+      "answer": "B"
+    },
+    {
+      "question": "Which element has the atomic number 92?",
+      "options": ["A) Uranium", "B) Plutonium", "C) Thorium", "D) Radon"],
+      "answer": "A"
+    },
+    {
+      "question": "In computing, what does 'GUI' stand for?",
+      "options": ["A) Graphical User Interface", "B) General Use Interface", "C) Global User Integration", "D) Guided User Interaction"],
+      "answer": "A"
+    },
+    {
+      "question": "Who wrote the philosophical work 'Being and Time'?",
+      "options": ["A) Jean-Paul Sartre", "B) Martin Heidegger", "C) Friedrich Nietzsche", "D) Michel Foucault"],
+      "answer": "B"
+    },
+    {
+      "question": "Which planet rotates on its side compared to other planets?",
+      "options": ["A) Uranus", "B) Neptune", "C) Venus", "D) Mars"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the name of the deepest known point in Earth's oceans?",
+      "options": ["A) Tonga Trench", "B) Mariana Trench", "C) Philippine Trench", "D) Puerto Rico Trench"],
+      "answer": "B"
+    },
+    {
+      "question": "Which war lasted from 1618 to 1648?",
+      "options": ["A) The Napoleonic Wars", "B) The Thirty Years' War", "C) The Hundred Years' War", "D) The Seven Years' War"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the longest river in Europe?",
+      "options": ["A) Danube", "B) Rhine", "C) Volga", "D) Dnieper"],
       "answer": "C"
     },
     {
       "question": "What is the largest internal organ in the human body?",
-      "options": ["A) Heart", "B) Liver", "C) Lung", "D) Kidney", "E) Pancreas"],
+      "options": ["A) Brain", "B) Liver", "C) Lung", "D) Kidney"],
       "answer": "B"
     },
     {
-      "question": "Which city was the capital of Japan before Tokyo?",
-      "options": ["A) Osaka", "B) Kyoto", "C) Nagoya", "D) Hiroshima", "E) Nara"],
+      "question": "What is the capital city of Kazakhstan?",
+      "options": ["A) Almaty", "B) Astana", "C) Tashkent", "D) Bishkek"],
       "answer": "B"
     },
     {
-      "question": "Which composer wrote 'The Four Seasons'?",
-      "options": ["A) Bach", "B) Beethoven", "C) Vivaldi", "D) Mozart", "E) Handel"],
-      "answer": "C"
-    },
-    {
-      "question": "What is the term for a word that is spelled the same forwards and backwards?",
-      "options": ["A) Homonym", "B) Antonym", "C) Palindrome", "D) Synonym", "E) Oxymoron"],
-      "answer": "C"
-    },
-    {
-      "question": "In computing, what does 'CPU' stand for?",
-      "options": ["A) Central Processing Unit", "B) Computer Personal Unit", "C) Central Performance Utility", "D) Computation Processing Unit", "E) Control Processing Unit"],
+      "question": "Which country was formerly known as Abyssinia?",
+      "options": ["A) Ethiopia", "B) Sudan", "C) Yemen", "D) Somalia"],
       "answer": "A"
     },
     {
-      "question": "Which philosopher wrote 'The Republic'?",
-      "options": ["A) Aristotle", "B) Socrates", "C) Plato", "D) Epicurus", "E) Cicero"],
-      "answer": "C"
-    },
-    {
-      "question": "What is the main language spoken in Vienna, Austria?",
-      "options": ["A) German", "B) French", "C) English", "D) Italian", "E) Hungarian"],
-      "answer": "A"
-    },
-    {
-      "question": "Which country invented paper?",
-      "options": ["A) Egypt", "B) China", "C) Greece", "D) India", "E) Mesopotamia"],
+      "question": "Who invented the World Wide Web?",
+      "options": ["A) Steve Jobs", "B) Tim Berners-Lee", "C) Bill Gates", "D) Larry Page"],
       "answer": "B"
     },
     {
-      "question": "What is the longest bone in the human body?",
-      "options": ["A) Tibia", "B) Femur", "C) Humerus", "D) Radius", "E) Fibula"],
-      "answer": "B"
-    },
-    {
-      "question": "Who was the first person to reach the South Pole?",
-      "options": ["A) Roald Amundsen", "B) Robert Scott", "C) Ernest Shackleton", "D) Edmund Hillary", "E) Douglas Mawson"],
-      "answer": "A"
-    },
-    {
-      "question": "Which element is gaseous at room temperature and used in neon signs?",
-      "options": ["A) Argon", "B) Neon", "C) Krypton", "D) Xenon", "E) Helium"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the capital of New Mexico, USA?",
-      "options": ["A) Albuquerque", "B) Santa Fe", "C) Las Cruces", "D) Taos", "E) Roswell"],
-      "answer": "B"
-    },
-    {
-      "question": "Which scientist proposed the three laws of motion?",
-      "options": ["A) Galileo Galilei", "B) Nikola Tesla", "C) Isaac Newton", "D) James Watt", "E) Michael Faraday"],
-      "answer": "C"
-    },
-    {
-      "question": "Which novel begins with 'Call me Ishmael'?",
-      "options": ["A) Moby-Dick", "B) Pride and Prejudice", "C) War and Peace", "D) The Odyssey", "E) Ulysses"],
-      "answer": "A"
-    },
-    {
-      "question": "What is the capital city of Mongolia?",
-      "options": ["A) Ulaanbaatar", "B) Bishkek", "C) Astana", "D) Tashkent", "E) Dushanbe"],
-      "answer": "A"
-    },
-    {
-      "question": "Which painter is famous for the work 'Guernica'?",
-      "options": ["A) Salvador Dalí", "B) Pablo Picasso", "C) Henri Matisse", "D) Jackson Pollock", "E) René Magritte"],
-      "answer": "B"
-    },
-    {
-      "question": "Which war was ended by the Treaty of Ghent?",
-      "options": ["A) World War I", "B) War of 1812", "C) American Civil War", "D) Napoleonic Wars", "E) Crimean War"],
-      "answer": "B"
-    },
-    {
-      "question": "What is the study of the universe beyond Earth's atmosphere called?",
-      "options": ["A) Geology", "B) Meteorology", "C) Astronomy", "D) Oceanography", "E) Biology"],
-      "answer": "C"
-    },
-    {
-      "question": "Which city is the southernmost capital in the world?",
-      "options": ["A) Wellington", "B) Canberra", "C) Suva", "D) Buenos Aires", "E) Santiago"],
+      "question": "Which blood type is known as the universal donor?",
+      "options": ["A) AB+", "B) O+", "C) A-", "D) O-"],
       "answer": "D"
     },
     {
-      "question": "Who wrote 'The Divine Comedy'?",
-      "options": ["A) Dante Alighieri", "B) Geoffrey Chaucer", "C) John Milton", "D) Virgil", "E) Homer"],
+      "question": "Which country is the origin of the car brand 'Volvo'?",
+      "options": ["A) Germany", "B) Sweden", "C) USA", "D) Japan"],
+      "answer": "B"
+    },
+    {
+      "question": "Which gas is used in the process of welding?",
+      "options": ["A) Oxygen", "B) Argon", "C) Helium", "D) Acetylene"],
+      "answer": "D"
+    },
+    {
+      "question": "What is the longest bone in the human body?",
+      "options": ["A) Tibia", "B) Femur", "C) Humerus", "D) Radius"],
+      "answer": "B"
+    },
+    {
+      "question": "Who painted 'The School of Athens'?",
+      "options": ["A) Raphael", "B) Michelangelo", "C) Leonardo da Vinci", "D) Caravaggio"],
       "answer": "A"
     },
     {
-      "question": "Which gas makes up most of the Earth's atmosphere?",
-      "options": ["A) Oxygen", "B) Nitrogen", "C) Carbon Dioxide", "D) Argon", "E) Hydrogen"],
+      "question": "Which metal has the highest electrical conductivity?",
+      "options": ["A) Copper", "B) Silver", "C) Gold", "D) Aluminum"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the term for animals that eat only plants?",
+      "options": ["A) Carnivores", "B) Herbivores", "C) Omnivores", "D) Insectivores"],
+      "answer": "B"
+    },
+    {
+      "question": "Which instrument measures atmospheric pressure?",
+      "options": ["A) Thermometer", "B) Barometer", "C) Altimeter", "D) Anemometer"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the second smallest country in the world?",
+      "options": ["A) Monaco", "B) Nauru", "C) Tuvalu", "D) San Marino"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the capital of Liechtenstein?",
+      "options": ["A) Vaduz", "B) Bern", "C) Innsbruck", "D) Geneva"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the chemical symbol for potassium?",
+      "options": ["A) P", "B) K", "C) Po", "D) Pt"],
+      "answer": "B"
+    },
+    {
+      "question": "In what year was the UN founded?",
+      "options": ["A) 1944", "B) 1945", "C) 1946", "D) 1950"],
+      "answer": "B"
+    },
+    {
+      "question": "Who discovered penicillin?",
+      "options": ["A) Marie Curie", "B) Alexander Fleming", "C) Louis Pasteur", "D) Edward Jenner"],
+      "answer": "B"
+    },
+    {
+      "question": "Which philosopher is known for the quote 'I think, therefore I am'?",
+      "options": ["A) Plato", "B) Descartes", "C) Aristotle", "D) Kant"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the rarest blood type?",
+      "options": ["A) AB-", "B) O+", "C) B-", "D) A-"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the process by which plants make food?",
+      "options": ["A) Respiration", "B) Fermentation", "C) Photosynthesis", "D) Transpiration"],
+      "answer": "C"
+    },
+    {
+      "question": "Which is the largest lake in Africa?",
+      "options": ["A) Lake Tanganyika", "B) Lake Malawi", "C) Lake Victoria", "D) Lake Chad"],
+      "answer": "C"
+    },
+    {
+      "question": "Who was the first human to journey into outer space?",
+      "options": ["A) Neil Armstrong", "B) Yuri Gagarin", "C) Buzz Aldrin", "D) Alan Shepard"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the capital of Uzbekistan?",
+      "options": ["A) Tashkent", "B) Baku", "C) Bishkek", "D) Dushanbe"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the SI unit of electric current?",
+      "options": ["A) Ampere", "B) Ohm", "C) Volt", "D) Watt"],
+      "answer": "A"
+    },
+    {
+      "question": "Who wrote 'Don Quixote'?",
+      "options": ["A) Cervantes", "B) Dante", "C) Goethe", "D) Hugo"],
+      "answer": "A"
+    },
+    {
+      "question": "Which element is a liquid at room temperature?",
+      "options": ["A) Bromine", "B) Mercury", "C) Chlorine", "D) Helium"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Roman emperor built a massive wall across Northern Britain?",
+      "options": ["A) Augustus", "B) Nero", "C) Hadrian", "D) Trajan"],
+      "answer": "C"
+    },
+    {
+      "question": "What year did the Berlin Wall fall?",
+      "options": ["A) 1987", "B) 1988", "C) 1989", "D) 1990"],
+      "answer": "C"
+    },
+    {
+      "question": "What does DNA stand for?",
+      "options": ["A) Dynamic Nucleus Acid", "B) Deoxyribonucleic Acid", "C) Dextroribonucleic Acid", "D) Double Nucleus Array"],
+      "answer": "B"
+    },
+    {
+      "question": "Who was the Greek goddess of wisdom?",
+      "options": ["A) Hera", "B) Aphrodite", "C) Artemis", "D) Athena"],
+      "answer": "D"
+    },
+    {
+      "question": "Which African country has Portuguese as its official language?",
+      "options": ["A) Ghana", "B) Angola", "C) Kenya", "D) Senegal"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the currency of Poland?",
+      "options": ["A) Zloty", "B) Koruna", "C) Forint", "D) Lira"],
+      "answer": "A"
+    },
+    {
+      "question": "Which metal is liquid at room temperature and toxic?",
+      "options": ["A) Mercury", "B) Aluminum", "C) Zinc", "D) Chromium"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following countries is landlocked?",
+      "options": ["A) Bolivia", "B) Ecuador", "C) Peru", "D) Chile"],
+      "answer": "A"
+    },
+    {
+      "question": "Who painted the 'Girl with a Pearl Earring'?",
+      "options": ["A) Rembrandt", "B) Vermeer", "C) Rubens", "D) Van Gogh"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Asian country is an island nation and a city-state?",
+      "options": ["A) Taiwan", "B) Singapore", "C) Sri Lanka", "D) Brunei"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the most common gas in Earth's atmosphere?",
+      "options": ["A) Oxygen", "B) Nitrogen", "C) Carbon Dioxide", "D) Hydrogen"],
+      "answer": "B"
+    },
+    {
+      "question": "Which element has the highest melting point?",
+      "options": ["A) Iron", "B) Carbon", "C) Tungsten", "D) Titanium"],
+      "answer": "C"
+    }
+  ],
+  
+ "Extreme": [
+    {
+      "question": "Who developed the concept of the collective unconscious?",
+      "options": ["A) Sigmund Freud", "B) Carl Jung", "C) B.F. Skinner", "D) Alfred Adler", "E) Jean Piaget"],
+      "answer": "B"
+    },
+    {
+      "question": "Which element has the highest electrical conductivity at room temperature?",
+      "options": ["A) Copper", "B) Gold", "C) Silver", "D) Aluminum", "E) Platinum"],
+      "answer": "C"
+    },
+    {
+      "question": "Which empire was ruled by Mansa Musa?",
+      "options": ["A) Ghana Empire", "B) Mali Empire", "C) Songhai Empire", "D) Kanem Empire", "E) Zulu Empire"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the rarest naturally occurring element on Earth?",
+      "options": ["A) Astatine", "B) Francium", "C) Promethium", "D) Californium", "E) Neptunium"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these countries is not a member of the Arctic Council?",
+      "options": ["A) Norway", "B) Finland", "C) Iceland", "D) China", "E) Denmark"],
+      "answer": "D"
+    },
+    {
+      "question": "In string theory, how many dimensions does M-theory propose?",
+      "options": ["A) 10", "B) 11", "C) 12", "D) 9", "E) 13"],
+      "answer": "B"
+    },
+    {
+      "question": "Who was the first woman to win a Nobel Prize?",
+      "options": ["A) Marie Curie", "B) Rosalind Franklin", "C) Ada Lovelace", "D) Dorothy Hodgkin", "E) Barbara McClintock"],
+      "answer": "A"
+    },
+    {
+      "question": "Which particle gives mass to other particles?",
+      "options": ["A) Higgs boson", "B) Photon", "C) Gluon", "D) Neutrino", "E) Graviton"],
+      "answer": "A"
+    },
+    {
+      "question": "Which civilization built the city of Tenochtitlan?",
+      "options": ["A) Maya", "B) Aztec", "C) Olmec", "D) Zapotec", "E) Inca"],
+      "answer": "B"
+    },
+    {
+      "question": "Which of the following is a moon of Neptune?",
+      "options": ["A) Europa", "B) Titan", "C) Triton", "D) Io", "E) Callisto"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Nobel Prize category did Malala Yousafzai win?",
+      "options": ["A) Literature", "B) Peace", "C) Chemistry", "D) Physics", "E) Economics"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the largest known volcano in the solar system?",
+      "options": ["A) Mount Everest", "B) Mauna Loa", "C) Olympus Mons", "D) Mount Kilimanjaro", "E) Vesuvius"],
+      "answer": "C"
+    },
+    {
+      "question": "Which composer is famous for his 'Goldberg Variations'?",
+      "options": ["A) Bach", "B) Mozart", "C) Beethoven", "D) Chopin", "E) Vivaldi"],
+      "answer": "A"
+    },
+    {
+      "question": "What language has the most native speakers worldwide?",
+      "options": ["A) English", "B) Mandarin", "C) Spanish", "D) Hindi", "E) Arabic"],
+      "answer": "B"
+    },
+    {
+      "question": "Which country was formerly known as Ceylon?",
+      "options": ["A) Sri Lanka", "B) Bangladesh", "C) Myanmar", "D) Maldives", "E) Nepal"],
+      "answer": "A"
+    },
+    {
+      "question": "Which planet has the shortest day in our solar system?",
+      "options": ["A) Jupiter", "B) Saturn", "C) Neptune", "D) Uranus", "E) Mercury"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the study of fungi called?",
+      "options": ["A) Botany", "B) Mycology", "C) Zoology", "D) Ecology", "E) Microbiology"],
+      "answer": "B"
+    },
+    {
+      "question": "Which battle marked the end of Napoleon's rule?",
+      "options": ["A) Battle of Austerlitz", "B) Battle of Leipzig", "C) Battle of Waterloo", "D) Battle of Trafalgar", "E) Battle of Borodino"],
+      "answer": "C"
+    },
+    {
+      "question": "Which country is known as the Land of the Thunder Dragon?",
+      "options": ["A) Nepal", "B) Bhutan", "C) Mongolia", "D) Tibet", "E) Laos"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the currency of South Africa?",
+      "options": ["A) Rand", "B) Shilling", "C) Dollar", "D) Peso", "E) Pound"],
+      "answer": "A"
+    },
+    {
+      "question": "Which organelle is known as the powerhouse of the cell?",
+      "options": ["A) Nucleus", "B) Ribosome", "C) Mitochondria", "D) Endoplasmic Reticulum", "E) Golgi Apparatus"],
+      "answer": "C"
+    },
+    {
+      "question": "Who was the first Chancellor of Germany after reunification in 1990?",
+      "options": ["A) Angela Merkel", "B) Gerhard Schröder", "C) Helmut Kohl", "D) Willy Brandt", "E) Konrad Adenauer"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the name of the largest desert in Asia?",
+      "options": ["A) Gobi", "B) Arabian", "C) Kalahari", "D) Thar", "E) Taklamakan"],
+      "answer": "A"
+    },
+    {
+      "question": "Which disease is caused by the bacterium Yersinia pestis?",
+      "options": ["A) Cholera", "B) Plague", "C) Tuberculosis", "D) Malaria", "E) Typhoid"],
+      "answer": "B"
+    },
+    {
+      "question": "Which famous scientist was awarded the Nobel Prize in Physics twice?",
+      "options": ["A) Albert Einstein", "B) Marie Curie", "C) Niels Bohr", "D) Max Planck", "E) Enrico Fermi"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the main language spoken in the Canadian province of Quebec?",
+      "options": ["A) English", "B) French", "C) Spanish", "D) German", "E) Italian"],
       "answer": "B"
     },
     {
       "question": "Which ancient civilization built Machu Picchu?",
-      "options": ["A) Maya", "B) Aztec", "C) Inca", "D) Olmec", "E) Toltec"],
+      "options": ["A) Maya", "B) Inca", "C) Aztec", "D) Olmec", "E) Zapotec"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the hardest naturally occurring mineral?",
+      "options": ["A) Corundum", "B) Quartz", "C) Diamond", "D) Topaz", "E) Sapphire"],
       "answer": "C"
     },
     {
-      "question": "What is the rarest naturally occurring element on Earth?",
-      "options": ["A) Francium", "B) Astatine", "C) Promethium", "D) Technetium", "E) Osmium"],
-      "answer": "B"
-    },
-    {
-      "question": "Which river runs through Baghdad?",
-      "options": ["A) Euphrates", "B) Tigris", "C) Jordan", "D) Nile", "E) Amazon"],
-      "answer": "B"
-    },
-    {
-      "question": "Who is the author of 'One Hundred Years of Solitude'?",
-      "options": ["A) Jorge Luis Borges", "B) Gabriel García Márquez", "C) Mario Vargas Llosa", "D) Pablo Neruda", "E) Isabel Allende"],
-      "answer": "B"
-    },
-    {
-      "question": "Which chemical element is diamond made of?",
-      "options": ["A) Carbon", "B) Silicon", "C) Oxygen", "D) Nitrogen", "E) Boron"],
+      "question": "Which city hosted the 1992 Summer Olympics?",
+      "options": ["A) Barcelona", "B) Atlanta", "C) Seoul", "D) Sydney", "E) Athens"],
       "answer": "A"
     },
     {
-      "question": "Which U.S. President issued the Emancipation Proclamation?",
-      "options": ["A) George Washington", "B) Abraham Lincoln", "C) Thomas Jefferson", "D) Ulysses S. Grant", "E) Theodore Roosevelt"],
+      "question": "Which ancient Greek philosopher taught Alexander the Great?",
+      "options": ["A) Plato", "B) Aristotle", "C) Socrates", "D) Epicurus", "E) Pythagoras"],
       "answer": "B"
     },
     {
-      "question": "What is the capital of Iceland?",
-      "options": ["A) Reykjavik", "B) Oslo", "C) Helsinki", "D) Copenhagen", "E) Stockholm"],
-      "answer": "A"
+      "question": "Which instrument measures seismic activity?",
+      "options": ["A) Barometer", "B) Seismometer", "C) Hygrometer", "D) Anemometer", "E) Thermometer"],
+      "answer": "B"
     },
     {
-      "question": "Which planet is tilted on its side, giving it extreme seasons?",
-      "options": ["A) Jupiter", "B) Mars", "C) Uranus", "D) Neptune", "E) Saturn"],
-      "answer": "C"
+      "question": "Which country has the largest population of indigenous people in the Americas?",
+      "options": ["A) Canada", "B) USA", "C) Brazil", "D) Mexico", "E) Peru"],
+      "answer": "D"
     },
     {
-      "question": "What language has the most official UN status?",
-      "options": ["A) English", "B) French", "C) Spanish", "D) Russian", "E) Arabic"],
+      "question": "What is the capital of Kazakhstan?",
+      "options": ["A) Almaty", "B) Astana", "C) Bishkek", "D) Tashkent", "E) Nur-Sultan"],
       "answer": "E"
     },
     {
-      "question": "Which ocean is the Sargasso Sea located in?",
-      "options": ["A) Atlantic", "B) Pacific", "C) Indian", "D) Arctic", "E) Southern"],
+      "question": "What is the chemical formula for table salt?",
+      "options": ["A) NaCl", "B) KCl", "C) CaCO3", "D) MgSO4", "E) Na2SO4"],
       "answer": "A"
     },
     {
-      "question": "Who was the first woman to win a Nobel Prize?",
-      "options": ["A) Marie Curie", "B) Rosalind Franklin", "C) Jane Goodall", "D) Rita Levi-Montalcini", "E) Dorothy Hodgkin"],
+      "question": "Who was the first president of independent Kenya?",
+      "options": ["A) Jomo Kenyatta", "B) Daniel arap Moi", "C) Uhuru Kenyatta", "D) Mwai Kibaki", "E) Raila Odinga"],
       "answer": "A"
     },
     {
-      "question": "Which country has the most UNESCO World Heritage Sites?",
-      "options": ["A) Italy", "B) China", "C) Spain", "D) France", "E) Germany"],
+      "question": "Which philosopher wrote 'The Republic'?",
+      "options": ["A) Socrates", "B) Plato", "C) Aristotle", "D) Cicero", "E) Seneca"],
       "answer": "B"
     },
     {
-      "question": "What is the approximate age of the Earth?",
-      "options": ["A) 4.5 million years", "B) 4.5 billion years", "C) 4.5 trillion years", "D) 450 million years", "E) 450 billion years"],
+      "question": "What is the name of the longest river in South America?",
+      "options": ["A) Amazon", "B) Orinoco", "C) Paraná", "D) Magdalena", "E) Rio de la Plata"],
+      "answer": "A"
+    },
+    {
+      "question": "Which famous physicist introduced the concept of black holes?",
+      "options": ["A) Albert Einstein", "B) Stephen Hawking", "C) Isaac Newton", "D) Galileo Galilei", "E) Niels Bohr"],
       "answer": "B"
     },
     {
-      "question": "Which novel features the character Atticus Finch?",
-      "options": ["A) 1984", "B) To Kill a Mockingbird", "C) The Great Gatsby", "D) Moby-Dick", "E) Jane Eyre"],
+      "question": "Which continent has the most countries?",
+      "options": ["A) Asia", "B) Africa", "C) Europe", "D) South America", "E) Oceania"],
       "answer": "B"
     },
     {
-{
-  "Extreme": [
-    {
-      "question": "Who formulated the theory of general relativity?",
-      "options": ["A) Isaac Newton", "B) Albert Einstein", "C) Niels Bohr", "D) Erwin Schrödinger", "E) Stephen Hawking"],
+      "question": "Who is known as the father of modern economics?",
+      "options": ["A) John Maynard Keynes", "B) Adam Smith", "C) Karl Marx", "D) David Ricardo", "E) Milton Friedman"],
       "answer": "B"
     },
     {
-      "question": "Which element is most abundant in the Earth's core?",
-      "options": ["A) Iron", "B) Nickel", "C) Aluminum", "D) Silicon", "E) Magnesium"],
+      "question": "Which is the largest moon of Saturn?",
+      "options": ["A) Titan", "B) Enceladus", "C) Rhea", "D) Dione", "E) Iapetus"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the capital of the Australian state of Queensland?",
+      "options": ["A) Sydney", "B) Brisbane", "C) Melbourne", "D) Perth", "E) Adelaide"],
+      "answer": "B"
+    },
+    {
+      "question": "Which artist painted the ceiling of the Sistine Chapel?",
+      "options": ["A) Leonardo da Vinci", "B) Michelangelo", "C) Raphael", "D) Donatello", "E) Caravaggio"],
+      "answer": "B"
+    },
+    {
+      "question": "Which year did the Titanic sink?",
+      "options": ["A) 1905", "B) 1912", "C) 1918", "D) 1923", "E) 1930"],
+      "answer": "B"
+    },
+    {
+      "question": "Which country is home to the ancient city of Petra?",
+      "options": ["A) Jordan", "B) Egypt", "C) Syria", "D) Lebanon", "E) Iraq"],
+      "answer": "A"
+    },
+    {
+      "question": "Which is the smallest bone in the human body?",
+      "options": ["A) Femur", "B) Stapes", "C) Tibia", "D) Ulna", "E) Fibula"],
+      "answer": "B"
+    },
+    {
+      "question": "Who invented the first successful airplane?",
+      "options": ["A) Samuel Langley", "B) Orville and Wilbur Wright", "C) Alberto Santos-Dumont", "D) Charles Lindbergh", "E) Amelia Earhart"],
+      "answer": "B"
+    },
+    {
+      "question": "Which natural disaster is measured by the Richter scale?",
+      "options": ["A) Hurricanes", "B) Earthquakes", "C) Tornadoes", "D) Tsunamis", "E) Volcanic eruptions"],
+      "answer": "B"
+    }
+  ]
+
+},
+"Coding": {
+   "Easy": [
+    {
+      "question": "What keyword is used to define a function in Python?",
+      "options": ["A) func", "B) def", "C) function", "D) define"],
+      "answer": "B"
+    },
+    {
+      "question": "Which symbol is used to comment a single line in Python?",
+      "options": ["A) //", "B) <!--", "C) #", "D) /*"],
+      "answer": "C"
+    },
+    {
+      "question": "Which data type is used to store true or false values?",
+      "options": ["A) int", "B) bool", "C) str", "D) float"],
+      "answer": "B"
+    },
+    {
+      "question": "What does 'len()' function do in Python?",
+      "options": ["A) Returns length", "B) Converts to int", "C) Prints output", "D) Creates list"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these is a Python list?",
+      "options": ["A) {1, 2, 3}", "B) (1, 2, 3)", "C) [1, 2, 3]", "D) <1, 2, 3>"],
+      "answer": "C"
+    },
+    {
+      "question": "What will 'print(2 + 3 * 4)' output?",
+      "options": ["A) 20", "B) 14", "C) 24", "D) 18"],
+      "answer": "B"
+    },
+    {
+      "question": "Which operator is used for equality comparison?",
+      "options": ["A) =", "B) ==", "C) !=", "D) <="],
+      "answer": "B"
+    },
+    {
+      "question": "How do you start a for loop in Python?",
+      "options": ["A) for i in range(5):", "B) for (i=0; i<5; i++)", "C) foreach i in range(5)", "D) loop i in range(5)"],
+      "answer": "A"
+    },
+    {
+      "question": "Which method adds an element to the end of a list?",
+      "options": ["A) add()", "B) push()", "C) append()", "D) insert()"],
+      "answer": "C"
+    },
+    {
+      "question": "What data type is the result of '3 / 2' in Python 3?",
+      "options": ["A) int", "B) float", "C) str", "D) bool"],
+      "answer": "B"
+    },
+    {
+      "question": "What will 'print(\"Hello\" + \" World\")' output?",
+      "options": ["A) Hello World", "B) Hello+World", "C) HelloWorld", "D) Error"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you declare a variable with the value 10 in Python?",
+      "options": ["A) var = 10", "B) int var = 10", "C) var := 10", "D) let var = 10"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these is a tuple?",
+      "options": ["A) [1, 2, 3]", "B) (1, 2, 3)", "C) {1, 2, 3}", "D) <1, 2, 3>"],
+      "answer": "B"
+    },
+    {
+      "question": "How do you check the type of a variable 'x'?",
+      "options": ["A) type(x)", "B) typeof(x)", "C) checktype(x)", "D) varType(x)"],
+      "answer": "A"
+    },
+    {
+      "question": "Which keyword is used to import modules in Python?",
+      "options": ["A) include", "B) import", "C) require", "D) using"],
+      "answer": "B"
+    },
+    {
+      "question": "What will 'print(bool(0))' output?",
+      "options": ["A) True", "B) False", "C) 0", "D) Error"],
+      "answer": "B"
+    },
+    {
+      "question": "What does '//' operator do in Python?",
+      "options": ["A) Division", "B) Floor division", "C) Modulus", "D) Exponentiation"],
+      "answer": "B"
+    },
+    {
+      "question": "Which of the following is used to handle exceptions?",
+      "options": ["A) try-except", "B) do-catch", "C) if-else", "D) switch-case"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you create a string in Python?",
+      "options": ["A) 'Hello'", "B) \"Hello\"", "C) '''Hello'''", "D) All of the above"],
+      "answer": "D"
+    },
+    {
+      "question": "Which built-in function returns the absolute value?",
+      "options": ["A) abs()", "B) absolute()", "C) fabs()", "D) absval()"],
+      "answer": "A"
+    },
+    {
+      "question": "What will be the output of 'print(5 % 2)'?",
+      "options": ["A) 2", "B) 1", "C) 0", "D) Error"],
+      "answer": "B"
+    },
+    {
+      "question": "How do you convert a string '123' to an integer?",
+      "options": ["A) int('123')", "B) str(123)", "C) convert(123)", "D) toInt('123')"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print(2 ** 3)'?",
+      "options": ["A) 6", "B) 8", "C) 9", "D) 5"],
+      "answer": "B"
+    },
+    {
+      "question": "Which keyword is used to create a loop that iterates over items of a sequence?",
+      "options": ["A) while", "B) loop", "C) for", "D) iterate"],
+      "answer": "C"
+    },
+    {
+      "question": "Which method converts all characters in a string to lowercase?",
+      "options": ["A) toLowerCase()", "B) lower()", "C) downcase()", "D) lowercase()"],
+      "answer": "B"
+    },
+    {
+      "question": "What does the 'break' statement do in a loop?",
+      "options": ["A) Skips iteration", "B) Exits loop", "C) Continues loop", "D) Pauses loop"],
+      "answer": "B"
+    },
+    {
+      "question": "Which operator is used to concatenate strings in Python?",
+      "options": ["A) +", "B) &", "C) .", "D) concat()"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you get the index of an element in a list?",
+      "options": ["A) list.index(element)", "B) list.find(element)", "C) list.locate(element)", "D) list.search(element)"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print(type([]))'?",
+      "options": ["A) <class 'list'>", "B) <type 'list'>", "C) list", "D) array"],
+      "answer": "A"
+    },
+    {
+      "question": "Which data type is used to store decimal numbers?",
+      "options": ["A) int", "B) float", "C) double", "D) decimal"],
+      "answer": "B"
+    },
+    {
+      "question": "How do you check if two variables are equal?",
+      "options": ["A) =", "B) ==", "C) equals()", "D) eq()"],
+      "answer": "B"
+    },
+    {
+      "question": "Which of these is not a Python keyword?",
+      "options": ["A) lambda", "B) yield", "C) loop", "D) global"],
+      "answer": "C"
+    },
+    {
+      "question": "How do you create a set in Python?",
+      "options": ["A) {}", "B) set()", "C) []", "D) ()"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the output of 'print(10 // 3)'?",
+      "options": ["A) 3.33", "B) 3", "C) 4", "D) 3.0"],
+      "answer": "B"
+    },
+    {
+      "question": "Which of these is a mutable data type?",
+      "options": ["A) tuple", "B) list", "C) string", "D) int"],
+      "answer": "B"
+    },
+    {
+      "question": "Which function converts an integer to a string?",
+      "options": ["A) str()", "B) int()", "C) toString()", "D) string()"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you start a while loop in Python?",
+      "options": ["A) while (condition):", "B) while condition {}", "C) while condition do", "D) loop while condition:"],
+      "answer": "A"
+    },
+    {
+      "question": "Which method returns the last element of a list?",
+      "options": ["A) list[-1]", "B) list.last()", "C) list.end()", "D) list.tail()"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'continue' statement do in a loop?",
+      "options": ["A) Stops loop", "B) Skips to next iteration", "C) Exits loop", "D) Pauses loop"],
+      "answer": "B"
+    },
+    {
+      "question": "How to check if 'a' is in a list 'my_list'?",
+      "options": ["A) a in my_list", "B) my_list.contains(a)", "C) my_list.has(a)", "D) contains(my_list, a)"],
+      "answer": "A"
+    },
+    {
+      "question": "Which method converts all characters in a string to uppercase?",
+      "options": ["A) upper()", "B) uppercase()", "C) toUpperCase()", "D) upcase()"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print(type(3.14))'?",
+      "options": ["A) <class 'int'>", "B) <class 'float'>", "C) <class 'double'>", "D) float"],
+      "answer": "B"
+    },
+    {
+      "question": "How do you start a conditional statement in Python?",
+      "options": ["A) if condition:", "B) if (condition) {}", "C) if condition then", "D) if condition do"],
+      "answer": "A"
+    },
+    {
+      "question": "Which keyword is used to define a block of code that runs when an exception occurs?",
+      "options": ["A) except", "B) catch", "C) error", "D) handle"],
+      "answer": "A"
+    },
+    {
+      "question": "How to remove an element from a list by value?",
+      "options": ["A) list.remove(value)", "B) list.pop(value)", "C) list.delete(value)", "D) list.discard(value)"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these converts a list to a set?",
+      "options": ["A) set(list)", "B) list.set()", "C) toSet(list)", "D) list.to_set()"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the result of 'print(bool(\"\"))'?",
+      "options": ["A) True", "B) False", "C) None", "D) Error"],
+      "answer": "B"
+    },
+    {
+      "question": "Which method splits a string into a list?",
+      "options": ["A) split()", "B) divide()", "C) cut()", "D) separate()"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print(5 > 3)'?",
+      "options": ["A) True", "B) False", "C) 5", "D) 3"],
       "answer": "A"
     }
   ],
-{
-  "Coding": {
-    "Easy": [
-      {
-        "question": "What keyword is used to define a function in Python?",
-        "options": ["A) define", "B) function", "C) def", "D) func"],
-        "answer": "C"
-      },
-      {
-        "question": "Which data type is immutable in Python?",
-        "options": ["A) list", "B) dict", "C) set", "D) tuple", "E) bytearray"],
-        "answer": "D"
-      },
-      {
-        "question": "What symbol is used to comment out a single line in Python?",
-        "options": ["A) //", "B) <!--", "C) #", "D) /*", "E) %"], 
-        "answer": "C"
-      },
-      {
-        "question": "Which loop will always execute at least once in C?",
-        "options": ["A) for", "B) while", "C) do-while", "D) foreach", "E) repeat-until"],
-        "answer": "C"
-      },
-      {
-        "question": "In HTML, which tag is used for the largest heading?",
-        "options": ["A) <h1>", "B) <h6>", "C) <title>", "D) <header>", "E) <headline>"],
-        "answer": "A"
-      },
-      {
-        "question": "What does CSS stand for?",
-        "options": ["A) Computer Style Sheets", "B) Creative Style System", "C) Cascading Style Sheets", "D) Colorful Style Syntax", "E) Custom Style Script"],
-        "answer": "C"
-      },
-      {
-        "question": "Which operator is used for string concatenation in JavaScript?",
-        "options": ["A) +", "B) &", "C) .", "D) &&", "E) |"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the index of the first element in an array in most programming languages?",
-        "options": ["A) 0", "B) 1", "C) -1", "D) 2", "E) Depends on the language"],
-        "answer": "A"
-      },
-      {
-        "question": "Which HTML attribute specifies an alternate text for an image?",
-        "options": ["A) src", "B) alt", "C) title", "D) href", "E) caption"],
-        "answer": "B"
-      },
-      {
-        "question": "What built-in method converts a string to lowercase in JavaScript?",
-        "options": ["A) toLower()", "B) lowerCase()", "C) toLowerCase()", "D) lowercase()", "E) downcase()"],
-        "answer": "C"
-      },
-      {
-        "question": "Which symbol is used to access properties of an object in JavaScript?",
-        "options": ["A) ::", "B) .", "C) ->", "D) =>", "E) #"],
-        "answer": "B"
-      },
-      {
-        "question": "In Python, what is the result of 3 == '3'?",
-        "options": ["A) True", "B) False", "C) Error", "D) None", "E) 3"],
-        "answer": "B"
-      },
-      {
-        "question": "Which tag is self-closing in HTML5?",
-        "options": ["A) <div>", "B) <p>", "C) <img>", "D) <span>", "E) <section>"],
-        "answer": "C"
-      },
-      {
-        "question": "What does SQL stand for?",
-        "options": ["A) Structured Query Language", "B) Simple Question Language", "C) Sequential Query List", "D) Standard Query Logic", "E) Structured Question List"],
-        "answer": "A"
-      },
-      {
-        "question": "Which symbol begins a CSS id selector?",
-        "options": ["A) .", "B) #", "C) @", "D) $", "E) &"],
-        "answer": "B"
-      },
-      {
-        "question": "In Java, which keyword is used to create a new object?",
-        "options": ["A) instantiate", "B) new", "C) create", "D) make", "E) build"],
-        "answer": "B"
-      },
-      {
-        "question": "Which HTML element is used to embed JavaScript code?",
-        "options": ["A) <js>", "B) <script>", "C) <code>", "D) <javascript>", "E) <embed>"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the value of the expression 5 % 2 in most languages?",
-        "options": ["A) 0", "B) 1", "C) 2", "D) 2.5", "E) Error"],
-        "answer": "B"
-      },
-      {
-        "question": "Which keyword defines a constant in JavaScript (ES6)?",
-        "options": ["A) var", "B) let", "C) const", "D) static", "E) final"],
-        "answer": "C"
-      },
-      {
-        "question": "In Python, which keyword is used for exception handling?",
-        "options": ["A) try", "B) catch", "C) handle", "D) except", "E) error"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the main file extension for Python scripts?",
-        "options": ["A) .py", "B) .pt", "C) .pyt", "D) .python", "E) .px"],
-        "answer": "A"
-      },
-      {
-        "question": "In CSS, how do you select all elements?",
-        "options": ["A) *", "B) all", "C) .all", "D) #all", "E) &"],
-        "answer": "A"
-      },
-      {
-        "question": "Which loop is ideal when you know the number of iterations beforehand?",
-        "options": ["A) while", "B) do-while", "C) for", "D) foreach", "E) repeat"],
-        "answer": "C"
-      },
-      {
-        "question": "What does DOM stand for?",
-        "options": ["A) Document Object Model", "B) Data Object Model", "C) Document Oriented Method", "D) Dynamic Object Model", "E) Document Order Model"],
-        "answer": "A"
-      },
-      {
-        "question": "Which HTML attribute is used to specify styles inline?",
-        "options": ["A) style", "B) class", "C) id", "D) css", "E) inline"],
-        "answer": "A"
-      },
-      {
-        "question": "In JavaScript, which method adds an element to the end of an array?",
-        "options": ["A) push()", "B) pop()", "C) shift()", "D) unshift()", "E) append()"],
-        "answer": "A"
-      },
-      {
-        "question": "Which built-in Python function returns the length of an object?",
-        "options": ["A) len()", "B) length()", "C) size()", "D) count()", "E) measure()"],
-        "answer": "A"
-      },
-      {
-        "question": "Which HTML tag creates a numbered list?",
-        "options": ["A) <ul>", "B) <ol>", "C) <li>", "D) <dl>", "E) <list>"],
-        "answer": "B"
-      },
-      {
-        "question": "What symbol is used to begin a block comment in CSS?",
-        "options": ["A) /*", "B) //", "C) <!--", "D) ##", "E) **"],
-        "answer": "A"
-      },
-      {
-        "question": "Which keyword is used to stop a loop prematurely in C?",
-        "options": ["A) stop", "B) break", "C) exit", "D) end", "E) halt"],
-        "answer": "B"
-      },
-      {
-        "question": "What does AJAX stand for?",
-        "options": ["A) Asynchronous Java and XML", "B) Asynchronous JavaScript and XML", "C) Advanced JavaScript and XHTML", "D) Assembled JSON and XML", "E) Asynchronous JSON and XHTML"],
-        "answer": "B"
-      },
-      {
-        "question": "Which method converts a JSON string to a JavaScript object?",
-        "options": ["A) JSON.parse()", "B) JSON.stringify()", "C) JSON.toObject()", "D) JSON.decode()", "E) JSON.objectify()"],
-        "answer": "A"
-      },
-      {
-        "question": "In Python, which collection type holds key-value pairs?",
-        "options": ["A) list", "B) tuple", "C) dict", "D) set", "E) array"],
-        "answer": "C"
-      },
-      {
-        "question": "Which HTML tag is used for a checkbox input?",
-        "options": ["A) <check>", "B) <input type=\"checkbox\">", "C) <checkbox>", "D) <option>", "E) <form>"],
-        "answer": "B"
-      },
-      {
-        "question": "Which CSS property controls the text size?",
-        "options": ["A) font-style", "B) font-weight", "C) font-size", "D) text-size", "E) text-style"],
-        "answer": "C"
-      },
-      {
-        "question": "What does SQL's SELECT statement do?",
-        "options": ["A) Deletes rows", "B) Updates rows", "C) Retrieves data", "D) Creates table", "E) Alters table"],
-        "answer": "C"
-      },
-      {
-        "question": "Which tag is used to create a table row in HTML?",
-        "options": ["A) <td>", "B) <tr>", "C) <th>", "D) <table>", "E) <row>"],
-        "answer": "B"
-      },
-      {
-        "question": "In JavaScript, which keyword declares a block-scoped variable?",
-        "options": ["A) var", "B) let", "C) const", "D) both B and C", "E) shared"],
-        "answer": "D"
-      },
-      {
-        "question": "Which Python keyword is used to create an anonymous function?",
-        "options": ["A) lambda", "B) anon", "C) def", "D) func", "E) inline"],
-        "answer": "A"
-      },
-      {
-        "question": "Which HTML element is used to create a dropdown list?",
-        "options": ["A) <dropdown>", "B) <select>", "C) <option>", "D) <list>", "E) <combo>"],
-        "answer": "B"
-      },
-      {
-        "question": "Which CSS unit is relative to the font-size of the element?",
-        "options": ["A) px", "B) em", "C) rem", "D) %", "E) vh"],
-        "answer": "B"
-      },
-      {
-        "question": "In SQL, which clause is used to filter results?",
-        "options": ["A) ORDER BY", "B) GROUP BY", "C) HAVING", "D) WHERE", "E) FILTER"],  
-        "answer": "D"
-      },
-      {
-        "question": "Which JavaScript function is used to schedule code execution after a delay?",
-        "options": ["A) setDelay()", "B) delay()", "C) setTimeout()", "D) wait()", "E) sleep()"],
-        "answer": "C"
-      },
-      {
-        "question": "What tag encloses the visible content of an HTML document?",
-        "options": ["A) <body>", "B) <head>", "C) <html>", "D) <main>", "E) <section>"],
-        "answer": "A"
-      },
-      {
-        "question": "Which HTML tag defines a hyperlink?",
-        "options": ["A) <link>", "B) <a>", "C) <href>", "D) <url>", "E) <anchor>"],
-        "answer": "B"
-      },
-      {
-        "question": "What does API stand for?",
-        "options": ["A) Application Programming Interface", "B) Application Protocol Internet", "C) Applied Program Internet", "D) Automatic Programming Interface", "E) Application Process Internet"],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS property sets the background color?",
-        "options": ["A) bg-color", "B) background-color", "C) color", "D) bg", "E) bgcolor"],
-        "answer": "B"
-      },
-      {
-        "question": "Which method removes the last element from an array in JavaScript?",
-        "options": ["A) pop()", "B) shift()", "C) slice()", "D) splice()", "E) remove()"],
-        "answer": "A"
-      },
-      {
-        "question": "In Python, which keyword is used to create a class?",
-        "options": ["A) class", "B) def", "C) struct", "D) object", "E) type"],
-        "answer": "A"
-      },
-      {
-        "question": "Which HTML tag is used to define a paragraph?",
-        "options": ["A) <p>", "B) <para>", "C) <text>", "D) <div>", "E) <span>"],
-        "answer": "A"
-      },
-      {
-        "question": "What file extension is commonly used for JavaScript files?",
-        "options": ["A) .java", "B) .js", "C) .jsx", "D) .ts", "E) .script"],
-        "answer": "B"
-      },
-      {
-        "question": "Which SQL keyword retrieves unique values?",
-        "options": ["A) UNIQUE", "B) DISTINCT", "C) ONLY", "D) SINGLE", "E) SPECIAL"],
-        "answer": "B"
-      }
-   ],
-"Medium": [
-  {
-    "question": "What is the time complexity of binary search on a sorted array of size n?",
-    "options": ["A) O(n)", "B) O(log n)", "C) O(n log n)", "D) O(1)", "E) O(n²)"],
-    "answer": "B"
-  },
-  {
-    "question": "In Python, what does the `strip()` method do on a string?",
-    "options": ["A) Converts to lowercase", "B) Removes whitespace", "C) Splits string", "D) Strips characters", "E) None"],
-    "answer": "B"
-  },
-  {
-    "question": "Which data structure uses FIFO order?",
-    "options": ["A) Stack", "B) Queue", "C) Tree", "D) Graph", "E) HashMap"],
-    "answer": "B"
-  },
-  {
-    "question": "Which keyword in Java marks a method that cannot be overridden?",
-    "options": ["A) static", "B) final", "C) abstract", "D) private", "E) synchronized"],
-    "answer": "B"
-  },
-  {
-    "question": "In C++, which operator must be overloaded to allow `a + b` syntax on objects?",
-    "options": ["A) operator_add", "B) operator+", "C) add()", "D) +()", "E) opPlus"],
-    "answer": "B"
-  },
-  {
-    "question": "Which HTML5 element is used for video playback?",
-    "options": ["A) <media>", "B) <movie>", "C) <embed>", "D) <video>", "E) <play>"],
-    "answer": "D"
-  },
-  {
-    "question": "What is the output of `print(2 ** 3 ** 2)` in Python?",
-    "options": ["A) 64", "B) 512", "C) 256", "D) 36", "E) Error"],
-    "answer": "B"
-  },
-  {
-    "question": "Which SQL clause groups rows sharing a property?",
-    "options": ["A) WHERE", "B) HAVING", "C) GROUP BY", "D) ORDER BY", "E) JOIN"],
-    "answer": "C"
-  },
-  {
-    "question": "In JavaScript, what does `===` compare?",
-    "options": ["A) Value only", "B) Type only", "C) Value and type", "D) Reference", "E) Prototype"],
-    "answer": "C"
-  },
-  {
-    "question": "Which CSS property controls the layout of flex items?",
-    "options": ["A) display", "B) position", "C) flex-direction", "D) float", "E) grid-template"],
-    "answer": "C"
-  }
-      {
-        "question": "What is the space complexity of merge sort?",
-        "options": ["A) O(1)", "B) O(log n)", "C) O(n)", "D) O(n log n)", "E) O(n²)"],
-        "answer": "C"
-      },
-      {
-        "question": "In Python list slicing `a[1:5:2]`, what does `2` represent?",
-        "options": ["A) Start index", "B) Stop index", "C) Step size", "D) Length", "E) Count"],
-        "answer": "C"
-      },
-      {
-        "question": "Which HTTP status code means 'Not Found'?",
-        "options": ["A) 200", "B) 301", "C) 400", "D) 404", "E) 500"],
-        "answer": "D"
-      },
-      {
-        "question": "What does REST stand for in web services?",
-        "options": ["A) Representational State Transfer", "B) Remote Execution Service Transport", "C) Reliable Service Transfer", "D) Represented Server Tech", "E) None"],
-        "answer": "A"
-      },
-      {
-        "question": "In C, what is the return type of `malloc()`?",
-        "options": ["A) void", "B) char*", "C) void*", "D) int", "E) size_t"],
-        "answer": "C"
-      },
-      {
-        "question": "Which Git command uploads commits to a remote repository?",
-        "options": ["A) git push", "B) git pull", "C) git fetch", "D) git commit", "E) git merge"],
-        "answer": "A"
-      },
-      {
-        "question": "What does JSON stand for?",
-        "options": ["A) Java Serialized Object Notation", "B) JavaScript Object Notation", "C) Java Standard Output Notation", "D) JSON Script Object Notation", "E) None"],
-        "answer": "B"
-      },
-      {
-        "question": "Which programming paradigm emphasizes objects and classes?",
-        "options": ["A) Functional", "B) Procedural", "C) Object-oriented", "D) Logic", "E) Declarative"],
-        "answer": "C"
-      },
-      {
-        "question": "In SQL, which join returns rows with matching keys only?",
-        "options": ["A) LEFT JOIN", "B) RIGHT JOIN", "C) INNER JOIN", "D) FULL JOIN", "E) CROSS JOIN"],
-        "answer": "C"
-      },
-      {
-        "question": "Which Python built-in type is immutable?",
-        "options": ["A) list", "B) dict", "C) set", "D) tuple", "E) bytearray"],
-        "answer": "D"
-      },
-      {
-        "question": "What is the output of `console.log(typeof NaN)` in JavaScript?",
-        "options": ["A) 'number'", "B) 'NaN'", "C) 'undefined'", "D) 'object'", "E) 'float'"],
-        "answer": "A"
-      },
-      {
-        "question": "Which CSS unit is relative to the root element font-size?",
-        "options": ["A) em", "B) rem", "C) px", "D) vh", "E) %"],
-        "answer": "B"
-      },
-      {
-        "question": "In Java, what keyword indicates a class cannot be subclassed?",
-        "options": ["A) static", "B) final", "C) abstract", "D) private", "E) protected"],
-        "answer": "B"
-      },
-      {
-        "question": "Which algorithm finds the shortest path in a weighted graph with non-negative edges?",
-        "options": ["A) BFS", "B) DFS", "C) Dijkstra's", "D) Kruskal's", "E) Prim's"],
-        "answer": "C"
-      },
-      {
-        "question": "What is the purpose of a constructor in OOP?",
-        "options": ["A) Destroy object", "B) Initialize object", "C) Clone object", "D) Serialize object", "E) None"],
-        "answer": "B"
-      },
-      {
-        "question": "Which JavaScript function parses a JSON string?",
-        "options": ["A) JSON.stringify()", "B) JSON.parse()", "C) JSON.toObject()", "D) JSON.decode()", "E) JSON.objectify()"],
-        "answer": "B"
-      },
-      {
-        "question": "Which HTML element defines the document's title shown in browser tab?",
-        "options": ["A) <header>", "B) <title>", "C) <meta>", "D) <head>", "E) <h1>"],
-        "answer": "B"
-      },
-      {
-        "question": "In Python, what keyword makes a function anonymous?",
-        "options": ["A) anon", "B) lambda", "C) def", "D) func", "E) inline"],
-        "answer": "B"
-      },
-      {
-        "question": "Which data structure uses LIFO order?",
-        "options": ["A) Queue", "B) Stack", "C) Tree", "D) Graph", "E) Heap"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the default access modifier for class members in C++?",
-        "options": ["A) public", "B) private", "C) protected", "D) internal", "E) friend"],
-        "answer": "B"
-      },
-      {
-        "question": "Which command initializes a new Git repository?",
-        "options": ["A) git start", "B) git init", "C) git create", "D) git new", "E) git repo"],
-        "answer": "B"
-      },
-      {
-        "question": "What does AJAX primarily use to communicate with the server?",
-        "options": ["A) WebSockets", "B) XMLHttpRequest", "C) FTP", "D) SMTP", "E) TCP"],
-        "answer": "B"
-      },
-      {
-        "question": "Which HTTP method is idempotent and retrieves data?",
-        "options": ["A) POST", "B) PUT", "C) DELETE", "D) GET", "E) PATCH"],
-        "answer": "D"
-      },
-      {
-        "question": "In CSS, which property controls element stacking order?",
-        "options": ["A) order", "B) z-index", "C) depth", "D) stack-order", "E) layer"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the purpose of the `finally` block in exception handling?",
-        "options": ["A) Executes only on success", "B) Executes only on failure", "C) Always executes", "D) Executes before try", "E) None"],
-        "answer": "C"
-      },
-      {
-        "question": "Which Python statement is used to exit a loop?",
-        "options": ["A) stop", "B) break", "C) exit", "D) continue", "E) return"],
-        "answer": "B"
-      },
-      {
-        "question": "Which method adds an element to the beginning of a JavaScript array?",
-        "options": ["A) push()", "B) unshift()", "C) shift()", "D) prepend()", "E) addFront()"],
-        "answer": "B"
-      },
-      {
-        "question": "In SQL, which function returns the current date and time?",
-        "options": ["A) NOW()", "B) CURRENT_DATE()", "C) GETDATE()", "D) SYSDATE()", "E) TODAY()"],
-        "answer": "A"
-      },
-      {
-        "question": "What does MVC stand for in web frameworks?",
-        "options": ["A) Model View Controller", "B) Model View Code", "C) Main View Controller", "D) Model Validate Control", "E) Module View Control"],
-        "answer": "A"
-      },
-      {
-        "question": "Which HTML attribute is used for linking an external CSS file?",
-        "options": ["A) src", "B) href", "C) linkto", "D) css", "E) rel"],
-        "answer": "E"
-      },
-      {
-        "question": "Which Python collection preserves insertion order as of 3.7?",
-        "options": ["A) list", "B) dict", "C) set", "D) frozenset", "E) array"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the complexity of accessing an element by index in an array?",
-        "options": ["A) O(1)", "B) O(log n)", "C) O(n)", "D) O(n log n)", "E) O(n²)"],
-        "answer": "A"
-      },
-      {
-        "question": "Which HTTP status code indicates server error?",
-        "options": ["A) 200", "B) 301", "C) 404", "D) 500", "E) 302"],
-        "answer": "D"
-      },
-      {
-        "question": "In JavaScript, which keyword declares a block-scoped constant?",
-        "options": ["A) var", "B) let", "C) const", "D) static", "E) final"],
-        "answer": "C"
-      },
-      {
-        "question": "Which database is known as a NoSQL document store?",
-        "options": ["A) MySQL", "B) PostgreSQL", "C) MongoDB", "D) Oracle", "E) SQLite"],
-        "answer": "C"
-      }
-    ],
-    "Hard": [
-      {
-        "question": "What is the time complexity of the worst case for quicksort?",
-        "options": ["A) O(n log n)", "B) O(n²)", "C) O(log n)", "D) O(n)"],
-        "answer": "B"
-      },
-      {
-        "question": "Which CSS property is used to create a responsive grid layout?",
-        "options": ["A) grid-template-columns", "B) grid-template-rows", "C) grid-auto-flow", "D) grid-gap"],
-        "answer": "A"
-      },
-      {
-        "question": "In JavaScript, what is the difference between `call()` and `apply()`?",
-        "options": ["A) No difference", "B) call() takes individual arguments, apply() takes an array", "C) apply() is deprecated", "D) call() is faster"],
-        "answer": "B"
-      },
-      {
-        "question": "Which CSS property is used to create a responsive image?",
-        "options": ["A) max-width", "B) width", "C) height", "D) responsive"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the purpose of the `<template>` element in HTML?",
-        "options": ["A) To define a reusable template for content", "B) To define a hyperlink", "C) To insert an image", "D) To create a form"],
-        "answer": "A"
-      },
-      {
-        "question": "Which design pattern ensures a class has only one instance?",
-        "options": ["A) Factory", "B) Singleton", "C) Observer", "D) Strategy"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the purpose of the `<slot>` element in HTML?",
-        "options": ["A) To create a placeholder for content in a web component", "B) To define a hyperlink", "C) To insert an image", "D) To create a form"],
-        "answer": "A"
-      },
-      {
-        "question": "In Python, what is a closure?",
-        "options": ["A) A nested function that captures variables from outer scope", "B) A way to close files", "C) A type of loop", "D) An exception handler"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the difference between `==` and `is` in Python?",
-        "options": ["A) No difference", "B) == compares values, is compares identity", "C) is compares values, == compares identity", "D) is is deprecated"],
-        "answer": "B"
-      },
-      {
-        "question": "Which data structure would be most efficient for implementing autocomplete?",
-        "options": ["A) Array", "B) Hash Table", "C) Trie", "D) Binary Tree"],
-        "answer": "C"
-      }
-    ],
-    "Extreme": [
-      {
-        "question": "What is the space complexity of the Floyd-Warshall algorithm?",
-        "options": ["A) O(V)", "B) O(V²)", "C) O(V³)", "D) O(E)"],
-        "answer": "B"
-      },
-      {
-        "question": "In JavaScript, what happens when you modify a const object's property?",
-        "options": ["A) Error is thrown", "B) Property is modified successfully", "C) Nothing happens", "D) Object becomes null"],
-        "answer": "B"
-      },
-      {
-        "question": "Which algorithm is used in Git's diff functionality?",
-        "options": ["A) Myers algorithm", "B) Dijkstra's algorithm", "C) Quick sort", "D) Binary search"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the difference between TCP and UDP?",
-        "options": ["A) TCP is faster", "B) UDP is connection-oriented", "C) TCP is reliable, UDP is not", "D) No difference"],
-        "answer": "C"
-      },
-      {
-        "question": "In database design, what is denormalization?",
-        "options": ["A) Removing all relationships", "B) Adding redundancy to improve performance", "C) Creating more tables", "D) Deleting data"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the CAP theorem in distributed systems?",
-        "options": ["A) Consistency, Availability, Partition tolerance - pick two", "B) All three can be achieved", "C) Only one can be achieved", "D) None of the above"],
-        "answer": "A"
-      },
-      {
-        "question": "Which consensus algorithm is used by Bitcoin?",
-        "options": ["A) Proof of Stake", "B) Proof of Work", "C) Raft", "D) Paxos"],
-        "answer": "B"
-      },
-      {
-        "question": "What is the time complexity of inserting into a B-tree?",
-        "options": ["A) O(1)", "B) O(log n)", "C) O(n)", "D) O(n log n)"],
-        "answer": "B"
-      },
-      {
-        "question": "In functional programming, what is a monad?",
-        "options": ["A) A design pattern for handling side effects", "B) A type of loop", "C) A database transaction", "D) An error handler"],
-        "answer": "A"
-      },
-      {
-        "question": "What is the purpose of garbage collection in programming languages?",
-        "options": ["A) To delete unused files", "B) To automatically manage memory", "C) To compress data", "D) To optimize code"],
-        "answer": "B"
-      }
-    ]
+     "Medium": [
+    {
+      "question": "What does the 'break' statement do inside a loop?",
+      "options": ["A) Skips iteration", "B) Stops loop", "C) Continues loop", "D) Restarts loop"],
+      "answer": "B"
+    },
+    {
+      "question": "Which Python data structure is immutable?",
+      "options": ["A) List", "B) Dictionary", "C) Tuple", "D) Set"],
+      "answer": "C"
+    },
+    {
+      "question": "How do you handle exceptions in Python?",
+      "options": ["A) try/except", "B) catch/throw", "C) if/else", "D) do/catch"],
+      "answer": "A"
+    },
+    {
+      "question": "What will this code print? 'print(\"Hello\" * 3)'",
+      "options": ["A) HelloHelloHello", "B) Hello 3", "C) Hello*3", "D) Error"],
+      "answer": "A"
+    },
+    {
+      "question": "Which keyword is used to create a class in Python?",
+      "options": ["A) class", "B) def", "C) object", "D) struct"],
+      "answer": "A"
+    },
+    {
+      "question": "How to create an empty dictionary?",
+      "options": ["A) {}", "B) []", "C) ()", "D) dict()"],
+      "answer": "D"
+    },
+    {
+      "question": "What will 'bool([])' return?",
+      "options": ["A) True", "B) False", "C) None", "D) Error"],
+      "answer": "B"
+    },
+    {
+      "question": "Which method removes the last element from a list?",
+      "options": ["A) pop()", "B) remove()", "C) delete()", "D) discard()"],
+      "answer": "A"
+    },
+    {
+      "question": "How to access the first character of a string 's'?",
+      "options": ["A) s(0)", "B) s[0]", "C) s{0}", "D) s.first()"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the output of '3 == 3.0' in Python?",
+      "options": ["A) True", "B) False", "C) Error", "D) None"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the difference between '==' and 'is' in Python?",
+      "options": ["A) No difference", "B) '==' compares values, 'is' compares identities", "C) 'is' compares values, '==' compares identities", "D) Both compare identities"],
+      "answer": "B"
+    },
+    {
+      "question": "How do you add an element to a set?",
+      "options": ["A) add()", "B) append()", "C) insert()", "D) push()"],
+      "answer": "A"
+    },
+    {
+      "question": "What will be the output of 'print([1,2,3] * 2)'?",
+      "options": ["A) [1,2,3,1,2,3]", "B) [2,4,6]", "C) [1,4,9]", "D) Error"],
+      "answer": "A"
+    },
+    {
+      "question": "Which method can be used to convert a string to lowercase?",
+      "options": ["A) lower()", "B) toLower()", "C) downcase()", "D) lowercase()"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the purpose of the 'self' parameter in class methods?",
+      "options": ["A) To refer to the class itself", "B) To refer to the instance object", "C) To declare static methods", "D) No special purpose"],
+      "answer": "B"
+    },
+    {
+      "question": "How do you check if a key exists in a dictionary?",
+      "options": ["A) key in dict", "B) dict.has(key)", "C) dict.contains(key)", "D) dict.exists(key)"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print(2 ** 3 ** 2)'?",
+      "options": ["A) 512", "B) 64", "C) 256", "D) 8"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following is a mutable data type?",
+      "options": ["A) tuple", "B) list", "C) str", "D) int"],
+      "answer": "B"
+    },
+    {
+      "question": "What is a lambda function?",
+      "options": ["A) Named function", "B) Anonymous function", "C) Class method", "D) Decorator"],
+      "answer": "B"
+    },
+    {
+      "question": "How can you concatenate two lists 'a' and 'b'?",
+      "options": ["A) a + b", "B) a.concat(b)", "C) a.append(b)", "D) a.extend(b)"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'pass' statement do?",
+      "options": ["A) Ends a loop", "B) Does nothing", "C) Skips an iteration", "D) Throws an error"],
+      "answer": "B"
+    },
+    {
+      "question": "How do you read a file in Python?",
+      "options": ["A) open('file').read()", "B) file.read()", "C) read('file')", "D) file.open()"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print(list(range(3)))'?",
+      "options": ["A) [0,1,2]", "B) [1,2,3]", "C) [0,1,2,3]", "D) Error"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following is NOT a Python data type?",
+      "options": ["A) list", "B) array", "C) tuple", "D) set"],
+      "answer": "B"
+    },
+    {
+      "question": "What will 'print(bool(None))' output?",
+      "options": ["A) True", "B) False", "C) None", "D) Error"],
+      "answer": "B"
+    },
+    {
+      "question": "How to convert a list to a tuple?",
+      "options": ["A) tuple(list)", "B) list.tuple()", "C) toTuple(list)", "D) list.to_tuple()"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the purpose of the 'yield' keyword?",
+      "options": ["A) Returns a value", "B) Returns a generator", "C) Raises an exception", "D) Ends a function"],
+      "answer": "B"
+    },
+    {
+      "question": "How do you create a virtual environment in Python?",
+      "options": ["A) python -m venv env", "B) virtualenv create env", "C) pip install env", "D) python create env"],
+      "answer": "A"
+    },
+    {
+      "question": "What is list comprehension used for?",
+      "options": ["A) Creating lists using loops", "B) Reading files", "C) Exception handling", "D) Defining functions"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following is used to add an element at a specific position in a list?",
+      "options": ["A) insert()", "B) append()", "C) extend()", "D) add()"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print('abc'.find('b'))'?",
+      "options": ["A) 1", "B) 0", "C) -1", "D) Error"],
+      "answer": "A"
+    },
+    {
+      "question": "Which method returns the number of occurrences of a substring?",
+      "options": ["A) count()", "B) find()", "C) index()", "D) length()"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you create a generator expression?",
+      "options": ["A) (x for x in range(5))", "B) [x for x in range(5)]", "C) {x for x in range(5)}", "D) <x for x in range(5)>"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'del' statement do?",
+      "options": ["A) Deletes variables or items", "B) Defines functions", "C) Delays execution", "D) Declares classes"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these is a built-in Python function?",
+      "options": ["A) map()", "B) apply()", "C) foreach()", "D) lambda()"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you convert a dictionary's keys to a list?",
+      "options": ["A) list(dict.keys())", "B) dict.keylist()", "C) dict.keys_list()", "D) keys(dict)"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print(0.1 + 0.2 == 0.3)'?",
+      "options": ["A) True", "B) False", "C) Error", "D) None"],
+      "answer": "B"
+    },
+    {
+      "question": "How to reverse a list named 'lst'?",
+      "options": ["A) lst.reverse()", "B) reversed(lst)", "C) lst[::-1]", "D) All of the above"],
+      "answer": "D"
+    },
+    {
+      "question": "Which operator is used to check if a value is NOT in a list?",
+      "options": ["A) not in", "B) !in", "C) not inside", "D) != in"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you create an empty set?",
+      "options": ["A) set()", "B) {}", "C) []", "D) ()"],
+      "answer": "A"
+    },
+    {
+      "question": "What will 'print(type(None))' output?",
+      "options": ["A) <class 'NoneType'>", "B) <class 'null'>", "C) None", "D) <type 'None'>"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the correct way to open a file for reading?",
+      "options": ["A) open('file.txt', 'r')", "B) open('file.txt', 'w')", "C) open('file.txt', 'a')", "D) open('file.txt')"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'strip()' method do?",
+      "options": ["A) Removes whitespace from both ends", "B) Removes all spaces", "C) Removes newlines only", "D) Splits strings"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you convert a string to a list of characters?",
+      "options": ["A) list(str)", "B) str.list()", "C) char(str)", "D) str.toList()"],
+      "answer": "A"
+    },
+    {
+      "question": "What will 'print(5 // 2)' output?",
+      "options": ["A) 2", "B) 2.5", "C) 3", "D) 2.0"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these functions returns the largest value?",
+      "options": ["A) max()", "B) min()", "C) largest()", "D) high()"],
+      "answer": "A"
+    }
+  ],
+
+     "Hard": [
+    {
+      "question": "What is a Python decorator primarily used for?",
+      "options": ["A) To modify functions or methods", "B) To create classes", "C) To handle exceptions", "D) To define variables"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following is true about Python's GIL (Global Interpreter Lock)?",
+      "options": ["A) It allows multiple threads to run in parallel", "B) It prevents multiple native threads from executing Python bytecodes at once", "C) It manages memory allocation", "D) It is a Python module for concurrency"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the output of the following code? \n\n`print(list(map(lambda x: x*2, [1,2,3])))`",
+      "options": ["A) [2,4,6]", "B) [1,2,3]", "C) [1,4,9]", "D) Error"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'with' statement do in Python?",
+      "options": ["A) Handles exceptions", "B) Simplifies exception handling", "C) Automatically manages resource acquisition and release", "D) Starts a loop"],
+      "answer": "C"
+    },
+    {
+      "question": "Which data structure provides O(1) average time complexity for lookup?",
+      "options": ["A) List", "B) Dictionary", "C) Tuple", "D) String"],
+      "answer": "B"
+    },
+    {
+      "question": "What is a generator in Python?",
+      "options": ["A) A function that returns an iterator", "B) A data type", "C) A special class", "D) A module"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these statements is true about Python's 'is' operator?",
+      "options": ["A) Checks object identity", "B) Checks value equality", "C) Assigns variables", "D) Compares data types"],
+      "answer": "A"
+    },
+    {
+      "question": "What is a metaclass in Python?",
+      "options": ["A) Class of a class", "B) Instance method", "C) Class attribute", "D) Special decorator"],
+      "answer": "A"
+    },
+    {
+      "question": "How can you catch multiple exceptions in one block?",
+      "options": ["A) except (TypeError, ValueError):", "B) except TypeError or ValueError:", "C) except TypeError, ValueError:", "D) except [TypeError, ValueError]:"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the functools.lru_cache decorator do?",
+      "options": ["A) Caches function results", "B) Logs function calls", "C) Limits recursion depth", "D) Runs function asynchronously"],
+      "answer": "A"
+    },
+    {
+      "question": "How to make a Python class iterable?",
+      "options": ["A) Define __iter__() method", "B) Define __init__() method", "C) Define __next__() method only", "D) Define __str__() method"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the result of the expression: 'bool([]) and bool({})'?",
+      "options": ["A) False", "B) True", "C) None", "D) Error"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following is NOT a Python built-in module?",
+      "options": ["A) math", "B) sys", "C) numpy", "D) os"],
+      "answer": "C"
+    },
+    {
+      "question": "What will the following code output? \n\n`a = [1,2,3]; b = a; b.append(4); print(a)`",
+      "options": ["A) [1,2,3,4]", "B) [1,2,3]", "C) Error", "D) None"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'isinstance()' function do?",
+      "options": ["A) Checks if an object is instance of a class", "B) Converts data types", "C) Returns type name", "D) Checks if two objects are equal"],
+      "answer": "A"
+    },
+    {
+      "question": "How can you reverse a string 's' in Python?",
+      "options": ["A) s[::-1]", "B) reversed(s)", "C) s.reverse()", "D) s.reversed()"],
+      "answer": "A"
+    },
+    {
+      "question": "Which method converts a string to a list of words?",
+      "options": ["A) split()", "B) join()", "C) strip()", "D) replace()"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of the following code? \n\n`print(type((1,)))`",
+      "options": ["A) <class 'tuple'>", "B) <class 'int'>", "C) <class 'list'>", "D) <class 'str'>"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following statements about Python lists is false?",
+      "options": ["A) Lists are mutable", "B) Lists can contain mixed data types", "C) Lists are immutable", "D) Lists support indexing"],
+      "answer": "C"
+    },
+    {
+      "question": "How do you write comments in Python?",
+      "options": ["A) Using #", "B) Using //", "C) Using <!-- -->", "D) Using /* */"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print(0.1 + 0.2 == 0.3)'?",
+      "options": ["A) False", "B) True", "C) Error", "D) None"],
+      "answer": "A"
+    },
+    {
+      "question": "Which built-in function can convert an iterable into a list?",
+      "options": ["A) list()", "B) dict()", "C) tuple()", "D) set()"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the difference between a list and a tuple?",
+      "options": ["A) Lists are mutable; tuples are immutable", "B) Tuples are mutable; lists are immutable", "C) Both are mutable", "D) Both are immutable"],
+      "answer": "A"
+    },
+    {
+      "question": "How to create a set from a list 'lst'?",
+      "options": ["A) set(lst)", "B) list(lst)", "C) dict(lst)", "D) tuple(lst)"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print(2 ** 3)'?",
+      "options": ["A) 8", "B) 6", "C) 9", "D) 5"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'enumerate()' function do?",
+      "options": ["A) Adds a counter to an iterable", "B) Sorts an iterable", "C) Filters an iterable", "D) Maps a function to an iterable"],
+      "answer": "A"
+    },
+    {
+      "question": "What is a Python slice notation used for?",
+      "options": ["A) Extracting parts of sequences", "B) Defining functions", "C) Exception handling", "D) Looping"],
+      "answer": "A"
+    },
+    {
+      "question": "How to check the length of a list 'lst'?",
+      "options": ["A) len(lst)", "B) length(lst)", "C) lst.length()", "D) size(lst)"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'zip()' function do?",
+      "options": ["A) Combines multiple iterables element-wise", "B) Sorts lists", "C) Compresses files", "D) Filters elements"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print(type([]) is list)'?",
+      "options": ["A) True", "B) False", "C) Error", "D) None"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the purpose of Python’s 'pass' statement?",
+      "options": ["A) Acts as a placeholder doing nothing", "B) Ends a function", "C) Raises an exception", "D) Starts a loop"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print(3 * \"abc\")'?",
+      "options": ["A) abcabcabc", "B) abc*3", "C) 3abc", "D) Error"],
+      "answer": "A"
+    },
+    {
+      "question": "Which keyword is used to create a function?",
+      "options": ["A) def", "B) func", "C) function", "D) method"],
+      "answer": "A"
+    },
+    {
+      "question": "What will 'print(list(reversed([1,2,3])))' output?",
+      "options": ["A) [3,2,1]", "B) [1,2,3]", "C) [3,1,2]", "D) Error"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the result of 'bool(0)'?",
+      "options": ["A) False", "B) True", "C) None", "D) Error"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you define a multi-line string?",
+      "options": ["A) Triple quotes ''' or \"\"\"", "B) Single quotes ''", "C) Double quotes \"\"", "D) Backticks ``"],
+      "answer": "A"
+    },
+    {
+      "question": "What does 'import *' do?",
+      "options": ["A) Imports all names from a module", "B) Imports one function", "C) Imports nothing", "D) Imports classes only"],
+      "answer": "A"
+    },
+    {
+      "question": "How to create a copy of a list named 'lst'?",
+      "options": ["A) lst.copy()", "B) lst.clone()", "C) copy(lst)", "D) lst.duplicate()"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print(10 // 3)'?",
+      "options": ["A) 3", "B) 3.33", "C) 4", "D) Error"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you concatenate strings 'a' and 'b'?",
+      "options": ["A) a + b", "B) a.concat(b)", "C) a.append(b)", "D) a & b"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following is an immutable data type?",
+      "options": ["A) int", "B) list", "C) dict", "D) set"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you declare a global variable inside a function?",
+      "options": ["A) global var_name", "B) var var_name", "C) declare global var_name", "D) global: var_name"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the purpose of the 'finally' block?",
+      "options": ["A) Always executes after try/except", "B) Executes only if no exception", "C) Executes only if exception occurs", "D) Defines a function"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the difference between 'list.append()' and 'list.extend()'?",
+      "options": ["A) append adds one item; extend adds all items of an iterable", "B) Both do the same", "C) append adds multiple items; extend adds one", "D) append removes items"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of 'print([1,2,3]*2)'?",
+      "options": ["A) [1,2,3,1,2,3]", "B) [2,4,6]", "C) [[1,2,3],[1,2,3]]", "D) Error"],
+      "answer": "A"
+    },
+    {
+      "question": "Which function converts a string to an integer?",
+      "options": ["A) int()", "B) str()", "C) float()", "D) convert()"],
+      "answer": "A"
+    }
+  ],
+   "Extreme": [
+    {
+      "question": "Which Python feature allows functions to be modified without changing their code?",
+      "options": ["A) Lambda functions", "B) Decorators", "C) Generators", "D) Context managers", "E) Metaclasses"],
+      "answer": "B"
+    },
+    {
+      "question": "What does the Python 'asyncio' library provide?",
+      "options": ["A) Asynchronous I/O handling", "B) Multi-threading support", "C) Database management", "D) Web development tools", "E) File compression"],
+      "answer": "A"
+    },
+    {
+      "question": "In Python, what is the output of: `list(zip([1,2], ['a','b','c']))`?",
+      "options": ["A) [(1, 'a'), (2, 'b')]", "B) [(1, 'a'), (2, 'b'), (None, 'c')]", "C) Error", "D) [(1, 'a'), (2, 'b'), (3, 'c')]", "E) []"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the main purpose of Python's 'with' statement?",
+      "options": ["A) Loop control", "B) Exception handling", "C) Resource management", "D) Function declaration", "E) Variable assignment"],
+      "answer": "C"
+    },
+    {
+      "question": "Which of these Python data types is immutable?",
+      "options": ["A) List", "B) Set", "C) Dictionary", "D) Tuple", "E) Bytearray"],
+      "answer": "D"
+    },
+    {
+      "question": "What does the 'yield' keyword do in Python?",
+      "options": ["A) Returns a generator", "B) Raises an exception", "C) Defines a function", "D) Imports a module", "E) Creates a list"],
+      "answer": "A"
+    },
+    {
+      "question": "How can you create a virtual environment in Python?",
+      "options": ["A) python -m venv env", "B) python create env", "C) pip install virtualenv", "D) python env create", "E) virtualenv python"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the difference between '==' and 'is' in Python?",
+      "options": ["A) '==' compares values; 'is' compares identities", "B) They are the same", "C) '==' compares identities; 'is' compares values", "D) Both compare memory addresses", "E) None of the above"],
+      "answer": "A"
+    },
+    {
+      "question": "Which built-in function returns the memory address of an object?",
+      "options": ["A) id()", "B) memory()", "C) address()", "D) getmem()", "E) ref()"],
+      "answer": "A"
+    },
+    {
+      "question": "How can you merge two dictionaries in Python 3.9+?",
+      "options": ["A) dict1 | dict2", "B) dict1.merge(dict2)", "C) dict1 + dict2", "D) dict1.update(dict2)", "E) merge(dict1, dict2)"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'global' keyword do in Python?",
+      "options": ["A) Declares a variable as global inside a function", "B) Imports global variables", "C) Creates a global function", "D) Defines a global class", "E) Deletes a global variable"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following is NOT a valid Python identifier?",
+      "options": ["A) _myvar", "B) 2var", "C) var_2", "D) varTwo", "E) __var__"],
+      "answer": "B"
+    },
+    {
+      "question": "What does the method 'str.format()' do?",
+      "options": ["A) Formats strings", "B) Converts to string", "C) Reverses strings", "D) Joins strings", "E) Splits strings"],
+      "answer": "A"
+    },
+    {
+      "question": "Which module is used for regular expressions in Python?",
+      "options": ["A) re", "B) regex", "C) reg", "D) pyregex", "E) expression"],
+      "answer": "A"
+    },
+    {
+      "question": "What will be the result of: `bool('False')`?",
+      "options": ["A) True", "B) False", "C) None", "D) Error", "E) 'False'"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you check if a key exists in a dictionary 'd'?",
+      "options": ["A) 'key' in d", "B) d.has_key('key')", "C) d.key_exists('key')", "D) d.contains('key')", "E) d.exists('key')"],
+      "answer": "A"
+    },
+    {
+      "question": "What does 'PEP' stand for in Python?",
+      "options": ["A) Python Enhancement Proposal", "B) Python Execution Process", "C) Programming Environment Protocol", "D) Python Extension Package", "E) Primary Execution Plan"],
+      "answer": "A"
+    },
+    {
+      "question": "Which function converts a Python object to a JSON string?",
+      "options": ["A) json.dumps()", "B) json.loads()", "C) json.encode()", "D) json.parse()", "E) json.toString()"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of: `print(bool([]))`?",
+      "options": ["A) False", "B) True", "C) None", "D) Error", "E) []"],
+      "answer": "A"
+    },
+    {
+      "question": "What keyword is used to handle exceptions in Python?",
+      "options": ["A) try", "B) catch", "C) except", "D) handle", "E) throw"],
+      "answer": "C"
+    },
+    {
+      "question": "Which Python built-in type represents an unordered collection of unique elements?",
+      "options": ["A) set", "B) list", "C) dict", "D) tuple", "E) array"],
+      "answer": "A"
+    },
+    {
+      "question": "What is a lambda function?",
+      "options": ["A) An anonymous function", "B) A recursive function", "C) A generator", "D) A method in classes", "E) A decorator"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'map()' function do?",
+      "options": ["A) Applies a function to all items in an iterable", "B) Filters items in a list", "C) Creates a dictionary", "D) Iterates through a string", "E) Sorts a list"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you import a module named 'math'?",
+      "options": ["A) import math", "B) include math", "C) require math", "D) using math", "E) module math"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the difference between 'break' and 'continue' statements?",
+      "options": ["A) 'break' exits loop; 'continue' skips to next iteration", "B) Both do the same", "C) 'break' skips iteration; 'continue' exits loop", "D) Both pause the loop", "E) None of the above"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following is NOT a Python keyword?",
+      "options": ["A) pass", "B) eval", "C) assert", "D) global", "E) nonlocal"],
+      "answer": "B"
+    },
+    {
+      "question": "What does the 'strip()' method do on strings?",
+      "options": ["A) Removes whitespace from both ends", "B) Removes all spaces", "C) Converts to uppercase", "D) Splits the string", "E) Replaces characters"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the correct way to open a file for reading?",
+      "options": ["A) open('file.txt', 'r')", "B) open('file.txt', 'w')", "C) open('file.txt', 'a')", "D) open('file.txt', 'x')", "E) open('file.txt', 'b')"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the use of the 'pass' statement in Python?",
+      "options": ["A) Placeholder for code", "B) Ends a function", "C) Throws an error", "D) Starts a loop", "E) Imports a module"],
+      "answer": "A"
+    },
+    {
+      "question": "Which statement is used to create a class in Python?",
+      "options": ["A) class", "B) def", "C) struct", "D) module", "E) object"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'finally' block do in exception handling?",
+      "options": ["A) Executes code regardless of exceptions", "B) Executes only on exception", "C) Executes only if no exception", "D) Defines a new exception", "E) Skips exception handling"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following is used to document a Python function?",
+      "options": ["A) Docstring", "B) Comment", "C) Annotation", "D) Metadata", "E) Decorator"],
+      "answer": "A"
+    },
+    {
+      "question": "How to check the data type of a variable 'x'?",
+      "options": ["A) type(x)", "B) datatype(x)", "C) typeof(x)", "D) class(x)", "E) typeOf(x)"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of: `print(0.1 + 0.2 == 0.3)`?",
+      "options": ["A) False", "B) True", "C) Error", "D) None", "E) 0.3"],
+      "answer": "A"
+    },
+    {
+      "question": "Which method is used to add an item to the end of a list?",
+      "options": ["A) append()", "B) add()", "C) insert()", "D) extend()", "E) push()"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you remove duplicates from a list 'lst'?",
+      "options": ["A) list(set(lst))", "B) lst.remove_duplicates()", "C) unique(lst)", "D) lst.unique()", "E) lst.deduplicate()"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'raise' keyword do?",
+      "options": ["A) Raises an exception", "B) Starts a loop", "C) Ends a function", "D) Imports a module", "E) Creates a class"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these is NOT a valid way to comment in Python?",
+      "options": ["A) # This is a comment", "B) '''This is a comment'''", "C) \"\"\"This is a comment\"\"\"", "D) // This is a comment", "E) #! This is a comment"],
+      "answer": "D"
+    },
+    {
+      "question": "What does the 'del' statement do?",
+      "options": ["A) Deletes a variable or item", "B) Defines a function", "C) Declares a variable", "D) Imports a module", "E) Creates a list"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the output of: `print(bool(None))`?",
+      "options": ["A) False", "B) True", "C) None", "D) Error", "E) 0"],
+      "answer": "A"
+    },
+    {
+      "question": "Which operator is used for floor division?",
+      "options": ["A) //", "B) /", "C) %", "D) **", "E) &"],
+      "answer": "A"
+    },
+    {
+      "question": "How do you create an empty dictionary?",
+      "options": ["A) {}", "B) []", "C) ()", "D) dict()", "E) Both A and D"],
+      "answer": "E"
+    },
+    {
+      "question": "Which built-in Python function returns the smallest item in an iterable?",
+      "options": ["A) min()", "B) max()", "C) smallest()", "D) low()", "E) lesser()"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'isinstance()' function check?",
+      "options": ["A) If an object is an instance of a class", "B) If two variables are equal", "C) If a function exists", "D) If a module is imported", "E) If a list is empty"],
+      "answer": "A"
+    },
+    {
+      "question": "How can you get a substring from a string 's' from index 2 to 5?",
+      "options": ["A) s[2:6]", "B) s[2:5]", "C) s.slice(2,5)", "D) s.substring(2,5)", "E) s(2,5)"],
+      "answer": "A"
+    },
+    {
+      "question": "What does the 'id()' function return?",
+      "options": ["A) Memory address of an object", "B) Type of object", "C) Length of object", "D) Value of object", "E) Hash of object"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of these is a Python immutable data type?",
+      "options": ["A) int", "B) list", "C) set", "D) dict", "E) bytearray"],
+      "answer": "A"
+    },
+    {
+      "question": "What will be the output of: `print('Hello'.upper())`?",
+      "options": ["A) HELLO", "B) hello", "C) Hello", "D) Error", "E) None"],
+      "answer": "A"
+    },
+    {
+      "question": "Which of the following is NOT a valid Python collection?",
+      "options": ["A) Array", "B) List", "C) Tuple", "D) Dictionary", "E) Set"],
+      "answer": "A"
+    }
+  ]
   }
 }
