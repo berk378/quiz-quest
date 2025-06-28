@@ -85,7 +85,19 @@ def show_question_window(questions, character, category, difficulty):
     health = tk.IntVar(value=3)
     question_index = tk.IntVar(value=0)
     selected_answer = tk.StringVar()
-    timer = tk.IntVar(value=15)
+    
+   
+    def get_timer_duration(category, difficulty):
+        timer_settings = {
+            "Math": {"Easy": 5, "Medium": 8, "Hard": 10, "Extreme": 15},
+            "General Knowledge": {"Easy": 5, "Medium": 8, "Hard": 10, "Extreme": 15},
+            "Coding": {"Easy": 5, "Medium": 8, "Hard": 10, "Extreme": 15},
+            "Geography": {"Easy": 5, "Medium": 8, "Hard": 10, "Extreme": 15}
+        }
+        return timer_settings.get(category, {}).get(difficulty, 15)
+    
+    timer_duration = get_timer_duration(category, difficulty)
+    timer = tk.IntVar(value=timer_duration)
 
     hearts_label = tk.Label(game_window, font=("Helvetica", 16))
     countdown_label = tk.Label(game_window, font=("Helvetica", 14))
@@ -98,9 +110,11 @@ def show_question_window(questions, character, category, difficulty):
             game_window.destroy()
 
     def countdown():
-        for t in range(15, 0, -1):
+        for t in range(timer_duration, 0, -1):
             timer.set(t)
-            countdown_label.config(text=f"⏳ Time left: {t}s", fg="red" if t <= 5 else "black")
+            # Sürenin %25'i kaldığında kırmızı yap
+            warning_threshold = max(1, timer_duration // 4)
+            countdown_label.config(text=f" Time left: {t}s", fg="red" if t <= warning_threshold else "black")
             time.sleep(1)
             if selected_answer.get():
                 break
@@ -125,6 +139,7 @@ def show_question_window(questions, character, category, difficulty):
         for i in range(4):
             option_buttons[i].config(text=options[i], value=options[i][0])
         update_hearts()
+        timer.set(timer_duration)  
         threading.Thread(target=countdown, daemon=True).start()
 
     def submit_answer():
@@ -140,7 +155,7 @@ def show_question_window(questions, character, category, difficulty):
 
     # Apply theme to game window
     if is_dark_mode.get():
-        game_window.configure(bg="#2e2e2e")
+        game_window.configure(bg="#1d1c1c")
         question_label = tk.Label(game_window, text="", wraplength=500, font=("Helvetica", 14), bg="#2e2e2e", fg="white")
         countdown_label.configure(bg="#2e2e2e", fg="white")
         hearts_label.configure(bg="#2e2e2e", fg="white")
@@ -181,11 +196,11 @@ def toggle_theme():
     if is_dark_mode.get():
         apply_light_theme()
         is_dark_mode.set(False)
-        theme_button.config(text="🌙 Dark Mode")
+        theme_button.config(text="Dark Mode")
     else:
         apply_dark_theme()
         is_dark_mode.set(True)
-        theme_button.config(text="☀️ Light Mode")
+        theme_button.config(text="Light Mode")
 
 def apply_dark_theme():
     root.configure(bg="#2e2e2e")
