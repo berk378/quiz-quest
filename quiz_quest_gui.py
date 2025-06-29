@@ -26,11 +26,14 @@ def start_game():
 def continue_to_category():
     global player_name
     selected_char = character_var.get()
-    player_name = name_entry.get().strip()
-
-    if not player_name:
-        messagebox.showwarning("Warning", "Please enter your name!")
-        return
+    # Anonim kontrolü
+    if is_anonymous.get():
+        player_name = "Anonymous Player"
+    else:
+        player_name = name_entry.get().strip()
+        if not player_name:
+            messagebox.showwarning("Warning", "Please enter your name!")
+            return
     if not selected_char:
         messagebox.showwarning("Warning", "Please select a character!")
         return
@@ -58,6 +61,9 @@ def load_questions(category, difficulty):
         return []
 
 def write_score_to_file(name, score, category, difficulty):
+    # Anonim ise skor kaydetme
+    if name == "Anonymous Player":
+        return
     score_data = {
         "name": name,
         "score": score,
@@ -86,7 +92,6 @@ def show_question_window(questions, character, category, difficulty):
     question_index = tk.IntVar(value=0)
     selected_answer = tk.StringVar()
     
-   
     def get_timer_duration(category, difficulty):
         timer_settings = {
             "Math": {"Easy": 5, "Medium": 8, "Hard": 10, "Extreme": 15},
@@ -112,7 +117,6 @@ def show_question_window(questions, character, category, difficulty):
     def countdown():
         for t in range(timer_duration, 0, -1):
             timer.set(t)
-            # Sürenin %25'i kaldığında kırmızı yap
             warning_threshold = max(1, timer_duration // 4)
             countdown_label.config(text=f" Time left: {t}s", fg="red" if t <= warning_threshold else "black")
             time.sleep(1)
@@ -207,7 +211,7 @@ def apply_dark_theme():
     
     # Update main widgets
     widgets = [title_label, name_label, char_label, continue_button,
-               category_label, difficulty_label, start_button, theme_button]
+               category_label, difficulty_label, start_button, theme_button, anonymous_check]
     
     for widget in widgets:
         try:
@@ -248,7 +252,7 @@ def apply_light_theme():
     
     # Update main widgets
     widgets = [title_label, name_label, char_label, continue_button,
-               category_label, difficulty_label, start_button, theme_button]
+               category_label, difficulty_label, start_button, theme_button, anonymous_check]
     
     for widget in widgets:
         try:
@@ -290,6 +294,7 @@ root.geometry("400x550")
 
 # Theme variable
 is_dark_mode = tk.BooleanVar(value=False)
+is_anonymous = tk.BooleanVar(value=False)
 
 # Theme button
 theme_button = tk.Button(root, text="🌙 Dark Mode", command=toggle_theme, font=("Helvetica", 10))
@@ -306,6 +311,21 @@ name_label = tk.Label(character_frame, text="Enter your name:", font=("Helvetica
 name_label.pack(pady=5)
 name_entry = tk.Entry(character_frame, font=("Helvetica", 12))
 name_entry.pack()
+
+# Anonim checkbox ve fonksiyonu
+def toggle_anonymous():
+    if is_anonymous.get():
+        name_entry.config(state="disabled")
+        name_entry.delete(0, tk.END)
+        name_entry.insert(0, "Anonymous Player")
+    else:
+        name_entry.config(state="normal")
+        name_entry.delete(0, tk.END)
+
+anonymous_check = tk.Checkbutton(character_frame, text="Play Anonymously", 
+                                variable=is_anonymous, font=("Helvetica", 12),
+                                command=toggle_anonymous)
+anonymous_check.pack(pady=5)
 
 char_label = tk.Label(character_frame, text="Choose your character:", font=("Helvetica", 12))
 char_label.pack(pady=5)
@@ -331,4 +351,4 @@ difficulty_buttons = [tk.Radiobutton(root, text=diff, variable=difficulty_var, v
 
 start_button = tk.Button(root, text="Start Game", font=("Helvetica", 14), command=start_game)
 
-root.mainloop() 
+root.mainloop()
