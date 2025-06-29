@@ -7,6 +7,10 @@ import random
 
 player_name = ""
 
+# Kategoriler ve zorluklar
+categories = ["Math", "Geography", "General Knowledge", "Coding"]
+difficulties = ["Easy", "Medium", "Hard", "Extreme"]
+
 def start_game():
     selected_char = character_var.get()
     selected_category = category_var.get()
@@ -26,7 +30,6 @@ def start_game():
 def continue_to_category():
     global player_name
     selected_char = character_var.get()
-    # Anonim kontrolü
     if is_anonymous.get():
         player_name = "Anonymous Player"
     else:
@@ -70,14 +73,21 @@ def write_score_to_file(name, score, category, difficulty):
         "category": category,
         "difficulty": difficulty
     }
-
     try:
         with open("scores.json", "r", encoding="utf-8") as f:
             scores = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError):
         scores = []
 
-    scores.append(score_data)
+    # Aynı kategori ve zorluk için skorları bul ve ekle
+    filtered = [s for s in scores if s["category"] == category and s["difficulty"] == difficulty]
+    filtered.append(score_data)
+    filtered.sort(key=lambda x: x["score"], reverse=True)
+    filtered = filtered[:10]  # Sadece ilk 10
+
+    # Diğer skorları koru
+    scores = [s for s in scores if not (s["category"] == category and s["difficulty"] == difficulty)]
+    scores.extend(filtered)
 
     with open("scores.json", "w", encoding="utf-8") as f:
         json.dump(scores, f, indent=4)
@@ -195,7 +205,49 @@ def show_question_window(questions, character, category, difficulty):
 
     display_question()
 
-# Theme functions
+# --- SKOR TABLOSU FONKSİYONU (SEKMELİ, İLK 10 SKOR) ---
+def show_scoreboard():
+    import tkinter.ttk as ttk
+
+    try:
+        with open("scores.json", "r", encoding="utf-8") as f:
+            scores = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        scores = []
+
+    sb = tk.Toplevel(root)
+    sb.title("Skor Tablosu")
+    sb.geometry("700x500")
+    sb.resizable(False, False)
+
+    notebook = ttk.Notebook(sb)
+    notebook.pack(fill="both", expand=True, padx=10, pady=10)
+
+    for cat in categories:
+        frame = tk.Frame(notebook)
+        notebook.add(frame, text=cat)
+        for diff in difficulties:
+            label = tk.Label(frame, text=f"{diff} - En İyi 10 Skor", font=("Helvetica", 11, "bold"))
+            label.pack(pady=(10, 0))
+            tree = ttk.Treeview(frame, columns=("rank", "name", "score"), show="headings", height=10)
+            tree.heading("rank", text="#")
+            tree.heading("name", text="İsim")
+            tree.heading("score", text="Skor")
+            tree.column("rank", width=30, anchor="center")
+            tree.column("name", width=180, anchor="center")
+            tree.column("score", width=60, anchor="center")
+            tree.pack(pady=2)
+
+            # İlgili skorları filtrele ve sırala
+            filtered = [s for s in scores if s["category"] == cat and s["difficulty"] == diff]
+            filtered.sort(key=lambda x: x["score"], reverse=True)
+            for idx, s in enumerate(filtered[:10], start=1):
+                display_name = "Anonim" if s["name"] == "Anonymous Player" else s["name"]
+                tree.insert("", "end", values=(idx, display_name, s["score"]))
+            if not filtered:
+                tree.insert("", "end", values=("", "-", "-"))
+
+# Tema fonksiyonları
 def toggle_theme():
     if is_dark_mode.get():
         apply_light_theme()
@@ -208,11 +260,8 @@ def toggle_theme():
 
 def apply_dark_theme():
     root.configure(bg="#2e2e2e")
-    
-    # Update main widgets
     widgets = [title_label, name_label, char_label, continue_button,
-               category_label, difficulty_label, start_button, theme_button, anonymous_check]
-    
+               category_label, difficulty_label, start_button, theme_button, anonymous_check, scoreboard_button]
     for widget in widgets:
         try:
             if isinstance(widget, tk.Button):
@@ -221,25 +270,17 @@ def apply_dark_theme():
                 widget.configure(bg="#2e2e2e", fg="white")
         except:
             pass
-    
-    # Update entry widget
     try:
         name_entry.configure(bg="#404040", fg="white", insertbackground="white")
     except:
         pass
-    
-    # Update frame
     character_frame.configure(bg="#2e2e2e")
-    
-    # Update character radiobuttons
     for child in character_frame.winfo_children():
         if isinstance(child, tk.Radiobutton):
             try:
                 child.configure(bg="#2e2e2e", fg="white", selectcolor="#404040")
             except:
                 pass
-    
-    # Update category and difficulty radiobuttons
     all_radiobuttons = category_buttons + difficulty_buttons
     for rb in all_radiobuttons:
         try:
@@ -249,11 +290,8 @@ def apply_dark_theme():
 
 def apply_light_theme():
     root.configure(bg="SystemButtonFace")
-    
-    # Update main widgets
     widgets = [title_label, name_label, char_label, continue_button,
-               category_label, difficulty_label, start_button, theme_button, anonymous_check]
-    
+               category_label, difficulty_label, start_button, theme_button, anonymous_check, scoreboard_button]
     for widget in widgets:
         try:
             if isinstance(widget, tk.Button):
@@ -262,25 +300,17 @@ def apply_light_theme():
                 widget.configure(bg="SystemButtonFace", fg="black")
         except:
             pass
-    
-    # Update entry widget
     try:
         name_entry.configure(bg="white", fg="black", insertbackground="black")
     except:
         pass
-    
-    # Update frame
     character_frame.configure(bg="SystemButtonFace")
-    
-    # Update character radiobuttons
     for child in character_frame.winfo_children():
         if isinstance(child, tk.Radiobutton):
             try:
                 child.configure(bg="SystemButtonFace", fg="black", selectcolor="white")
             except:
                 pass
-    
-    # Update category and difficulty radiobuttons
     all_radiobuttons = category_buttons + difficulty_buttons
     for rb in all_radiobuttons:
         try:
@@ -292,13 +322,14 @@ root = tk.Tk()
 root.title("Quiz Quest GUI")
 root.geometry("400x550")
 
-# Theme variable
 is_dark_mode = tk.BooleanVar(value=False)
 is_anonymous = tk.BooleanVar(value=False)
 
-# Theme button
 theme_button = tk.Button(root, text="🌙 Dark Mode", command=toggle_theme, font=("Helvetica", 10))
 theme_button.pack(pady=5)
+
+scoreboard_button = tk.Button(root, text="Skor Tablosu", font=("Helvetica", 10), command=show_scoreboard)
+scoreboard_button.pack(pady=5)
 
 title_label = tk.Label(root, text="Welcome to Quiz Quest", font=("Helvetica", 16, "bold"))
 title_label.pack(pady=10)
@@ -312,7 +343,6 @@ name_label.pack(pady=5)
 name_entry = tk.Entry(character_frame, font=("Helvetica", 12))
 name_entry.pack()
 
-# Anonim checkbox ve fonksiyonu
 def toggle_anonymous():
     if is_anonymous.get():
         name_entry.config(state="disabled")
@@ -342,11 +372,9 @@ category_var = tk.StringVar()
 difficulty_var = tk.StringVar()
 
 category_label = tk.Label(root, text="Select Category:", font=("Helvetica", 12))
-categories = ["Math", "Geography", "General Knowledge", "Coding"]
 category_buttons = [tk.Radiobutton(root, text=cat, variable=category_var, value=cat, font=("Helvetica", 12)) for cat in categories]
 
 difficulty_label = tk.Label(root, text="Select Difficulty:", font=("Helvetica", 12))
-difficulties = ["Easy","Medium","Hard","Extreme"]
 difficulty_buttons = [tk.Radiobutton(root, text=diff, variable=difficulty_var, value=diff, font=("Helvetica", 12)) for diff in difficulties]
 
 start_button = tk.Button(root, text="Start Game", font=("Helvetica", 14), command=start_game)

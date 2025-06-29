@@ -1,0 +1,26 @@
+[
+    {
+        "name": "berk",
+        "score": 1,
+        "category": "Geography",
+        "difficulty": "Medium"
+    },
+    {
+        "name": "SD",
+        "score": 0,
+        "category": "General Knowledge",
+        "difficulty": "Medium"
+    },
+    {
+        "name": "SD",
+        "score": 0,
+        "category": "Geography",
+        "difficulty": "Medium"
+    },
+    {
+        "name": "SD",
+        "score": 2,
+        "category": "Geography",
+        "difficulty": "Medium"
+    }
+]
