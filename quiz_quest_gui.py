@@ -8,7 +8,7 @@ import random
 player_name = ""
 
 # Categories and difficulties
-categories = ["Math", "Geography", "General Knowledge", "Coding"]
+categories = ["Math", "Geography", "General Knowledge", "Coding", "Mixed"]  # Mixed eklendi
 difficulties = ["Easy", "Medium", "Hard", "Extreme"]
 
 def start_game():
@@ -16,8 +16,19 @@ def start_game():
     selected_category = category_var.get()
     selected_difficulty = difficulty_var.get()
 
-    if not selected_char or not selected_category or not selected_difficulty:
-        messagebox.showwarning("Warning", "Please select character, category, and difficulty!")
+    if not selected_char:
+        messagebox.showwarning("Warning", "Please select character!")
+        return
+
+   
+    if mixed_mode_active.get():
+        selected_category = random.choice(categories[:-1])  
+        selected_difficulty = random.choice(difficulties)
+        category_var.set(selected_category)
+        difficulty_var.set(selected_difficulty)
+
+    if not selected_category or not selected_difficulty:
+        messagebox.showwarning("Warning", "Please select category and difficulty!")
         return
 
     questions = load_questions(selected_category, selected_difficulty)
@@ -61,7 +72,7 @@ def spin_random_selection():
 
 def show_category_selection():
     category_label.pack(pady=5)
-    random_button.pack(pady=5)  # Random tuşunu burada göster
+    button_frame.pack(pady=5)
     for rb in category_buttons:
         rb.pack(anchor="w")
     difficulty_label.pack(pady=5)
@@ -73,9 +84,17 @@ def load_questions(category, difficulty):
     try:
         with open("questions.json", "r", encoding="utf-8") as f:
             all_questions = json.load(f)
-            questions = all_questions.get(category, {}).get(difficulty, [])
-            random.shuffle(questions)
-            return questions
+            if category == "Mixed":
+
+                questions = []
+                for cat in all_questions:
+                    questions += all_questions[cat].get(difficulty, [])
+                random.shuffle(questions)
+                return questions
+            else:
+                questions = all_questions.get(category, {}).get(difficulty, [])
+                random.shuffle(questions)
+                return questions
     except:
         return []
 
@@ -99,7 +118,7 @@ def write_score_to_file(name, score, category, difficulty):
     filtered = [s for s in scores if s["category"] == category and s["difficulty"] == difficulty]
     filtered.append(score_data)
     filtered.sort(key=lambda x: x["score"], reverse=True)
-    filtered = filtered[:10]  # Sadece ilk 10
+    filtered = filtered[:10]  # 10
 
     # Score
     scores = [s for s in scores if not (s["category"] == category and s["difficulty"] == difficulty)]
@@ -125,6 +144,9 @@ def show_question_window(questions, character, category, difficulty):
             "Coding": {"Easy": 5, "Medium": 8, "Hard": 10, "Extreme": 15},
             "Geography": {"Easy": 5, "Medium": 8, "Hard": 10, "Extreme": 15}
         }
+        # Mixed mod
+        if category == "Mixed":
+            return 10
         return timer_settings.get(category, {}).get(difficulty, 15)
     
     timer_duration = get_timer_duration(category, difficulty)
@@ -232,7 +254,7 @@ def show_scoreboard():
         scores = []
 
     sb = tk.Toplevel(root)
-    sb.title("Skor Tablosu")
+    sb.title("Scoreboard")
     sb.geometry("700x500")
     sb.resizable(False, False)
 
@@ -393,7 +415,24 @@ difficulty_label = tk.Label(root, text="Select Difficulty:", font=("Helvetica", 
 difficulty_buttons = [tk.Radiobutton(root, text=diff, variable=difficulty_var, value=diff, font=("Helvetica", 12)) for diff in difficulties]
 
 start_button = tk.Button(root, text="Start Game", font=("Helvetica", 14), command=start_game)
+button_frame = tk.Frame(root)
 
-random_button = tk.Button(root, text="🎲 Random", font=("Helvetica", 12, "bold"), command=spin_random_selection)
+# Mixed mode state variable
+mixed_mode_active = tk.BooleanVar(value=False)
+
+def activate_mixed_mode():
+    mixed_mode_active.set(True)
+    category_var.set("Mixed")
+    # Optionally, visually indicate mixed mode is active
+
+def deactivate_mixed_mode():
+    mixed_mode_active.set(False)
+    # Optionally, visually indicate mixed mode is inactive
+
+random_button = tk.Button(button_frame, text="🎲 Random", font=("Helvetica", 12, "bold"), command=lambda: [deactivate_mixed_mode(), spin_random_selection()])
+random_button.pack(side="left", padx=5)
+
+mixed_button = tk.Button(button_frame, text="🎲 Mixed Mode", font=("Helvetica", 12, "bold"), command=activate_mixed_mode)
+mixed_button.pack(side="left", padx=5)
 
 root.mainloop()

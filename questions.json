@@ -2086,8 +2086,1001 @@
     "answer": "C"
   }
 ]
-
+ },
+  "History": {
+  "Easy": [
+   {
+    "question": "Who was the first President of the United States?",
+    "options": ["George Washington", "Abraham Lincoln", "John Adams", "Thomas Jefferson"],
+    "answer": "George Washington"
   },
+  {
+    "question": "In which year did World War II end?",
+    "options": ["1945", "1939", "1941", "1950"],
+    "answer": "1945"
+  },
+  {
+    "question": "What ancient civilization built the pyramids?",
+    "options": ["Romans", "Greeks", "Egyptians", "Aztecs"],
+    "answer": "Egyptians"
+  },
+  {
+    "question": "Who discovered America in 1492?",
+    "options": ["Leif Erikson", "Amerigo Vespucci", "Christopher Columbus", "Ferdinand Magellan"],
+    "answer": "Christopher Columbus"
+  },
+  {
+    "question": "Which empire was ruled by Julius Caesar?",
+    "options": ["Ottoman Empire", "Roman Empire", "Greek Empire", "British Empire"],
+    "answer": "Roman Empire"
+  },
+  {
+    "question": "What wall divided East and West Berlin during the Cold War?",
+    "options": ["Berlin Wall", "Great Wall of China", "Iron Wall", "Red Wall"],
+    "answer": "Berlin Wall"
+  },
+  {
+    "question": "Who was the British Prime Minister during World War II?",
+    "options": ["Winston Churchill", "Margaret Thatcher", "Neville Chamberlain", "Tony Blair"],
+    "answer": "Winston Churchill"
+  },
+  {
+    "question": "Where did the Renaissance begin?",
+    "options": ["France", "Germany", "Italy", "Spain"],
+    "answer": "Italy"
+  },
+  {
+    "question": "Which U.S. President abolished slavery?",
+    "options": ["George Washington", "Abraham Lincoln", "John F. Kennedy", "Franklin D. Roosevelt"],
+    "answer": "Abraham Lincoln"
+  },
+  {
+    "question": "What was the name of the ship that sank in 1912 after hitting an iceberg?",
+    "options": ["Titanic", "Lusitania", "Queen Mary", "Santa Maria"],
+    "answer": "Titanic"
+  },
+  {
+    "question": "Who was the leader of Nazi Germany?",
+    "options": ["Joseph Stalin", "Adolf Hitler", "Benito Mussolini", "Winston Churchill"],
+    "answer": "Adolf Hitler"
+  },
+  {
+    "question": "Which country gifted the Statue of Liberty to the U.S.?",
+    "options": ["England", "France", "Germany", "Spain"],
+    "answer": "France"
+  },
+  {
+    "question": "Which civilization invented democracy?",
+    "options": ["Romans", "Greeks", "Egyptians", "Babylonians"],
+    "answer": "Greeks"
+  },
+  {
+    "question": "Which city was buried by the eruption of Mount Vesuvius?",
+    "options": ["Pompeii", "Athens", "Rome", "Troy"],
+    "answer": "Pompeii"
+  },
+  {
+    "question": "Who was the first man to walk on the Moon?",
+    "options": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "John Glenn"],
+    "answer": "Neil Armstrong"
+  },
+  {
+    "question": "What war was fought between the North and South in the United States?",
+    "options": ["Revolutionary War", "Civil War", "World War I", "Vietnam War"],
+    "answer": "Civil War"
+  },
+  {
+    "question": "Who was Cleopatra?",
+    "options": ["Queen of England", "Queen of Egypt", "Roman Empress", "Greek Philosopher"],
+    "answer": "Queen of Egypt"
+  },
+  {
+    "question": "Which war ended with the Treaty of Versailles?",
+    "options": ["World War I", "World War II", "Cold War", "Napoleonic Wars"],
+    "answer": "World War I"
+  },
+  {
+    "question": "Who painted the Mona Lisa?",
+    "options": ["Michelangelo", "Leonardo da Vinci", "Raphael", "Donatello"],
+    "answer": "Leonardo da Vinci"
+  },
+  {
+    "question": "Who led the first expedition to circumnavigate the globe?",
+    "options": ["Christopher Columbus", "Ferdinand Magellan", "James Cook", "Marco Polo"],
+    "answer": "Ferdinand Magellan"
+  },
+  {
+    "question": "Where was the Declaration of Independence signed?",
+    "options": ["New York", "Philadelphia", "Boston", "Washington, D.C."],
+    "answer": "Philadelphia"
+  },
+  {
+    "question": "What structure is known as a wonder of the ancient world in Egypt?",
+    "options": ["Eiffel Tower", "Pyramids of Giza", "Colosseum", "Great Wall"],
+    "answer": "Pyramids of Giza"
+  },
+  {
+    "question": "Who was the first emperor of Rome?",
+    "options": ["Augustus", "Julius Caesar", "Nero", "Caligula"],
+    "answer": "Augustus"
+  },
+  {
+    "question": "Who was known as the Maid of Orléans?",
+    "options": ["Marie Antoinette", "Joan of Arc", "Eleanor of Aquitaine", "Isabella I"],
+    "answer": "Joan of Arc"
+  },
+  {
+    "question": "What was the name of the period when machines began to replace hand tools?",
+    "options": ["Renaissance", "Industrial Revolution", "Middle Ages", "Enlightenment"],
+    "answer": "Industrial Revolution"
+  },
+  {
+    "question": "Which country was known as the USSR?",
+    "options": ["Russia", "Germany", "China", "Italy"],
+    "answer": "Russia"
+  },
+  {
+    "question": "Who was the famous civil rights leader in 1960s America?",
+    "options": ["Malcolm X", "Martin Luther King Jr.", "Barack Obama", "Frederick Douglass"],
+    "answer": "Martin Luther King Jr."
+  },
+  {
+    "question": "What event started World War I?",
+    "options": ["Invasion of Poland", "Assassination of Archduke Franz Ferdinand", "Attack on Pearl Harbor", "Russian Revolution"],
+    "answer": "Assassination of Archduke Franz Ferdinand"
+  },
+  {
+    "question": "Who was the longest reigning British monarch before Queen Elizabeth II?",
+    "options": ["Queen Victoria", "King George V", "Queen Anne", "King Henry VIII"],
+    "answer": "Queen Victoria"
+  },
+  {
+    "question": "What ancient wonder was a lighthouse in Egypt?",
+    "options": ["Lighthouse of Alexandria", "Great Pyramid", "Hanging Gardens", "Temple of Artemis"],
+    "answer": "Lighthouse of Alexandria"
+  },
+  {
+    "question": "What document announced American independence from Britain?",
+    "options": ["Magna Carta", "Bill of Rights", "Declaration of Independence", "Constitution"],
+    "answer": "Declaration of Independence"
+  },
+  {
+    "question": "Which U.S. President served during the Great Depression and World War II?",
+    "options": ["Herbert Hoover", "Franklin D. Roosevelt", "Harry Truman", "Woodrow Wilson"],
+    "answer": "Franklin D. Roosevelt"
+  },
+  {
+    "question": "What was the Cold War primarily about?",
+    "options": ["Trade", "Colonialism", "Ideology and nuclear threat", "Religion"],
+    "answer": "Ideology and nuclear threat"
+  },
+  {
+    "question": "Who was the founder of Islam?",
+    "options": ["Jesus", "Abraham", "Muhammad", "Moses"],
+    "answer": "Muhammad"
+  },
+  {
+    "question": "Who was the famous Greek philosopher who taught Alexander the Great?",
+    "options": ["Plato", "Socrates", "Aristotle", "Pythagoras"],
+    "answer": "Aristotle"
+  },
+  {
+    "question": "What structure connects Asia and North America during the Ice Age?",
+    "options": ["Panama Canal", "Bering Land Bridge", "Silk Road", "Suez Canal"],
+    "answer": "Bering Land Bridge"
+  },
+  {
+    "question": "Who was the queen during the Spanish Armada?",
+    "options": ["Elizabeth I", "Mary I", "Anne", "Victoria"],
+    "answer": "Elizabeth I"
+  },
+  {
+    "question": "Which ancient people created the first writing system?",
+    "options": ["Egyptians", "Greeks", "Sumerians", "Romans"],
+    "answer": "Sumerians"
+  },
+  {
+    "question": "What country did the Vikings come from?",
+    "options": ["England", "Norway", "Germany", "France"],
+    "answer": "Norway"
+  },
+  {
+    "question": "Who was the leader of the Soviet Union during World War II?",
+    "options": ["Vladimir Lenin", "Joseph Stalin", "Nikita Khrushchev", "Leon Trotsky"],
+    "answer": "Joseph Stalin"
+  },
+  {
+    "question": "What medieval event killed millions in Europe?",
+    "options": ["Hundred Years' War", "The Black Death", "Great Fire", "Reformation"],
+    "answer": "The Black Death"
+  },
+  {
+    "question": "What famous document limits the power of the English king?",
+    "options": ["Magna Carta", "Treaty of Paris", "Bill of Rights", "Domesday Book"],
+    "answer": "Magna Carta"
+  },
+  {
+    "question": "Where did the American Revolution begin?",
+    "options": ["New York", "Boston", "Philadelphia", "Washington"],
+    "answer": "Boston"
+  },
+  {
+    "question": "Who was the first human in space?",
+    "options": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "John Glenn"],
+    "answer": "Yuri Gagarin"
+  },
+  {
+    "question": "Which ship brought the Pilgrims to America?",
+    "options": ["Santa Maria", "Mayflower", "Titanic", "Endeavour"],
+    "answer": "Mayflower"
+  },
+  {
+    "question": "What empire was known for gladiator fights?",
+    "options": ["Greek", "Egyptian", "Roman", "Persian"],
+    "answer": "Roman"
+  },
+  {
+    "question": "Who invented the telephone?",
+    "options": ["Thomas Edison", "Nikola Tesla", "Alexander Graham Bell", "Isaac Newton"],
+    "answer": "Alexander Graham Bell"
+  },
+  {
+    "question": "Where did Napoleon Bonaparte come from?",
+    "options": ["Italy", "Spain", "France", "Austria"],
+    "answer": "France"
+  },
+  {
+    "question": "What city was the center of the Byzantine Empire?",
+    "options": ["Athens", "Rome", "Constantinople", "Alexandria"],
+    "answer": "Constantinople"
+  }
+
+  ],
+  "Medium": [
+    {
+    "question": "Who was the U.S. President during the Louisiana Purchase?",
+    "options": ["George Washington", "James Madison", "Thomas Jefferson", "Andrew Jackson"],
+    "answer": "Thomas Jefferson"
+  },
+  {
+    "question": "Which empire was ruled by Genghis Khan?",
+    "options": ["Ottoman Empire", "Mongol Empire", "Roman Empire", "Persian Empire"],
+    "answer": "Mongol Empire"
+  },
+  {
+    "question": "What year did the Berlin Wall fall?",
+    "options": ["1985", "1989", "1991", "1980"],
+    "answer": "1989"
+  },
+  {
+    "question": "Which war was known as 'The Great War' before World War II?",
+    "options": ["World War I", "Crimean War", "Vietnam War", "Korean War"],
+    "answer": "World War I"
+  },
+  {
+    "question": "What event marked the start of the French Revolution?",
+    "options": ["Storming of the Bastille", "Execution of Louis XVI", "Reign of Terror", "Tennis Court Oath"],
+    "answer": "Storming of the Bastille"
+  },
+  {
+    "question": "Which U.S. President signed the Civil Rights Act of 1964?",
+    "options": ["John F. Kennedy", "Lyndon B. Johnson", "Dwight D. Eisenhower", "Richard Nixon"],
+    "answer": "Lyndon B. Johnson"
+  },
+  {
+    "question": "Which English king had six wives?",
+    "options": ["Henry VII", "Henry VIII", "Edward VI", "Richard III"],
+    "answer": "Henry VIII"
+  },
+  {
+    "question": "What was the name of the first permanent English settlement in America?",
+    "options": ["Plymouth", "Jamestown", "Roanoke", "Salem"],
+    "answer": "Jamestown"
+  },
+  {
+    "question": "The Opium Wars were fought between China and which country?",
+    "options": ["France", "United States", "Britain", "Japan"],
+    "answer": "Britain"
+  },
+  {
+    "question": "Who was the Soviet leader during the Cuban Missile Crisis?",
+    "options": ["Joseph Stalin", "Leonid Brezhnev", "Nikita Khrushchev", "Mikhail Gorbachev"],
+    "answer": "Nikita Khrushchev"
+  },
+  {
+    "question": "What was the name of the plan to rebuild Europe after World War II?",
+    "options": ["Truman Plan", "Marshall Plan", "NATO Pact", "Molotov Plan"],
+    "answer": "Marshall Plan"
+  },
+  {
+    "question": "Which American civil rights leader gave the 'I Have a Dream' speech?",
+    "options": ["Malcolm X", "Frederick Douglass", "Martin Luther King Jr.", "Rosa Parks"],
+    "answer": "Martin Luther King Jr."
+  },
+  {
+    "question": "The Hundred Years' War was fought between which two countries?",
+    "options": ["France and Spain", "England and France", "Germany and Italy", "Portugal and France"],
+    "answer": "England and France"
+  },
+  {
+    "question": "What caused the U.S. to enter World War I?",
+    "options": ["Pearl Harbor attack", "Zimmermann Telegram", "Lusitania sinking", "D-Day"],
+    "answer": "Zimmermann Telegram"
+  },
+  {
+    "question": "Which country invaded Poland in 1939, starting World War II?",
+    "options": ["Soviet Union", "Germany", "Japan", "Italy"],
+    "answer": "Germany"
+  },
+  {
+    "question": "Who was the founder of the Persian Empire?",
+    "options": ["Cyrus the Great", "Darius I", "Xerxes", "Alexander the Great"],
+    "answer": "Cyrus the Great"
+  },
+  {
+    "question": "Where did Napoleon Bonaparte die?",
+    "options": ["Paris", "Corsica", "St. Helena", "Elba"],
+    "answer": "St. Helena"
+  },
+  {
+    "question": "What dynasty built the Great Wall of China?",
+    "options": ["Tang", "Ming", "Qing", "Han"],
+    "answer": "Ming"
+  },
+  {
+    "question": "Which philosopher taught Plato?",
+    "options": ["Socrates", "Aristotle", "Pythagoras", "Zeno"],
+    "answer": "Socrates"
+  },
+  {
+    "question": "Who wrote the Communist Manifesto?",
+    "options": ["Karl Marx", "Joseph Stalin", "Vladimir Lenin", "Friedrich Nietzsche"],
+    "answer": "Karl Marx"
+  },
+  {
+    "question": "Which explorer is credited with the first voyage around Africa to India?",
+    "options": ["Vasco da Gama", "Ferdinand Magellan", "Bartholomew Dias", "Christopher Columbus"],
+    "answer": "Vasco da Gama"
+  },
+  {
+    "question": "What year did the Titanic sink?",
+    "options": ["1910", "1912", "1905", "1914"],
+    "answer": "1912"
+  },
+  {
+    "question": "Who discovered penicillin?",
+    "options": ["Marie Curie", "Alexander Fleming", "Louis Pasteur", "Gregor Mendel"],
+    "answer": "Alexander Fleming"
+  },
+  {
+    "question": "What major global event happened in 1929?",
+    "options": ["World War I", "Wall Street Crash", "Great Depression ends", "Pearl Harbor"],
+    "answer": "Wall Street Crash"
+  },
+  {
+    "question": "Which treaty ended World War I?",
+    "options": ["Treaty of Versailles", "Treaty of Tordesillas", "Treaty of Paris", "Treaty of Ghent"],
+    "answer": "Treaty of Versailles"
+  },
+  {
+    "question": "What was the Cold War mainly about?",
+    "options": ["Nuclear weapons", "Land disputes", "Economic trade", "Ideological conflict"],
+    "answer": "Ideological conflict"
+  },
+  {
+    "question": "The Enlightenment emphasized reason and what?",
+    "options": ["Faith", "Emotion", "Science", "Tradition"],
+    "answer": "Science"
+  },
+  {
+    "question": "Who was known as the 'Iron Lady'?",
+    "options": ["Angela Merkel", "Golda Meir", "Margaret Thatcher", "Indira Gandhi"],
+    "answer": "Margaret Thatcher"
+  },
+  {
+    "question": "What Roman Emperor legalized Christianity?",
+    "options": ["Nero", "Julius Caesar", "Constantine", "Augustus"],
+    "answer": "Constantine"
+  },
+  {
+    "question": "Where was Nelson Mandela imprisoned for 27 years?",
+    "options": ["Pretoria", "Cape Town", "Robben Island", "Durban"],
+    "answer": "Robben Island"
+  },
+  {
+    "question": "Who led India to independence using nonviolent resistance?",
+    "options": ["Jawaharlal Nehru", "Gandhi", "Indira Gandhi", "Subhas Chandra Bose"],
+    "answer": "Gandhi"
+  },
+  {
+    "question": "Which civilization invented the wheel?",
+    "options": ["Romans", "Chinese", "Sumerians", "Egyptians"],
+    "answer": "Sumerians"
+  },
+  {
+    "question": "Who led the Salt March in India?",
+    "options": ["Gandhi", "Nehru", "Patel", "Tagore"],
+    "answer": "Gandhi"
+  },
+  {
+    "question": "In what city was Archduke Franz Ferdinand assassinated?",
+    "options": ["Berlin", "Vienna", "Sarajevo", "Belgrade"],
+    "answer": "Sarajevo"
+  },
+  {
+    "question": "What ancient city was the capital of the Byzantine Empire?",
+    "options": ["Athens", "Rome", "Constantinople", "Alexandria"],
+    "answer": "Constantinople"
+  },
+  {
+    "question": "Who led the Reformation in Germany?",
+    "options": ["John Calvin", "Martin Luther", "Henry VIII", "Erasmus"],
+    "answer": "Martin Luther"
+  },
+  {
+    "question": "What battle marked the end of Napoleon’s rule?",
+    "options": ["Austerlitz", "Waterloo", "Borodino", "Leipzig"],
+    "answer": "Waterloo"
+  },
+  {
+    "question": "Who was the first Chancellor of unified Germany?",
+    "options": ["Otto von Bismarck", "Wilhelm I", "Adolf Hitler", "Helmut Kohl"],
+    "answer": "Otto von Bismarck"
+  },
+  {
+    "question": "Which Chinese philosopher emphasized filial piety?",
+    "options": ["Laozi", "Sun Tzu", "Mencius", "Confucius"],
+    "answer": "Confucius"
+  },
+  {
+    "question": "What war was fought between North and South Korea?",
+    "options": ["Vietnam War", "Cold War", "Korean War", "Sino-Korean War"],
+    "answer": "Korean War"
+  },
+  {
+    "question": "Which leader initiated the Cultural Revolution in China?",
+    "options": ["Sun Yat-sen", "Mao Zedong", "Chiang Kai-shek", "Deng Xiaoping"],
+    "answer": "Mao Zedong"
+  },
+  {
+    "question": "Which explorer was the first European to reach the Pacific from the New World?",
+    "options": ["Hernán Cortés", "Francisco Pizarro", "Vasco Núñez de Balboa", "John Cabot"],
+    "answer": "Vasco Núñez de Balboa"
+  },
+  {
+    "question": "Which English document limited royal power in 1215?",
+    "options": ["Magna Carta", "Bill of Rights", "Constitution", "Habeas Corpus"],
+    "answer": "Magna Carta"
+  },
+  {
+    "question": "Which event triggered the American Civil War?",
+    "options": ["Battle of Gettysburg", "Election of Abraham Lincoln", "Missouri Compromise", "Kansas-Nebraska Act"],
+    "answer": "Election of Abraham Lincoln"
+  },
+  {
+    "question": "What movement sought to end slavery in the U.S.?",
+    "options": ["Reconstruction", "Civil Rights", "Abolitionist", "Progressive"],
+    "answer": "Abolitionist"
+  },
+  {
+    "question": "What was Sputnik?",
+    "options": ["A Soviet tank", "First satellite", "A space shuttle", "Nuclear weapon"],
+    "answer": "First satellite"
+  },
+  {
+    "question": "What was the main goal of the Crusades?",
+    "options": ["Trade", "Land expansion", "Religion", "Exploration"],
+    "answer": "Religion"
+  },
+  {
+    "question": "Which U.S. President faced the Watergate scandal?",
+    "options": ["John F. Kennedy", "Lyndon B. Johnson", "Richard Nixon", "Gerald Ford"],
+    "answer": "Richard Nixon"
+  }
+   
+  ],
+  "Hard": [
+    {
+    "question": "Which treaty ended the Thirty Years' War?",
+    "options": ["Treaty of Tordesillas", "Treaty of Utrecht", "Treaty of Versailles", "Treaty of Westphalia"],
+    "answer": "Treaty of Westphalia"
+  },
+  {
+    "question": "Who was the last Pharaoh of Ancient Egypt?",
+    "options": ["Cleopatra VII", "Tutankhamun", "Ramses II", "Nefertiti"],
+    "answer": "Cleopatra VII"
+  },
+  {
+    "question": "Which battle marked the end of Persian attempts to conquer Greece?",
+    "options": ["Battle of Marathon", "Battle of Thermopylae", "Battle of Salamis", "Battle of Plataea"],
+    "answer": "Battle of Plataea"
+  },
+  {
+    "question": "Who was the first Holy Roman Emperor?",
+    "options": ["Otto I", "Charlemagne", "Frederick I", "Charles V"],
+    "answer": "Charlemagne"
+  },
+  {
+    "question": "What year did the Russian Revolution begin?",
+    "options": ["1905", "1914", "1917", "1922"],
+    "answer": "1917"
+  },
+  {
+    "question": "Who was the leader of the Haitian Revolution?",
+    "options": ["Toussaint Louverture", "Simon Bolivar", "Jean-Jacques Dessalines", "Henri Christophe"],
+    "answer": "Toussaint Louverture"
+  },
+  {
+    "question": "Which empire was known for the city of Tenochtitlan?",
+    "options": ["Inca", "Maya", "Aztec", "Olmec"],
+    "answer": "Aztec"
+  },
+  {
+    "question": "What was the capital of the Inca Empire?",
+    "options": ["Cusco", "Quito", "Lima", "Tikal"],
+    "answer": "Cusco"
+  },
+  {
+    "question": "Who led the German unification in the 19th century?",
+    "options": ["Wilhelm I", "Otto von Bismarck", "Frederick the Great", "Adolf Hitler"],
+    "answer": "Otto von Bismarck"
+  },
+  {
+    "question": "Which event is considered the spark of the Protestant Reformation?",
+    "options": ["Council of Trent", "Diet of Worms", "Posting of the 95 Theses", "Peace of Augsburg"],
+    "answer": "Posting of the 95 Theses"
+  },
+  {
+    "question": "What was the capital of the Byzantine Empire?",
+    "options": ["Rome", "Constantinople", "Antioch", "Alexandria"],
+    "answer": "Constantinople"
+  },
+  {
+    "question": "Who was the first female Prime Minister of Israel?",
+    "options": ["Tzipi Livni", "Golda Meir", "Shulamit Aloni", "Dalia Itzik"],
+    "answer": "Golda Meir"
+  },
+  {
+    "question": "Which war featured trench warfare and poison gas?",
+    "options": ["World War II", "World War I", "Crimean War", "Boer War"],
+    "answer": "World War I"
+  },
+  {
+    "question": "Which Japanese city was the second to be hit by an atomic bomb?",
+    "options": ["Tokyo", "Osaka", "Hiroshima", "Nagasaki"],
+    "answer": "Nagasaki"
+  },
+  {
+    "question": "Which Chinese dynasty built most of the existing Great Wall?",
+    "options": ["Han", "Tang", "Ming", "Song"],
+    "answer": "Ming"
+  },
+  {
+    "question": "What battle stopped the Muslim advance into Western Europe in 732?",
+    "options": ["Battle of Tours", "Battle of Poitiers", "Battle of Vienna", "Battle of Constantinople"],
+    "answer": "Battle of Tours"
+  },
+  {
+    "question": "Who succeeded Lenin as the leader of the Soviet Union?",
+    "options": ["Leon Trotsky", "Joseph Stalin", "Nikita Khrushchev", "Mikhail Gorbachev"],
+    "answer": "Joseph Stalin"
+  },
+  {
+    "question": "Which empire used quipus for record-keeping?",
+    "options": ["Aztec", "Inca", "Maya", "Olmec"],
+    "answer": "Inca"
+  },
+  {
+    "question": "Which U.S. President served non-consecutive terms?",
+    "options": ["Theodore Roosevelt", "Grover Cleveland", "Woodrow Wilson", "Ulysses S. Grant"],
+    "answer": "Grover Cleveland"
+  },
+  {
+    "question": "What was the main cause of the Crimean War?",
+    "options": ["Territorial dispute", "Religious tension", "Naval power", "Trade routes"],
+    "answer": "Religious tension"
+  },
+  {
+    "question": "What language did the Eastern Roman Empire primarily use?",
+    "options": ["Latin", "Greek", "Arabic", "Turkish"],
+    "answer": "Greek"
+  },
+  {
+    "question": "Which king signed the Magna Carta?",
+    "options": ["Henry II", "Richard I", "John", "Edward I"],
+    "answer": "John"
+  },
+  {
+    "question": "Who invented the printing press?",
+    "options": ["Leonardo da Vinci", "Johannes Gutenberg", "Isaac Newton", "Galileo Galilei"],
+    "answer": "Johannes Gutenberg"
+  },
+  {
+    "question": "What was the capital of the Ottoman Empire?",
+    "options": ["Istanbul", "Ankara", "Baghdad", "Mecca"],
+    "answer": "Istanbul"
+  },
+  {
+    "question": "Who led the Bolsheviks in the Russian Revolution?",
+    "options": ["Joseph Stalin", "Leon Trotsky", "Vladimir Lenin", "Mikhail Gorbachev"],
+    "answer": "Vladimir Lenin"
+  },
+  {
+    "question": "What event is considered the start of the Great Depression?",
+    "options": ["WWI", "Black Tuesday", "New Deal", "Bank Failures"],
+    "answer": "Black Tuesday"
+  },
+  {
+    "question": "What was the name of Hitler's failed 1923 coup attempt?",
+    "options": ["Beer Hall Putsch", "Munich Rebellion", "Nazi March", "Reich Revolt"],
+    "answer": "Beer Hall Putsch"
+  },
+  {
+    "question": "Who was the first ruler of a unified Germany?",
+    "options": ["Wilhelm I", "Frederick II", "Bismarck", "Ludwig II"],
+    "answer": "Wilhelm I"
+  },
+  {
+    "question": "Which U.S. President ordered the atomic bomb to be dropped?",
+    "options": ["Franklin D. Roosevelt", "Harry Truman", "Dwight Eisenhower", "John F. Kennedy"],
+    "answer": "Harry Truman"
+  },
+  {
+    "question": "What city was known as Byzantium before becoming Constantinople?",
+    "options": ["Athens", "Istanbul", "Troy", "Byzantium"],
+    "answer": "Byzantium"
+  },
+  {
+    "question": "What was the codename for the Allied invasion of Normandy?",
+    "options": ["Operation Torch", "Operation Overlord", "Operation Market Garden", "Operation Neptune"],
+    "answer": "Operation Overlord"
+  },
+  {
+    "question": "Who was the longest-reigning British monarch before Queen Elizabeth II?",
+    "options": ["Queen Victoria", "King George III", "Henry VIII", "Elizabeth I"],
+    "answer": "Queen Victoria"
+  },
+  {
+    "question": "What year did the U.S. enter World War II?",
+    "options": ["1939", "1940", "1941", "1942"],
+    "answer": "1941"
+  },
+  {
+    "question": "Which empire was known for the Code of Hammurabi?",
+    "options": ["Babylonian", "Assyrian", "Persian", "Sumerian"],
+    "answer": "Babylonian"
+  },
+  {
+    "question": "Who was the famous Carthaginian general in the Second Punic War?",
+    "options": ["Scipio", "Hannibal", "Augustus", "Cicero"],
+    "answer": "Hannibal"
+  },
+  {
+    "question": "What country was formerly known as Persia?",
+    "options": ["Turkey", "Iran", "Iraq", "Syria"],
+    "answer": "Iran"
+  },
+  {
+    "question": "Which battle ended Napoleon’s final campaign?",
+    "options": ["Leipzig", "Trafalgar", "Waterloo", "Borodino"],
+    "answer": "Waterloo"
+  },
+  {
+    "question": "Which American President was in office during the Cuban Missile Crisis?",
+    "options": ["Dwight Eisenhower", "John F. Kennedy", "Lyndon B. Johnson", "Richard Nixon"],
+    "answer": "John F. Kennedy"
+  },
+  {
+    "question": "Which empire was ruled by Suleiman the Magnificent?",
+    "options": ["Mughal Empire", "Ottoman Empire", "Safavid Empire", "Byzantine Empire"],
+    "answer": "Ottoman Empire"
+  },
+  {
+    "question": "Who led the unification of Italy in the 19th century?",
+    "options": ["Giuseppe Garibaldi", "Benito Mussolini", "Victor Emmanuel II", "Cavour"],
+    "answer": "Giuseppe Garibaldi"
+  },
+  {
+    "question": "What invention helped spread Martin Luther’s ideas quickly?",
+    "options": ["Compass", "Printing Press", "Astrolabe", "Steam Engine"],
+    "answer": "Printing Press"
+  },
+  {
+    "question": "Who was the founder of the Mughal Empire?",
+    "options": ["Babur", "Akbar", "Shah Jahan", "Aurangzeb"],
+    "answer": "Babur"
+  },
+  {
+    "question": "Which empire created the Cyrillic alphabet?",
+    "options": ["Byzantine", "Russian", "Bulgarian", "Roman"],
+    "answer": "Byzantine"
+  },
+  {
+    "question": "What event ended the Roman Republic?",
+    "options": ["Punic Wars", "Assassination of Julius Caesar", "Battle of Actium", "Sack of Rome"],
+    "answer": "Assassination of Julius Caesar"
+  },
+  {
+    "question": "Which explorer was executed in the Philippines?",
+    "options": ["Christopher Columbus", "Vasco da Gama", "Magellan", "Amerigo Vespucci"],
+    "answer": "Magellan"
+  },
+  {
+    "question": "What was the name of the French prison stormed in 1789?",
+    "options": ["Versailles", "The Bastille", "Mont Saint-Michel", "Conciergerie"],
+    "answer": "The Bastille"
+  },
+  {
+    "question": "Which scientist was placed under house arrest for supporting heliocentrism?",
+    "options": ["Galileo Galilei", "Kepler", "Copernicus", "Newton"],
+    "answer": "Galileo Galilei"
+  },
+  {
+    "question": "Who led China during the Great Leap Forward?",
+    "options": ["Sun Yat-sen", "Deng Xiaoping", "Mao Zedong", "Chiang Kai-shek"],
+    "answer": "Mao Zedong"
+  },
+  {
+    "question": "What wall was built to separate Roman Britain from Scotland?",
+    "options": ["Hadrian's Wall", "Berlin Wall", "Antonine Wall", "Great Wall"],
+    "answer": "Hadrian's Wall"
+  }
+
+  ],
+  "Extreme": [
+    {
+    "question": "Which treaty marked the official end of the Holy Roman Empire in 1806?",
+    "options": ["Treaty of Vienna", "Treaty of Lunéville", "Treaty of Pressburg", "Treaty of Campo Formio", "Treaty of Amiens"],
+    "answer": "Treaty of Pressburg"
+  },
+  {
+    "question": "Who was the longest-reigning non-royal head of state in history?",
+    "options": ["Fidel Castro", "Paul Biya", "François Duvalier", "Kim Il-sung", "Josip Broz Tito"],
+    "answer": "Fidel Castro"
+  },
+  {
+    "question": "Which battle in 1274 BCE is one of the earliest well-documented battles in history?",
+    "options": ["Battle of Thermopylae", "Battle of Marathon", "Battle of Kadesh", "Battle of Gaugamela", "Battle of Megiddo"],
+    "answer": "Battle of Kadesh"
+  },
+  {
+    "question": "Who was the last emperor of the Western Roman Empire?",
+    "options": ["Romulus Augustulus", "Constantine XI", "Nero", "Theodosius I", "Honorius"],
+    "answer": "Romulus Augustulus"
+  },
+  {
+    "question": "Which of the following civilizations was NOT part of the Mesopotamian region?",
+    "options": ["Babylonian", "Sumerian", "Akkadian", "Hittite", "Assyrian"],
+    "answer": "Hittite"
+  },
+  {
+    "question": "Which empire ruled the largest contiguous land empire in history?",
+    "options": ["Roman", "British", "Mongol", "Russian", "Ottoman"],
+    "answer": "Mongol"
+  },
+  {
+    "question": "Who was assassinated on the Ides of March?",
+    "options": ["Brutus", "Augustus", "Julius Caesar", "Mark Antony", "Cicero"],
+    "answer": "Julius Caesar"
+  },
+  {
+    "question": "The Taiping Rebellion was led by a man claiming to be whose brother?",
+    "options": ["Jesus Christ", "Buddha", "Confucius", "Muhammad", "Shiva"],
+    "answer": "Jesus Christ"
+  },
+  {
+    "question": "What was the capital of the ancient Hittite Empire?",
+    "options": ["Babylon", "Nineveh", "Hattusa", "Ur", "Memphis"],
+    "answer": "Hattusa"
+  },
+  {
+    "question": "Which of the following was a direct cause of the Peloponnesian War?",
+    "options": ["The Delian League", "Roman expansion", "Persian invasion", "Assassination of Pericles", "Death of Socrates"],
+    "answer": "The Delian League"
+  },
+  {
+    "question": "Which dynasty ruled China before the Mongol-led Yuan dynasty?",
+    "options": ["Tang", "Qing", "Song", "Han", "Ming"],
+    "answer": "Song"
+  },
+  {
+    "question": "Who was the first ruler to unify Japan under one central government?",
+    "options": ["Oda Nobunaga", "Tokugawa Ieyasu", "Toyotomi Hideyoshi", "Emperor Meiji", "Prince Shōtoku"],
+    "answer": "Tokugawa Ieyasu"
+  },
+  {
+    "question": "What empire was known for its 'Immortals' military unit?",
+    "options": ["Roman Empire", "Macedonian Empire", "Byzantine Empire", "Persian Empire", "Ottoman Empire"],
+    "answer": "Persian Empire"
+  },
+  {
+    "question": "Which treaty created the modern state boundaries of the Middle East post-WWI?",
+    "options": ["Treaty of Trianon", "Sykes-Picot Agreement", "Treaty of Lausanne", "Treaty of Versailles", "Balfour Declaration"],
+    "answer": "Sykes-Picot Agreement"
+  },
+  {
+    "question": "What was the name of the elite soldiers of the Ottoman Empire?",
+    "options": ["Sipahi", "Bey", "Janissary", "Mamluk", "Khan"],
+    "answer": "Janissary"
+  },
+  {
+    "question": "Who was the first Caliph after the death of Prophet Muhammad?",
+    "options": ["Umar", "Ali", "Uthman", "Muawiyah", "Abu Bakr"],
+    "answer": "Abu Bakr"
+  },
+  {
+    "question": "What was the capital of the Abbasid Caliphate?",
+    "options": ["Mecca", "Damascus", "Baghdad", "Cairo", "Basra"],
+    "answer": "Baghdad"
+  },
+  {
+    "question": "Which explorer first reached India by sea?",
+    "options": ["Bartolomeu Dias", "Vasco da Gama", "Christopher Columbus", "Ferdinand Magellan", "John Cabot"],
+    "answer": "Vasco da Gama"
+  },
+  {
+    "question": "What ancient war was fought between Athens and Sparta?",
+    "options": ["Trojan War", "Punic War", "Peloponnesian War", "Persian War", "Macedonian War"],
+    "answer": "Peloponnesian War"
+  },
+  {
+    "question": "Who was the founder of the Maurya Empire in India?",
+    "options": ["Chandragupta Maurya", "Ashoka", "Harsha", "Bindusara", "Babur"],
+    "answer": "Chandragupta Maurya"
+  },
+  {
+    "question": "Which European power colonized the Congo Free State under King Leopold II?",
+    "options": ["France", "Germany", "Belgium", "Portugal", "Netherlands"],
+    "answer": "Belgium"
+  },
+  {
+    "question": "Who was the ruler of the Mali Empire during its peak of power and wealth?",
+    "options": ["Sundiata Keita", "Mansa Musa", "Askia Muhammad", "Ibn Battuta", "Ali Kolon"],
+    "answer": "Mansa Musa"
+  },
+  {
+    "question": "What was the name of the naval battle that established British naval supremacy in 1805?",
+    "options": ["Battle of Trafalgar", "Battle of the Nile", "Battle of Jutland", "Battle of Lepanto", "Battle of Copenhagen"],
+    "answer": "Battle of Trafalgar"
+  },
+  {
+    "question": "Which of the following was NOT a participant in the Congress of Vienna?",
+    "options": ["Austria", "Russia", "Prussia", "United States", "Great Britain"],
+    "answer": "United States"
+  },
+  {
+    "question": "Who was the last emperor of Russia?",
+    "options": ["Nicholas II", "Alexander III", "Peter the Great", "Ivan the Terrible", "Alexander II"],
+    "answer": "Nicholas II"
+  },
+  {
+    "question": "Which ancient city was destroyed and buried by the eruption of Mount Vesuvius?",
+    "options": ["Athens", "Pompeii", "Carthage", "Rome", "Alexandria"],
+    "answer": "Pompeii"
+  },
+  {
+    "question": "What country fought in the Winter War against the Soviet Union in 1939?",
+    "options": ["Finland", "Poland", "Latvia", "Estonia", "Romania"],
+    "answer": "Finland"
+  },
+  {
+    "question": "Which civilization developed the concept of zero independently?",
+    "options": ["Greeks", "Chinese", "Romans", "Babylonians", "Mayans"],
+    "answer": "Mayans"
+  },
+  {
+    "question": "Which medieval battle marked the end of the Wars of the Roses?",
+    "options": ["Battle of Towton", "Battle of Bosworth Field", "Battle of Hastings", "Battle of Agincourt", "Battle of St. Albans"],
+    "answer": "Battle of Bosworth Field"
+  },
+  {
+    "question": "Who was the leader of the Chinese Communist Revolution?",
+    "options": ["Chiang Kai-shek", "Sun Yat-sen", "Mao Zedong", "Zhou Enlai", "Deng Xiaoping"],
+    "answer": "Mao Zedong"
+  },
+  {
+    "question": "What was the name of Hitler’s plan to invade the Soviet Union?",
+    "options": ["Operation Sea Lion", "Operation Barbarossa", "Operation Citadel", "Operation Valkyrie", "Operation Torch"],
+    "answer": "Operation Barbarossa"
+  },
+  {
+    "question": "Who was the female pharaoh who ruled Egypt as king?",
+    "options": ["Nefertiti", "Cleopatra", "Hatshepsut", "Sobekneferu", "Merneith"],
+    "answer": "Hatshepsut"
+  },
+  {
+    "question": "The Zulu Kingdom reached its peak under which leader?",
+    "options": ["Cetshwayo", "Mpande", "Shaka Zulu", "Dingane", "Mzilikazi"],
+    "answer": "Shaka Zulu"
+  },
+  {
+    "question": "Which civilization is known for building Machu Picchu?",
+    "options": ["Aztecs", "Incas", "Mayans", "Olmecs", "Toltecs"],
+    "answer": "Incas"
+  },
+  {
+    "question": "Which war was ended by the Treaty of Ghent?",
+    "options": ["American Revolutionary War", "War of 1812", "Mexican-American War", "Seven Years' War", "French and Indian War"],
+    "answer": "War of 1812"
+  },
+  {
+    "question": "Which philosopher wrote 'The Prince'?",
+    "options": ["Voltaire", "Machiavelli", "Hobbes", "Locke", "Rousseau"],
+    "answer": "Machiavelli"
+  },
+  {
+    "question": "Who led the Red Army during the Russian Civil War?",
+    "options": ["Lenin", "Stalin", "Trotsky", "Kerensky", "Zhukov"],
+    "answer": "Trotsky"
+  },
+  {
+    "question": "Which African country was never colonized?",
+    "options": ["Ghana", "Kenya", "Ethiopia", "Senegal", "Angola"],
+    "answer": "Ethiopia"
+  },
+  {
+    "question": "Which British monarch was executed during the English Civil War?",
+    "options": ["Henry VIII", "James I", "Charles I", "Edward VI", "George III"],
+    "answer": "Charles I"
+  },
+  {
+    "question": "Who was the first President of the Republic of Turkey?",
+    "options": ["İsmet İnönü", "Sultan Mehmed VI", "Mustafa Kemal Atatürk", "Turgut Özal", "Celal Bayar"],
+    "answer": "Mustafa Kemal Atatürk"
+  },
+  {
+    "question": "The Khmer Empire built which famous temple complex?",
+    "options": ["Borobudur", "Angkor Wat", "Bagan", "Wat Arun", "Shwedagon Pagoda"],
+    "answer": "Angkor Wat"
+  },
+  {
+    "question": "Which American president issued the Emancipation Proclamation?",
+    "options": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "Andrew Johnson", "Ulysses S. Grant"],
+    "answer": "Abraham Lincoln"
+  },
+  {
+    "question": "What was the capital of the Aztec Empire?",
+    "options": ["Tenochtitlan", "Teotihuacan", "Chichen Itza", "Tikal", "Palenque"],
+    "answer": "Tenochtitlan"
+  },
+  {
+    "question": "Which philosopher tutored Alexander the Great?",
+    "options": ["Socrates", "Plato", "Pythagoras", "Aristotle", "Zeno"],
+    "answer": "Aristotle"
+  },
+  {
+    "question": "Which empire was ruled by Charlemagne?",
+    "options": ["Byzantine Empire", "Frankish Empire", "Holy Roman Empire", "Carolingian Empire", "Saxon Empire"],
+    "answer": "Carolingian Empire"
+  },
+  {
+    "question": "The Boxer Rebellion was directed primarily against whom?",
+    "options": ["Chinese peasants", "Western foreigners", "Ming loyalists", "Buddhist monks", "Korean invaders"],
+    "answer": "Western foreigners"
+  },
+  {
+    "question": "Which event led to the start of the Protestant Reformation?",
+    "options": ["Council of Trent", "Posting of the 95 Theses", "Diet of Worms", "Peace of Augsburg", "Counter-Reformation"],
+    "answer": "Posting of the 95 Theses"
+  },
+  {
+    "question": "The Meiji Restoration led to the modernization of which country?",
+    "options": ["China", "Japan", "Korea", "Thailand", "Vietnam"],
+    "answer": "Japan"
+  },
+  {
+    "question": "Which empire sacked Constantinople in 1204 during the Fourth Crusade?",
+    "options": ["Mongols", "Franks", "Byzantines", "Latin Empire", "Ottomans"],
+    "answer": "Latin Empire"
+  },
+  {
+    "question": "Which famous Roman general defeated Hannibal at the Battle of Zama?",
+    "options": ["Scipio Africanus", "Caesar", "Cato", "Pompey", "Augustus"],
+    "answer": "Scipio Africanus"
+  }
+
+  ]
+},
   "General Knowledge": {
     
  "Easy": [
