@@ -44,8 +44,24 @@ def continue_to_category():
     character_frame.pack_forget()
     show_category_selection()
 
+def spin_random_selection():
+    spin_time = 1000  # toplam animasyon süresi (ms)
+    interval = 50     # her adımda bekleme süresi (ms)
+    elapsed = [0]
+
+    def spin():
+        cat = random.choice(categories)
+        diff = random.choice(difficulties)
+        category_var.set(cat)
+        difficulty_var.set(diff)
+        elapsed[0] += interval
+        if elapsed[0] < spin_time:
+            root.after(interval, spin)
+    spin()
+
 def show_category_selection():
     category_label.pack(pady=5)
+    random_button.pack(pady=5)  # Random tuşunu burada göster
     for rb in category_buttons:
         rb.pack(anchor="w")
     difficulty_label.pack(pady=5)
@@ -377,5 +393,7 @@ difficulty_label = tk.Label(root, text="Select Difficulty:", font=("Helvetica", 
 difficulty_buttons = [tk.Radiobutton(root, text=diff, variable=difficulty_var, value=diff, font=("Helvetica", 12)) for diff in difficulties]
 
 start_button = tk.Button(root, text="Start Game", font=("Helvetica", 14), command=start_game)
+
+random_button = tk.Button(root, text="🎲 Random", font=("Helvetica", 12, "bold"), command=spin_random_selection)
 
 root.mainloop()
