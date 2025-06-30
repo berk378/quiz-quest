@@ -7,7 +7,7 @@ import random
 
 player_name = ""
 
-# Kategoriler ve zorluklar
+# Categories and difficulties
 categories = ["Math", "Geography", "General Knowledge", "Coding"]
 difficulties = ["Easy", "Medium", "Hard", "Extreme"]
 
@@ -64,7 +64,7 @@ def load_questions(category, difficulty):
         return []
 
 def write_score_to_file(name, score, category, difficulty):
-    # Anonim ise skor kaydetme
+    #Anonymous player score
     if name == "Anonymous Player":
         return
     score_data = {
@@ -79,13 +79,13 @@ def write_score_to_file(name, score, category, difficulty):
     except (FileNotFoundError, json.JSONDecodeError):
         scores = []
 
-    # Aynı kategori ve zorluk için skorları bul ve ekle
+    
     filtered = [s for s in scores if s["category"] == category and s["difficulty"] == difficulty]
     filtered.append(score_data)
     filtered.sort(key=lambda x: x["score"], reverse=True)
     filtered = filtered[:10]  # Sadece ilk 10
 
-    # Diğer skorları koru
+    # Score
     scores = [s for s in scores if not (s["category"] == category and s["difficulty"] == difficulty)]
     scores.extend(filtered)
 
@@ -205,7 +205,7 @@ def show_question_window(questions, character, category, difficulty):
 
     display_question()
 
-# --- SKOR TABLOSU FONKSİYONU (SEKMELİ, İLK 10 SKOR) ---
+
 def show_scoreboard():
     import tkinter.ttk as ttk
 
@@ -238,7 +238,6 @@ def show_scoreboard():
             tree.column("score", width=60, anchor="center")
             tree.pack(pady=2)
 
-            # İlgili skorları filtrele ve sırala
             filtered = [s for s in scores if s["category"] == cat and s["difficulty"] == diff]
             filtered.sort(key=lambda x: x["score"], reverse=True)
             for idx, s in enumerate(filtered[:10], start=1):
@@ -247,7 +246,7 @@ def show_scoreboard():
             if not filtered:
                 tree.insert("", "end", values=("", "-", "-"))
 
-# Tema fonksiyonları
+
 def toggle_theme():
     if is_dark_mode.get():
         apply_light_theme()
