@@ -22,5 +22,23 @@
         "score": 2,
         "category": "Geography",
         "difficulty": "Medium"
+    },
+    {
+        "name": "b",
+        "score": 1,
+        "category": "Coding",
+        "difficulty": "Medium"
+    },
+    {
+        "name": "b",
+        "score": 1,
+        "category": "Coding",
+        "difficulty": "Medium"
+    },
+    {
+        "name": "b",
+        "score": 0,
+        "category": "Coding",
+        "difficulty": "Medium"
     }
 ]
