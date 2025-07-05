@@ -4,6 +4,66 @@ import json
 import threading
 import time
 import random
+import os
+
+# --- GIF Animation Functions ---
+def show_gif_inline(parent, gif_path, size=(120, 120)):  # Reduced back to smaller size
+    frames = []
+    try:
+        i = 0
+        while True:
+            img = tk.PhotoImage(file=gif_path, format=f"gif -index {i}")
+            if size:
+                img = img.subsample(max(img.width() // size[0], 1), max(img.height() // size[1], 1))
+            frames.append(img)
+            i += 1
+    except Exception as e:
+        # Create a placeholder if GIF is missing
+        if not frames:
+            label = tk.Label(parent, text=f"Character\nImage", width=10, height=5, 
+                          relief="ridge", bd=2, bg="#f0f0f0")
+            label.pack(side="left", padx=10, pady=5)
+            return label
+    if not frames:
+        return None
+        
+    lbl = tk.Label(parent)
+    lbl.pack(side="left", padx=10, pady=5)
+    def update(idx=0):
+        lbl.config(image=frames[idx])
+        lbl.image = frames[idx]
+        parent.after(100, update, (idx + 1) % len(frames))
+    update()
+    return lbl
+
+def show_gif(parent, gif_path, size=(200, 200)):  # Reduced back to smaller size
+    frames = []
+    try:
+        i = 0
+        while True:
+            img = tk.PhotoImage(file=gif_path, format=f"gif -index {i}")
+            if size:
+                img = img.subsample(max(img.width() // size[0], 1), max(img.height() // size[1], 1))
+            frames.append(img)
+            i += 1
+    except Exception as e:
+        # Create a placeholder if GIF is missing
+        if not frames:
+            label = tk.Label(parent, text="Character Result", width=15, height=10, 
+                          relief="ridge", bd=2, bg="#f0f0f0")
+            label.pack(pady=10)
+            return label
+    if not frames:
+        return None
+        
+    lbl = tk.Label(parent)
+    lbl.pack(pady=10)
+    def update(idx=0):
+        lbl.config(image=frames[idx])
+        lbl.image = frames[idx]
+        parent.after(100, update, (idx + 1) % len(frames))
+    update()
+    return lbl
 
 player_name = ""
 
@@ -31,7 +91,7 @@ def start_game():
 
     questions = load_questions(selected_category, selected_difficulty)
     if not questions:
-        messagebox.showerror("Error", "No questions found.")
+        messagebox.showerror("Error", "No questions found. Please create a questions.json file.")
         return
 
     show_question_window(questions, selected_char, selected_category, selected_difficulty)
@@ -70,13 +130,17 @@ def spin_random_selection():
 
 def show_category_selection():
     category_label.pack(pady=5)
-    button_frame.pack(pady=5)
     for rb in category_buttons:
         rb.pack(anchor="w")
     difficulty_label.pack(pady=5)
     for rb in difficulty_buttons:
         rb.pack(anchor="w")
-    start_button.pack(pady=20)
+    
+    # Show the button frame with all game mode buttons
+    button_frame.pack(pady=10)
+    
+    # Show the start button
+    start_button.pack(pady=10)
 
 def load_questions(category, difficulty):
     try:
@@ -124,7 +188,27 @@ def write_score_to_file(name, score, category, difficulty):
 def show_results_window(answer_list):
     results_win = tk.Toplevel(root)
     results_win.title("Results")
-    results_win.geometry("400x550")
+    results_win.geometry("400x650")
+
+    # --- WIN/LOSE GIF and TEXT ---
+    score = sum(1 for ans in answer_list if ans["is_correct"])
+    char = character_var.get()
+    win_gifs = {
+        "Warrior": "warrior win.gif",
+        "Wizard": "wizard win.gif",
+        "Archer": "archer win.gif"
+    }
+    lose_gifs = {
+        "Warrior": "warrior lose.gif",
+        "Wizard": "wizard lose.gif",
+        "Archer": "archer lose.gif"
+    }
+    if score >= 5:
+        tk.Label(results_win, text="You Win!", font=("Helvetica", 22, "bold"), fg="green").pack(pady=5)
+        show_gif(results_win, win_gifs.get(char, "warrior win.gif"))
+    else:
+        tk.Label(results_win, text="You Lose!", font=("Helvetica", 22, "bold"), fg="red").pack(pady=5)
+        show_gif(results_win, lose_gifs.get(char, "warrior lose.gif"))
 
     tk.Label(results_win, text="Answered Questions", font=("Helvetica", 14, "bold")).pack(pady=10)
 
@@ -197,9 +281,9 @@ def show_question_window(questions, character, category, difficulty):
     selected_answer = tk.StringVar()
     answer_list = []
 
-    # Karakter özellikleri için flagler
-    warrior_shield_used = [False]  # Warrior için bir kez can koruma
-    archer_retry_used = [False]    # Archer için bir kez tekrar hakkı (her soru için sıfırlanır)
+    # Character abilities
+    warrior_shield_used = [False]  # Warrior: one-time shield
+    archer_retry_used = [False]    # Archer: one retry per question
 
     def get_timer_duration(category, difficulty):
         timer_settings = {
@@ -212,10 +296,10 @@ def show_question_window(questions, character, category, difficulty):
             return 10
         return timer_settings.get(category, {}).get(difficulty, 15)
 
-    # Mage için süreye +2 ekle
+    # Wizard gets +2 seconds
     base_timer_duration = get_timer_duration(category, difficulty)
     def get_character_timer():
-        if character == "Mage":
+        if character == "Wizard":
             return base_timer_duration + 2
         return base_timer_duration
 
@@ -242,12 +326,11 @@ def show_question_window(questions, character, category, difficulty):
             if selected_answer.get():
                 break
         else:
-            # Süre bitti, yanlış say
             handle_wrong_answer(timeout=True)
 
     def display_question():
         selected_answer.set("")
-        archer_retry_used[0] = False  # Archer için tekrar hakkı sıfırlanır
+        archer_retry_used[0] = False
         if question_index.get() >= len(questions):
             write_score_to_file(player_name, score.get(), category, difficulty)
             show_results_window(answer_list)
@@ -267,7 +350,7 @@ def show_question_window(questions, character, category, difficulty):
 
     def handle_wrong_answer(timeout=False):
         q = questions[question_index.get()]
-        # Warrior: İlk yanlışta can kaybetmez, ama soru atlanır
+        # Warrior: first wrong answer does not lose health
         if character == "Warrior" and not warrior_shield_used[0]:
             warrior_shield_used[0] = True
             answer_list.append({
@@ -275,16 +358,16 @@ def show_question_window(questions, character, category, difficulty):
                 "selected": selected_answer.get() if selected_answer.get() else "",
                 "is_correct": False
             })
-            messagebox.showinfo("Warrior Shield", "Warrior özelliği ile bu seferlik can kaybetmedin!")
+            messagebox.showinfo("Warrior Shield", "With Warrior's ability, you didn't lose a life this time!")
             question_index.set(question_index.get() + 1)
             display_question()
             return
-        # Archer: Yanlışta bir kez tekrar hakkı
+        # Archer: one retry per question
         if character == "Archer" and not archer_retry_used[0]:
             archer_retry_used[0] = True
-            messagebox.showinfo("Archer Retry", "Archer özelliği ile bu soruyu tekrar deneyebilirsin!")
-            return  # Aynı soruda tekrar şans ver
-        # Normal yanlış
+            messagebox.showinfo("Archer Retry", "With Archer's ability, you can try this question again!")
+            return
+        # Normal wrong answer
         health.set(health.get() - 1)
         answer_list.append({
             "question": q,
@@ -954,7 +1037,7 @@ def show_1v1_results(player1, result1, player2, result2):
 
 root = tk.Tk()
 root.title("Quiz Quest GUI")
-root.geometry("400x550")
+root.geometry("550x700")  # Increased window size for larger GIFs
 
 is_dark_mode = tk.BooleanVar(value=False)
 is_anonymous = tk.BooleanVar(value=False)
@@ -965,16 +1048,16 @@ theme_button.pack(pady=5)
 scoreboard_button = tk.Button(root, text="Scoreboard", font=("Helvetica", 10), command=show_scoreboard)
 scoreboard_button.pack(pady=5)
 
-title_label = tk.Label(root, text="Welcome to Quiz Quest", font=("Helvetica", 16, "bold"))
+title_label = tk.Label(root, text="Welcome to Quiz Quest", font=("Helvetica", 18, "bold"))
 title_label.pack(pady=10)
 
 character_var = tk.StringVar(value="")
 character_frame = tk.Frame(root)
-character_frame.pack()
+character_frame.pack(pady=10, expand=True)
 
 name_label = tk.Label(character_frame, text="Enter your name:", font=("Helvetica", 12))
 name_label.pack(pady=5)
-name_entry = tk.Entry(character_frame, font=("Helvetica", 12))
+name_entry = tk.Entry(character_frame, font=("Helvetica", 12), width=25)
 name_entry.pack()
 
 def toggle_anonymous():
@@ -991,27 +1074,45 @@ anonymous_check = tk.Checkbutton(character_frame, text="Play Anonymously",
                                 command=toggle_anonymous)
 anonymous_check.pack(pady=5)
 
-char_label = tk.Label(character_frame, text="Choose your character:", font=("Helvetica", 12))
-char_label.pack(pady=5)
+char_label = tk.Label(character_frame, text="Choose your character:", font=("Helvetica", 14, "bold"))
+char_label.pack(pady=10)
 
-chars = [("Warrior", "Warrior"), ("Mage", "Mage"), ("Archer", "Archer")]
+chars = [("Warrior", "Warrior"), ("Wizard", "Wizard"), ("Archer", "Archer")]
+gif_files = {
+    "Warrior": "Warrior.gif",
+    "Wizard": "Wizard.gif",
+    "Archer": "Archer.gif"
+}
+
+# Create character selection buttons with larger GIFs
 for text, value in chars:
-    rb = tk.Radiobutton(character_frame, text=text, variable=character_var, value=value, font=("Helvetica", 12))
-    rb.pack(anchor="w")
+    char_row = tk.Frame(character_frame)
+    char_row.pack(pady=10, fill="x")
+    
+    # Character selection button
+    rb = tk.Radiobutton(char_row, text=text, variable=character_var, value=value, 
+                        font=("Helvetica", 14, "bold"))
+    rb.pack(side="left", padx=15)
+    
+    # Character GIF animation (larger)
+    show_gif_inline(char_row, gif_files[value], size=(150, 150))
 
-continue_button = tk.Button(character_frame, text="Continue", font=("Helvetica", 14), command=continue_to_category)
-continue_button.pack(pady=15)
+continue_button = tk.Button(character_frame, text="Continue", font=("Helvetica", 16, "bold"), 
+                           command=continue_to_category, bg="#4CAF50", fg="white")
+continue_button.pack(pady=20)
 
 category_var = tk.StringVar()
 difficulty_var = tk.StringVar()
 
-category_label = tk.Label(root, text="Select Category:", font=("Helvetica", 12))
+category_label = tk.Label(root, text="Select Category:", font=("Helvetica", 14))
 category_buttons = [tk.Radiobutton(root, text=cat, variable=category_var, value=cat, font=("Helvetica", 12)) for cat in categories]
 
-difficulty_label = tk.Label(root, text="Select Difficulty:", font=("Helvetica", 12))
+difficulty_label = tk.Label(root, text="Select Difficulty:", font=("Helvetica", 14))
 difficulty_buttons = [tk.Radiobutton(root, text=diff, variable=difficulty_var, value=diff, font=("Helvetica", 12)) for diff in difficulties]
 
-start_button = tk.Button(root, text="Start Game", font=("Helvetica", 14), command=start_game)
+start_button = tk.Button(root, text="Start Game", font=("Helvetica", 16), command=start_game, bg="#4CAF50", fg="white")
+
+# Create button frame for game mode buttons
 button_frame = tk.Frame(root)
 
 mixed_mode_active = tk.BooleanVar(value=False)
@@ -1023,11 +1124,14 @@ def activate_mixed_mode():
 def deactivate_mixed_mode():
     mixed_mode_active.set(False)
 
-random_button = tk.Button(button_frame, text="🎲 Random", font=("Helvetica", 12, "bold"), command=lambda: [deactivate_mixed_mode(), spin_random_selection()])
-random_button.pack(side="left", padx=5)
+# Add game mode buttons to button frame
+random_button = tk.Button(button_frame, text="🎲 Random", font=("Helvetica", 12, "bold"), 
+                         command=lambda: [deactivate_mixed_mode(), spin_random_selection()])
+random_button.pack(side="left", padx=5, pady=5)
 
-mixed_button = tk.Button(button_frame, text="🎲 Mixed Mode", font=("Helvetica", 12, "bold"), command=activate_mixed_mode)
-mixed_button.pack(side="left", padx=5)
+mixed_button = tk.Button(button_frame, text="🎲 Mixed Mode", font=("Helvetica", 12, "bold"), 
+                        command=activate_mixed_mode)
+mixed_button.pack(side="left", padx=5, pady=5)
 
 def start_60s_challenge():
     selected_char = character_var.get()
@@ -1055,10 +1159,13 @@ def start_60s_challenge():
 
     show_60s_challenge_window(questions, selected_char, selected_category, selected_difficulty)
 
-challenge_button = tk.Button(button_frame, text="⏱ 60 Seconds Challenge", font=("Helvetica", 12, "bold"), command=start_60s_challenge)
-challenge_button.pack(side="left", padx=5)
+challenge_button = tk.Button(button_frame, text="⏱ 60 Seconds Challenge", font=("Helvetica", 12, "bold"), 
+                            command=start_60s_challenge)
+challenge_button.pack(side="left", padx=5, pady=5)
 
-onevone_button = tk.Button(button_frame, text="🤝 1v1 Mode", font=("Helvetica", 12, "bold"), command=start_1v1_mode)
-onevone_button.pack(side="left", padx=5)
+onevone_button = tk.Button(button_frame, text="🤝 1v1 Mode", font=("Helvetica", 12, "bold"), 
+                          command=start_1v1_mode)
+onevone_button.pack(side="left", padx=5, pady=5)
 
+# Start the main event loop
 root.mainloop()
