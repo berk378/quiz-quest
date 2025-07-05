@@ -197,6 +197,10 @@ def show_question_window(questions, character, category, difficulty):
     selected_answer = tk.StringVar()
     answer_list = []
 
+    # Karakter özellikleri için flagler
+    warrior_shield_used = [False]  # Warrior için bir kez can koruma
+    archer_retry_used = [False]    # Archer için bir kez tekrar hakkı (her soru için sıfırlanır)
+
     def get_timer_duration(category, difficulty):
         timer_settings = {
             "Math": {"Easy": 5, "Medium": 8, "Hard": 10, "Extreme": 15},
@@ -208,8 +212,14 @@ def show_question_window(questions, character, category, difficulty):
             return 10
         return timer_settings.get(category, {}).get(difficulty, 15)
 
-    timer_duration = get_timer_duration(category, difficulty)
-    timer = tk.IntVar(value=timer_duration)
+    # Mage için süreye +2 ekle
+    base_timer_duration = get_timer_duration(category, difficulty)
+    def get_character_timer():
+        if character == "Mage":
+            return base_timer_duration + 2
+        return base_timer_duration
+
+    timer = tk.IntVar(value=get_character_timer())
 
     hearts_label = tk.Label(game_window, font=("Helvetica", 16))
     countdown_label = tk.Label(game_window, font=("Helvetica", 14))
@@ -223,6 +233,7 @@ def show_question_window(questions, character, category, difficulty):
             game_window.destroy()
 
     def countdown():
+        timer_duration = get_character_timer()
         for t in range(timer_duration, 0, -1):
             timer.set(t)
             warning_threshold = max(1, timer_duration // 4)
@@ -231,13 +242,12 @@ def show_question_window(questions, character, category, difficulty):
             if selected_answer.get():
                 break
         else:
-            health.set(health.get() - 1)
-            update_hearts()
-            question_index.set(question_index.get() + 1)
-            display_question()
+            # Süre bitti, yanlış say
+            handle_wrong_answer(timeout=True)
 
     def display_question():
         selected_answer.set("")
+        archer_retry_used[0] = False  # Archer için tekrar hakkı sıfırlanır
         if question_index.get() >= len(questions):
             write_score_to_file(player_name, score.get(), category, difficulty)
             show_results_window(answer_list)
@@ -252,25 +262,54 @@ def show_question_window(questions, character, category, difficulty):
         for i in range(4):
             option_buttons[i].config(text=options[i], value=options[i][0])
         update_hearts()
-        timer.set(timer_duration)
+        timer.set(get_character_timer())
         threading.Thread(target=countdown, daemon=True).start()
+
+    def handle_wrong_answer(timeout=False):
+        q = questions[question_index.get()]
+        # Warrior: İlk yanlışta can kaybetmez, ama soru atlanır
+        if character == "Warrior" and not warrior_shield_used[0]:
+            warrior_shield_used[0] = True
+            answer_list.append({
+                "question": q,
+                "selected": selected_answer.get() if selected_answer.get() else "",
+                "is_correct": False
+            })
+            messagebox.showinfo("Warrior Shield", "Warrior özelliği ile bu seferlik can kaybetmedin!")
+            question_index.set(question_index.get() + 1)
+            display_question()
+            return
+        # Archer: Yanlışta bir kez tekrar hakkı
+        if character == "Archer" and not archer_retry_used[0]:
+            archer_retry_used[0] = True
+            messagebox.showinfo("Archer Retry", "Archer özelliği ile bu soruyu tekrar deneyebilirsin!")
+            return  # Aynı soruda tekrar şans ver
+        # Normal yanlış
+        health.set(health.get() - 1)
+        answer_list.append({
+            "question": q,
+            "selected": selected_answer.get() if selected_answer.get() else "",
+            "is_correct": False
+        })
+        question_index.set(question_index.get() + 1)
+        display_question()
 
     def submit_answer():
         if not selected_answer.get():
             return
         correct = questions[question_index.get()]["answer"]
         is_correct = selected_answer.get() == correct
-        answer_list.append({
-            "question": questions[question_index.get()],
-            "selected": selected_answer.get(),
-            "is_correct": is_correct
-        })
         if is_correct:
+            answer_list.append({
+                "question": questions[question_index.get()],
+                "selected": selected_answer.get(),
+                "is_correct": True
+            })
             score.set(score.get() + 1)
+            question_index.set(question_index.get() + 1)
+            display_question()
         else:
-            health.set(health.get() - 1)
-        question_index.set(question_index.get() + 1)
-        display_question()
+            handle_wrong_answer(timeout=False)
 
     question_label = tk.Label(game_window, text="", wraplength=500, font=("Helvetica", 14))
     question_label.pack(pady=20)
