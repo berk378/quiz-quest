@@ -7,60 +7,58 @@ import random
 import os
 
 # --- GIF Animation Functions ---
-def show_gif_inline(parent, gif_path, size=(120, 120)):  # Reduced back to smaller size
+def show_gif_inline(parent, gif_path, size=(120, 120)):
     frames = []
     try:
         i = 0
         while True:
             img = tk.PhotoImage(file=gif_path, format=f"gif -index {i}")
-            if size:
-                img = img.subsample(max(img.width() // size[0], 1), max(img.height() // size[1], 1))
+            x = max(img.width() // size[0], 1)
+            y = max(img.height() // size[1], 1)
+            img = img.subsample(int(x), int(y))
             frames.append(img)
             i += 1
-    except Exception as e:
-        # Create a placeholder if GIF is missing
+    except Exception:
         if not frames:
-            label = tk.Label(parent, text=f"Character\nImage", width=10, height=5, 
-                          relief="ridge", bd=2, bg="#f0f0f0")
+            label = tk.Label(parent, text="Character\nImage", width=10, height=5, relief="ridge", bd=2, bg="#f0f0f0")
             label.pack(side="left", padx=10, pady=5)
             return label
     if not frames:
         return None
-        
+
     lbl = tk.Label(parent)
     lbl.pack(side="left", padx=10, pady=5)
     def update(idx=0):
         lbl.config(image=frames[idx])
-        lbl.image = frames[idx]
+        lbl.image = frames[idx]  # Tkinter için referans tutmak gerekli
         parent.after(100, update, (idx + 1) % len(frames))
     update()
     return lbl
 
-def show_gif(parent, gif_path, size=(200, 200)):  # Reduced back to smaller size
+def show_gif(parent, gif_path, size=(200, 200)):
     frames = []
     try:
         i = 0
         while True:
             img = tk.PhotoImage(file=gif_path, format=f"gif -index {i}")
-            if size:
-                img = img.subsample(max(img.width() // size[0], 1), max(img.height() // size[1], 1))
+            x = max(img.width() // size[0], 1)
+            y = max(img.height() // size[1], 1)
+            img = img.subsample(int(x), int(y))
             frames.append(img)
             i += 1
-    except Exception as e:
-        # Create a placeholder if GIF is missing
+    except Exception:
         if not frames:
-            label = tk.Label(parent, text="Character Result", width=15, height=10, 
-                          relief="ridge", bd=2, bg="#f0f0f0")
+            label = tk.Label(parent, text="Character Result", width=15, height=10, relief="ridge", bd=2, bg="#f0f0f0")
             label.pack(pady=10)
             return label
     if not frames:
         return None
-        
+
     lbl = tk.Label(parent)
     lbl.pack(pady=10)
     def update(idx=0):
         lbl.config(image=frames[idx])
-        lbl.image = frames[idx]
+        lbl.image = frames[idx]  # Tkinter için referans tutmak gerekli
         parent.after(100, update, (idx + 1) % len(frames))
     update()
     return lbl
@@ -304,6 +302,7 @@ def show_question_window(questions, character, category, difficulty):
         return base_timer_duration
 
     timer = tk.IntVar(value=get_character_timer())
+    timer_active = [False]  # Flag to track if timer is active
 
     hearts_label = tk.Label(game_window, font=("Helvetica", 16))
     countdown_label = tk.Label(game_window, font=("Helvetica", 14))
@@ -316,21 +315,33 @@ def show_question_window(questions, character, category, difficulty):
             messagebox.showinfo("Game Over", f"Nice try {character}!\nFinal Score: {score.get()}")
             game_window.destroy()
 
-    def countdown():
-        timer_duration = get_character_timer()
-        for t in range(timer_duration, 0, -1):
-            timer.set(t)
-            warning_threshold = max(1, timer_duration // 4)
-            countdown_label.config(text=f" Time left: {t}s", fg="red" if t <= warning_threshold else "black")
-            time.sleep(1)
-            if selected_answer.get():
-                break
-        else:
+    def countdown(t=None):
+        if not timer_active[0]:  # Stop if timer is no longer active
+            return
+            
+        if t is None:
+            t = get_character_timer()
+            
+        if t <= 0:
             handle_wrong_answer(timeout=True)
+            return
+            
+        if selected_answer.get():  # Stop if answer selected
+            return
+            
+        timer.set(t)
+        warning_threshold = max(1, get_character_timer() // 4)
+        countdown_label.config(text=f"Time left: {t}s", 
+                              fg="red" if t <= warning_threshold else "black")
+        game_window.after(1000, countdown, t-1)
 
     def display_question():
         selected_answer.set("")
         archer_retry_used[0] = False
+        
+        # Stop any existing timer
+        timer_active[0] = False
+        
         if question_index.get() >= len(questions):
             write_score_to_file(player_name, score.get(), category, difficulty)
             show_results_window(answer_list)
@@ -345,10 +356,14 @@ def show_question_window(questions, character, category, difficulty):
         for i in range(4):
             option_buttons[i].config(text=options[i], value=options[i][0])
         update_hearts()
-        timer.set(get_character_timer())
-        threading.Thread(target=countdown, daemon=True).start()
+        
+        # Start new timer
+        timer_active[0] = True
+        countdown()
 
     def handle_wrong_answer(timeout=False):
+        timer_active[0] = False  # Stop the timer
+        
         q = questions[question_index.get()]
         # Warrior: first wrong answer does not lose health
         if character == "Warrior" and not warrior_shield_used[0]:
@@ -366,6 +381,9 @@ def show_question_window(questions, character, category, difficulty):
         if character == "Archer" and not archer_retry_used[0]:
             archer_retry_used[0] = True
             messagebox.showinfo("Archer Retry", "With Archer's ability, you can try this question again!")
+            # Restart the timer
+            timer_active[0] = True
+            countdown()
             return
         # Normal wrong answer
         health.set(health.get() - 1)
@@ -585,12 +603,14 @@ def show_60s_challenge_window(questions, character, category, difficulty):
     selected_answer = tk.StringVar()
     answer_list = []
     health = tk.IntVar(value=3)
+    timer_active = [False]  # Flag to control timer
 
     time_bonus = {"Easy": 2, "Medium": 3, "Hard": 4, "Extreme": 5}
 
     def update_hearts():
         hearts_label.config(text="❤️" * health.get())
         if health.get() <= 0:
+            timer_active[0] = False  # Stop timer
             write_score_to_file(player_name, score.get(), category, difficulty)
             show_results_window(answer_list)
             messagebox.showinfo("Game Over", f"Out of lives!\nScore: {score.get()}")
@@ -599,6 +619,7 @@ def show_60s_challenge_window(questions, character, category, difficulty):
     def next_question():
         selected_answer.set("")
         if q_index.get() >= len(questions) or time_left.get() <= 0 or health.get() <= 0:
+            timer_active[0] = False  # Stop timer
             write_score_to_file(player_name, score.get(), category, difficulty)
             show_results_window(answer_list)
             messagebox.showinfo("Challenge Over", f"Score: {score.get()}")
@@ -637,13 +658,14 @@ def show_60s_challenge_window(questions, character, category, difficulty):
         next_question()
 
     def timer_countdown():
-        while time_left.get() > 0 and health.get() > 0:
-            time.sleep(1)
-            time_left.set(time_left.get() - 1)
-            timer_label.config(text=f"Time Left: {time_left.get()} s")
+        if not timer_active[0] or time_left.get() <= 0 or health.get() <= 0:
             if time_left.get() <= 0 or health.get() <= 0:
                 submit_btn.config(state="disabled")
-                break
+            return
+        
+        time_left.set(time_left.get() - 1)
+        timer_label.config(text=f"Time Left: {time_left.get()} s")
+        challenge_win.after(1000, timer_countdown)
 
     question_label = tk.Label(challenge_win, text="", wraplength=500, font=("Helvetica", 14))
     question_label.pack(pady=20)
@@ -660,7 +682,8 @@ def show_60s_challenge_window(questions, character, category, difficulty):
     hearts_label.pack(pady=5)
 
     next_question()
-    threading.Thread(target=timer_countdown, daemon=True).start()
+    timer_active[0] = True    
+    challenge_win.after(1000, timer_countdown)
 # --- End 60 Seconds Challenge Mode ---
 
 # --- 1v1 Mode Integration ---
@@ -909,13 +932,13 @@ def play_1v1_60s(player, questions, category, difficulty, lives, callback):
         next_question()
 
     def timer_countdown():
-        while time_left.get() > 0 and health.get() > 0:
-            time.sleep(1)
-            time_left.set(time_left.get() - 1)
-            timer_label.config(text=f"Time Left: {time_left.get()} s")
+        if time_left.get() <= 0 or health.get() <= 0:
             if time_left.get() <= 0 or health.get() <= 0:
                 submit_btn.config(state="disabled")
-                break
+            return
+        time_left.set(time_left.get() - 1)
+        timer_label.config(text=f"Time Left: {time_left.get()} s")
+        challenge_win.after(1000, timer_countdown)
 
     question_label = tk.Label(challenge_win, text="", wraplength=500, font=("Helvetica", 14))
     question_label.pack(pady=20)
