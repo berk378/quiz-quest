@@ -15,7 +15,7 @@ def show_gif_inline(parent, gif_path, size=(120, 120)):
             img = tk.PhotoImage(file=gif_path, format=f"gif -index {i}")
             x = max(img.width() // size[0], 1)
             y = max(img.height() // size[1], 1)
-            img = img.subsample(int(x), int(y))
+            img = img.subsample(int(x), int(y))  # type: ignore
             frames.append(img)
             i += 1
     except Exception:
@@ -30,7 +30,7 @@ def show_gif_inline(parent, gif_path, size=(120, 120)):
     lbl.pack(side="left", padx=10, pady=5)
     def update(idx=0):
         lbl.config(image=frames[idx])
-        lbl.image = frames[idx]  # Tkinter için referans tutmak gerekli
+        setattr(lbl, "image", frames[idx])  # type: ignore[attr-defined]
         parent.after(100, update, (idx + 1) % len(frames))
     update()
     return lbl
@@ -43,7 +43,7 @@ def show_gif(parent, gif_path, size=(200, 200)):
             img = tk.PhotoImage(file=gif_path, format=f"gif -index {i}")
             x = max(img.width() // size[0], 1)
             y = max(img.height() // size[1], 1)
-            img = img.subsample(int(x), int(y))
+            img = img.subsample(int(x), int(y)) # type: ignore
             frames.append(img)
             i += 1
     except Exception:
@@ -58,7 +58,7 @@ def show_gif(parent, gif_path, size=(200, 200)):
     lbl.pack(pady=10)
     def update(idx=0):
         lbl.config(image=frames[idx])
-        lbl.image = frames[idx]  # Tkinter için referans tutmak gerekli
+        lbl.image = frames[idx]  # type: ignore # Tkinter için referans tutmak gerekli
         parent.after(100, update, (idx + 1) % len(frames))
     update()
     return lbl
@@ -67,6 +67,16 @@ player_name = ""
 
 categories = ["Math", "Geography", "General Knowledge", "Coding", "Mixed"]
 difficulties = ["Easy", "Medium", "Hard", "Extreme", "Mixed"]
+
+
+
+
+# Karakter yetenekleri için açıklamalar
+char_descriptions = {
+    "Warrior": "Starts with +1 HP (4 total hearts)",
+    "Wizard": "+3 seconds time for every question",
+    "Archer": "Bonus +1 point at the end of the game"  # Yeni Archer yeteneği
+}
 
 def start_game():
     selected_char = character_var.get()
@@ -191,6 +201,11 @@ def show_results_window(answer_list):
     # --- WIN/LOSE GIF and TEXT ---
     score = sum(1 for ans in answer_list if ans["is_correct"])
     char = character_var.get()
+    
+    # Archer karakteri için bonus puan
+    if char == "Archer":
+        score += 1  # Archer +1 bonus puan alır
+        
     win_gifs = {
         "Warrior": "warrior win.gif",
         "Wizard": "wizard win.gif",
@@ -201,6 +216,21 @@ def show_results_window(answer_list):
         "Wizard": "wizard lose.gif",
         "Archer": "archer lose.gif"
     }
+    
+    # Skoru ekranın üst kısmında belirgin şekilde göster
+    score_frame = tk.Frame(results_win, bg="#f0f0f0", pady=10, padx=10)
+    score_frame.pack(fill="x", pady=10)
+    
+    score_label = tk.Label(score_frame, text=f"Final Score: {score}", 
+                          font=("Helvetica", 18, "bold"), fg="blue", bg="#f0f0f0")
+    score_label.pack()
+    
+    # Archer için bonus puan bilgisini göster
+    if char == "Archer":
+        bonus_label = tk.Label(score_frame, text="(Includes +1 Archer bonus point)", 
+                              font=("Helvetica", 10, "italic"), fg="green", bg="#f0f0f0")
+        bonus_label.pack()
+    
     if score >= 5:
         tk.Label(results_win, text="You Win!", font=("Helvetica", 22, "bold"), fg="green").pack(pady=5)
         show_gif(results_win, win_gifs.get(char, "warrior win.gif"))
@@ -274,14 +304,16 @@ def show_question_window(questions, character, category, difficulty):
     game_window.geometry("550x500")
 
     score = tk.IntVar(value=0)
-    health = tk.IntVar(value=3)
+    # Warrior 4 can ile başlar (normal 3 yerine)
+    initial_health = 4 if character == "Warrior" else 3
+    health = tk.IntVar(value=initial_health)
     question_index = tk.IntVar(value=0)
     selected_answer = tk.StringVar()
     answer_list = []
 
     # Character abilities
     warrior_shield_used = [False]  # Warrior: one-time shield
-    archer_retry_used = [False]    # Archer: one retry per question
+    # Archer retry özelliği kaldırıldı
 
     def get_timer_duration(category, difficulty):
         timer_settings = {
@@ -294,11 +326,11 @@ def show_question_window(questions, character, category, difficulty):
             return 10
         return timer_settings.get(category, {}).get(difficulty, 15)
 
-    # Wizard gets +2 seconds
+    # Wizard +3 saniye ekstra süre alır
     base_timer_duration = get_timer_duration(category, difficulty)
     def get_character_timer():
         if character == "Wizard":
-            return base_timer_duration + 2
+            return base_timer_duration + 3  # 2'den 3'e çıkarıldı
         return base_timer_duration
 
     timer = tk.IntVar(value=get_character_timer())
@@ -306,14 +338,23 @@ def show_question_window(questions, character, category, difficulty):
 
     hearts_label = tk.Label(game_window, font=("Helvetica", 16))
     countdown_label = tk.Label(game_window, font=("Helvetica", 14))
+    
+    # Score display
+    score_label = tk.Label(game_window, text="Score: 0", font=("Helvetica", 14, "bold"))
+    score_label.pack(pady=5)
+
+    def update_score():
+        score_label.config(text=f"Score: {score.get()}")
 
     def update_hearts():
         hearts_label.config(text="❤️" * health.get())
         if health.get() <= 0:
-            write_score_to_file(player_name, score.get(), category, difficulty)
-            show_results_window(answer_list)
-            messagebox.showinfo("Game Over", f"Nice try {character}!\nFinal Score: {score.get()}")
+            # Archer bonus puanı dahil edilerek kaydedilir
+            bonus = 1 if character == "Archer" else 0
+            write_score_to_file(player_name, score.get() + bonus, category, difficulty)
             game_window.destroy()
+            # Sadece sonuç penceresi gösterilir, mesaj kutusu gösterilmez
+            show_results_window(answer_list)
 
     def countdown(t=None):
         if not timer_active[0]:  # Stop if timer is no longer active
@@ -337,16 +378,18 @@ def show_question_window(questions, character, category, difficulty):
 
     def display_question():
         selected_answer.set("")
-        archer_retry_used[0] = False
+        # Archer retry özelliği kaldırıldı
         
         # Stop any existing timer
         timer_active[0] = False
         
         if question_index.get() >= len(questions):
-            write_score_to_file(player_name, score.get(), category, difficulty)
-            show_results_window(answer_list)
-            messagebox.showinfo("Well Done!", f"You finished the game, {character}!\nFinal Score: {score.get()}")
+            # Archer bonus puanı dahil edilerek kaydedilir
+            bonus = 1 if character == "Archer" else 0
+            write_score_to_file(player_name, score.get() + bonus, category, difficulty)
             game_window.destroy()
+            # Sadece sonuç penceresi gösterilir, mesaj kutusu gösterilmez
+            show_results_window(answer_list)
             return
 
         q = questions[question_index.get()]
@@ -356,6 +399,7 @@ def show_question_window(questions, character, category, difficulty):
         for i in range(4):
             option_buttons[i].config(text=options[i], value=options[i][0])
         update_hearts()
+        update_score()
         
         # Start new timer
         timer_active[0] = True
@@ -377,14 +421,9 @@ def show_question_window(questions, character, category, difficulty):
             question_index.set(question_index.get() + 1)
             display_question()
             return
-        # Archer: one retry per question
-        if character == "Archer" and not archer_retry_used[0]:
-            archer_retry_used[0] = True
-            messagebox.showinfo("Archer Retry", "With Archer's ability, you can try this question again!")
-            # Restart the timer
-            timer_active[0] = True
-            countdown()
-            return
+            
+        # Archer retry özelliği kaldırıldı - bonus puan artık sonunda ekleniyor
+        
         # Normal wrong answer
         health.set(health.get() - 1)
         answer_list.append({
@@ -602,29 +641,43 @@ def show_60s_challenge_window(questions, character, category, difficulty):
     q_index = tk.IntVar(value=0)
     selected_answer = tk.StringVar()
     answer_list = []
-    health = tk.IntVar(value=3)
-    timer_active = [False]  # Flag to control timer
+    # Warrior 4 can ile başlar
+    initial_health = 4 if character == "Warrior" else 3
+    health = tk.IntVar(value=initial_health)
+    timer_active = [True]  # Flag to control timer - starting as active
 
     time_bonus = {"Easy": 2, "Medium": 3, "Hard": 4, "Extreme": 5}
+
+    # Score display
+    score_label = tk.Label(challenge_win, text="Score: 0", font=("Helvetica", 14, "bold"))
+    score_label.pack(pady=5)
+    
+    def update_score():
+        score_label.config(text=f"Score: {score.get()}")
 
     def update_hearts():
         hearts_label.config(text="❤️" * health.get())
         if health.get() <= 0:
             timer_active[0] = False  # Stop timer
-            write_score_to_file(player_name, score.get(), category, difficulty)
-            show_results_window(answer_list)
-            messagebox.showinfo("Game Over", f"Out of lives!\nScore: {score.get()}")
+            # Archer bonus puanı dahil edilerek kaydedilir
+            bonus = 1 if character == "Archer" else 0
+            write_score_to_file(player_name, score.get() + bonus, category, difficulty)
             challenge_win.destroy()
+            # Sadece sonuç penceresi gösterilir, mesaj kutusu gösterilmez
+            show_results_window(answer_list)
 
     def next_question():
         selected_answer.set("")
         if q_index.get() >= len(questions) or time_left.get() <= 0 or health.get() <= 0:
             timer_active[0] = False  # Stop timer
-            write_score_to_file(player_name, score.get(), category, difficulty)
-            show_results_window(answer_list)
-            messagebox.showinfo("Challenge Over", f"Score: {score.get()}")
+            # Archer bonus puanı dahil edilerek kaydedilir
+            bonus = 1 if character == "Archer" else 0
+            write_score_to_file(player_name, score.get() + bonus, category, difficulty)
             challenge_win.destroy()
+            # Sadece sonuç penceresi gösterilir, mesaj kutusu gösterilmez
+            show_results_window(answer_list)
             return
+            
         q = questions[q_index.get()]
         question_label.config(text=q["question"])
         opts = q["options"].copy()
@@ -633,6 +686,7 @@ def show_60s_challenge_window(questions, character, category, difficulty):
             option_buttons[i].config(text=opts[i], value=opts[i][0])
         timer_label.config(text=f"Time Left: {time_left.get()} s")
         update_hearts()
+        update_score()
 
     def submit():
         if not selected_answer.get():
@@ -678,11 +732,10 @@ def show_60s_challenge_window(questions, character, category, difficulty):
     submit_btn.pack(pady=10)
     timer_label = tk.Label(challenge_win, text="Time Left: 60 s", font=("Helvetica", 14))
     timer_label.pack()
-    hearts_label = tk.Label(challenge_win, text="❤️❤️❤️", font=("Helvetica", 16))
+    hearts_label = tk.Label(challenge_win, text="❤️" * health.get(), font=("Helvetica", 16))
     hearts_label.pack(pady=5)
 
     next_question()
-    timer_active[0] = True    
     challenge_win.after(1000, timer_countdown)
 # --- End 60 Seconds Challenge Mode ---
 
@@ -774,6 +827,14 @@ def play_1v1_round(player, questions, category, difficulty, lives, callback):
     question_index = tk.IntVar(value=0)
     selected_answer = tk.StringVar()
     answer_list = []
+    timer_active = [True]  # Flag to control timer
+
+    # Score display
+    score_label = tk.Label(game_window, text="Score: 0", font=("Helvetica", 14, "bold"))
+    score_label.pack(pady=5)
+    
+    def update_score():
+        score_label.config(text=f"Score: {score.get()}")
 
     def get_timer_duration(category, difficulty):
         timer_settings = {
@@ -795,25 +856,33 @@ def play_1v1_round(player, questions, category, difficulty, lives, callback):
     def update_hearts():
         hearts_label.config(text="❤️" * health.get())
         if health.get() <= 0:
+            timer_active[0] = False
             question_index.set(len(questions))
 
-    def countdown():
-        for t in range(timer_duration, 0, -1):
-            timer.set(t)
-            warning_threshold = max(1, timer_duration // 4)
-            countdown_label.config(text=f" Time left: {t}s", fg="red" if t <= warning_threshold else "black")
-            time.sleep(1)
-            if selected_answer.get():
-                break
-        else:
+    def countdown(t=None):
+        if not timer_active[0] or selected_answer.get():
+            return
+            
+        if t is None:
+            t = timer_duration
+            
+        if t <= 0:
             health.set(health.get() - 1)
             update_hearts()
             question_index.set(question_index.get() + 1)
             display_question()
+            return
+            
+        timer.set(t)
+        warning_threshold = max(1, timer_duration // 4)
+        countdown_label.config(text=f"Time left: {t}s", 
+                               fg="red" if t <= warning_threshold else "black")
+        game_window.after(1000, lambda: countdown(t-1))
 
     def display_question():
         selected_answer.set("")
         if question_index.get() >= len(questions) or health.get() <= 0:
+            timer_active[0] = False
             game_window.destroy()
             callback({
                 "score": score.get(),
@@ -831,8 +900,9 @@ def play_1v1_round(player, questions, category, difficulty, lives, callback):
         for i in range(4):
             option_buttons[i].config(text=options[i], value=options[i][0])
         update_hearts()
+        update_score()
         timer.set(timer_duration)
-        threading.Thread(target=countdown, daemon=True).start()
+        countdown()
 
     def submit_answer():
         if not selected_answer.get():
@@ -879,17 +949,27 @@ def play_1v1_60s(player, questions, category, difficulty, lives, callback):
     selected_answer = tk.StringVar()
     answer_list = []
     health = tk.IntVar(value=lives)
+    timer_active = [True]  # Flag to control timer
 
     time_bonus = {"Easy": 2, "Medium": 3, "Hard": 4, "Extreme": 5}
+
+    # Score display
+    score_label = tk.Label(challenge_win, text="Score: 0", font=("Helvetica", 14, "bold"))
+    score_label.pack(pady=5)
+    
+    def update_score():
+        score_label.config(text=f"Score: {score.get()}")
 
     def update_hearts():
         hearts_label.config(text="❤️" * health.get())
         if health.get() <= 0:
+            timer_active[0] = False
             q_index.set(len(questions))
 
     def next_question():
         selected_answer.set("")
         if q_index.get() >= len(questions) or time_left.get() <= 0 or health.get() <= 0:
+            timer_active[0] = False
             challenge_win.destroy()
             callback({
                 "score": score.get(),
@@ -899,6 +979,7 @@ def play_1v1_60s(player, questions, category, difficulty, lives, callback):
                 "mode": "60s"
             })
             return
+            
         q = questions[q_index.get()]
         question_label.config(text=q["question"])
         opts = q["options"].copy()
@@ -907,6 +988,7 @@ def play_1v1_60s(player, questions, category, difficulty, lives, callback):
             option_buttons[i].config(text=opts[i], value=opts[i][0])
         timer_label.config(text=f"Time Left: {time_left.get()} s")
         update_hearts()
+        update_score()
 
     def submit():
         if not selected_answer.get():
@@ -932,10 +1014,11 @@ def play_1v1_60s(player, questions, category, difficulty, lives, callback):
         next_question()
 
     def timer_countdown():
-        if time_left.get() <= 0 or health.get() <= 0:
+        if not timer_active[0] or time_left.get() <= 0 or health.get() <= 0:
             if time_left.get() <= 0 or health.get() <= 0:
                 submit_btn.config(state="disabled")
             return
+        
         time_left.set(time_left.get() - 1)
         timer_label.config(text=f"Time Left: {time_left.get()} s")
         challenge_win.after(1000, timer_countdown)
@@ -951,11 +1034,11 @@ def play_1v1_60s(player, questions, category, difficulty, lives, callback):
     submit_btn.pack(pady=10)
     timer_label = tk.Label(challenge_win, text="Time Left: 60 s", font=("Helvetica", 14))
     timer_label.pack()
-    hearts_label = tk.Label(challenge_win, text="❤️" * lives, font=("Helvetica", 16))
+    hearts_label = tk.Label(challenge_win, text="❤️" * health.get(), font=("Helvetica", 16))
     hearts_label.pack(pady=5)
 
     next_question()
-    threading.Thread(target=timer_countdown, daemon=True).start()
+    challenge_win.after(1000, timer_countdown)
 
 def show_1v1_results(player1, result1, player2, result2):
     win = tk.Toplevel(root)
@@ -971,12 +1054,21 @@ def show_1v1_results(player1, result1, player2, result2):
 
     confetti_label = tk.Label(win, text="", font=("Helvetica", 30))
     confetti_label.pack(pady=10)
+    
     def confetti():
         for _ in range(10):
-            confetti_label.config(text="🎉" * random.randint(5, 15))
-            win.update()
-            time.sleep(0.15)
-        confetti_label.config(text="🎉" * 10)
+            confetti_text = "🎉" * random.randint(5, 15)
+            confetti_label.config(text=confetti_text)
+            try:
+                win.update()
+                time.sleep(0.15)
+            except:
+                break  # Window was closed
+        try:
+            confetti_label.config(text="🎉" * 10)
+        except:
+            pass  # Window was closed
+            
     threading.Thread(target=confetti, daemon=True).start()
 
     tk.Label(win, text=f"Winner: {winner}", font=("Helvetica", 18, "bold"), fg="green").pack(pady=10)
@@ -1117,13 +1209,25 @@ for text, value in chars:
                         font=("Helvetica", 14, "bold"))
     rb.pack(side="left", padx=15)
     
-    # Character GIF animation (larger)
-    show_gif_inline(char_row, gif_files[value], size=(150, 150))
+    # Character GIF animation (küçültülmüş boyut)
+    show_gif_inline(char_row, gif_files[value], size=(100, 100))
+    
+    # Karakter açıklamasını ekle
+    desc_label = tk.Label(char_row, text=char_descriptions[value], font=("Helvetica", 10, "italic"))
+    desc_label.pack(side="left", padx=5)
 
-continue_button = tk.Button(character_frame, text="Continue", font=("Helvetica", 16, "bold"), 
-                           command=continue_to_category, bg="#4CAF50", fg="white")
-continue_button.pack(pady=20)
-
+continue_button = tk.Button(
+    character_frame,
+    text="CONTINUE",
+    font=("Helvetica", 18, "bold"),
+    command=continue_to_category,
+    bg="#FF5722",
+    fg="white",
+    padx=30,
+    pady=12,
+    relief=tk.RAISED,
+    bd=3
+)
 category_var = tk.StringVar()
 difficulty_var = tk.StringVar()
 
@@ -1137,6 +1241,16 @@ start_button = tk.Button(root, text="Start Game", font=("Helvetica", 16), comman
 
 # Create button frame for game mode buttons
 button_frame = tk.Frame(root)
+
+continue_button.pack(pady=30, fill="x", padx=20)
+category_label.pack_forget()
+for rb in category_buttons:
+    rb.pack_forget()
+difficulty_label.pack_forget()
+for rb in difficulty_buttons:
+    rb.pack_forget()
+button_frame.pack_forget()
+start_button.pack_forget()
 
 mixed_mode_active = tk.BooleanVar(value=False)
 
