@@ -73,11 +73,10 @@ difficulties = ["Easy", "Medium", "Hard", "Extreme", "Mixed"]
 
 # Karakter yetenekleri için açıklamalar
 char_descriptions = {
-    "Warrior": "Starts with +1 HP (4 total hearts)",
+    "Warrior": "Starts with 4 hearts (no special shield)",
     "Wizard": "+3 seconds time for every question",
-    "Archer": "Bonus +1 point at the end of the game"  # Yeni Archer yeteneği
+    "Archer": "Starts with +1 point"
 }
-
 def start_game():
     selected_char = character_var.get()
     selected_category = category_var.get()
@@ -1212,7 +1211,7 @@ for text, value in chars:
 continue_button = tk.Button(
     character_frame,
     text="CONTINUE",
-    font=("Helvetica", 18, "bold"),
+    font=("Helvetica", 16, "bold"),
     command=continue_to_category,
     bg="#27870A",
     fg="white",
@@ -1221,7 +1220,7 @@ continue_button = tk.Button(
     relief=tk.RAISED,
     bd=3
 )
-continue_button.place(relx=0.5, rely=1.0, anchor="s", y=-20, width=300, height=60)
+continue_button.place(relx=1.0, rely=0.5, anchor="e", x=-10)
 
 category_var = tk.StringVar()
 difficulty_var = tk.StringVar()
