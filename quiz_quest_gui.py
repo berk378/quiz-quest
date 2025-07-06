@@ -1152,7 +1152,7 @@ def show_1v1_results(player1, result1, player2, result2):
 
 root = tk.Tk()
 root.title("Quiz Quest GUI")
-root.geometry("550x700")  # Increased window size for larger GIFs
+root.geometry("600x800")  # Increased window size for larger GIFs
 
 is_dark_mode = tk.BooleanVar(value=False)
 is_anonymous = tk.BooleanVar(value=False)
@@ -1203,16 +1203,9 @@ gif_files = {
 for text, value in chars:
     char_row = tk.Frame(character_frame)
     char_row.pack(pady=10, fill="x")
-    
-    # Character selection button
-    rb = tk.Radiobutton(char_row, text=text, variable=character_var, value=value, 
-                        font=("Helvetica", 14, "bold"))
+    rb = tk.Radiobutton(char_row, text=text, variable=character_var, value=value, font=("Helvetica", 14, "bold"))
     rb.pack(side="left", padx=15)
-    
-    # Character GIF animation (küçültülmüş boyut)
     show_gif_inline(char_row, gif_files[value], size=(100, 100))
-    
-    # Karakter açıklamasını ekle
     desc_label = tk.Label(char_row, text=char_descriptions[value], font=("Helvetica", 10, "italic"))
     desc_label.pack(side="left", padx=5)
 
@@ -1221,13 +1214,15 @@ continue_button = tk.Button(
     text="CONTINUE",
     font=("Helvetica", 18, "bold"),
     command=continue_to_category,
-    bg="#FF5722",
+    bg="#27870A",
     fg="white",
     padx=30,
     pady=12,
     relief=tk.RAISED,
     bd=3
 )
+continue_button.place(relx=0.5, rely=1.0, anchor="s", y=-20, width=300, height=60)
+
 category_var = tk.StringVar()
 difficulty_var = tk.StringVar()
 
@@ -1242,7 +1237,7 @@ start_button = tk.Button(root, text="Start Game", font=("Helvetica", 16), comman
 # Create button frame for game mode buttons
 button_frame = tk.Frame(root)
 
-continue_button.pack(pady=30, fill="x", padx=20)
+# Başlangıçta sadece CONTINUE gözüksün, diğerleri gizli
 category_label.pack_forget()
 for rb in category_buttons:
     rb.pack_forget()
