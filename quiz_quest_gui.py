@@ -73,10 +73,11 @@ difficulties = ["Easy", "Medium", "Hard", "Extreme", "Mixed"]
 
 # Karakter yetenekleri için açıklamalar
 char_descriptions = {
-    "Warrior": "Starts with 4 hearts (no special shield)",
+    "Warrior": "Starts with +1 HP (4 total hearts)",
     "Wizard": "+3 seconds time for every question",
-    "Archer": "Starts with +1 point"
+    "Archer": "Bonus +1 point at the end of the game"  # Yeni Archer yeteneği
 }
+
 def start_game():
     selected_char = character_var.get()
     selected_category = category_var.get()
@@ -354,34 +355,34 @@ def show_question_window(questions, character, category, difficulty):
             game_window.destroy()
             # Sadece sonuç penceresi gösterilir, mesaj kutusu gösterilmez
             show_results_window(answer_list)
-
     def countdown(t=None):
         if not timer_active[0]:  # Stop if timer is no longer active
             return
-            
+
         if t is None:
             t = get_character_timer()
-            
+
         if t <= 0:
             handle_wrong_answer(timeout=True)
             return
-            
-        if selected_answer.get():  # Stop if answer selected
-            return
-            
+
         timer.set(t)
         warning_threshold = max(1, get_character_timer() // 4)
-        countdown_label.config(text=f"Time left: {t}s", 
-                              fg="red" if t <= warning_threshold else "black")
-        game_window.after(1000, countdown, t-1)
+        countdown_label.config(
+            text=f"Time left: {t}s",
+            fg="red" if t <= warning_threshold else "black"
+        )
+        game_window.after(1000, lambda: countdown(t-1))
+
+    question_label = tk.Label(game_window, text="", wraplength=500, font=("Helvetica", 14))
 
     def display_question():
         selected_answer.set("")
         # Archer retry özelliği kaldırıldı
-        
+
         # Stop any existing timer
         timer_active[0] = False
-        
+
         if question_index.get() >= len(questions):
             # Archer bonus puanı dahil edilerek kaydedilir
             bonus = 1 if character == "Archer" else 0
@@ -397,12 +398,13 @@ def show_question_window(questions, character, category, difficulty):
         random.shuffle(options)
         for i in range(4):
             option_buttons[i].config(text=options[i], value=options[i][0])
-        update_hearts()
-        update_score()
-        
-        # Start new timer
-        timer_active[0] = True
-        countdown()
+    update_hearts()
+    update_score()
+
+    # Her yeni soruda timer'ı sıfırla ve başlat
+    timer.set(get_character_timer())
+    timer_active[0] = True
+    countdown()
 
     def handle_wrong_answer(timeout=False):
         timer_active[0] = False  # Stop the timer
@@ -436,21 +438,19 @@ def show_question_window(questions, character, category, difficulty):
     def submit_answer():
         if not selected_answer.get():
             return
-        correct = questions[question_index.get()]["answer"]
-        is_correct = selected_answer.get() == correct
+        q = questions[question_index.get()]
+        is_correct = selected_answer.get() == q["answer"]
+        answer_list.append({
+            "question": q,
+            "selected": selected_answer.get(),
+            "is_correct": is_correct
+        })
         if is_correct:
-            answer_list.append({
-                "question": questions[question_index.get()],
-                "selected": selected_answer.get(),
-                "is_correct": True
-            })
             score.set(score.get() + 1)
-            question_index.set(question_index.get() + 1)
-            display_question()
         else:
-            handle_wrong_answer(timeout=False)
-
-    question_label = tk.Label(game_window, text="", wraplength=500, font=("Helvetica", 14))
+            health.set(health.get() - 1)
+        question_index.set(question_index.get() + 1)
+        display_question()
     question_label.pack(pady=20)
 
     option_buttons = []
@@ -1211,7 +1211,7 @@ for text, value in chars:
 continue_button = tk.Button(
     character_frame,
     text="CONTINUE",
-    font=("Helvetica", 16, "bold"),
+    font=("Helvetica", 18, "bold"),
     command=continue_to_category,
     bg="#27870A",
     fg="white",
@@ -1220,8 +1220,7 @@ continue_button = tk.Button(
     relief=tk.RAISED,
     bd=3
 )
-continue_button.place(relx=1.0, rely=0.5, anchor="e", x=-10)
-
+continue_button.place(relx=0.98, rely=0.5, anchor="e", width=200, height=55)
 category_var = tk.StringVar()
 difficulty_var = tk.StringVar()
 
@@ -1300,3 +1299,4 @@ onevone_button.pack(side="left", padx=5, pady=5)
 
 # Start the main event loop
 root.mainloop()
+
