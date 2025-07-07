@@ -132,7 +132,7 @@ def spin_random_selection():
         category_var.set(cat)
         difficulty_var.set(diff)
         elapsed[0] += interval
-        if elapsed[0] < spin_time:
+    if elapsed[0] < spin_time:
             root.after(interval, spin)
     spin()
 
@@ -313,7 +313,6 @@ def show_question_window(questions, character, category, difficulty):
 
     # Character abilities
     warrior_shield_used = [False]  # Warrior: one-time shield
-    # Archer retry özelliği kaldırıldı
 
     def get_timer_duration(category, difficulty):
         timer_settings = {
@@ -330,7 +329,7 @@ def show_question_window(questions, character, category, difficulty):
     base_timer_duration = get_timer_duration(category, difficulty)
     def get_character_timer():
         if character == "Wizard":
-            return base_timer_duration + 3  # 2'den 3'e çıkarıldı
+            return base_timer_duration + 3
         return base_timer_duration
 
     timer = tk.IntVar(value=get_character_timer())
@@ -338,10 +337,25 @@ def show_question_window(questions, character, category, difficulty):
 
     hearts_label = tk.Label(game_window, font=("Helvetica", 16))
     countdown_label = tk.Label(game_window, font=("Helvetica", 14))
-    
+
     # Score display
     score_label = tk.Label(game_window, text="Score: 0", font=("Helvetica", 14, "bold"))
     score_label.pack(pady=5)
+
+    question_label = tk.Label(game_window, text="", wraplength=500, font=("Helvetica", 14))
+    question_label.pack(pady=20)
+
+    # Şık butonları
+    option_buttons = []
+    for _ in range(4):
+        btn = tk.Radiobutton(game_window, text="", variable=selected_answer, font=("Helvetica", 12))
+        btn.pack(anchor="w", padx=20)
+        option_buttons.append(btn)
+
+    submit_btn = tk.Button(game_window, text="Submit", font=("Helvetica", 12), command=lambda: submit_answer())
+    submit_btn.pack(pady=10)
+    countdown_label.pack()
+    hearts_label.pack()
 
     def update_score():
         score_label.config(text=f"Score: {score.get()}")
@@ -353,19 +367,16 @@ def show_question_window(questions, character, category, difficulty):
             bonus = 1 if character == "Archer" else 0
             write_score_to_file(player_name, score.get() + bonus, category, difficulty)
             game_window.destroy()
-            # Sadece sonuç penceresi gösterilir, mesaj kutusu gösterilmez
             show_results_window(answer_list)
-    def countdown(t=None):
-        if not timer_active[0]:  # Stop if timer is no longer active
-            return
 
+    def countdown(t=None):
+        if not timer_active[0]:
+            return
         if t is None:
             t = get_character_timer()
-
         if t <= 0:
             handle_wrong_answer(timeout=True)
             return
-
         timer.set(t)
         warning_threshold = max(1, get_character_timer() // 4)
         countdown_label.config(
@@ -374,41 +385,29 @@ def show_question_window(questions, character, category, difficulty):
         )
         game_window.after(1000, lambda: countdown(t-1))
 
-    question_label = tk.Label(game_window, text="", wraplength=500, font=("Helvetica", 14))
-
     def display_question():
         selected_answer.set("")
-        # Archer retry özelliği kaldırıldı
-
-        # Stop any existing timer
         timer_active[0] = False
-
         if question_index.get() >= len(questions):
-            # Archer bonus puanı dahil edilerek kaydedilir
             bonus = 1 if character == "Archer" else 0
             write_score_to_file(player_name, score.get() + bonus, category, difficulty)
             game_window.destroy()
-            # Sadece sonuç penceresi gösterilir, mesaj kutusu gösterilmez
             show_results_window(answer_list)
             return
-
         q = questions[question_index.get()]
         question_label.config(text=q["question"])
         options = q["options"].copy()
         random.shuffle(options)
         for i in range(4):
             option_buttons[i].config(text=options[i], value=options[i][0])
-    update_hearts()
-    update_score()
-
-    # Her yeni soruda timer'ı sıfırla ve başlat
-    timer.set(get_character_timer())
-    timer_active[0] = True
-    countdown()
+        update_hearts()
+        update_score()
+        timer.set(get_character_timer())
+        timer_active[0] = True
+        countdown()
 
     def handle_wrong_answer(timeout=False):
-        timer_active[0] = False  # Stop the timer
-        
+        timer_active[0] = False
         q = questions[question_index.get()]
         # Warrior: first wrong answer does not lose health
         if character == "Warrior" and not warrior_shield_used[0]:
@@ -422,9 +421,6 @@ def show_question_window(questions, character, category, difficulty):
             question_index.set(question_index.get() + 1)
             display_question()
             return
-            
-        # Archer retry özelliği kaldırıldı - bonus puan artık sonunda ekleniyor
-        
         # Normal wrong answer
         health.set(health.get() - 1)
         answer_list.append({
@@ -438,6 +434,7 @@ def show_question_window(questions, character, category, difficulty):
     def submit_answer():
         if not selected_answer.get():
             return
+        timer_active[0] = False
         q = questions[question_index.get()]
         is_correct = selected_answer.get() == q["answer"]
         answer_list.append({
@@ -451,19 +448,6 @@ def show_question_window(questions, character, category, difficulty):
             health.set(health.get() - 1)
         question_index.set(question_index.get() + 1)
         display_question()
-    question_label.pack(pady=20)
-
-    option_buttons = []
-    for _ in range(4):
-        btn = tk.Radiobutton(game_window, text="", variable=selected_answer, font=("Helvetica", 12))
-        btn.pack(anchor="w", padx=20)
-        option_buttons.append(btn)
-
-    submit_btn = tk.Button(game_window, text="Submit", font=("Helvetica", 12), command=submit_answer)
-    submit_btn.pack(pady=10)
-
-    countdown_label.pack()
-    hearts_label.pack()
 
     display_question()
 
@@ -558,7 +542,6 @@ def show_scoreboard():
     for s in scores:
         display_name = "Anonymous" if s["name"] == "Anonymous Player" else str(s["name"])
         tree.insert("", "end", values=(display_name, s["category"], s["difficulty"], str(s["score"])))
-
 def toggle_theme():
     if is_dark_mode.get():
         apply_light_theme()
@@ -1299,4 +1282,5 @@ onevone_button.pack(side="left", padx=5, pady=5)
 
 # Start the main event loop
 root.mainloop()
+
 
