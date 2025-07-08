@@ -75,7 +75,8 @@ difficulties = ["Easy", "Medium", "Hard", "Extreme", "Mixed"]
 char_descriptions = {
     "Warrior": "Starts with +1 HP (4 total hearts)",
     "Wizard": "+3 seconds time for every question",
-    "Archer": "Bonus +1 point at the end of the game"  # Yeni Archer yeteneği
+    "Archer": "Bonus +1 point at the end of the game"  
+    # "Classic": "No special abilities, standard gameplay"
 }
 
 def start_game():
@@ -319,7 +320,7 @@ def show_question_window(questions, character, category, difficulty):
     game_window.geometry("550x500")
 
     score = tk.IntVar(value=0)
-    initial_health = 4 if character == "Warrior" else 3
+    initial_health = 3 if character == "Classic" else (4 if character == "Warrior" else 3)
     health = tk.IntVar(value=initial_health)
     question_index = tk.IntVar(value=0)
     selected_answer = tk.StringVar()
@@ -622,7 +623,7 @@ def show_60s_challenge_window(questions, character, category, difficulty):
     selected_answer = tk.StringVar()
     answer_list = []
     # Warrior 4 can ile başlar
-    initial_health = 4 if character == "Warrior" else 3
+    initial_health = 3 if character == "Classic" else (4 if character == "Warrior" else 3)
     health = tk.IntVar(value=initial_health)
     timer_active = [True]  # Flag to control timer - starting as active
 
@@ -1201,11 +1202,12 @@ anonymous_check.pack(pady=5)
 char_label = tk.Label(character_frame, text="Choose your character:", font=("Helvetica", 14, "bold"))
 char_label.pack(pady=10)
 
-chars = [("Warrior", "Warrior"), ("Wizard", "Wizard"), ("Archer", "Archer")]
+chars = [("Classic", "Classic"), ("Warrior", "Warrior"), ("Wizard", "Wizard"), ("Archer", "Archer")]
 gif_files = {
     "Warrior": "Warrior.gif",
     "Wizard": "Wizard.gif",
     "Archer": "Archer.gif"
+    #Classic character no GIF
 }
 
 # Create character selection buttons with larger GIFs
@@ -1214,10 +1216,14 @@ for text, value in chars:
     char_row.pack(pady=10, fill="x")
     rb = tk.Radiobutton(char_row, text=text, variable=character_var, value=value, font=("Helvetica", 14, "bold"))
     rb.pack(side="left", padx=15)
-    show_gif_inline(char_row, gif_files[value], size=(100, 100))
-    desc_label = tk.Label(char_row, text=char_descriptions[value], font=("Helvetica", 10, "italic"))
-    desc_label.pack(side="left", padx=5)
-
+    if value in gif_files:
+        show_gif_inline(char_row, gif_files[value], size=(100, 100))
+        desc_label = tk.Label(char_row, text=char_descriptions[value], font=("Helvetica", 10, "italic"))
+        desc_label.pack(side="left", padx=5)
+    elif value == "Classic":
+        desc_label = tk.Label(char_row, text="No special abilities, standard gameplay", font=("Helvetica", 10, "italic"))
+        desc_label.pack(side="left", padx=5)
+        
 continue_button = tk.Button(
     character_frame,
     text="CONTINUE",

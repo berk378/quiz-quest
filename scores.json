@@ -24,10 +24,16 @@
         "difficulty": "Medium"
     },
     {
-        "name": "b",
-        "score": 1,
-        "category": "Coding",
-        "difficulty": "Medium"
+        "name": "berk",
+        "score": 0,
+        "category": "Math",
+        "difficulty": "Easy"
+    },
+    {
+        "name": "berk",
+        "score": 2,
+        "category": "General Knowledge",
+        "difficulty": "Easy"
     },
     {
         "name": "b",
@@ -37,6 +43,18 @@
     },
     {
         "name": "b",
+        "score": 1,
+        "category": "Coding",
+        "difficulty": "Medium"
+    },
+    {
+        "name": "b",
+        "score": 0,
+        "category": "Coding",
+        "difficulty": "Medium"
+    },
+    {
+        "name": "berk",
         "score": 0,
         "category": "Coding",
         "difficulty": "Medium"
