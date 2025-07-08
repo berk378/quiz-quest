@@ -65,7 +65,7 @@ def show_gif(parent, gif_path, size=(200, 200)):
 
 player_name = ""
 
-categories = ["Math", "Geography", "General Knowledge", "Coding", "Mixed"]
+categories = ["Math", "Geography", "General Knowledge", "Coding", "Mixed" ,"History"]
 difficulties = ["Easy", "Medium", "Hard", "Extreme", "Mixed"]
 
 
@@ -221,7 +221,7 @@ def show_results_window(answer_list):
     lose_gifs = {
         "Warrior": "warrior lose.gif",
         "Wizard": "wizard lose.gif",
-        "Archer": "archer lose.gif"
+        "Archer": "archer die.gif"
     }
 
     score_frame = tk.Frame(left_frame, bg="#f0f0f0", pady=10, padx=10)
@@ -1307,7 +1307,7 @@ onevone_button = tk.Button(button_frame, text="🤝 1v1 Mode", font=("Helvetica"
                           command=start_1v1_mode)
 onevone_button.pack(side="left", padx=5, pady=5)
 
-# Start the main event loop
-root.mainloop()
 
+
+root.mainloop()
 
