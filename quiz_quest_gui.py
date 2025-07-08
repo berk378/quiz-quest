@@ -304,15 +304,11 @@ def show_question_window(questions, character, category, difficulty):
     game_window.geometry("550x500")
 
     score = tk.IntVar(value=0)
-    # Warrior 4 can ile başlar (normal 3 yerine)
     initial_health = 4 if character == "Warrior" else 3
     health = tk.IntVar(value=initial_health)
     question_index = tk.IntVar(value=0)
     selected_answer = tk.StringVar()
     answer_list = []
-
-    # Character abilities
-    warrior_shield_used = [False]  # Warrior: one-time shield
 
     def get_timer_duration(category, difficulty):
         timer_settings = {
@@ -325,7 +321,6 @@ def show_question_window(questions, character, category, difficulty):
             return 10
         return timer_settings.get(category, {}).get(difficulty, 15)
 
-    # Wizard +3 saniye ekstra süre alır
     base_timer_duration = get_timer_duration(category, difficulty)
     def get_character_timer():
         if character == "Wizard":
@@ -333,19 +328,16 @@ def show_question_window(questions, character, category, difficulty):
         return base_timer_duration
 
     timer = tk.IntVar(value=get_character_timer())
-    timer_active = [False]  # Flag to track if timer is active
+    timer_active = [False]
+    timer_job = [None]  # after id'sini saklamak için
 
     hearts_label = tk.Label(game_window, font=("Helvetica", 16))
     countdown_label = tk.Label(game_window, font=("Helvetica", 14))
-
-    # Score display
     score_label = tk.Label(game_window, text="Score: 0", font=("Helvetica", 14, "bold"))
     score_label.pack(pady=5)
-
     question_label = tk.Label(game_window, text="", wraplength=500, font=("Helvetica", 14))
     question_label.pack(pady=20)
 
-    # Şık butonları
     option_buttons = []
     for _ in range(4):
         btn = tk.Radiobutton(game_window, text="", variable=selected_answer, font=("Helvetica", 12))
@@ -363,35 +355,29 @@ def show_question_window(questions, character, category, difficulty):
     def update_hearts():
         hearts_label.config(text="❤️" * health.get())
         if health.get() <= 0:
-            # Archer bonus puanı dahil edilerek kaydedilir
+            timer_active[0] = False
+            if timer_job[0] is not None:
+                game_window.after_cancel(timer_job[0])
+                timer_job[0] = None
+            game_window.destroy()
             bonus = 1 if character == "Archer" else 0
             write_score_to_file(player_name, score.get() + bonus, category, difficulty)
-            game_window.destroy()
             show_results_window(answer_list)
-
-    def countdown(t=None):
-        if not timer_active[0]:
-            return
-        if t is None:
-            t = get_character_timer()
-        if t <= 0:
-            handle_wrong_answer(timeout=True)
-            return
-        timer.set(t)
-        warning_threshold = max(1, get_character_timer() // 4)
-        countdown_label.config(
-            text=f"Time left: {t}s",
-            fg="red" if t <= warning_threshold else "black"
-        )
-        game_window.after(1000, lambda: countdown(t-1))
 
     def display_question():
         selected_answer.set("")
         timer_active[0] = False
-        if question_index.get() >= len(questions):
+        if timer_job[0] is not None:
+            game_window.after_cancel(timer_job[0])
+            timer_job[0] = None
+        if question_index.get() >= len(questions) or health.get() <= 0:
+            timer_active[0] = False
+            if timer_job[0] is not None:
+                game_window.after_cancel(timer_job[0])
+                timer_job[0] = None
+            game_window.destroy()
             bonus = 1 if character == "Archer" else 0
             write_score_to_file(player_name, score.get() + bonus, category, difficulty)
-            game_window.destroy()
             show_results_window(answer_list)
             return
         q = questions[question_index.get()]
@@ -406,35 +392,32 @@ def show_question_window(questions, character, category, difficulty):
         timer_active[0] = True
         countdown()
 
-    def handle_wrong_answer(timeout=False):
-        timer_active[0] = False
-        q = questions[question_index.get()]
-        # Warrior: first wrong answer does not lose health
-        if character == "Warrior" and not warrior_shield_used[0]:
-            warrior_shield_used[0] = True
-            answer_list.append({
-                "question": q,
-                "selected": selected_answer.get() if selected_answer.get() else "",
-                "is_correct": False
-            })
-            messagebox.showinfo("Warrior Shield", "With Warrior's ability, you didn't lose a life this time!")
+    def countdown(t=None):
+        if not timer_active[0]:
+            return
+        if t is None:
+            t = get_character_timer()
+        if t <= 0:
+            health.set(health.get() - 1)
+            update_hearts()
             question_index.set(question_index.get() + 1)
             display_question()
             return
-        # Normal wrong answer
-        health.set(health.get() - 1)
-        answer_list.append({
-            "question": q,
-            "selected": selected_answer.get() if selected_answer.get() else "",
-            "is_correct": False
-        })
-        question_index.set(question_index.get() + 1)
-        display_question()
+        timer.set(t)
+        warning_threshold = max(1, get_character_timer() // 4)
+        countdown_label.config(
+            text=f"Time left: {t}s",
+            fg="red" if t <= warning_threshold else "black"
+        )
+        timer_job[0] = game_window.after(1000, lambda: countdown(t-1))
 
     def submit_answer():
         if not selected_answer.get():
             return
         timer_active[0] = False
+        if timer_job[0] is not None:
+            game_window.after_cancel(timer_job[0])
+            timer_job[0] = None
         q = questions[question_index.get()]
         is_correct = selected_answer.get() == q["answer"]
         answer_list.append({
@@ -810,6 +793,7 @@ def play_1v1_round(player, questions, category, difficulty, lives, callback):
     selected_answer = tk.StringVar()
     answer_list = []
     timer_active = [True]  # Flag to control timer
+    timer_job = [None]     # Timer id'sini saklamak için
 
     # Score display
     score_label = tk.Label(game_window, text="Score: 0", font=("Helvetica", 14, "bold"))
@@ -839,32 +823,42 @@ def play_1v1_round(player, questions, category, difficulty, lives, callback):
         hearts_label.config(text="❤️" * health.get())
         if health.get() <= 0:
             timer_active[0] = False
+            if timer_job[0] is not None:
+                game_window.after_cancel(timer_job[0])
+                timer_job[0] = None
             question_index.set(len(questions))
 
     def countdown(t=None):
         if not timer_active[0] or selected_answer.get():
             return
-            
+
         if t is None:
             t = timer_duration
-            
+
         if t <= 0:
             health.set(health.get() - 1)
             update_hearts()
             question_index.set(question_index.get() + 1)
             display_question()
             return
-            
+
         timer.set(t)
         warning_threshold = max(1, timer_duration // 4)
-        countdown_label.config(text=f"Time left: {t}s", 
-                               fg="red" if t <= warning_threshold else "black")
-        game_window.after(1000, lambda: countdown(t-1))
+        countdown_label.config(text=f"Time left: {t}s", fg="red" if t <= warning_threshold else "black")
+        # Timer'ı kaydet
+        timer_job[0] = game_window.after(1000, lambda: countdown(t-1))
 
     def display_question():
         selected_answer.set("")
+        # Eski timer'ı iptal et
+        if timer_job[0] is not None:
+            game_window.after_cancel(timer_job[0])
+            timer_job[0] = None
         if question_index.get() >= len(questions) or health.get() <= 0:
             timer_active[0] = False
+            if timer_job[0] is not None:
+                game_window.after_cancel(timer_job[0])
+                timer_job[0] = None
             game_window.destroy()
             callback({
                 "score": score.get(),
@@ -884,11 +878,16 @@ def play_1v1_round(player, questions, category, difficulty, lives, callback):
         update_hearts()
         update_score()
         timer.set(timer_duration)
+        timer_active[0] = True
         countdown()
 
     def submit_answer():
         if not selected_answer.get():
             return
+        # Timer'ı iptal et
+        if timer_job[0] is not None:
+            game_window.after_cancel(timer_job[0])
+            timer_job[0] = None
         correct = questions[question_index.get()]["answer"]
         is_correct = selected_answer.get() == correct
         answer_list.append({
