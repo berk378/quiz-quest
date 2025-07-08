@@ -449,7 +449,6 @@ def show_question_window(questions, character, category, difficulty):
         display_question()
 
     display_question()
-
 def show_scoreboard():
     import tkinter.ttk as ttk
 
@@ -461,86 +460,38 @@ def show_scoreboard():
 
     sb = tk.Toplevel(root)
     sb.title("Scoreboard")
-    sb.geometry("1100x600")
+    sb.geometry("1100x700")
     sb.resizable(True, True)
 
     notebook = ttk.Notebook(sb)
     notebook.pack(fill="both", expand=True, padx=10, pady=10)
 
-    # Category tabs, each with all difficulties as columns
+    # Her kategori için bir sekme/tab
     for cat in categories:
-        if cat == "Mixed":
-            continue  # Skip Mixed for scoreboard
         frame = tk.Frame(notebook)
         notebook.add(frame, text=cat)
 
-        # Table with all difficulties as columns
-        columns = ["rank"]
-        columns += [f"{diff}_name" for diff in difficulties[:-1]]
-        columns += [f"{diff}_score" for diff in difficulties[:-1]]
+        # Her zorluk için ayrı bir tablo (Top 5)
+        for diff in difficulties[:-1]:  # "Mixed" zorluğu hariç, istersen dahil edebilirsin
+            tk.Label(frame, text=f"{diff} Top 5", font=("Helvetica", 13, "bold")).pack(pady=(10, 0))
+            tree = ttk.Treeview(frame, columns=("rank", "name", "score"), show="headings", height=5)
+            tree.heading("rank", text="#")
+            tree.heading("name", text="Name")
+            tree.heading("score", text="Score")
+            tree.column("rank", width=30, anchor="center")
+            tree.column("name", width=180, anchor="center")
+            tree.column("score", width=80, anchor="center")
+            tree.pack(pady=2, fill="x", padx=20)
 
-        tree = ttk.Treeview(frame, columns=columns, show="headings", height=12)
-        tree.heading("rank", text="#")
-        for diff in difficulties[:-1]:
-            tree.heading(f"{diff}_name", text=f"{diff} Name")
-            tree.heading(f"{diff}_score", text=f"{diff} Score")
-            tree.column(f"{diff}_name", width=120, anchor="center")
-            tree.column(f"{diff}_score", width=80, anchor="center")
-        tree.column("rank", width=30, anchor="center")
-        tree.pack(fill="both", expand=True, side="left")
-
-        # Add horizontal scrollbar
-        xscroll = tk.Scrollbar(frame, orient="horizontal", command=tree.xview)
-        tree.configure(xscrollcommand=xscroll.set)
-        xscroll.pack(side="bottom", fill="x")
-
-        # Prepare top 10 for each difficulty
-        tops = {}
-        max_len = 0
-        for diff in difficulties[:-1]:
+            # O kategori ve zorluk için skorları bul
             filtered = [s for s in scores if s["category"] == cat and s["difficulty"] == diff]
             filtered.sort(key=lambda x: x["score"], reverse=True)
-            tops[diff] = filtered[:10]
-            max_len = max(max_len, len(tops[diff]))
-        # Fill rows
-        for idx in range(max_len):
-            row = [str(idx + 1)]
-            for diff in difficulties[:-1]:
-                if idx < len(tops[diff]):
-                    s = tops[diff][idx]
-                    display_name = "Anonymous" if s["name"] == "Anonymous Player" else str(s["name"])
-                    row.append(display_name)
-                    row.append(str(s["score"]))
-                else:
-                    row.append("-")
-                    row.append("-")
-            tree.insert("", "end", values=row)
+            for idx, s in enumerate(filtered[:5]):
+                display_name = "Anonymous" if s["name"] == "Anonymous Player" else str(s["name"])
+                tree.insert("", "end", values=(idx + 1, display_name, s["score"]))
 
-    # History tab (all scores, all categories/difficulties, sorted by date if possible)
-    history_frame = tk.Frame(notebook)
-    notebook.add(history_frame, text="History")
-    label = tk.Label(history_frame, text="All Scores", font=("Helvetica", 12, "bold"))
-    label.pack(pady=(10, 0))
-    tree = ttk.Treeview(history_frame, columns=("name", "category", "difficulty", "score"), show="headings", height=20)
-    tree.heading("name", text="Name")
-    tree.heading("category", text="Category")
-    tree.heading("difficulty", text="Difficulty")
-    tree.heading("score", text="Score")
-    tree.column("name", width=180, anchor="center")
-    tree.column("category", width=120, anchor="center")
-    tree.column("difficulty", width=100, anchor="center")
-    tree.column("score", width=60, anchor="center")
-    tree.pack(pady=2, fill="both", expand=True)
+    
 
-    # Add vertical scrollbar for history
-    yscroll = tk.Scrollbar(history_frame, orient="vertical", command=tree.yview)
-    tree.configure(yscrollcommand=yscroll.set)
-    yscroll.pack(side="right", fill="y")
-
-    # Show all scores (most recent last)
-    for s in scores:
-        display_name = "Anonymous" if s["name"] == "Anonymous Player" else str(s["name"])
-        tree.insert("", "end", values=(display_name, s["category"], s["difficulty"], str(s["score"])))
 def toggle_theme():
     if is_dark_mode.get():
         apply_light_theme()
@@ -1223,7 +1174,7 @@ for text, value in chars:
     elif value == "Classic":
         desc_label = tk.Label(char_row, text="No special abilities, standard gameplay", font=("Helvetica", 10, "italic"))
         desc_label.pack(side="left", padx=5)
-        
+
 continue_button = tk.Button(
     character_frame,
     text="CONTINUE",
@@ -1236,7 +1187,7 @@ continue_button = tk.Button(
     relief=tk.RAISED,
     bd=3
 )
-continue_button.place(relx=0.98, rely=0.5, anchor="e", width=200, height=55)
+continue_button.place(relx=0.98, rely=0.6, anchor="e", width=200, height=55)
 category_var = tk.StringVar()
 difficulty_var = tk.StringVar()
 

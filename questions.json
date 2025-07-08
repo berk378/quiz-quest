@@ -859,7 +859,11 @@
   "options": ["A) π/2", "B) π", "C) 3π/2", "D) 2π"],
   "answer": "A",
   "explanation": "The smallest positive solution is x = π/2."
-},
+}
+
+ ],
+    "Extreme": [
+
 {
   "question": "What is the value of the Riemann zeta function ζ(2)?",
   "options": ["A) π^2/6", "B) π^2/4", "C) π^2/8", "D) 2π^2", "E) π^3/6"],
