@@ -196,16 +196,23 @@ def write_score_to_file(name, score, category, difficulty):
 def show_results_window(answer_list):
     results_win = tk.Toplevel(root)
     results_win.title("Results")
-    results_win.geometry("400x650")
+    results_win.geometry("800x600")  # Geniş pencere
 
-    # --- WIN/LOSE GIF and TEXT ---
+    # Ana yatay frame (solda skor/gif/liste, sağda detay)
+    main_frame = tk.Frame(results_win)
+    main_frame.pack(fill="both", expand=True)
+
+    # --- SOL FRAME (skor, gif, liste) ---
+    left_frame = tk.Frame(main_frame, width=320)
+    left_frame.pack(side="left", fill="y", padx=10, pady=10)
+    left_frame.pack_propagate(False)
+
+    # Skor ve gif
     score = sum(1 for ans in answer_list if ans["is_correct"])
     char = character_var.get()
-    
-    # Archer karakteri için bonus puan
     if char == "Archer":
-        score += 1  # Archer +1 bonus puan alır
-        
+        score += 1
+
     win_gifs = {
         "Warrior": "warrior win.gif",
         "Wizard": "wizard win.gif",
@@ -216,64 +223,71 @@ def show_results_window(answer_list):
         "Wizard": "wizard lose.gif",
         "Archer": "archer lose.gif"
     }
-    
-    # Skoru ekranın üst kısmında belirgin şekilde göster
-    score_frame = tk.Frame(results_win, bg="#f0f0f0", pady=10, padx=10)
-    score_frame.pack(fill="x", pady=10)
-    
-    score_label = tk.Label(score_frame, text=f"Final Score: {score}", 
-                          font=("Helvetica", 18, "bold"), fg="blue", bg="#f0f0f0")
+
+    score_frame = tk.Frame(left_frame, bg="#f0f0f0", pady=10, padx=10)
+    score_frame.pack(fill="x", pady=5)
+    score_label = tk.Label(score_frame, text=f"Final Score: {score}", font=("Helvetica", 18, "bold"), fg="blue", bg="#f0f0f0")
     score_label.pack()
-    
-    # Archer için bonus puan bilgisini göster
     if char == "Archer":
-        bonus_label = tk.Label(score_frame, text="(Includes +1 Archer bonus point)", 
-                              font=("Helvetica", 10, "italic"), fg="green", bg="#f0f0f0")
+        bonus_label = tk.Label(score_frame, text="(Includes +1 Archer bonus point)", font=("Helvetica", 10, "italic"), fg="green", bg="#f0f0f0")
         bonus_label.pack()
-    
+
     if score >= 5:
-        tk.Label(results_win, text="You Win!", font=("Helvetica", 22, "bold"), fg="green").pack(pady=5)
-        show_gif(results_win, win_gifs.get(char, "warrior win.gif"))
+        tk.Label(left_frame, text="You Win!", font=("Helvetica", 22, "bold"), fg="green").pack(pady=5)
+        show_gif(left_frame, win_gifs.get(char, "warrior win.gif"))
     else:
-        tk.Label(results_win, text="You Lose!", font=("Helvetica", 22, "bold"), fg="red").pack(pady=5)
-        show_gif(results_win, lose_gifs.get(char, "warrior lose.gif"))
+        tk.Label(left_frame, text="You Lose!", font=("Helvetica", 22, "bold"), fg="red").pack(pady=5)
+        show_gif(left_frame, lose_gifs.get(char, "warrior lose.gif"))
 
-    tk.Label(results_win, text="Answered Questions", font=("Helvetica", 14, "bold")).pack(pady=10)
+    tk.Label(left_frame, text="Answered Questions", font=("Helvetica", 14, "bold")).pack(pady=10)
 
-    list_frame = tk.Frame(results_win)
+    list_frame = tk.Frame(left_frame)
     list_frame.pack(fill="both", expand=True)
 
     scrollbar = tk.Scrollbar(list_frame)
     scrollbar.pack(side="right", fill="y")
 
-    results_listbox = tk.Listbox(list_frame, font=("Helvetica", 12), yscrollcommand=scrollbar.set)
+    results_listbox = tk.Listbox(list_frame, font=("Helvetica", 12), yscrollcommand=scrollbar.set, width=30)
     results_listbox.pack(fill="both", expand=True)
     scrollbar.config(command=results_listbox.yview)
 
-    detail_frame = tk.Frame(results_win)
-    detail_frame.pack(fill="x", padx=10, pady=10)
+    for idx, ans in enumerate(answer_list, 1):
+        status = "✅" if ans["is_correct"] else "❌"
+        results_listbox.insert("end", f"Question {idx} {status}")
 
-    detail_question = tk.Label(detail_frame, text="", wraplength=350, font=("Helvetica", 12, "bold"))
-    detail_question.pack(pady=5)
+    # --- SAĞ FRAME (detaylar, kaydırılabilir) ---
+    right_frame = tk.Frame(main_frame)
+    right_frame.pack(side="left", fill="both", expand=True, padx=10, pady=10)
+
+    detail_canvas = tk.Canvas(right_frame)
+    detail_canvas.pack(side="left", fill="both", expand=True)
+
+    detail_scroll = tk.Scrollbar(right_frame, orient="vertical", command=detail_canvas.yview)
+    detail_scroll.pack(side="right", fill="y")
+
+    detail_canvas.configure(yscrollcommand=detail_scroll.set)
+    detail_canvas.bind('<Configure>', lambda e: detail_canvas.configure(scrollregion=detail_canvas.bbox("all")))
+
+    detail_frame = tk.Frame(detail_canvas)
+    detail_canvas.create_window((0, 0), window=detail_frame, anchor="nw")
+
+    detail_question = tk.Label(detail_frame, text="", wraplength=400, font=("Helvetica", 13, "bold"))
+    detail_question.pack(pady=10)
     detail_options = []
     for _ in range(4):
-        lbl = tk.Label(detail_frame, text="", wraplength=350, font=("Helvetica", 11))
+        lbl = tk.Label(detail_frame, text="", wraplength=400, font=("Helvetica", 12))
         lbl.pack(anchor="w", padx=20)
         detail_options.append(lbl)
     detail_explanation = tk.Label(
         detail_frame,
         text="",
-        wraplength=350,
+        wraplength=400,
         font=("Helvetica", 13, "bold"),
         fg="#2e2e2e",
         bg="#f0f0f0",
         justify="center"
     )
-    detail_explanation.pack(pady=15, fill="x")
-
-    for idx, ans in enumerate(answer_list, 1):
-        status = "✅" if ans["is_correct"] else "❌"
-        results_listbox.insert("end", f"Question {idx} {status}")
+    detail_explanation.pack(pady=20, fill="x")
 
     def on_select(event):
         selection = results_listbox.curselection()
@@ -295,6 +309,7 @@ def show_results_window(answer_list):
             detail_options[i].config(text="")
         explanation = q.get("explanation", "No explanation available.")
         detail_explanation.config(text=f"Explanation: {explanation}")
+        detail_canvas.yview_moveto(0)
 
     results_listbox.bind("<<ListboxSelect>>", on_select)
 
@@ -409,7 +424,7 @@ def show_question_window(questions, character, category, difficulty):
             text=f"Time left: {t}s",
             fg="red" if t <= warning_threshold else "black"
         )
-        timer_job[0] = game_window.after(1000, lambda: countdown(t-1))
+        timer_job[0] = game_window.after(1000, lambda: countdown(t-1)) # type: ignore
 
     def submit_answer():
         if not selected_answer.get():
@@ -829,11 +844,11 @@ def play_1v1_round(player, questions, category, difficulty, lives, callback):
             question_index.set(len(questions))
 
     def countdown(t=None):
-        if not timer_active[0] or selected_answer.get():
+        if not timer_active[0]:
             return
 
         if t is None:
-            t = timer_duration
+             t = timer_duration
 
         if t <= 0:
             health.set(health.get() - 1)
@@ -845,8 +860,7 @@ def play_1v1_round(player, questions, category, difficulty, lives, callback):
         timer.set(t)
         warning_threshold = max(1, timer_duration // 4)
         countdown_label.config(text=f"Time left: {t}s", fg="red" if t <= warning_threshold else "black")
-        # Timer'ı kaydet
-        timer_job[0] = game_window.after(1000, lambda: countdown(t-1))
+        timer_job[0] = game_window.after(1000, lambda: countdown(t-1))  # type: ignore
 
     def display_question():
         selected_answer.set("")
@@ -1024,7 +1038,7 @@ def play_1v1_60s(player, questions, category, difficulty, lives, callback):
 def show_1v1_results(player1, result1, player2, result2):
     win = tk.Toplevel(root)
     win.title("1v1 Results")
-    win.geometry("700x600")
+    win.geometry("1100x700")  # Daha geniş pencere
 
     if result1["score"] > result2["score"]:
         winner = player1
@@ -1065,25 +1079,40 @@ def show_1v1_results(player1, result1, player2, result2):
     listbox1.grid(row=1, column=0, padx=5, pady=2)
     listbox2.grid(row=1, column=1, padx=5, pady=2)
 
-    detail_frame1 = tk.Frame(frame)
-    detail_frame1.grid(row=2, column=0, padx=5, pady=5, sticky="n")
-    detail_frame2 = tk.Frame(frame)
-    detail_frame2.grid(row=2, column=1, padx=5, pady=5, sticky="n")
+    # --- KAYDIRILABİLİR DETAY FRAME 1 ---
+    detail_canvas1 = tk.Canvas(frame, height=250)
+    detail_canvas1.grid(row=2, column=0, sticky="nsew", padx=5, pady=5)
+    detail_scroll1 = tk.Scrollbar(frame, orient="vertical", command=detail_canvas1.yview)
+    detail_scroll1.grid(row=2, column=0, sticky="nse", padx=(0,5))
+    detail_canvas1.configure(yscrollcommand=detail_scroll1.set)
+    detail_frame1 = tk.Frame(detail_canvas1)
+    detail_canvas1.create_window((0, 0), window=detail_frame1, anchor="nw")
+    detail_canvas1.bind('<Configure>', lambda e: detail_canvas1.configure(scrollregion=detail_canvas1.bbox("all")))
 
-    detail_q1 = tk.Label(detail_frame1, text="", wraplength=300, font=("Helvetica", 12, "bold"))
+    # --- KAYDIRILABİLİR DETAY FRAME 2 ---
+    detail_canvas2 = tk.Canvas(frame, height=250)
+    detail_canvas2.grid(row=2, column=1, sticky="nsew", padx=5, pady=5)
+    detail_scroll2 = tk.Scrollbar(frame, orient="vertical", command=detail_canvas2.yview)
+    detail_scroll2.grid(row=2, column=1, sticky="nse", padx=(0,5))
+    detail_canvas2.configure(yscrollcommand=detail_scroll2.set)
+    detail_frame2 = tk.Frame(detail_canvas2)
+    detail_canvas2.create_window((0, 0), window=detail_frame2, anchor="nw")
+    detail_canvas2.bind('<Configure>', lambda e: detail_canvas2.configure(scrollregion=detail_canvas2.bbox("all")))
+
+    detail_q1 = tk.Label(detail_frame1, text="", wraplength=400, font=("Helvetica", 12, "bold"))
     detail_q1.pack(pady=2)
-    detail_opts1 = [tk.Label(detail_frame1, text="", wraplength=300, font=("Helvetica", 11)) for _ in range(4)]
+    detail_opts1 = [tk.Label(detail_frame1, text="", wraplength=400, font=("Helvetica", 11)) for _ in range(4)]
     for lbl in detail_opts1:
         lbl.pack(anchor="w", padx=10)
-    detail_exp1 = tk.Label(detail_frame1, text="", wraplength=300, font=("Helvetica", 12, "italic"), fg="#2e2e2e", bg="#f0f0f0", justify="center")
+    detail_exp1 = tk.Label(detail_frame1, text="", wraplength=400, font=("Helvetica", 12, "italic"), fg="#2e2e2e", bg="#f0f0f0", justify="center")
     detail_exp1.pack(pady=5, fill="x")
 
-    detail_q2 = tk.Label(detail_frame2, text="", wraplength=300, font=("Helvetica", 12, "bold"))
+    detail_q2 = tk.Label(detail_frame2, text="", wraplength=400, font=("Helvetica", 12, "bold"))
     detail_q2.pack(pady=2)
-    detail_opts2 = [tk.Label(detail_frame2, text="", wraplength=300, font=("Helvetica", 11)) for _ in range(4)]
+    detail_opts2 = [tk.Label(detail_frame2, text="", wraplength=400, font=("Helvetica", 11)) for _ in range(4)]
     for lbl in detail_opts2:
         lbl.pack(anchor="w", padx=10)
-    detail_exp2 = tk.Label(detail_frame2, text="", wraplength=300, font=("Helvetica", 12, "italic"), fg="#2e2e2e", bg="#f0f0f0", justify="center")
+    detail_exp2 = tk.Label(detail_frame2, text="", wraplength=400, font=("Helvetica", 12, "italic"), fg="#2e2e2e", bg="#f0f0f0", justify="center")
     detail_exp2.pack(pady=5, fill="x")
 
     for idx, ans in enumerate(result1["answers"], 1):
@@ -1093,7 +1122,7 @@ def show_1v1_results(player1, result1, player2, result2):
         status = "✅" if ans["is_correct"] else "❌"
         listbox2.insert("end", f"Q{idx} {status}")
 
-    def update_detail(detail_q, detail_opts, detail_exp, ans):
+    def update_detail(detail_q, detail_opts, detail_exp, ans, canvas):
         q = ans["question"]
         detail_q.config(text=q["question"])
         for i, opt in enumerate(q["options"]):
@@ -1109,28 +1138,27 @@ def show_1v1_results(player1, result1, player2, result2):
             detail_opts[i].config(text="")
         explanation = q.get("explanation", "No explanation available.")
         detail_exp.config(text=f"Explanation: {explanation}")
+        canvas.yview_moveto(0)
 
     def on_select1(event):
         sel = listbox1.curselection()
         if not sel: return
         idx = sel[0]
         ans = result1["answers"][idx]
-        update_detail(detail_q1, detail_opts1, detail_exp1, ans)
+        update_detail(detail_q1, detail_opts1, detail_exp1, ans, detail_canvas1)
 
     def on_select2(event):
         sel = listbox2.curselection()
         if not sel: return
         idx = sel[0]
         ans = result2["answers"][idx]
-        update_detail(detail_q2, detail_opts2, detail_exp2, ans)
+        update_detail(detail_q2, detail_opts2, detail_exp2, ans, detail_canvas2)
 
     listbox1.bind("<<ListboxSelect>>", on_select1)
     listbox2.bind("<<ListboxSelect>>", on_select2)
 
     tk.Label(win, text=f"{player1} Score: {result1['score']}", font=("Helvetica", 13)).pack()
     tk.Label(win, text=f"{player2} Score: {result2['score']}", font=("Helvetica", 13)).pack()
-# --- End 1v1 Mode Integration ---
-
 root = tk.Tk()
 root.title("Quiz Quest GUI")
 root.geometry("600x800")  # Increased window size for larger GIFs
