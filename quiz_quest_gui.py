@@ -65,7 +65,7 @@ def show_gif(parent, gif_path, size=(200, 200)):
 
 player_name = ""
 
-categories = ["Math", "Geography", "General Knowledge", "Coding", "Mixed" ,"History"]
+categories = ["Math", "Geography", "General Knowledge", "Coding", "History" ,"Mixed"]
 difficulties = ["Easy", "Medium", "Hard", "Extreme", "Mixed"]
 
 
@@ -313,6 +313,8 @@ def show_results_window(answer_list):
         detail_canvas.yview_moveto(0)
 
     results_listbox.bind("<<ListboxSelect>>", on_select)
+
+
 
 def show_question_window(questions, character, category, difficulty):
     game_window = tk.Toplevel(root)

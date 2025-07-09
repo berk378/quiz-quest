@@ -1029,13 +1029,13 @@
 },
 {
   "question": "Which function is its own derivative?",
-  "options": ["A) e^x", "B) x^2", "C) sin x", "D) cos x", "E) ln x"],
+  "options": ["A) e^x", "B) x^2", "C) sin x", "D) cos x"],
   "answer": "A",
   "explanation": "The derivative of e^x is e^x, so it is its own derivative."
 },
 {
   "question": "What is the volume of a 4-dimensional hypercube with side length 1?",
-  "options": ["A) 1", "B) 4", "C) 8", "D) 16", "E) 24"],
+  "options": ["A) 1", "B) 4", "C) 8", "D) 16"],
   "answer": "A",
   "explanation": "The volume of a 4D hypercube (tesseract) with side length 1 is 1^4 = 1."
 },
@@ -1045,15 +1045,15 @@
     "A) Symmetric",
     "B) Skew-symmetric",
     "C) Orthogonal",
-    "D) Diagonal",
-    "E) Identity"
+    "D) Diagonal"
+    
   ],
   "answer": "A",
   "explanation": "A symmetric matrix is equal to its own transpose."
 },
 {
   "question": "What is the determinant of a rotation matrix in 2D?",
-  "options": ["A) 1", "B) 0", "C) -1", "D) Depends on angle", "E) Undefined"],
+  "options": ["A) 1", "B) 0", "C) -1", "D) Depends on angle" ],
   "answer": "A",
   "explanation": "The determinant of any 2D rotation matrix is always 1."
 },
@@ -1071,13 +1071,13 @@
 },
 {
   "question": "What is the limit of (1 + 1/n)^n as n approaches infinity?",
-  "options": ["A) e", "B) 0", "C) 1", "D) ∞", "E) None of these"],
+  "options": ["A) e", "B) 0", "C) 1", "D) ∞"],
   "answer": "A",
   "explanation": "As n approaches infinity, (1 + 1/n)^n approaches the constant e."
 },
 {
   "question": "What is the sum of the interior angles of a dodecagon (12-sided polygon)?",
-  "options": ["A) 1800°", "B) 1440°", "C) 2160°", "D) 900°", "E) 1200°"],
+  "options": ["A) 1800°", "B) 1440°", "C) 2160°", "D) 900°"],
   "answer": "A",
   "explanation": "The sum is (12-2) × 180° = 1800°."
 },
@@ -1087,8 +1087,7 @@
     "A) 1/s",
     "B) s",
     "C) e^s",
-    "D) 0",
-    "E) 1"
+    "D) 0"
   ],
   "answer": "A",
   "explanation": "The Laplace transform of 1 is 1/s."
@@ -1099,8 +1098,7 @@
     "A) (x - 2)^2",
     "B) x - 2",
     "C) x^2 - 4",
-    "D) x^2 - 2x + 1",
-    "E) x^2 - 2x - 1"
+    "D) x^2 - 2x + 1"
   ],
   "answer": "A",
   "explanation": "The minimal polynomial is (x - 2)^2 because the matrix is not diagonalizable but has a single eigenvalue 2."
@@ -1111,8 +1109,7 @@
     "A) ∑ 1/n^2",
     "B) ∑ 1/n",
     "C) ∑ n",
-    "D) ∑ (-1)^n",
-    "E) ∑ n!"
+    "D) ∑ (-1)^n"
   ],
   "answer": "A",
   "explanation": "The series ∑ 1/n^2 converges (Basel problem), while the others diverge."
@@ -1123,21 +1120,20 @@
     "A) y = Ce^{-x}",
     "B) y = Ce^x",
     "C) y = Cx",
-    "D) y = 0",
-    "E) y = C"
+    "D) y = 0"
   ],
   "answer": "A",
   "explanation": "The general solution is y = Ce^{-x}."
 },
 {
   "question": "What is the probability of getting exactly two heads in three tosses of a fair coin?",
-  "options": ["A) 3/8", "B) 1/8", "C) 1/2", "D) 1/4", "E) 3/4"],
+  "options": ["A) 3/8", "B) 1/8", "C) 1/2", "D) 1/4"],
   "answer": "A",
   "explanation": "There are 3 ways to get exactly two heads out of 8 possible outcomes, so the probability is 3/8."
 },
 {
   "question": "What is the binomial coefficient C(5,2)?",
-  "options": ["A) 10", "B) 5", "C) 15", "D) 20", "E) 25"],
+  "options": ["A) 10", "B) 5", "C) 15", "D) 20"],
   "answer": "A",
   "explanation": "C(5,2) = 5!/(2!3!) = 10."
 },
@@ -1147,8 +1143,7 @@
     "A) (2,1)",
     "B) (1,2)",
     "C) (3,0)",
-    "D) (0,3)",
-    "E) (1,1)"
+    "D) (0,3)"
   ],
   "answer": "A",
   "explanation": "Solving the system gives x = 2, y = 1."
@@ -1159,21 +1154,20 @@
     "A) Gaussian function",
     "B) Sine function",
     "C) Cosine function",
-    "D) Exponential decay",
-    "E) Step function"
+    "D) Exponential decay"
   ],
   "answer": "A",
   "explanation": "The Fourier transform of a Gaussian function is another Gaussian."
 },
 {
   "question": "What is the dot product of vectors (1,2,3) and (4,5,6)?",
-  "options": ["A) 32", "B) 27", "C) 28", "D) 31", "E) 30"],
+  "options": ["A) 32", "B) 27", "C) 28", "D) 31"],
   "answer": "A",
   "explanation": "Dot product: 1×4 + 2×5 + 3×6 = 4 + 10 + 18 = 32."
 },
 {
   "question": "What is the determinant of the identity matrix of size n?",
-  "options": ["A) 1", "B) 0", "C) n", "D) n!", "E) Undefined"],
+  "options": ["A) 1", "B) 0", "C) n", "D) n!"],
   "answer": "A",
   "explanation": "The determinant of the identity matrix is always 1."
 },
@@ -1183,8 +1177,8 @@
     "A) x^x (ln x + 1)",
     "B) x^(x-1)",
     "C) x^(x+1)",
-    "D) ln x",
-    "E) x^x ln x"
+    "D) ln x"
+    
   ],
   "answer": "A",
   "explanation": "The derivative of x^x is x^x (ln x + 1)."
@@ -1195,8 +1189,8 @@
     "A) ±1",
     "B) 0",
     "C) 1 only",
-    "D) -1 only",
-    "E) Complex numbers"
+    "D) -1 only"
+  
   ],
   "answer": "A",
   "explanation": "If A^2 = I, the eigenvalues λ satisfy λ^2 = 1, so λ = ±1."
@@ -1213,8 +1207,8 @@
     "A) Hyperbolic geometry",
     "B) Euclidean geometry",
     "C) Plane geometry",
-    "D) Solid geometry",
-    "E) Analytic geometry"
+    "D) Solid geometry"
+    
   ],
   "answer": "A",
   "explanation": "Hyperbolic geometry is a non-Euclidean geometry."
@@ -1225,8 +1219,8 @@
     "A) n + 1",
     "B) n",
     "C) n - 1",
-    "D) Infinite",
-    "E) 1"
+    "D) Infinite"
+    
   ],
   "answer": "A",
   "explanation": "The dimension is n + 1, corresponding to the coefficients of x^0 through x^n."
@@ -1237,15 +1231,14 @@
     "A) (x/2) - (sin(2x)/4) + C",
     "B) (x/2) + (sin(2x)/4) + C",
     "C) -cos(x) + C",
-    "D) cos^2(x) + C",
-    "E) sin(x) + C"
+    "D) cos^2(x) + C"
   ],
   "answer": "A",
   "explanation": "The integral of sin^2(x) dx is (x/2) - (sin(2x)/4) + C."
 },
 {
   "question": "What is the value of the infinite continued fraction 1 + 1/(1 + 1/(1 + 1/(...)))?",
-  "options": ["A) (1 + √5)/2", "B) 1", "C) 2", "D) √2", "E) π"],
+  "options": ["A) (1 + √5)/2", "B) 1", "C) 2", "D) √2"],
   "answer": "A",
   "explanation": "Let x = 1 + 1/x. Solving gives x^2 - x - 1 = 0, so x = (1 + √5)/2."
 },
@@ -1255,8 +1248,7 @@
     "A) 0.5772",
     "B) 3.1415",
     "C) 2.7183",
-    "D) 1.6180",
-    "E) 0"
+    "D) 1.6180"
   ],
   "answer": "A",
   "explanation": "The Euler-Mascheroni constant γ is approximately 0.5772."
@@ -1267,15 +1259,14 @@
     "A) (n - 2) × 180°",
     "B) n × 90°",
     "C) (n + 2) × 180°",
-    "D) n × 180°",
-    "E) (n - 1) × 90°"
+    "D) n × 180°"
   ],
   "answer": "A",
   "explanation": "The sum of the interior angles is (n - 2) × 180°."
 },
 {
   "question": "What is the standard deviation of a data set where all values are equal?",
-  "options": ["A) 0", "B) 1", "C) Undefined", "D) Depends on the mean", "E) Infinite"],
+  "options": ["A) 0", "B) 1", "C) Undefined", "D) Depends on the mean"],
   "answer": "A",
   "explanation": "If all values are equal, the standard deviation is 0."
 },
@@ -1291,8 +1282,7 @@
     "A) y = A cos x + B sin x",
     "B) y = Ae^x + Be^{-x}",
     "C) y = Ax + B",
-    "D) y = 0",
-    "E) y = x^2"
+    "D) y = 0"
   ],
   "answer": "A",
   "explanation": "The general solution is y = A cos x + B sin x."
@@ -2024,182 +2014,182 @@
 "Extreme": [
   {
     "question": "Which country has a town named 'Dull' that is officially twinned with 'Boring' in the USA?",
-    "options": ["A) England", "B) Ireland", "C) Scotland", "D) Wales", "E) Canada"],
+    "options": ["A) England", "B) Ireland", "C) Scotland", "D) Wales"],
     "answer": "C"
   },
   {
     "question": "Which island is the easternmost point of Russia?",
-    "options": ["A) Sakhalin", "B) Iturup", "C) Komsomolets", "D) Big Diomede", "E) Wrangel Island"],
+    "options": ["A) Sakhalin", "B) Iturup", "C) Komsomolets", "D) Big Diomede"],
     "answer": "D"
   },
   {
     "question": "Which city is located on two continents and known for the Hagia Sophia?",
-    "options": ["A) Athens", "B) Baku", "C) Istanbul", "D) Cairo", "E) Tbilisi"],
+    "options": ["A) Athens", "B) Baku", "C) Istanbul", "D) Cairo"],
     "answer": "C"
   },
   {
     "question": "Which of these countries does not border the Caspian Sea?",
-    "options": ["A) Russia", "B) Kazakhstan", "C) Azerbaijan", "D) Iran", "E) Turkmenistan"],
+    "options": ["A) Russia", "B) Kazakhstan", "C) Azerbaijan", "D) Iran"],
     "answer": "E"
   },
   {
     "question": "Where is the geographic center of the Earth's landmasses located?",
-    "options": ["A) Cairo", "B) Istanbul", "C) Mecca", "D) Baghdad", "E) Almaty"],
+    "options": ["A) Cairo", "B) Istanbul", "C) Mecca", "D) Baghdad"],
     "answer": "C"
   },
   {
     "question": "Which is the only country with three capital cities?",
-    "options": ["A) Nigeria", "B) South Africa", "C) Bolivia", "D) Sri Lanka", "E) India"],
+    "options": ["A) Nigeria", "B) South Africa", "C) Bolivia", "D) Sri Lanka"],
     "answer": "B"
   },
   {
     "question": "Which country has the world’s only non-rectangular national flag?",
-    "options": ["A) Bhutan", "B) Nepal", "C) Vatican City", "D) Sri Lanka", "E) Maldives"],
+    "options": ["A) Bhutan", "B) Nepal", "C) Vatican City", "D) Sri Lanka"],
     "answer": "B"
   },
   {
     "question": "Which of these cities is furthest north?",
-    "options": ["A) Helsinki", "B) Oslo", "C) Reykjavik", "D) Anchorage", "E) Murmansk"],
+    "options": ["A) Helsinki", "B) Oslo", "C) Reykjavik", "D) Anchorage"],
     "answer": "E"
   },
   {
     "question": "Which of the following is not a landlocked country?",
-    "options": ["A) Bolivia", "B) Mongolia", "C) Paraguay", "D) Ethiopia", "E) Malaysia"],
+    "options": ["A) Bolivia", "B) Mongolia", "C) Paraguay", "D) Ethiopia"],
     "answer": "E"
   },
   {
     "question": "What is the flattest country in the world?",
-    "options": ["A) Maldives", "B) Qatar", "C) Netherlands", "D) Bangladesh", "E) Denmark"],
+    "options": ["A) Maldives", "B) Qatar", "C) Netherlands", "D) Bangladesh"],
     "answer": "A"
   },
   {
     "question": "Which river crosses the most international borders?",
-    "options": ["A) Danube", "B) Amazon", "C) Nile", "D) Mekong", "E) Congo"],
+    "options": ["A) Danube", "B) Amazon", "C) Nile", "D) Mekong"],
     "answer": "A"
   },
   {
     "question": "Which capital city is located on an island?",
-    "options": ["A) Jakarta", "B) Lisbon", "C) Madrid", "D) Sofia", "E) Bucharest"],
+    "options": ["A) Jakarta", "B) Lisbon", "C) Madrid", "D) Sofia"],
     "answer": "A"
   },
   {
     "question": "Which country is home to the most pyramids in the world?",
-    "options": ["A) Mexico", "B) Peru", "C) Sudan", "D) Egypt", "E) Guatemala"],
+    "options": ["A) Mexico", "B) Peru", "C) Sudan", "D) Egypt"],
     "answer": "C"
   },
   {
     "question": "Which lake has the clearest freshwater in the world?",
-    "options": ["A) Lake Baikal", "B) Crater Lake", "C) Lake Tahoe", "D) Lake Mashu", "E) Blue Lake (New Zealand)"],
+    "options": ["A) Lake Baikal", "B) Crater Lake", "C) Lake Tahoe",  "D) Blue Lake (New Zealand)"],
     "answer": "E"
   },
   {
     "question": "Which city has the largest urban population in the world?",
-    "options": ["A) Tokyo", "B) Delhi", "C) São Paulo", "D) Shanghai", "E) Mexico City"],
+    "options": ["A) Tokyo", "B) Delhi", "C) São Paulo", "D) Shanghai"],
     "answer": "A"
   },
   {
     "question": "Which country is NOT part of the African Great Lakes region?",
-    "options": ["A) Kenya", "B) Rwanda", "C) Burundi", "D) Chad", "E) Uganda"],
+    "options": ["A) Kenya", "B) Rwanda", "C) Burundi", "D) Chad"],
     "answer": "D"
   },
   {
     "question": "Which European capital is furthest east?",
-    "options": ["A) Kyiv", "B) Moscow", "C) Helsinki", "D) Athens", "E) Ankara"],
+    "options": ["A) Kyiv", "B) Moscow", "C) Helsinki", "D) Athens"],
     "answer": "B"
   },
   {
     "question": "Which of these countries has the lowest population density?",
-    "options": ["A) Mongolia", "B) Namibia", "C) Iceland", "D) Australia", "E) Canada"],
+    "options": ["A) Mongolia", "B) Namibia", "C) Iceland", "D) Australia"],
     "answer": "A"
   },
   {
     "question": "Which of these is NOT a real island?",
-    "options": ["A) Snake Island", "B) Ghost Island", "C) Christmas Island", "D) Sentinel Island", "E) Easter Island"],
+    "options": ["A) Snake Island", "B) Ghost Island", "C) Christmas Island", "D) Sentinel Island"],
     "answer": "B"
   },
   {
     "question": "Which river flows through the most countries in the world?",
-    "options": ["A) Amazon", "B) Danube", "C) Congo", "D) Mekong", "E) Ganges"],
+    "options": ["A) Amazon", "B) Danube", "C) Congo", "D) Mekong"],
     "answer": "B"
   },
   {
     "question": "Which African city has the highest population?",
-    "options": ["A) Lagos", "B) Cairo", "C) Kinshasa", "D) Nairobi", "E) Addis Ababa"],
+    "options": ["A) Lagos", "B) Cairo", "C) Kinshasa", "D) Nairobi"],
     "answer": "A"
   },
   {
     "question": "Which ocean is shrinking?",
-    "options": ["A) Pacific", "B) Atlantic", "C) Indian", "D) Arctic", "E) Southern"],
+    "options": ["A) Pacific", "B) Atlantic", "C) Indian", "D) Arctic"],
     "answer": "B"
   },
   {
     "question": "Which country has the most natural lakes?",
-    "options": ["A) USA", "B) Finland", "C) Canada", "D) Russia", "E) Brazil"],
+    "options": ["A) USA", "B) Finland", "C) Canada", "D) Russia"],
     "answer": "C"
   },
   {
     "question": "Which country’s territory is entirely in the Southern Hemisphere?",
-    "options": ["A) Ecuador", "B) Australia", "C) Kenya", "D) Indonesia", "E) Colombia"],
+    "options": ["A) Ecuador", "B) Australia", "C) Kenya", "D) Indonesia"],
     "answer": "B"
   },
   {
     "question": "Which mountain range forms the longest above-sea mountain chain?",
-    "options": ["A) Himalayas", "B) Andes", "C) Rockies", "D) Alps", "E) Urals"],
+    "options": ["A) Himalayas", "B) Andes", "C) Rockies", "D) Alps"],
     "answer": "B"
   },
   {
     "question": "Which country is the largest island nation?",
-    "options": ["A) Madagascar", "B) Japan", "C) Australia", "D) Indonesia", "E) Philippines"],
+    "options": ["A) Madagascar", "B) Japan", "C) Australia", "D) Indonesia"],
     "answer": "D"
   },
   {
     "question": "Which of these countries is fully within the Arctic Circle?",
-    "options": ["A) Norway", "B) Russia", "C) Greenland", "D) Iceland", "E) Canada"],
+    "options": ["A) Norway", "B) Russia", "C) Greenland", "D) Iceland"],
     "answer": "C"
   },
   {
     "question": "Which country is closest to the Mariana Trench?",
-    "options": ["A) Indonesia", "B) Japan", "C) Philippines", "D) Palau", "E) Papua New Guinea"],
+    "options": ["A) Indonesia", "B) Japan", "C) Philippines", "D) Palau"],
     "answer": "C"
   },
   {
     "question": "Which African nation has the most official languages?",
-    "options": ["A) Nigeria", "B) South Africa", "C) Ethiopia", "D) Kenya", "E) Cameroon"],
+    "options": ["A) Nigeria", "B) South Africa", "C) Ethiopia", "D) Kenya"],
     "answer": "B"
   },
   {
     "question": "Which desert is the oldest in the world?",
-    "options": ["A) Sahara", "B) Gobi", "C) Namib", "D) Kalahari", "E) Atacama"],
+    "options": ["A) Sahara", "B) Gobi", "C) Namib", "D) Kalahari"],
     "answer": "C"
   },
   {
     "question": "Which of these countries is not a member of the Commonwealth?",
-    "options": ["A) India", "B) Nigeria", "C) USA", "D) Pakistan", "E) Canada"],
+    "options": ["A) India", "B) Nigeria", "C) USA", "D) Pakistan"],
     "answer": "C"
   },
   {
     "question": "Which of these islands is disputed territory?",
-    "options": ["A) Guam", "B) Taiwan", "C) Greenland", "D) Iceland", "E) Seychelles"],
+    "options": ["A) Guam", "B) Taiwan", "C) Greenland", "D) Iceland"],
     "answer": "B"
   },
   {
     "question": "Which country has a national park entirely made of pink sand dunes?",
-    "options": ["A) Australia", "B) Namibia", "C) USA", "D) Chile", "E) Morocco"],
+    "options": ["A) Australia", "B) Namibia", "C) USA", "D) Chile"],
     "answer": "B"
   },
   {
     "question": "Which river flows backward during certain times of the year?",
-    "options": ["A) Mississippi", "B) Amazon", "C) Nile", "D) Orinoco", "E) Congo"],
+    "options": ["A) Mississippi", "B) Amazon", "C) Nile", "D) Orinoco"],
     "answer": "B"
   },
   {
     "question": "Which capital city has the longest continuous human settlement?",
-    "options": ["A) Jerusalem", "B) Damascus", "C) Cairo", "D) Athens", "E) Baghdad"],
+    "options": ["A) Jerusalem", "B) Damascus", "C) Cairo", "D) Athens"],
     "answer": "B"
   },
   {
     "question": "Which country is famous for the Chocolate Hills?",
-    "options": ["A) Philippines", "B) Switzerland", "C) Belgium", "D) Ghana", "E) Malaysia"],
+    "options": ["A) Philippines", "B) Switzerland", "C) Belgium", "D) Ghana"],
     "answer": "A"
   },
   {
@@ -2209,62 +2199,62 @@
   },
   {
     "question": "Which U.S. state has the longest coastline?",
-    "options": ["A) California", "B) Florida", "C) Texas", "D) Alaska", "E) Hawaii"],
+    "options": ["A) California", "B) Florida", "C) Texas", "D) Alaska"],
     "answer": "D"
   },
   {
     "question": "Which island is known as the 'Island of Fire and Ice'?",
-    "options": ["A) Iceland", "B) Japan", "C) Philippines", "D) Fiji", "E) Indonesia"],
+    "options": ["A) Iceland", "B) Japan", "C) Philippines", "D) Fiji"],
     "answer": "A"
   },
   {
     "question": "Which country has no rivers?",
-    "options": ["A) Saudi Arabia", "B) Qatar", "C) UAE", "D) Oman", "E) Bahrain"],
+    "options": ["A) Saudi Arabia", "B) Qatar", "C) UAE", "D) Oman"],
     "answer": "A"
   },
   {
     "question": "Which country is home to the Atacama Desert?",
-    "options": ["A) Argentina", "B) Peru", "C) Chile", "D) Bolivia", "E) Ecuador"],
+    "options": ["A) Argentina", "B) Peru", "C) Chile", "D) Bolivia"],
     "answer": "C"
   },
   {
     "question": "Which sea has no coastline?",
-    "options": ["A) Red Sea", "B) Arabian Sea", "C) Sargasso Sea", "D) Mediterranean", "E) Baltic Sea"],
+    "options": ["A) Red Sea", "B) Arabian Sea", "C) Sargasso Sea", "D) Mediterranean"],
     "answer": "C"
   },
   {
     "question": "Which continent has the most countries?",
-    "options": ["A) Africa", "B) Europe", "C) Asia", "D) South America", "E) North America"],
+    "options": ["A) Africa", "B) Europe", "C) Asia", "D) South America"],
     "answer": "A"
   },
   {
     "question": "Which city is known as the ‘City of Bridges’?",
-    "options": ["A) Amsterdam", "B) Venice", "C) Pittsburgh", "D) Hamburg", "E) Istanbul"],
+    "options": ["A) Amsterdam", "B) Venice", "C) Pittsburgh", "D) Hamburg"],
     "answer": "C"
   },
   {
     "question": "Which country is split into the most time zones?",
-    "options": ["A) Russia", "B) USA", "C) France", "D) China", "E) Australia"],
+    "options": ["A) Russia", "B) USA", "C) France", "D) China"],
     "answer": "C"
   },
   {
     "question": "Which mountain range separates Europe and Asia?",
-    "options": ["A) Alps", "B) Carpathians", "C) Caucasus", "D) Urals", "E) Tatras"],
+    "options": ["A) Alps", "B) Carpathians", "C) Caucasus", "D) Urals"],
     "answer": "D"
   },
   {
     "question": "Which lake is both the deepest and oldest?",
-    "options": ["A) Crater Lake", "B) Lake Tanganyika", "C) Lake Vostok", "D) Lake Baikal", "E) Lake Superior"],
+    "options": ["A) Crater Lake", "B) Lake Tanganyika", "C) Lake Vostok", "D) Lake Baikal"],
     "answer": "D"
   },
   {
     "question": "Which is the southernmost capital city in the world?",
-    "options": ["A) Wellington", "B) Canberra", "C) Santiago", "D) Buenos Aires", "E) Pretoria"],
+    "options": ["A) Wellington", "B) Canberra", "C) Santiago", "D) Buenos Aires"],
     "answer": "A"
   },
   {
     "question": "Which river is the longest in Europe?",
-    "options": ["A) Rhine", "B) Danube", "C) Volga", "D) Elbe", "E) Dnieper"],
+    "options": ["A) Rhine", "B) Danube", "C) Volga", "D) Elbe" ],
     "answer": "C"
   }
 ]
@@ -3158,7 +3148,7 @@
   "Extreme": [
     {
    "question": "Which treaty marked the official end of the Holy Roman Empire in 1806?",
-  "options": ["Treaty of Vienna", "Treaty of Lunéville", "Treaty of Pressburg", "Treaty of Campo Formio", "Treaty of Amiens"],
+  "options": ["Treaty of Vienna", "Treaty of Lunéville", "Treaty of Pressburg", "Treaty of Campo Formio" ],
   "answer": "Treaty of Pressburg",
   "explanation": "The Treaty of Pressburg in 1805 led to the dissolution of the Holy Roman Empire in 1806."
 },
@@ -3170,85 +3160,85 @@
 },
 {
   "question": "Which battle in 1274 BCE is one of the earliest well-documented battles in history?",
-  "options": ["Battle of Thermopylae", "Battle of Marathon", "Battle of Kadesh", "Battle of Gaugamela", "Battle of Megiddo"],
+  "options": [ "Battle of Marathon", "Battle of Kadesh", "Battle of Gaugamela", "Battle of Megiddo"],
   "answer": "Battle of Kadesh",
   "explanation": "The Battle of Kadesh between the Egyptians and Hittites is one of the earliest battles recorded in detail."
 },
 {
   "question": "Who was the last emperor of the Western Roman Empire?",
-  "options": ["Romulus Augustulus", "Constantine XI", "Nero", "Theodosius I", "Honorius"],
+  "options": ["Romulus Augustulus", "Nero", "Theodosius I", "Honorius"],
   "answer": "Romulus Augustulus",
   "explanation": "Romulus Augustulus was the last emperor of the Western Roman Empire, deposed in 476 AD."
 },
 {
   "question": "Which of the following civilizations was NOT part of the Mesopotamian region?",
-  "options": ["Babylonian", "Sumerian", "Akkadian", "Hittite", "Assyrian"],
+  "options": ["Babylonian", "Sumerian", "Akkadian", "Hittite"],
   "answer": "Hittite",
   "explanation": "The Hittites were based in Anatolia (modern Turkey), not in Mesopotamia."
 },
 {
   "question": "Which empire ruled the largest contiguous land empire in history?",
-  "options": ["Roman", "British", "Mongol", "Russian", "Ottoman"],
+  "options": ["Roman", "British", "Mongol", "Russian"],
   "answer": "Mongol",
   "explanation": "The Mongol Empire, founded by Genghis Khan, was the largest contiguous land empire in history."
 },
 {
   "question": "Who was assassinated on the Ides of March?",
-  "options": ["Brutus", "Augustus", "Julius Caesar", "Mark Antony", "Cicero"],
+  "options": ["Brutus", "Augustus", "Julius Caesar", "Mark Antony"],
   "answer": "Julius Caesar",
   "explanation": "Julius Caesar was assassinated on the Ides of March (March 15) in 44 BC."
 },
 {
   "question": "The Taiping Rebellion was led by a man claiming to be whose brother?",
-  "options": ["Jesus Christ", "Buddha", "Confucius", "Muhammad", "Shiva"],
+  "options": ["Jesus Christ", "Buddha", "Confucius", "Muhammad"],
   "answer": "Jesus Christ",
   "explanation": "Hong Xiuquan, leader of the Taiping Rebellion, claimed to be the brother of Jesus Christ."
 },
 {
   "question": "What was the capital of the ancient Hittite Empire?",
-  "options": ["Babylon", "Nineveh", "Hattusa", "Ur", "Memphis"],
+  "options": ["Babylon", "Nineveh", "Hattusa", "Ur"],
   "answer": "Hattusa",
   "explanation": "Hattusa was the capital city of the Hittite Empire in Anatolia."
 },
 {
   "question": "Which of the following was a direct cause of the Peloponnesian War?",
-  "options": ["The Delian League", "Roman expansion", "Persian invasion", "Assassination of Pericles", "Death of Socrates"],
+  "options": ["The Delian League", "Roman expansion", "Persian invasion", "Assassination of Pericles"],
   "answer": "The Delian League",
   "explanation": "The Delian League, led by Athens, threatened Sparta and its allies, leading to the Peloponnesian War."
 },
 {
   "question": "Which dynasty ruled China before the Mongol-led Yuan dynasty?",
-  "options": ["Tang", "Qing", "Song", "Han", "Ming"],
+  "options": ["Tang", "Qing", "Song", "Han"],
   "answer": "Song",
   "explanation": "The Song dynasty ruled China before the Mongol Yuan dynasty."
 },
 {
   "question": "Who was the first ruler to unify Japan under one central government?",
-  "options": ["Oda Nobunaga", "Tokugawa Ieyasu", "Toyotomi Hideyoshi", "Emperor Meiji", "Prince Shōtoku"],
+  "options": ["Oda Nobunaga", "Tokugawa Ieyasu", "Toyotomi Hideyoshi", "Emperor Meiji"],
   "answer": "Tokugawa Ieyasu",
   "explanation": "Tokugawa Ieyasu unified Japan and established the Tokugawa shogunate in 1603."
 },
 {
   "question": "What empire was known for its 'Immortals' military unit?",
-  "options": ["Roman Empire", "Macedonian Empire", "Byzantine Empire", "Persian Empire", "Ottoman Empire"],
+  "options": ["Roman Empire", "Byzantine Empire", "Persian Empire", "Ottoman Empire"],
   "answer": "Persian Empire",
   "explanation": "The Persian Empire's elite force was called the 'Immortals.'"
 },
 {
   "question": "Which treaty created the modern state boundaries of the Middle East post-WWI?",
-  "options": ["Treaty of Trianon", "Sykes-Picot Agreement", "Treaty of Lausanne", "Treaty of Versailles", "Balfour Declaration"],
+  "options": [ "Sykes-Picot Agreement", "Treaty of Lausanne", "Treaty of Versailles", "Balfour Declaration"],
   "answer": "Sykes-Picot Agreement",
   "explanation": "The Sykes-Picot Agreement divided Ottoman lands in the Middle East between Britain and France after WWI."
 },
 {
   "question": "What was the name of the elite soldiers of the Ottoman Empire?",
-  "options": ["Sipahi", "Bey", "Janissary", "Mamluk", "Khan"],
+  "options": [ "Bey", "Janissary", "Mamluk", "Khan"],
   "answer": "Janissary",
   "explanation": "The Janissaries were elite infantry units that formed the Ottoman Sultan's household troops."
 },
 {
   "question": "Who was the first Caliph after the death of Prophet Muhammad?",
-  "options": ["Umar", "Ali", "Uthman", "Muawiyah", "Abu Bakr"],
+  "options": [ "Ali", "Uthman", "Muawiyah", "Abu Bakr"],
   "answer": "Abu Bakr",
   "explanation": "Abu Bakr became the first Caliph after the death of Prophet Muhammad."
 },
@@ -3260,199 +3250,199 @@
 },
 {
   "question": "Which explorer first reached India by sea?",
-  "options": ["Bartolomeu Dias", "Vasco da Gama", "Christopher Columbus", "Ferdinand Magellan", "John Cabot"],
+  "options": [ "Vasco da Gama", "Christopher Columbus", "Ferdinand Magellan", "John Cabot"],
   "answer": "Vasco da Gama",
   "explanation": "Vasco da Gama was the first European to reach India by sea, sailing around Africa in 1498."
 },
 {
   "question": "What ancient war was fought between Athens and Sparta?",
-  "options": ["Trojan War", "Punic War", "Peloponnesian War", "Persian War", "Macedonian War"],
+  "options": [ "Punic War", "Peloponnesian War", "Persian War", "Macedonian War"],
   "answer": "Peloponnesian War",
   "explanation": "The Peloponnesian War was fought between Athens and Sparta from 431 to 404 BC."
 },
 {
   "question": "Who was the founder of the Maurya Empire in India?",
-  "options": ["Chandragupta Maurya", "Ashoka", "Harsha", "Bindusara", "Babur"],
+  "options": ["Chandragupta Maurya",  "Harsha", "Bindusara", "Babur"],
   "answer": "Chandragupta Maurya",
   "explanation": "Chandragupta Maurya founded the Maurya Empire in ancient India."
 },
 {
   "question": "Which European power colonized the Congo Free State under King Leopold II?",
-  "options": ["France", "Germany", "Belgium", "Portugal", "Netherlands"],
+  "options": [ "Germany", "Belgium", "Portugal", "Netherlands"],
   "answer": "Belgium",
   "explanation": "Belgium, under King Leopold II, colonized the Congo Free State in the late 19th century."
 },
 {
   "question": "Who was the ruler of the Mali Empire during its peak of power and wealth?",
-  "options": ["Sundiata Keita", "Mansa Musa", "Askia Muhammad", "Ibn Battuta", "Ali Kolon"],
+  "options": [ "Mansa Musa", "Askia Muhammad", "Ibn Battuta", "Ali Kolon"],
   "answer": "Mansa Musa",
   "explanation": "Mansa Musa was the richest and most famous ruler of the Mali Empire."
 },
 {
   "question": "What was the name of the naval battle that established British naval supremacy in 1805?",
-  "options": ["Battle of Trafalgar", "Battle of the Nile", "Battle of Jutland", "Battle of Lepanto", "Battle of Copenhagen"],
+  "options": [ "Battle of the Nile", "Battle of Jutland", "Battle of Lepanto", "Battle of Copenhagen"],
   "answer": "Battle of Trafalgar",
   "explanation": "The Battle of Trafalgar in 1805 established British naval supremacy during the Napoleonic Wars."
 },
 {
   "question": "Which of the following was NOT a participant in the Congress of Vienna?",
-  "options": ["Austria", "Russia", "Prussia", "United States", "Great Britain"],
+  "options": [ "Russia", "Prussia", "United States", "Great Britain"],
   "answer": "United States",
   "explanation": "The United States did not participate in the Congress of Vienna, which redrew Europe's borders after Napoleon."
 },
 {
   "question": "Who was the last emperor of Russia?",
-  "options": ["Nicholas II", "Alexander III", "Peter the Great", "Ivan the Terrible", "Alexander II"],
+  "options": ["Nicholas II",  "Peter the Great", "Ivan the Terrible", "Alexander II"],
   "answer": "Nicholas II",
   "explanation": "Nicholas II was the last Tsar of Russia, abdicating in 1917."
 },
 {
   "question": "Which ancient city was destroyed and buried by the eruption of Mount Vesuvius?",
-  "options": ["Athens", "Pompeii", "Carthage", "Rome", "Alexandria"],
+  "options": [ "Pompeii", "Carthage", "Rome", "Alexandria"],
   "answer": "Pompeii",
   "explanation": "Pompeii was destroyed and buried by the eruption of Mount Vesuvius in 79 AD."
 },
 {
   "question": "What country fought in the Winter War against the Soviet Union in 1939?",
-  "options": ["Finland", "Poland", "Latvia", "Estonia", "Romania"],
+  "options": ["Finland",  "Latvia", "Estonia", "Romania"],
   "answer": "Finland",
   "explanation": "Finland fought the Soviet Union in the Winter War of 1939–1940."
 },
 {
   "question": "Which civilization developed the concept of zero independently?",
-  "options": ["Greeks", "Chinese", "Romans", "Babylonians", "Mayans"],
+  "options": [ "Chinese", "Romans", "Babylonians", "Mayans"],
   "answer": "Mayans",
   "explanation": "The Mayans independently developed the concept of zero in their number system."
 },
 {
   "question": "Which medieval battle marked the end of the Wars of the Roses?",
-  "options": ["Battle of Towton", "Battle of Bosworth Field", "Battle of Hastings", "Battle of Agincourt", "Battle of St. Albans"],
+  "options": ["Battle of Bosworth Field", "Battle of Hastings", "Battle of Agincourt", "Battle of St. Albans"],
   "answer": "Battle of Bosworth Field",
   "explanation": "The Battle of Bosworth Field in 1485 ended the Wars of the Roses in England."
 },
 {
   "question": "Who was the leader of the Chinese Communist Revolution?",
-  "options": ["Chiang Kai-shek", "Sun Yat-sen", "Mao Zedong", "Zhou Enlai", "Deng Xiaoping"],
+  "options": [ "Sun Yat-sen", "Mao Zedong", "Zhou Enlai", "Deng Xiaoping"],
   "answer": "Mao Zedong",
   "explanation": "Mao Zedong led the Chinese Communist Revolution and founded the People's Republic of China."
 },
 {
   "question": "What was the name of Hitler’s plan to invade the Soviet Union?",
-  "options": ["Operation Sea Lion", "Operation Barbarossa", "Operation Citadel", "Operation Valkyrie", "Operation Torch"],
+  "options": [ "Operation Barbarossa", "Operation Citadel", "Operation Valkyrie", "Operation Torch"],
   "answer": "Operation Barbarossa",
   "explanation": "Operation Barbarossa was the code name for Nazi Germany's invasion of the Soviet Union in 1941."
 },
 {
   "question": "Who was the female pharaoh who ruled Egypt as king?",
-  "options": ["Nefertiti", "Cleopatra", "Hatshepsut", "Sobekneferu", "Merneith"],
+  "options": [ "Cleopatra", "Hatshepsut", "Sobekneferu", "Merneith"],
   "answer": "Hatshepsut",
   "explanation": "Hatshepsut was one of the few female pharaohs and ruled Egypt as king."
 },
 {
   "question": "The Zulu Kingdom reached its peak under which leader?",
-  "options": ["Cetshwayo", "Mpande", "Shaka Zulu", "Dingane", "Mzilikazi"],
+  "options": [ "Mpande", "Shaka Zulu", "Dingane", "Mzilikazi"],
   "answer": "Shaka Zulu",
   "explanation": "Shaka Zulu transformed the Zulu Kingdom into a powerful state in southern Africa."
 },
 {
   "question": "Which civilization is known for building Machu Picchu?",
-  "options": ["Aztecs", "Incas", "Mayans", "Olmecs", "Toltecs"],
+  "options": ["Incas", "Mayans", "Olmecs", "Toltecs"],
   "answer": "Incas",
   "explanation": "The Incas built Machu Picchu in the Andes Mountains of Peru."
 },
 {
   "question": "Which war was ended by the Treaty of Ghent?",
-  "options": ["American Revolutionary War", "War of 1812", "Mexican-American War", "Seven Years' War", "French and Indian War"],
+  "options": ["War of 1812", "Mexican-American War", "Seven Years' War", "French and Indian War"],
   "answer": "War of 1812",
   "explanation": "The Treaty of Ghent ended the War of 1812 between the United States and Britain."
 },
 {
   "question": "Which philosopher wrote 'The Prince'?",
-  "options": ["Voltaire", "Machiavelli", "Hobbes", "Locke", "Rousseau"],
+  "options": [ "Machiavelli", "Hobbes", "Locke", "Rousseau"],
   "answer": "Machiavelli",
   "explanation": "Niccolò Machiavelli wrote 'The Prince,' a treatise on political power."
 },
 {
   "question": "Who led the Red Army during the Russian Civil War?",
-  "options": ["Lenin", "Stalin", "Trotsky", "Kerensky", "Zhukov"],
+  "options": [ "Stalin", "Trotsky", "Kerensky", "Zhukov"],
   "answer": "Trotsky",
   "explanation": "Leon Trotsky was the leader of the Red Army during the Russian Civil War."
 },
 {
   "question": "Which African country was never colonized?",
-  "options": ["Ghana", "Kenya", "Ethiopia", "Senegal", "Angola"],
+  "options": [ "Kenya", "Ethiopia", "Senegal", "Angola"],
   "answer": "Ethiopia",
   "explanation": "Ethiopia is one of the only African countries never to have been colonized."
 },
 {
   "question": "Which British monarch was executed during the English Civil War?",
-  "options": ["Henry VIII", "James I", "Charles I", "Edward VI", "George III"],
+  "options": ["Henry VIII", "Charles I", "Edward VI", "George III"],
   "answer": "Charles I",
   "explanation": "King Charles I was executed in 1649 during the English Civil War."
 },
 {
   "question": "Who was the first President of the Republic of Turkey?",
-  "options": ["İsmet İnönü", "Sultan Mehmed VI", "Mustafa Kemal Atatürk", "Turgut Özal", "Celal Bayar"],
+  "options": ["İsmet İnönü",  "Mustafa Kemal Atatürk", "Turgut Özal", "Celal Bayar"],
   "answer": "Mustafa Kemal Atatürk",
   "explanation": "Mustafa Kemal Atatürk was the founder and first President of the Republic of Turkey."
 },
 {
   "question": "The Khmer Empire built which famous temple complex?",
-  "options": ["Borobudur", "Angkor Wat", "Bagan", "Wat Arun", "Shwedagon Pagoda"],
+  "options": [ "Angkor Wat", "Bagan", "Wat Arun", "Shwedagon Pagoda"],
   "answer": "Angkor Wat",
   "explanation": "Angkor Wat is a massive temple complex built by the Khmer Empire in Cambodia."
 },
 {
   "question": "Which American president issued the Emancipation Proclamation?",
-  "options": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "Andrew Johnson", "Ulysses S. Grant"],
+  "options": [ "Thomas Jefferson", "Abraham Lincoln", "Andrew Johnson", "Ulysses S. Grant"],
   "answer": "Abraham Lincoln",
   "explanation": "Abraham Lincoln issued the Emancipation Proclamation in 1863, freeing slaves in Confederate states."
 },
 {
   "question": "What was the capital of the Aztec Empire?",
-  "options": ["Tenochtitlan", "Teotihuacan", "Chichen Itza", "Tikal", "Palenque"],
+  "options": ["Tenochtitlan",  "Chichen Itza", "Tikal", "Palenque"],
   "answer": "Tenochtitlan",
   "explanation": "Tenochtitlan was the capital of the Aztec Empire, located on an island in Lake Texcoco."
 },
 {
   "question": "Which philosopher tutored Alexander the Great?",
-  "options": ["Socrates", "Plato", "Pythagoras", "Aristotle", "Zeno"],
+  "options": ["Socrates", "Pythagoras", "Aristotle", "Zeno"],
   "answer": "Aristotle",
   "explanation": "Aristotle was the tutor of Alexander the Great."
 },
 {
   "question": "Which empire was ruled by Charlemagne?",
-  "options": ["Byzantine Empire", "Frankish Empire", "Holy Roman Empire", "Carolingian Empire", "Saxon Empire"],
+  "options": ["Byzantine Empire", "Holy Roman Empire", "Carolingian Empire", "Saxon Empire"],
   "answer": "Carolingian Empire",
   "explanation": "Charlemagne was the ruler of the Carolingian Empire, which later became the Holy Roman Empire."
 },
 {
   "question": "The Boxer Rebellion was directed primarily against whom?",
-  "options": ["Chinese peasants", "Western foreigners", "Ming loyalists", "Buddhist monks", "Korean invaders"],
+  "options": ["Chinese peasants", "Western foreigners", "Buddhist monks", "Korean invaders"],
   "answer": "Western foreigners",
   "explanation": "The Boxer Rebellion in China was primarily directed against Western foreigners and Christian missionaries."
 },
 {
   "question": "Which event led to the start of the Protestant Reformation?",
-  "options": ["Council of Trent", "Posting of the 95 Theses", "Diet of Worms", "Peace of Augsburg", "Counter-Reformation"],
+  "options": [ "Posting of the 95 Theses", "Diet of Worms", "Peace of Augsburg", "Counter-Reformation"],
   "answer": "Posting of the 95 Theses",
   "explanation": "Martin Luther's posting of the 95 Theses in 1517 sparked the Protestant Reformation."
 },
 {
   "question": "The Meiji Restoration led to the modernization of which country?",
-  "options": ["China", "Japan", "Korea", "Thailand", "Vietnam"],
+  "options": ["China", "Japan", "Korea", "Thailand"],
   "answer": "Japan",
   "explanation": "The Meiji Restoration in 1868 led to the rapid modernization and industrialization of Japan."
 },
 {
   "question": "Which empire sacked Constantinople in 1204 during the Fourth Crusade?",
-  "options": ["Mongols", "Franks", "Byzantines", "Latin Empire", "Ottomans"],
+  "options": ["Mongols", "Franks", "Byzantines", "Latin Empire"],
   "answer": "Latin Empire",
   "explanation": "The Latin Empire was established after Crusaders sacked Constantinople in 1204."
 },
 {
   "question": "Which famous Roman general defeated Hannibal at the Battle of Zama?",
-  "options": ["Scipio Africanus", "Caesar", "Cato", "Pompey", "Augustus"],
+  "options": ["Scipio Africanus", "Caesar", "Cato", "Pompey"],
   "answer": "Scipio Africanus",
   "explanation": "Scipio Africanus defeated Hannibal at the Battle of Zama in 202 BC, ending the Second Punic War."
   }
@@ -4329,229 +4319,229 @@
  "Extreme": [
     {
   "question": "Who developed the concept of the collective unconscious?",
-  "options": ["A) Sigmund Freud", "B) Carl Jung", "C) B.F. Skinner", "D) Alfred Adler", "E) Jean Piaget"],
+  "options": ["A) Sigmund Freud", "B) Carl Jung", "C) B.F. Skinner", "D) Alfred Adler"],
   "answer": "B",
   "explanation": "Carl Jung developed the concept of the collective unconscious in analytical psychology."
 },
 {
   "question": "Which element has the highest electrical conductivity at room temperature?",
-  "options": ["A) Copper", "B) Gold", "C) Silver", "D) Aluminum", "E) Platinum"],
+  "options": ["A) Copper", "B) Gold", "C) Silver", "D) Aluminum"],
   "answer": "C",
   "explanation": "Silver has the highest electrical conductivity of all elements at room temperature."
 },
 {
   "question": "Which empire was ruled by Mansa Musa?",
-  "options": ["A) Ghana Empire", "B) Mali Empire", "C) Songhai Empire", "D) Kanem Empire", "E) Zulu Empire"],
+  "options": ["A) Ghana Empire", "B) Mali Empire", "C) Songhai Empire", "D) Kanem Empire"],
   "answer": "B",
   "explanation": "Mansa Musa was the ruler of the Mali Empire in West Africa."
 },
 {
   "question": "What is the rarest naturally occurring element on Earth?",
-  "options": ["A) Astatine", "B) Francium", "C) Promethium", "D) Californium", "E) Neptunium"],
+  "options": ["A) Astatine", "B) Francium", "C) Promethium", "D) Californium"],
   "answer": "A",
   "explanation": "Astatine is the rarest naturally occurring element on Earth."
 },
 {
   "question": "Which of these countries is not a member of the Arctic Council?",
-  "options": ["A) Norway", "B) Finland", "C) Iceland", "D) China", "E) Denmark"],
+  "options": ["A) Norway", "B) Finland", "C) Iceland", "D) China"],
   "answer": "D",
   "explanation": "China is not a member of the Arctic Council, but is an observer."
 },
 {
   "question": "In string theory, how many dimensions does M-theory propose?",
-  "options": ["A) 10", "B) 11", "C) 12", "D) 9", "E) 13"],
+  "options": ["A) 10", "B) 11", "C) 12", "D) 9"],
   "answer": "B",
   "explanation": "M-theory proposes 11 dimensions."
 },
 {
   "question": "Who was the first woman to win a Nobel Prize?",
-  "options": ["A) Marie Curie", "B) Rosalind Franklin", "C) Ada Lovelace", "D) Dorothy Hodgkin", "E) Barbara McClintock"],
+  "options": ["A) Marie Curie", "B) Rosalind Franklin", "C) Ada Lovelace", "D) Dorothy Hodgkin"],
   "answer": "A",
   "explanation": "Marie Curie was the first woman to win a Nobel Prize."
 },
 {
   "question": "Which particle gives mass to other particles?",
-  "options": ["A) Higgs boson", "B) Photon", "C) Gluon", "D) Neutrino", "E) Graviton"],
+  "options": ["A) Higgs boson", "B) Photon", "C) Gluon", "D) Neutrino"],
   "answer": "A",
   "explanation": "The Higgs boson is responsible for giving mass to other particles."
 },
 {
   "question": "Which civilization built the city of Tenochtitlan?",
-  "options": ["A) Maya", "B) Aztec", "C) Olmec", "D) Zapotec", "E) Inca"],
+  "options": ["A) Maya", "B) Aztec", "C) Olmec", "D) Zapotec"],
   "answer": "B",
   "explanation": "The Aztecs built the city of Tenochtitlan."
 },
 {
   "question": "Which of the following is a moon of Neptune?",
-  "options": ["A) Europa", "B) Titan", "C) Triton", "D) Io", "E) Callisto"],
+  "options": ["A) Europa", "B) Titan", "C) Triton", "D) Io"],
   "answer": "C",
   "explanation": "Triton is the largest moon of Neptune."
 },
 {
   "question": "Which Nobel Prize category did Malala Yousafzai win?",
-  "options": ["A) Literature", "B) Peace", "C) Chemistry", "D) Physics", "E) Economics"],
+  "options": ["A) Literature", "B) Peace", "C) Chemistry", "D) Physics"],
   "answer": "B",
   "explanation": "Malala Yousafzai won the Nobel Peace Prize."
 },
 {
   "question": "What is the largest known volcano in the solar system?",
-  "options": ["A) Mount Everest", "B) Mauna Loa", "C) Olympus Mons", "D) Mount Kilimanjaro", "E) Vesuvius"],
+  "options": ["A) Mount Everest", "B) Mauna Loa", "C) Olympus Mons", "D) Mount Kilimanjaro"],
   "answer": "C",
   "explanation": "Olympus Mons on Mars is the largest known volcano in the solar system."
 },
 {
   "question": "Which composer is famous for his 'Goldberg Variations'?",
-  "options": ["A) Bach", "B) Mozart", "C) Beethoven", "D) Chopin", "E) Vivaldi"],
+  "options": ["A) Bach", "B) Mozart", "C) Beethoven", "D) Chopin"],
   "answer": "A",
   "explanation": "Johann Sebastian Bach composed the 'Goldberg Variations.'"
 },
 {
   "question": "What language has the most native speakers worldwide?",
-  "options": ["A) English", "B) Mandarin", "C) Spanish", "D) Hindi", "E) Arabic"],
+  "options": ["A) English", "B) Mandarin", "C) Spanish", "D) Hindi"],
   "answer": "B",
   "explanation": "Mandarin Chinese has the most native speakers worldwide."
 },
 {
   "question": "Which country was formerly known as Ceylon?",
-  "options": ["A) Sri Lanka", "B) Bangladesh", "C) Myanmar", "D) Maldives", "E) Nepal"],
+  "options": ["A) Sri Lanka", "B) Bangladesh", "C) Myanmar", "D) Maldives"],
   "answer": "A",
   "explanation": "Sri Lanka was formerly known as Ceylon."
 },
 {
   "question": "Which planet has the shortest day in our solar system?",
-  "options": ["A) Jupiter", "B) Saturn", "C) Neptune", "D) Uranus", "E) Mercury"],
+  "options": ["A) Jupiter", "B) Saturn", "C) Neptune", "D) Uranus"],
   "answer": "A",
   "explanation": "Jupiter has the shortest day, rotating once in about 10 hours."
 },
 {
   "question": "What is the study of fungi called?",
-  "options": ["A) Botany", "B) Mycology", "C) Zoology", "D) Ecology", "E) Microbiology"],
+  "options": ["A) Botany", "B) Mycology", "C) Zoology", "D) Ecology"],
   "answer": "B",
   "explanation": "Mycology is the study of fungi."
 },
 {
   "question": "Which battle marked the end of Napoleon's rule?",
-  "options": ["A) Battle of Austerlitz", "B) Battle of Leipzig", "C) Battle of Waterloo", "D) Battle of Trafalgar", "E) Battle of Borodino"],
+  "options": ["A) Battle of Austerlitz", "B) Battle of Leipzig", "C) Battle of Waterloo", "D) Battle of Trafalgar"],
   "answer": "C",
   "explanation": "The Battle of Waterloo marked the end of Napoleon's rule."
 },
 {
   "question": "Which country is known as the Land of the Thunder Dragon?",
-  "options": ["A) Nepal", "B) Bhutan", "C) Mongolia", "D) Tibet", "E) Laos"],
+  "options": ["A) Nepal", "B) Bhutan", "C) Mongolia", "D) Tibet"],
   "answer": "B",
   "explanation": "Bhutan is known as the Land of the Thunder Dragon."
 },
 {
   "question": "What is the currency of South Africa?",
-  "options": ["A) Rand", "B) Shilling", "C) Dollar", "D) Peso", "E) Pound"],
+  "options": ["A) Rand", "B) Shilling", "C) Dollar", "D) Peso"],
   "answer": "A",
   "explanation": "The currency of South Africa is the Rand."
 },
 {
   "question": "Which organelle is known as the powerhouse of the cell?",
-  "options": ["A) Nucleus", "B) Ribosome", "C) Mitochondria", "D) Endoplasmic Reticulum", "E) Golgi Apparatus"],
+  "options": ["A) Nucleus", "B) Ribosome", "C) Mitochondria", "D) Endoplasmic Reticulum"],
   "answer": "C",
   "explanation": "Mitochondria are known as the powerhouse of the cell."
 },
 {
   "question": "Who was the first Chancellor of Germany after reunification in 1990?",
-  "options": ["A) Angela Merkel", "B) Gerhard Schröder", "C) Helmut Kohl", "D) Willy Brandt", "E) Konrad Adenauer"],
+  "options": ["A) Angela Merkel", "B) Gerhard Schröder", "C) Helmut Kohl", "D) Willy Brandt"],
   "answer": "C",
   "explanation": "Helmut Kohl was the first Chancellor of reunified Germany."
 },
 {
   "question": "What is the name of the largest desert in Asia?",
-  "options": ["A) Gobi", "B) Arabian", "C) Kalahari", "D) Thar", "E) Taklamakan"],
+  "options": ["A) Gobi", "B) Arabian", "C) Kalahari", "D) Thar"],
   "answer": "A",
   "explanation": "The Gobi Desert is the largest desert in Asia."
 },
 {
   "question": "Which disease is caused by the bacterium Yersinia pestis?",
-  "options": ["A) Cholera", "B) Plague", "C) Tuberculosis", "D) Malaria", "E) Typhoid"],
+  "options": ["A) Cholera", "B) Plague", "C) Tuberculosis", "D) Malaria"],
   "answer": "B",
   "explanation": "Yersinia pestis causes the plague."
 },
 {
   "question": "Which famous scientist was awarded the Nobel Prize in Physics twice?",
-  "options": ["A) Albert Einstein", "B) Marie Curie", "C) Niels Bohr", "D) Max Planck", "E) Enrico Fermi"],
+  "options": ["A) Albert Einstein", "B) Marie Curie", "C) Niels Bohr", "D) Max Planck"],
   "answer": "B",
   "explanation": "Marie Curie won Nobel Prizes in both Physics and Chemistry."
 },
 {
   "question": "What is the main language spoken in the Canadian province of Quebec?",
-  "options": ["A) English", "B) French", "C) Spanish", "D) German", "E) Italian"],
+  "options": ["A) English", "B) French", "C) Spanish", "D) German"],
   "answer": "B",
   "explanation": "French is the main language spoken in Quebec."
 },
 {
   "question": "Which ancient civilization built Machu Picchu?",
-  "options": ["A) Maya", "B) Inca", "C) Aztec", "D) Olmec", "E) Zapotec"],
+  "options": ["A) Maya", "B) Inca", "C) Aztec", "D) Olmec"],
   "answer": "B",
   "explanation": "The Inca civilization built Machu Picchu."
 },
 {
   "question": "What is the hardest naturally occurring mineral?",
-  "options": ["A) Corundum", "B) Quartz", "C) Diamond", "D) Topaz", "E) Sapphire"],
+  "options": ["A) Corundum", "B) Quartz", "C) Diamond", "D) Topaz"],
   "answer": "C",
   "explanation": "Diamond is the hardest naturally occurring mineral."
 },
 {
   "question": "Which city hosted the 1992 Summer Olympics?",
-  "options": ["A) Barcelona", "B) Atlanta", "C) Seoul", "D) Sydney", "E) Athens"],
+  "options": ["A) Barcelona", "B) Atlanta", "C) Seoul", "D) Sydney"],
   "answer": "A",
   "explanation": "Barcelona hosted the 1992 Summer Olympics."
 },
 {
   "question": "Which ancient Greek philosopher taught Alexander the Great?",
-  "options": ["A) Plato", "B) Aristotle", "C) Socrates", "D) Epicurus", "E) Pythagoras"],
+  "options": ["A) Plato", "B) Aristotle", "C) Socrates", "D) Epicurus"],
   "answer": "B",
   "explanation": "Aristotle was the tutor of Alexander the Great."
 },
 {
   "question": "Which instrument measures seismic activity?",
-  "options": ["A) Barometer", "B) Seismometer", "C) Hygrometer", "D) Anemometer", "E) Thermometer"],
+  "options": ["A) Barometer", "B) Seismometer", "C) Hygrometer", "D) Anemometer"],
   "answer": "B",
   "explanation": "A seismometer measures seismic activity."
 },
 {
   "question": "Which country has the largest population of indigenous people in the Americas?",
-  "options": ["A) Canada", "B) USA", "C) Brazil", "D) Mexico", "E) Peru"],
+  "options": ["A) Canada", "B) USA", "C) Brazil", "D) Mexico"],
   "answer": "D",
   "explanation": "Mexico has the largest population of indigenous people in the Americas."
 },
 {
   "question": "What is the capital of Kazakhstan?",
-  "options": ["A) Almaty", "B) Astana", "C) Bishkek", "D) Tashkent", "E) Nur-Sultan"],
+  "options": ["A) Almaty", "B) Astana", "C) Bishkek", "E) Nur-Sultan"],
   "answer": "E",
   "explanation": "Nur-Sultan (formerly Astana) is the capital of Kazakhstan."
 },
 {
   "question": "What is the chemical formula for table salt?",
-  "options": ["A) NaCl", "B) KCl", "C) CaCO3", "D) MgSO4", "E) Na2SO4"],
+  "options": ["A) NaCl", "B) KCl", "C) CaCO3", "D) MgSO4"],
   "answer": "A",
   "explanation": "The chemical formula for table salt is NaCl."
 },
 {
   "question": "Who was the first president of independent Kenya?",
-  "options": ["A) Jomo Kenyatta", "B) Daniel arap Moi", "C) Uhuru Kenyatta", "D) Mwai Kibaki", "E) Raila Odinga"],
+  "options": ["A) Jomo Kenyatta", "B) Daniel arap Moi", "C) Uhuru Kenyatta", "D) Mwai Kibaki"],
   "answer": "A",
   "explanation": "Jomo Kenyatta was the first president of independent Kenya."
 },
 {
   "question": "Which philosopher wrote 'The Republic'?",
-  "options": ["A) Socrates", "B) Plato", "C) Aristotle", "D) Cicero", "E) Seneca"],
+  "options": ["A) Socrates", "B) Plato", "C) Aristotle", "D) Cicero"],
   "answer": "B",
   "explanation": "Plato wrote 'The Republic.'"
 },
 {
   "question": "What is the name of the longest river in South America?",
-  "options": ["A) Amazon", "B) Orinoco", "C) Paraná", "D) Magdalena", "E) Rio de la Plata"],
+  "options": ["A) Amazon", "B) Orinoco", "C) Paraná", "D) Magdalena"],
   "answer": "A",
   "explanation": "The Amazon River is the longest river in South America."
 },
 {
   "question": "Which famous physicist introduced the concept of black holes?",
-  "options": ["A) Albert Einstein", "B) Stephen Hawking", "C) Isaac Newton", "D) Galileo Galilei", "E) Niels Bohr"],
+  "options": ["A) Albert Einstein", "B) Stephen Hawking", "C) Isaac Newton", "D) Galileo Galilei"],
   "answer": "B",
   "explanation": "Stephen Hawking made significant contributions to the theory of black holes."
 },
@@ -4563,55 +4553,54 @@
 },
 {
   "question": "Who is known as the father of modern economics?",
-  "options": ["A) John Maynard Keynes", "B) Adam Smith", "C) Karl Marx", "D) David Ricardo", "E) Milton Friedman"],
+  "options": ["A) John Maynard Keynes", "B) Adam Smith", "C) Karl Marx", "D) David Ricardo"],
   "answer": "B",
   "explanation": "Adam Smith is known as the father of modern economics."
 },
 {
   "question": "Which is the largest moon of Saturn?",
-  "options": ["A) Titan", "B) Enceladus", "C) Rhea", "D) Dione", "E) Iapetus"],
+  "options": ["A) Titan", "B) Enceladus", "C) Rhea", "D) Dione"],
   "answer": "A",
   "explanation": "Titan is the largest moon of Saturn."
 },
 {
   "question": "What is the capital of the Australian state of Queensland?",
-  "options": ["A) Sydney", "B) Brisbane", "C) Melbourne", "D) Perth", "E) Adelaide"],
+  "options": ["A) Sydney", "B) Brisbane", "C) Melbourne", "D) Perth"],
   "answer": "B",
   "explanation": "Brisbane is the capital of Queensland, Australia."
 },
 {
   "question": "Which artist painted the ceiling of the Sistine Chapel?",
-  "options": ["A) Leonardo da Vinci", "B) Michelangelo", "C) Raphael", "D) Donatello", "E) Caravaggio"],
+  "options": ["A) Leonardo da Vinci", "B) Michelangelo", "C) Raphael", "D) Donatello"],
   "answer": "B",
   "explanation": "Michelangelo painted the ceiling of the Sistine Chapel."
 },
 {
   "question": "Which year did the Titanic sink?",
-  "options": ["A) 1905", "B) 1912", "C) 1918", "D) 1923", "E) 1930"],
+  "options": ["A) 1905", "B) 1912", "C) 1918", "D) 1923"],
   "answer": "B",
   "explanation": "The Titanic sank in 1912."
 },
 {
   "question": "Which country is home to the ancient city of Petra?",
-  "options": ["A) Jordan", "B) Egypt", "C) Syria", "D) Lebanon", "E) Iraq"],
+  "options": ["A) Jordan", "B) Egypt", "C) Syria", "D) Lebanon"],
   "answer": "A",
   "explanation": "Petra is located in Jordan."
 },
 {
   "question": "Which is the smallest bone in the human body?",
-  "options": ["A) Femur", "B) Stapes", "C) Tibia", "D) Ulna", "E) Fibula"],
+  "options": ["A) Femur", "B) Stapes", "C) Tibia", "D) Ulna"],
   "answer": "B",
   "explanation": "The stapes is the smallest bone in the human body."
 },
 {
   "question": "Who invented the first successful airplane?",
-  "options": ["A) Samuel Langley", "B) Orville and Wilbur Wright", "C) Alberto Santos-Dumont", "D) Charles Lindbergh", "E) Amelia Earhart"],
-  "answer": "B",
+  "options": ["A) Samuel Langley", "B) Orville and Wilbur Wright", "C) Alberto Santos-Dumont", "D) Charles Lindbergh"],
   "explanation": "The Wright brothers invented the first successful airplane."
 },
 {
   "question": "Which natural disaster is measured by the Richter scale?",
-  "options": ["A) Hurricanes", "B) Earthquakes", "C) Tornadoes", "D) Tsunamis", "E) Volcanic eruptions"],
+  "options": ["A) Hurricanes", "B) Earthquakes", "C) Tornadoes", "D) Tsunamis"],
   "answer": "B",
   "explanation": "The Richter scale measures the magnitude of earthquakes."
     }
@@ -5476,25 +5465,25 @@
    "Extreme": [
     {
       "question": "Which Python feature allows functions to be modified without changing their code?",
-  "options": ["A) Lambda functions", "B) Decorators", "C) Generators", "D) Context managers", "E) Metaclasses"],
+  "options": ["A) Lambda functions", "B) Decorators", "C) Generators", "D) Context managers"],
   "answer": "B",
   "explanation": "Decorators allow you to modify or enhance functions without changing their code."
 },
 {
   "question": "What does the Python 'asyncio' library provide?",
-  "options": ["A) Asynchronous I/O handling", "B) Multi-threading support", "C) Database management", "D) Web development tools", "E) File compression"],
+  "options": ["A) Asynchronous I/O handling", "B) Multi-threading support", "C) Database management", "D) Web development tools"],
   "answer": "A",
   "explanation": "'asyncio' provides asynchronous I/O handling for concurrent code."
 },
 {
   "question": "In Python, what is the output of: `list(zip([1,2], ['a','b','c']))`?",
-  "options": ["A) [(1, 'a'), (2, 'b')]", "B) [(1, 'a'), (2, 'b'), (None, 'c')]", "C) Error", "D) [(1, 'a'), (2, 'b'), (3, 'c')]", "E) []"],
+  "options": ["A) [(1, 'a'), (2, 'b')]", "B) [(1, 'a'), (2, 'b'), (None, 'c')]", "C) Error", "D) [(1, 'a'), (2, 'b'), (3, 'c')]"],
   "answer": "A",
   "explanation": "zip stops at the shortest iterable, so the result is [(1, 'a'), (2, 'b')]."
 },
 {
   "question": "What is the main purpose of Python's 'with' statement?",
-  "options": ["A) Loop control", "B) Exception handling", "C) Resource management", "D) Function declaration", "E) Variable assignment"],
+  "options": ["A) Loop control", "B) Exception handling", "C) Resource management", "D) Function declaration"],
   "answer": "C",
   "explanation": "The 'with' statement is used for resource management (context management)."
 },
@@ -5506,37 +5495,37 @@
 },
 {
   "question": "What does the 'yield' keyword do in Python?",
-  "options": ["A) Returns a generator", "B) Raises an exception", "C) Defines a function", "D) Imports a module", "E) Creates a list"],
+  "options": ["A) Returns a generator", "B) Raises an exception", "C) Defines a function", "D) Imports a module"],
   "answer": "A",
   "explanation": "'yield' returns a generator from a function."
 },
 {
   "question": "How can you create a virtual environment in Python?",
-  "options": ["A) python -m venv env", "B) python create env", "C) pip install virtualenv", "D) python env create", "E) virtualenv python"],
+  "options": ["A) python -m venv env", "B) python create env", "C) pip install virtualenv", "D) python env create"],
   "answer": "A",
   "explanation": "python -m venv env creates a virtual environment."
 },
 {
   "question": "What is the difference between '==' and 'is' in Python?",
-  "options": ["A) '==' compares values; 'is' compares identities", "B) They are the same", "C) '==' compares identities; 'is' compares values", "D) Both compare memory addresses", "E) None of the above"],
+  "options": ["A) '==' compares values; 'is' compares identities", "B) They are the same", "C) '==' compares identities; 'is' compares values", "D) Both compare memory addresses"],
   "answer": "A",
   "explanation": "'==' checks value equality, 'is' checks object identity."
 },
 {
   "question": "Which built-in function returns the memory address of an object?",
-  "options": ["A) id()", "B) memory()", "C) address()", "D) getmem()", "E) ref()"],
+  "options": ["A) id()", "B) memory()", "C) address()", "D) getmem()"],
   "answer": "A",
   "explanation": "id() returns the memory address of an object."
 },
 {
   "question": "How can you merge two dictionaries in Python 3.9+?",
-  "options": ["A) dict1 | dict2", "B) dict1.merge(dict2)", "C) dict1 + dict2", "D) dict1.update(dict2)", "E) merge(dict1, dict2)"],
+  "options": ["A) dict1 | dict2", "B) dict1.merge(dict2)", "C) dict1 + dict2", "D) dict1.update(dict2)"],
   "answer": "A",
   "explanation": "The '|' operator merges two dictionaries in Python 3.9+."
 },
 {
   "question": "What does the 'global' keyword do in Python?",
-  "options": ["A) Declares a variable as global inside a function", "B) Imports global variables", "C) Creates a global function", "D) Defines a global class", "E) Deletes a global variable"],
+  "options": ["A) Declares a variable as global inside a function", "B) Imports global variables", "C) Creates a global function", "D) Defines a global class"],
   "answer": "A",
   "explanation": "The 'global' keyword declares a variable as global inside a function."
 },
@@ -5548,223 +5537,223 @@
 },
 {
   "question": "What does the method 'str.format()' do?",
-  "options": ["A) Formats strings", "B) Converts to string", "C) Reverses strings", "D) Joins strings", "E) Splits strings"],
+  "options": ["A) Formats strings", "B) Converts to string", "C) Reverses strings", "D) Joins strings"],
   "answer": "A",
   "explanation": "str.format() is used to format strings."
 },
 {
   "question": "Which module is used for regular expressions in Python?",
-  "options": ["A) re", "B) regex", "C) reg", "D) pyregex", "E) expression"],
+  "options": ["A) re", "B) regex", "C) reg", "D) pyregex"],
   "answer": "A",
   "explanation": "The 're' module is used for regular expressions."
 },
 {
   "question": "What will be the result of: `bool('False')`?",
-  "options": ["A) True", "B) False", "C) None", "D) Error", "E) 'False'"],
+  "options": ["A) True", "B) False", "C) None", "D) Error"],
   "answer": "A",
   "explanation": "Any non-empty string is True, including 'False'."
 },
 {
   "question": "How do you check if a key exists in a dictionary 'd'?",
-  "options": ["A) 'key' in d", "B) d.has_key('key')", "C) d.key_exists('key')", "D) d.contains('key')", "E) d.exists('key')"],
+  "options": ["A) 'key' in d", "B) d.has_key('key')", "C) d.key_exists('key')", "D) d.contains('key')"],
   "answer": "A",
   "explanation": "Use 'key' in d to check if a key exists in a dictionary."
 },
 {
   "question": "What does 'PEP' stand for in Python?",
-  "options": ["A) Python Enhancement Proposal", "B) Python Execution Process", "C) Programming Environment Protocol", "D) Python Extension Package", "E) Primary Execution Plan"],
+  "options": ["A) Python Enhancement Proposal", "B) Python Execution Process", "C) Programming Environment Protocol", "D) Python Extension Package"],
   "answer": "A",
   "explanation": "PEP stands for Python Enhancement Proposal."
 },
 {
   "question": "Which function converts a Python object to a JSON string?",
-  "options": ["A) json.dumps()", "B) json.loads()", "C) json.encode()", "D) json.parse()", "E) json.toString()"],
+  "options": ["A) json.dumps()", "B) json.loads()", "C) json.encode()", "D) json.parse()"],
   "answer": "A",
   "explanation": "json.dumps() converts a Python object to a JSON string."
 },
 {
   "question": "What is the output of: `print(bool([]))`?",
-  "options": ["A) False", "B) True", "C) None", "D) Error", "E) []"],
+  "options": ["A) False", "B) True", "C) None", "D) Error"],
   "answer": "A",
   "explanation": "An empty list evaluates to False."
 },
 {
   "question": "What keyword is used to handle exceptions in Python?",
-  "options": ["A) try", "B) catch", "C) except", "D) handle", "E) throw"],
+  "options": ["A) try", "B) catch", "C) except", "D) handle"],
   "answer": "C",
   "explanation": "The 'except' keyword is used to handle exceptions."
 },
 {
   "question": "Which Python built-in type represents an unordered collection of unique elements?",
-  "options": ["A) set", "B) list", "C) dict", "D) tuple", "E) array"],
+  "options": ["A) set", "B) list", "C) dict", "D) tuple"],
   "answer": "A",
   "explanation": "A set is an unordered collection of unique elements."
 },
 {
   "question": "What is a lambda function?",
-  "options": ["A) An anonymous function", "B) A recursive function", "C) A generator", "D) A method in classes", "E) A decorator"],
+  "options": ["A) An anonymous function", "B) A recursive function", "C) A generator", "D) A method in classes"],
   "answer": "A",
   "explanation": "A lambda function is an anonymous function."
 },
 {
   "question": "What does the 'map()' function do?",
-  "options": ["A) Applies a function to all items in an iterable", "B) Filters items in a list", "C) Creates a dictionary", "D) Iterates through a string", "E) Sorts a list"],
+  "options": ["A) Applies a function to all items in an iterable", "B) Filters items in a list", "C) Creates a dictionary", "D) Iterates through a string"],
   "answer": "A",
   "explanation": "map() applies a function to all items in an iterable."
 },
 {
   "question": "How do you import a module named 'math'?",
-  "options": ["A) import math", "B) include math", "C) require math", "D) using math", "E) module math"],
+  "options": ["A) import math", "B) include math", "C) require math", "D) using math"],
   "answer": "A",
   "explanation": "Use 'import math' to import the math module."
 },
 {
   "question": "What is the difference between 'break' and 'continue' statements?",
-  "options": ["A) 'break' exits loop; 'continue' skips to next iteration", "B) Both do the same", "C) 'break' skips iteration; 'continue' exits loop", "D) Both pause the loop", "E) None of the above"],
+  "options": ["A) 'break' exits loop; 'continue' skips to next iteration", "B) Both do the same", "C) 'break' skips iteration; 'continue' exits loop", "D) Both pause the loop"],
   "answer": "A",
   "explanation": "'break' exits the loop, 'continue' skips to the next iteration."
 },
 {
   "question": "Which of the following is NOT a Python keyword?",
-  "options": ["A) pass", "B) eval", "C) assert", "D) global", "E) nonlocal"],
+  "options": ["A) pass", "B) eval", "C) assert", "D) global"],
   "answer": "B",
   "explanation": "'eval' is a built-in function, not a keyword."
 },
 {
   "question": "What does the 'strip()' method do on strings?",
-  "options": ["A) Removes whitespace from both ends", "B) Removes all spaces", "C) Converts to uppercase", "D) Splits the string", "E) Replaces characters"],
+  "options": ["A) Removes whitespace from both ends", "B) Removes all spaces", "C) Converts to uppercase", "D) Splits the string"],
   "answer": "A",
   "explanation": "strip() removes whitespace from both ends of a string."
 },
 {
   "question": "What is the correct way to open a file for reading?",
-  "options": ["A) open('file.txt', 'r')", "B) open('file.txt', 'w')", "C) open('file.txt', 'a')", "D) open('file.txt', 'x')", "E) open('file.txt', 'b')"],
+  "options": ["A) open('file.txt', 'r')", "B) open('file.txt', 'w')", "C) open('file.txt', 'a')", "D) open('file.txt', 'x')"],
   "answer": "A",
   "explanation": "open('file.txt', 'r') opens a file for reading."
 },
 {
   "question": "What is the use of the 'pass' statement in Python?",
-  "options": ["A) Placeholder for code", "B) Ends a function", "C) Throws an error", "D) Starts a loop", "E) Imports a module"],
+  "options": ["A) Placeholder for code", "B) Ends a function", "C) Throws an error", "D) Starts a loop"],
   "answer": "A",
   "explanation": "pass is a placeholder that does nothing."
 },
 {
   "question": "Which statement is used to create a class in Python?",
-  "options": ["A) class", "B) def", "C) struct", "D) module", "E) object"],
+  "options": ["A) class", "B) def", "C) struct", "D) module"],
   "answer": "A",
   "explanation": "The 'class' keyword is used to define a class."
 },
 {
   "question": "What does the 'finally' block do in exception handling?",
-  "options": ["A) Executes code regardless of exceptions", "B) Executes only on exception", "C) Executes only if no exception", "D) Defines a new exception", "E) Skips exception handling"],
+  "options": ["A) Executes code regardless of exceptions", "B) Executes only on exception", "C) Executes only if no exception", "D) Defines a new exception"],
   "answer": "A",
   "explanation": "The finally block always executes, regardless of exceptions."
 },
 {
   "question": "Which of the following is used to document a Python function?",
-  "options": ["A) Docstring", "B) Comment", "C) Annotation", "D) Metadata", "E) Decorator"],
+  "options": ["A) Docstring", "B) Comment", "C) Annotation", "D) Metadata"],
   "answer": "A",
   "explanation": "A docstring documents a Python function."
 },
 {
   "question": "How to check the data type of a variable 'x'?",
-  "options": ["A) type(x)", "B) datatype(x)", "C) typeof(x)", "D) class(x)", "E) typeOf(x)"],
+  "options": ["A) type(x)", "B) datatype(x)", "C) typeof(x)", "D) class(x)"],
   "answer": "A",
   "explanation": "type(x) returns the data type of x."
 },
 {
   "question": "What is the output of: `print(0.1 + 0.2 == 0.3)`?",
-  "options": ["A) False", "B) True", "C) Error", "D) None", "E) 0.3"],
+  "options": ["A) False", "B) True", "C) Error", "D) None"],
   "answer": "A",
   "explanation": "Due to floating point precision, the result is False."
 },
 {
   "question": "Which method is used to add an item to the end of a list?",
-  "options": ["A) append()", "B) add()", "C) insert()", "D) extend()", "E) push()"],
+  "options": ["A) append()", "B) add()", "C) insert()", "D) extend()"],
   "answer": "A",
   "explanation": "append() adds an item to the end of a list."
 },
 {
   "question": "How do you remove duplicates from a list 'lst'?",
-  "options": ["A) list(set(lst))", "B) lst.remove_duplicates()", "C) unique(lst)", "D) lst.unique()", "E) lst.deduplicate()"],
+  "options": ["A) list(set(lst))", "B) lst.remove_duplicates()", "C) unique(lst)", "D) lst.unique()"],
   "answer": "A",
   "explanation": "list(set(lst)) removes duplicates by converting to a set and back to a list."
 },
 {
   "question": "What does the 'raise' keyword do?",
-  "options": ["A) Raises an exception", "B) Starts a loop", "C) Ends a function", "D) Imports a module", "E) Creates a class"],
+  "options": ["A) Raises an exception", "B) Starts a loop", "C) Ends a function", "D) Imports a module"],
   "answer": "A",
   "explanation": "raise is used to raise an exception."
 },
 {
   "question": "Which of these is NOT a valid way to comment in Python?",
-  "options": ["A) # This is a comment", "B) '''This is a comment'''", "C) \"\"\"This is a comment\"\"\"", "D) // This is a comment", "E) #! This is a comment"],
+  "options": ["A) # This is a comment", "B) '''This is a comment'''", "C) \"\"\"This is a comment\"\"\"", "D) // This is a comment"],
   "answer": "D",
   "explanation": "// is not a valid comment syntax in Python."
 },
 {
   "question": "What does the 'del' statement do?",
-  "options": ["A) Deletes a variable or item", "B) Defines a function", "C) Declares a variable", "D) Imports a module", "E) Creates a list"],
+  "options": ["A) Deletes a variable or item", "B) Defines a function", "C) Declares a variable", "D) Imports a module"],
   "answer": "A",
   "explanation": "del deletes a variable or item."
 },
 {
   "question": "What is the output of: `print(bool(None))`?",
-  "options": ["A) False", "B) True", "C) None", "D) Error", "E) 0"],
+  "options": ["A) False", "B) True", "C) None", "D) Error"],
   "answer": "A",
   "explanation": "bool(None) is False."
 },
 {
   "question": "Which operator is used for floor division?",
-  "options": ["A) //", "B) /", "C) %", "D) **", "E) &"],
+  "options": ["A) //", "B) /", "C) %", "D) **"],
   "answer": "A",
   "explanation": "// is the floor division operator."
 },
 {
   "question": "How do you create an empty dictionary?",
-  "options": ["A) {}", "B) []", "C) ()", "D) dict()", "E) Both A and D"],
+  "options": ["A) {}", "B) []", "C) ()", "D) dict()"],
   "answer": "E",
   "explanation": "Both {} and dict() create an empty dictionary."
 },
 {
   "question": "Which built-in Python function returns the smallest item in an iterable?",
-  "options": ["A) min()", "B) max()", "C) smallest()", "D) low()", "E) lesser()"],
+  "options": ["A) min()", "B) max()", "C) smallest()", "D) low()"],
   "answer": "A",
   "explanation": "min() returns the smallest item."
 },
 {
   "question": "What does the 'isinstance()' function check?",
-  "options": ["A) If an object is an instance of a class", "B) If two variables are equal", "C) If a function exists", "D) If a module is imported", "E) If a list is empty"],
+  "options": ["A) If an object is an instance of a class", "B) If two variables are equal", "C) If a function exists", "D) If a module is imported"],
   "answer": "A",
   "explanation": "isinstance() checks if an object is an instance of a class."
 },
 {
   "question": "How can you get a substring from a string 's' from index 2 to 5?",
-  "options": ["A) s[2:6]", "B) s[2:5]", "C) s.slice(2,5)", "D) s.substring(2,5)", "E) s(2,5)"],
+  "options": ["A) s[2:6]", "B) s[2:5]", "C) s.slice(2,5)", "D) s.substring(2,5)"],
   "answer": "A",
   "explanation": "s[2:6] gets the substring from index 2 up to (but not including) 6."
 },
 {
   "question": "What does the 'id()' function return?",
-  "options": ["A) Memory address of an object", "B) Type of object", "C) Length of object", "D) Value of object", "E) Hash of object"],
+  "options": ["A) Memory address of an object", "B) Type of object", "C) Length of object", "D) Value of object"],
   "answer": "A",
   "explanation": "id() returns the memory address of an object."
 },
 {
   "question": "Which of these is a Python immutable data type?",
-  "options": ["A) int", "B) list", "C) set", "D) dict", "E) bytearray"],
+  "options": ["A) int", "B) list", "C) set", "D) dict"],
   "answer": "A",
   "explanation": "int is immutable in Python."
 },
 {
   "question": "What will be the output of: `print('Hello'.upper())`?",
-  "options": ["A) HELLO", "B) hello", "C) Hello", "D) Error", "E) None"],
+  "options": ["A) HELLO", "B) hello", "C) Hello", "D) Error"],
   "answer": "A",
   "explanation": "'Hello'.upper() returns 'HELLO'."
 },
 {
   "question": "Which of the following is NOT a valid Python collection?",
-  "options": ["A) Array", "B) List", "C) Tuple", "D) Dictionary", "E) Set"],
+  "options": ["A) Array", "B) List", "C) Tuple", "D) Dictionary"],
   "answer": "A",
   "explanation": "Array is not a built-in Python collection type."
     }
