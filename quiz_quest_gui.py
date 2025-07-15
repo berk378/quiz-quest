@@ -303,13 +303,21 @@ def show_results_window(answer_list):
             opt_text = opt
             if opt[0] == q["answer"]:
                 opt_text += " (Correct Answer)"
-            if opt[0] == ans["selected"]:
+            if ans["selected"] and opt[0] == ans["selected"]:
                 opt_text += " (Your Answer)"
             detail_options[i].config(text=opt_text)
         for i in range(len(q["options"]), 4):
             detail_options[i].config(text="")
+        
+        # Cevap verilmediğinde özel mesaj göster
+        if not ans["selected"]:
+            explanation_text = "⏰ Time ran out! No answer was selected.\n\n"
+        else:
+            explanation_text = ""
+        
         explanation = q.get("explanation", "No explanation available.")
-        detail_explanation.config(text=f"Explanation: {explanation}")
+        explanation_text += f"Explanation: {explanation}"
+        detail_explanation.config(text=explanation_text)
         detail_canvas.yview_moveto(0)
 
     results_listbox.bind("<<ListboxSelect>>", on_select)
@@ -416,6 +424,13 @@ def show_question_window(questions, character, category, difficulty):
         if t is None:
             t = get_character_timer()
         if t <= 0:
+            # Süre bitti, soruyu yanlış olarak kaydet
+            q = questions[question_index.get()]
+            answer_list.append({
+                "question": q,
+                "selected": "",  # Cevap verilmedi
+                "is_correct": False
+            })
             health.set(health.get() - 1)
             update_hearts()
             question_index.set(question_index.get() + 1)
@@ -602,7 +617,7 @@ def show_60s_challenge_window(questions, character, category, difficulty):
 
     def next_question():
         selected_answer.set("")
-        if q_index.get() >= len(questions) or time_left.get() <= 0 or health.get() <= 0:
+        if q_index.get() >= len(questions) or health.get() <= 0:
             timer_active[0] = False  # Stop timer
             # Archer bonus puanı dahil edilerek kaydedilir
             bonus = 1 if character == "Archer" else 0
@@ -646,9 +661,27 @@ def show_60s_challenge_window(questions, character, category, difficulty):
         next_question()
 
     def timer_countdown():
-        if not timer_active[0] or time_left.get() <= 0 or health.get() <= 0:
-            if time_left.get() <= 0 or health.get() <= 0:
+        if not timer_active[0] or health.get() <= 0:
+            if health.get() <= 0:
                 submit_btn.config(state="disabled")
+            return
+        
+        if time_left.get() <= 0:
+            # Süre bitti - eğer aktif bir soru varsa onu yanlış olarak kaydet
+            if q_index.get() < len(questions):
+                q = questions[q_index.get()]
+                answer_list.append({
+                    "question": q,
+                    "selected": "",  # Cevap verilmedi
+                    "is_correct": False
+                })
+            timer_active[0] = False
+            submit_btn.config(state="disabled")
+            # Archer bonus puanı dahil edilerek kaydedilir
+            bonus = 1 if character == "Archer" else 0
+            write_score_to_file(player_name, score.get() + bonus, category, difficulty)
+            challenge_win.destroy()
+            show_results_window(answer_list)
             return
         
         time_left.set(time_left.get() - 1)
@@ -805,6 +838,13 @@ def play_1v1_round(player, questions, category, difficulty, lives, callback):
              t = timer_duration
 
         if t <= 0:
+            # Süre bitti, soruyu yanlış olarak kaydet
+            q = questions[question_index.get()]
+            answer_list.append({
+                "question": q,
+                "selected": "",  # Cevap verilmedi
+                "is_correct": False
+            })
             health.set(health.get() - 1)
             update_hearts()
             question_index.set(question_index.get() + 1)
@@ -917,7 +957,7 @@ def play_1v1_60s(player, questions, category, difficulty, lives, callback):
 
     def next_question():
         selected_answer.set("")
-        if q_index.get() >= len(questions) or time_left.get() <= 0 or health.get() <= 0:
+        if q_index.get() >= len(questions) or health.get() <= 0:
             timer_active[0] = False
             challenge_win.destroy()
             callback({
@@ -963,9 +1003,30 @@ def play_1v1_60s(player, questions, category, difficulty, lives, callback):
         next_question()
 
     def timer_countdown():
-        if not timer_active[0] or time_left.get() <= 0 or health.get() <= 0:
-            if time_left.get() <= 0 or health.get() <= 0:
+        if not timer_active[0] or health.get() <= 0:
+            if health.get() <= 0:
                 submit_btn.config(state="disabled")
+            return
+        
+        if time_left.get() <= 0:
+            # Süre bitti - eğer aktif bir soru varsa onu yanlış olarak kaydet
+            if q_index.get() < len(questions):
+                q = questions[q_index.get()]
+                answer_list.append({
+                    "question": q,
+                    "selected": "",  # Cevap verilmedi
+                    "is_correct": False
+                })
+            timer_active[0] = False
+            submit_btn.config(state="disabled")
+            challenge_win.destroy()
+            callback({
+                "score": score.get(),
+                "answers": answer_list,
+                "category": category,
+                "difficulty": difficulty,
+                "mode": "60s"
+            })
             return
         
         time_left.set(time_left.get() - 1)
@@ -1081,17 +1142,25 @@ def show_1v1_results(player1, result1, player2, result2):
         detail_q.config(text=q["question"])
         for i, opt in enumerate(q["options"]):
             opt_text = opt
-            if opt[0] == q["answer"] and opt[0] == ans["selected"]:
+            if opt[0] == q["answer"] and ans["selected"] and opt[0] == ans["selected"]:
                 opt_text += " (Correct Answer, Your Answer)"
             elif opt[0] == q["answer"]:
                 opt_text += " (Correct Answer)"
-            elif opt[0] == ans["selected"]:
+            elif ans["selected"] and opt[0] == ans["selected"]:
                 opt_text += " (Your Answer)"
             detail_opts[i].config(text=opt_text)
         for i in range(len(q["options"]), 4):
             detail_opts[i].config(text="")
+        
+        # Cevap verilmediğinde özel mesaj göster
+        if not ans["selected"]:
+            explanation_text = "⏰ Time ran out! No answer was selected.\n\n"
+        else:
+            explanation_text = ""
+        
         explanation = q.get("explanation", "No explanation available.")
-        detail_exp.config(text=f"Explanation: {explanation}")
+        explanation_text += f"Explanation: {explanation}"
+        detail_exp.config(text=explanation_text)
         canvas.yview_moveto(0)
 
     def on_select1(event):
@@ -1269,4 +1338,3 @@ onevone_button.pack(side="left", padx=5, pady=5)
 
 
 root.mainloop()
-
